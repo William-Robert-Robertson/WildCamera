@@ -101,11 +101,13 @@ WildCamera Open Source Wildlife Camera
 			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
 			- **NXP i.MX95** Preproduction: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
 			- **ST STM32MP2 Series** On ST roadmap. CSI-2 #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
-			- **Chips Integrating Mali-C55 ISP**
+			- **Raspberry Pi (RPi) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
+			- **Raspberry Pi (RPi) Zero 2** Power consumption and lack of sleep mode are a problem but worth testing.
+			- Chips Integrating **Mali-C55 ISP**
 				- **Renesas RZ/V2H** Mali-C55 ISPC
 			- Chips Integrating **Mali C52 ISP**
    				- Possibly in the longer therm
-			- **Chips Integrating Amlogic C3 ISP**
+			- Chips Integrating **Amlogic C3 ISP**
    				- Currently in development by Amlogic
 	- **Low Power**
 		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware
