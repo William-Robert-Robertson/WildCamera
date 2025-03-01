@@ -124,7 +124,7 @@ WildCamera Open Source Wildlife Camera
 - **Activation Sensors** Passive Infra Red (PIR) or other technologies for specialist applications.
 - **Storage** MicroSD card or internal flash memory (eMMC).	
 - **Data Communication** Wi-Fi (preferred) or Bluetooth for video, photo and data download to a laptop within range.
-- **Wakeup Communication** Low power protocol e.g. Bluetooth LE, Zigbee or sub-1GHz IEEE 802.15.4 to send wake-up signal to waken up WiFi above.
+- **Wakeup Communication** Low power protocol e.g. Matter IoT, Bluetooth LE, Zigbee or sub-1GHz IEEE 802.15.4 to send wake-up signal to waken up WiFi above.
 - **Power Supply** solar panel(s), external power source.
 - **Battery** Li or LiFePO4 for high temperatures, PbA for lower temperatures.
 
