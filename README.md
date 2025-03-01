@@ -269,6 +269,7 @@ WildCamera Open Source Wildlife Camera
 	- Building a Linux kernel for an embedded system is difficult - we provide that ready made and ready to go.
 	- When we design add-on modules we ensure that they're compatible and easy to add using simple tools.
 	- We try to provide full, easily understood documentation.
+	- Where needed, we can provide a full build and customisation service.
 - **What optics can be used?:**
 	- **Optics in Camera Modules** The optics built-in to camera modules support most use cases
 	- **Custom Optics** Any off-the-shelf or custom designed lens system that's compatible with an M12 mounting.
