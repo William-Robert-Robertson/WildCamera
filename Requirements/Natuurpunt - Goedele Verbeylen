@@ -1,0 +1,154 @@
+Requirements - Natuurpunt - Goedele Verbeylen
+Particiapants:
+  G: Goedele Verbeylen https://www.facebook.com/goedele.verbeylen
+  WR: Will Robertson
+Date:
+  08 December 2024
+
+WR:
+
+If CritterCam could have any features you want without regard for any practical or technical limitations at all, what would those features be?
+
+Would be great if features could be in priory order and divided into core features and features that can be in optional add-on components or modules.
+
+G:
+
+things I immediately think of: fast trigger (than can be aimed separately from the camera to a point where you expect the animal will pass right before it comes in front of the camera; or like security cameras often have: always keep a buffer in the memory so that when an animal passes too fast you can go back in time), focus at short distances that’s sharp during both day and night (or zoom in from longer distances so you can hang the camera on a tree further away, don’t know if that’s feasible?), easy to aim (like with the external live view screen from the Bushnell Natureview Liveview), long lasting batteries, easy to attach to a tree (the tree forks I use are very helpful, but too short: I often can’t aim the camera how I want since I can’t put them under a larger angle because the tree is in the way… another way to solve this would be a camera that stays in place but has a lens that can turn), making both pictures and movies at sufficiently high quality, options to change all kinds of settings from a distance (but won't work in several of my study sites because the reception is bad)
+
+and if batteries last long: also memory cards that are suffiently large to store everything
+
+inconspicuous
+
+possibility to secure it with a cable lock
+
+rain-proof
+
+possibility to film inside a nest box or hollow
+
+possibility to set start and stop times whenever you want (now there's usually the choice between day/night/24hrs or to set one or two time periods that stay the same every day, more flexibility can be useful)
+
+WR:
+
+Some of those features - like the buffer - would increase power consumption - requiring bigger rechargeable batteries and solar panels - but an ecologist could switch them on or off according to their needs. The software could tell the ecologist an estimate if the additional cost in power consumption of each feature switched on or off to the the ecologist could estimate whether a larger battery or solar panel might be needed.
+
+An optional GSM module could send the ecologist an SMS to warn them in advance if the battery was getting low so that they could buy an extra solar panel and organise going out to fit it before data collection is interrupted or the battery damaged by being in a low charge state for too long.
+
+I agree absolutely about the trigger that can be seperately aimed - absolutely critical.
+
+ST say that their microprocessors (MPUs - Micro Processor Units) can waken from sleep mode in 100 mS so the unit needs to detect an animal 100 mS in advance. (I haven't independently verified that 100 mS figure yet thought.)
+
+PIR sensors work well for mammals but not for reptiles or insects so people studying them want to have the flexibility to fit different types of sensors.
+
+I agree absolutely about being able to focus nearby both at day and at night - that's hugely important.
+
+Zoom went through my mind - a camera module with a powerful zoom lense and connected via MIPI CSI-2 or USB could be an optional extra - camera modules with a powerful zoom are more expensive but may be justified in some circumstances.
+
+I agree about very large memory cards. Another possibility would be the optional ability to compress the photo or video (e.g. to JPEG or MP4) before saving it - that would consume more power but enormously reduce the storage needed.
+
+I'd want the ecologist to be able to move data from CritterCam to a laptop (or update configuration) simply by standing within WiFi range and moving the files - no more balancing up ladders while fiddling with SD cards (I've dropped and lost a fiddly SD card in the field myself - thankfully an empty one).
+
+The pressure and economic incentivs to develop better recharged batteries and better microprocessors has become enormous now and hopefully that'll act in our favour in the long term - I think part of the key is to keep the design modular so that if better technology becomes available for one module (e.g. a new battery chemistry for the battery module) that module can easily be replaced.
+
+Easy to aim is critical and missing in many commercial cameras. An external live view on a smartphone would be a big help for this?
+
+Rainproof is extremely important - I'm in tough with 2 independent groups of experts in this field.
+
+An external MIPI CSI-2 camera could be placed in a nest box or hollow up to a maximum cable length of 30 cm from the MPU. For an external USB camera module the cable length could be longer but power consumption likely higher.
+
+A lense that can turn is available in some camera modules - it makes them more expensive but I can see that they could be a valuable optional extra in many situations.
+
+Can see that having seperate still and video camera modules would be an advantage.
+
+An optional extra that could be added in future could be for the cameras to automatically form a mesh network so that if one of them has a GSM signal and the others don't the others will root communications through it - that would have to be added in future though.
+
+Inconspicuous isn't something I've looked at - armed forces have done enormous amounts of research into that over the last 70 years (camouflage) and a lot of it is declassified now so we should be able to make use of that.
+
+All-open-source software will allow a lot of flexibility in setting settings and adding additional software features if needed.
+
+G:
+
+Here's the manual for the cameras I used at the dormouse bridge in Brussels, so you can check out the options. I installed 2 of these in Neerijse last week, but there was no reception to aim them correctly so I just did it by feel (they don't have a screen to see if they're aimed right, it can only be done by sending a picture to your smartphone, change the position a bit, and do that again and again until it's right).
+
+Link to Wilsus-Tradenda-4G-WIRELESS-NL-UK.pdf file
+
+WR:
+
+Argh - that's very frustrating - they should be able to send a live video to a smartphone via a WiFi connection for aiming without any GSM signal - our sites often have weak and or unreliable mobile signals.
+
+Balancing up a tree while fiddling to align a camera and fiddling with a smartphone and trying to find a mobile signal and trying not to fall to injury or death is something that would definitely require a prehensile tail - not practical or safe for us greater apes unfortunately.
+
+G:
+
+Yep. For one of the cameras, I asked Ivo to hand me my laptop, so I aimed the camera, took out the sd card and looked at the video on my laptop, put it back in the camera, aimed a little bit better, and did all that a few times, while standing in the fork of a willow. I managed not to fall down and not to let the laptop fall down only just...
+
+WR:
+
+I reckon that having the IR LED modules detachable would also be a help - pointing the IR LED modules directly at an animal from just beside the camera itself seems to cause red-eye - making the photos and videos look very strange - not helpful for conservation education or fund raising.
+
+Detachable IR LED modules also allow the ecologist to choose a specific wavelength of IR LED for animals which are sensitive to some wavelengths of IR light or to choose visible LEDs where that would be justified.
+
+G:
+
+Yep. For one of the cameras, I asked Ivo to hand me my laptop, so I aimed the camera, took out the sd card and looked at the video on my laptop, put it back in the camera, aimed a little bit better, and did all that a few times, while standing in the fork of a willow. I managed not to fall down and not to let the laptop fall down only just...
+
+WR:
+
+That doesn't sound practical or safe 🙈 Tight hug! 🤗
+
+G:
+
+I should really think about buying a good harness for safety...
+
+WR:
+
+I'm planning to ask around the arborist community to see if I can find a used arborist harness for you.
+
+The newest harnesses can be very expensive and very heavy.
+
+I've got a used harness here that I was planning to bring next time I come.
+
+(An optional extra module could be an RFID tag reader module to record the identity of individuals alongside the video and identity any individuals that are videoed but not tagged.)
+
+G:
+
+I don't have much strength anymore, so if it's too heavy it will prevent me from getting up the tree 🙈.
+
+WR:
+
+Exactly - I think these harnesses have to be light - I notice the decline in my performance that every additional 2 or 3 kilos of weight causes - I have to be very careful what I eat to carefully control my weight - for me several extra kilos of harness are very unwelcome as well 🙈
+
+G: and WR:
+
+Conversation on requirements for width and shape for entrance holes for Hazel Dormice Muscardinus avellanarius which isn't relevant to CritterCam specialisation omitted here.
+
+G:
+
+This is what you get with a small entrance (but they like it anyway...): 
+
+https://www.youtube.com/watch?v=iMvchEbWif8
+
+WR:
+
+Watching that video I suddenly realised that - of course - having a camera that can focus nearby can also reduce the distance between the IR LEDs and the subject and that can greatly reduce the amount of power that has to be burned to light up the subject.
+
+It's called an "inverse square law" - if you half the distance between the IR LEDs and the subject you reduce the power needed not to a half but to very roughly a quarter.
+
+So cameras that can focus nearby have a hidden power saving advantage at night...
+
+WR: and G:
+
+Conversation not relevent to CritterCam specifications so ommitted.
+
+G:
+
+Yes, also in Italy they found them at high altitudes. http://www.italian-journal-of-mammalogy.it/pdf-77155-57641?filename=57641.pdf
+
+https://aca.pensoft.net/article/82512
+
+WR:
+
+Note: The above papers show the potential need for CtritterCam to survive cold temperatures at altitude - it should be possible to fit different battery chemistries to CritterCam depending on the requirements.
+
+WR: and G:
+
+End of relevent part of conversation.
