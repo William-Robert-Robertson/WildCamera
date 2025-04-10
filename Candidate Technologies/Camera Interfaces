@@ -1,0 +1,18 @@
+Candidate Camera Interfaces
+
+MIPI CSI-2
+
+MIPI CSI-1
+Deceased.
+
+MIPI CSI-3
+Deceased.
+
+Sony SLVS-EC
+  https://www.sony-semicon.com/en/technology/is/slvsec.html
+  Only MPU which could be found which supports it is Renesas RZ/V Microprocessor Series launched in 2020
+  https://www.renesas.com/en/about/press-room/renesas-unveils-rzv-microprocessor-series-vision-optimized-artificial-intelligence-accelerator
+
+DCMI
+  STMicroelectronics STM32 Digital Camera Memory Interface (DCMI)
+  This appears to be used only by STM32 MCUs.
