@@ -1,0 +1,202 @@
+Debix Model A Getting Started and Power Consumption
+
+# Follow instructions here:
+# https://debix.io/Document/manual_info/id/9.html
+# Download Ubuntu - Boot from SD Card - in our case Ubuntu 22.04
+# Download Yocto - Boot from SD Card - in our case Yocto-L6.1.22_2.0.0
+
+# Insert Ubuntu SD card, connect monitor and connect power via USB
+# LED goes continuous red and blank screen is displayed then "Debix" then blank screen again then flashing red when boot is completed
+# Connect USB keyboard and mouse
+# Connect Ethernet cable.
+
+# RTC battery is CR1225
+
+DEBIX Model A 2GB RAM
+
+sudo apt update
+sudo apt upgrade
+
+Password debix
+
+sudo reboot
+
+sudo shutdown
+# Schedules shutdown in 1 minute 
+
+During boot 0.7 A at c. 5 v
+After boot 0.49 A at c. 5 V
+
+systemctl suspend
+05.14 V
+0.148 A
+0.076 W
+
+Disconnect network cable
+
+05.14 V
+0.100 A
+0.52 W
+
+Unplug USB dongles for keyboard and mouse
+
+05.12 V
+0.076 A
+0.399 W
+
+Restart and repeat all the above without network cable connected
+
+05.13 V
+0.044 A
+0.225 W
+
+Unplug monitor
+
+05.13 V
+0.035 A
+0.170 W
+
+Plug monitor in again
+
+05.13 V
+0.043 A
+0.22 W
+
+Plug in mouse and keyboard dongles
+
+0.050 A
+0.26 W
+
+wake up (button closest to USB C connector)
+
+02.07 W
+
+systemctl suspend
+
+0.34 W
+
+remove USB keyboard and mouse dongles
+
+0.22 W
+
+unplug screen
+
+0.17 W
+
+running with screen and USB mouse and keyboard dongle disconnected
+
+1.49 W
+
+systemctl hibernate
+# Gives Sleep verb "hibernate" not supported error
+
+# Insert Yocto SD card, connect monitor and connect power via USB
+
+# As with Ubuntu, the first Yocto boot takes longer then subsequent boots
+
+02.26 W
+
+sudo apt update
+sudo apt upgrade
+# Didn't find anything
+
+systemctl suspend
+
+00.95 W
+
+Disconnect USB keyboard and mouse dongles, ethernet and screen
+
+0.096 A
+0.49 W
+
+# Waken up using button closest to USB C connector
+
+0.32 A
+1.78 W
+
+with ethernet unplugged
+
+systemctl suspend
+
+0.34 W
+
+unplug USB dongles for keyboard and mouse
+
+0.22 W
+
+unplug screen
+
+0.17 W
+0.035 A
+
+# Waken up using button closest to USB C connector
+
+01.6 W
+
+plug in screen
+
+01.67 W
+
+plug in USB keyboard and mouse dongles
+
+02.09 W
+
+Using Ubuntu SD Card
+
+Connect Debix I/O Board and RPi Camera 3 but do not change configuration
+Leave USB keyboard and mouse dongle plugged in
+02.29 W
+0.446 A
+
+Press button closest to USB C connector to switch into sleep mode
+
+0.47 W
+0.09 A
+
+Unplug USB keyboard and mouse dongles and screen
+
+0.31 W
+0.06A
+
+# https://www.youtube.com/watch?v=UKIM1t8Kdu4
+# or
+# https://debix.io/Uploads/Temp/file/20241225/DEBIX%20IO%20Board%20User%20Manual-V1.1.pdf
+
+Activities
+
+Type add for "Add-on Board" and click on "Add-on Board"
+
+Select Debix + Io Board
+Select None
+
+You have successfully copied the file
+/boot/imx8mp-debix-io-board.dtb
+to
+/boot/imx8mp-evk.dtb
+New configuration will be used on your next boot!
+
+sudo reboot
+
+0.46 A
+2.30 W
+
+Cheese didn't work.
+
+# https://libcamera.org/getting-started.html
+
+Raspberry Pi 4 Model B
+With screen and USB mouse disconnected
+1.77 W
+
+Zero 2 W can go down to about 400 mW with HDMI disabled:
+https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/
+
+# The following example data from a solar panel is moved to Power Harvesting / Test Configurations
+# 25 January 2025
+# Zürich
+# Bulk charge
+# 0.5A
+# 13.48 V
+# 6.69 W rising to c. 12 Watt depending on sun and cloud
+# Light cloud
+# Panel vertical
