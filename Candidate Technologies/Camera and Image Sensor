@@ -1,0 +1,250 @@
+Candidate Camera Modules and Image Sensors:
+
+OwlSight Ultra-high Resolution Cameras - OV64A40
+  https://www.arducam.com/64mp-ov64a40-camera-module/
+
+ST Image Sensors
+https://www.st.com/en/imaging-and-photonics-solutions/cmos-image-sensors/products.html
+
+Develop smarter vision systems with ST BrightSense technology - On-demand webinar
+https://content.st.com/develop-smarter-vision-systems.html
+  20:40 "Auto wake-up 1-1.5mW, 30mW at 60 fps"
+  22:30 "image difference mode" "eliminate unnecessary background" "50 dB SNR with noise reduction"
+  28:00 Promodules - lense focused, glued and tested in cleanroom environment. different lenses optimised for thickness, depth of focus or ultrawide
+  29:52 P-Board connects Promodules to RPI, STM32 etc. FFC, 3cmx3cm in size,
+  30:28 S-Board - Sensor Board - m12 lense holder and non-glues M12 lense or smaller with an adapter FFC, 3cmx3cm in size
+  31:50 EVK Main - USB C output - STSW-IMG501 software
+  33:08 Linux Driver for each of our sensors supporting S>TM32MP2, RaspberryPi, NXP, Rock chip STSW-IMG502, STSW-IMG503, STSW-IMG505, 
+  35:30 400 to 300 nM can go up to 1000 so UV or deep IR sensitivity
+  55:00 auto wake-up grid of 4x4 and you can select which part of the grid does and does not cause auto wake-up - see user manual
+  Adrien Martin
+  Marie-Charlotte Leclerc
+  Adela Viezure
+
+VD55G1
+  https://www.st.com/resource/en/datasheet/vd55g1.pdf
+  "0.56-megapixel"
+  "Monochrome"
+  "Ultralow power solution with:
+  – Smart auto wake-up feature, with ultralow power sleepy mode, and
+  smart wake up when an event is detected"
+  "Low power operation of ≤ 2 mW in auto wake-up mode"
+  "– High sensitivity and sharpness in both visible and NIR"
+  "1-lane MIPI CSI-2 output"
+  "MIPI I3C"
+
+VG5761
+  https://www.st.com/en/imaging-and-photonics-solutions/vg5761.html
+  "AEC-Q100 grade 2 automotive qualification ongoing"
+  "Mipi CSI-2 (4 x 0.8 Gbps)" - will this work with 2 lanes on MPUs?
+  "Automotive HDR Global Shutter 2.3Mp with 3.2um pixel and iBGA"
+  "This automotive global shutter sensor product family features both HDR and ultra low-noise where crosstalk is minimized for near infrared (NIR) scenes.
+  They are highly recommended for high-end computer vision applications in demanding environments."
+  "Up to 4-LED control output, synchronized with sensor integration periods"
+  "Support of binning by 2 and by 4"
+  "Automotive qualified IM2BGA plastic package"
+  "Large spectrum glass for visible and IR applications with dual AR coating"
+  "Embedded 16-bit video processing pipe with pixel defect correction, high dynamic range (HDR) merge with ghost removal, and programmable compression of dynamic"
+
+VB1940 - in Preview in December 2024
+  https://www.st.com/en/imaging-and-photonics-solutions/vb1940.html
+  "Automotive-grade, 5.1 Mpixel image sensor with global shutter and rolling modes for full image resolution and performance, in NIR and RGB"
+  "Dual exposure controls (RGB and IR)"
+  "On-chip bayerization ISP (image signal processor)"
+  "Quad lane transmitter MIPI CSI-2 up to 1.5 Gbps per lane"
+  "Peak quantum efficiency 25% @ 940 nm"
+  N.B: by comparrison "Quantum efficiency depends on the wavelength of the photons and is generally less than 35%." https://psec.uchicago.edu/library/photomultipliers/Photonis_PMT_basics.pdf
+
+VD1940
+  https://www.st.com/en/imaging-and-photonics-solutions/vd1940.html
+  "Automotive-grade, 5.1 Mpixel image sensor with global shutter and rolling modes for full image resolution and performance, in NIR and RGB"
+  Dual exposure controls (RGB and IR)
+  On-chip bayerization ISP (image signal processor)
+  On-chip color HDR (high dynamic range) merges"
+  "Quad lane transmitter MIPI CSI-2"
+  "Peak quantum efficiency 25% @ 940 nm"
+
+VB1740 - in Preview in December 2024
+  https://www.st.com/en/imaging-and-photonics-solutions/vb1740.html
+  "Automotive-grade, 2.7 Mpixel image sensor with global shutter and rolling modes for full image resolution and performance, in NIR and RGB"
+  "Dual exposure controls (RGB and IR)"
+  "On-chip bayerization ISP (image signal processor)"
+  "Quad lane transmitter MIPI CSI-2 up to 1.5 Gbps per lane"
+  "Output synchronized with sensor integration periods
+  PWM (pulse-width modulation) control"
+  "Peak quantum efficiency 25% @ 940 nm"
+
+Linux Start Guide for ST BrightSense image sensors - Rev 1 - May 2024
+https://www.st.com/resource/en/product_presentation/linux-startguide-stbrightsense.pdf
+  ST BrightSense, "This Linux Start Guide covers all the products of the ST BrightSense portfolio, which includes at the time of writing"
+  "Every ST BrightSense image sensor is available with two main hardware kit options, which both contains the necessary board,
+  optics and a 22-pin FFC/FPC cable."
+  S-Board
+    "The S-Board is a hardware kit including a sensor board for a given image sensor, that is equipped with M12 lens holder and
+    removable lens, enabling user to change lens at any time."
+  P-Board
+    "The P-Board is a hardware kit including a board with connector to evaluation any camera module provided by STMicroelectronics
+    and its authorized partners. This kit enables to evaluate image sensors built as turnkey camera module to save the effort
+    associated to lens selection and focus."
+    "P-Board has no image sensor - None (promodule to order separately)"
+  "Complementing V4L2 is libcamera. It operates as a user-space library and provides a unified interface for camera applications"
+  "Raspberry Pi"
+  "By default, Raspberry Pi OS comes with Libcamera library. Using Libcamera allows to benefit from Broadcom HW ISP
+  available on the RPi SoC for image processing (debayering, 3A, etc.)."
+  "Each Image Sensor must be described in Libcamera. For that reason, the RPi OS Libcamera package should be upgraded
+  with a new version where all ST BrightSense Image Sensors are described"
+  "Once the libcamera package has been downloaded from st.com it can be installed with the below command line:"
+  $ sudo dpkg -i libcamera-ipa_0.2.0.deb
+  "While some embedded platforms such as the Raspberry Pi series rely on Libcamera as a camera software library, other Linuxbased plat or s on’t ene it ro it and only support V4L2. In such situation, standard V4L2 tools must be used to
+  communicate with the image sensor."
+
+B-CAMS-IMX Camera module bundle for STM32 boards
+https://www.st.com/en/evaluation-tools/b-cams-imx.html#overview
+
+VD56G3 Compact and high-sensitivity 1.5 megapixel monochrome global shutter image sensor
+  https://www.st.com/en/imaging-and-photonics-solutions/vd56g3.html
+  "Benefits both visible and NIR imaging (850 nm and 940 nm)."
+  "Multiple features to optimize data size and frame rates such as crop, binning, and programmable sequences."
+
+It looks like ST are mentioning a lot about MIPI CSI-2 in the summary information about their newest image sensors - this seems to suggest the likelihood of a commitment to CSI-2 throughout their ecosystem.
+https://www.st.com/content/st_com/en/campaigns/st-brightsense-imag-mccmos.html
+
+Sony Image Sensors
+https://www.sony-semicon.com/en/products/is/index.html
+
+Raspberry Pi Camera software - detailed information
+https://www.raspberrypi.com/documentation/computers/camera_software.html
+
+Raspberry Pi Camera Module 3 NoIR
+  Based on 12 Megapixel Sony IMX708 sensor.
+  https://www.raspberrypi.com/products/camera-module-3/
+  https://www.pi-shop.ch/raspberry-pi-camera-3-noir
+  https://www.raspberrypi.com/news/raspberry-pi-camera-module-more-on-video-capture/
+
+Raspberry Pi AI Camera
+  https://www.raspberrypi.com/products/ai-camera/
+
+Raspberry Pi Camera Module 2
+  https://www.raspberrypi.com/products/camera-module-v2/
+  April 2016
+  Sony IMX219 8-megapixel sensor
+
+Raspberry Pi High Quality Camera
+  https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/
+  "12.3 megapixel Sony IMX477 sensor, 7.9mm diagonal image size"
+  C/CS-mount
+
+Raspberry Pi Global Shutter Camera
+  https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/
+  "Sensor: Sony IMX296LQR-C"
+  Sony IMX296 sensor
+  C/CS-mount
+
+RPi Zero V1.3 Camera
+  https://www.waveshare.com/wiki/RPi_Zero_V1.3_Camera
+  https://www.pi-shop.ch/raspberry-zero-v1-3-mini-camera
+    "5 megapixel OV5647 sensor"
+
+  https://forums.raspberrypi.com/viewtopic.php?t=366676
+  camera modules supported by mainline Linux kernel drivers!
+  "Insights on Raspberry Pi 5 and Sony IMX Sensor Integration"
+  "Fri Mar 01, 2024 5:56 pm re: 1. We have moved to an entirely open-source camera stack. Therefore, you should be able to write your drivers for any MIPI CSI camera. There are already several cameras already supported in the Linux kernel. If you have registers sets etc then it's quite possible. Check out the drivers already in the kernel tree for ideas."
+  "Fri Mar 01, 2024 6:08 pm 1. As JamesH has said, the camera stack is now entirely open. We have support for a number of 3rd party camera modules by just using the mainline Linux kernel drivers for them (eg IMX327/290/462 family, IMX258, IMX296, OV7251, OV9281/2)."
+
+Vision Components MIPI Camera Modules
+  https://www.mipi-modules.com/en/mipi-accessories/
+  https://www.vision-components.com/en/news/mipi-modules-com-new-website-for-the-vc-mipi-ecosystem/
+  Camera drivers: In source code and for all common processor platforms
+  https://www.mipi-modules.com/fileadmin/external/documentation/software/vc_mipi_driver_list/index.html
+    Drivers for NXP i.MX8 Series
+    Current version: 0.3.0
+    Supported MIPI modules:
+      VC MIPI IMX290 / IMX290C
+      VC MIPI IMX327C
+      VC MIPI IMX462C
+    Supported system on modules:
+      Toradex Verdin iMX8M Plus
+      Toradex Verdin iMX8M Mini
+      Variscite DART-MX8M-PLUS
+    Supported carrier boards:
+      Toradex Dahlia Carrier Board
+      Variscite DART-MX8M-PLUS Evaluation Kits
+    Supported board support packages:
+      Toradex Yocto Project 6.6.0
+      Variscite Kirkstone 5.15.71
+
+  For more on Toradex see MPU andd MCU https://www.toradex.com/de/computer-on-modules/colibri-arm-family/nxp-imx-8x
+  VC MIPI Repeater Board for flexible cable routing and IOs
+
+Coral Camera
+  https://coral.ai/products/camera/
+  Omnivision OV5645 SoC (built in ISP)
+  MIPI-CSI, dual lane MIPI interface
+Coral Environmental Sensor Board 
+  https://coral.ai/products/environmental/
+
+DEBIX Camera Adapter Board
+  EMB-AS-08
+  https://debix.io/hardware/camera-adapter-board.html
+  DEBIX Camera 200A Module
+  https://debix.io/hardware/200a-camera.html
+  DEBIX Camera 500A Module
+  https://debix.io/hardware/500a-camera.html
+  DEBIX Camera 1300A Module
+  https://debix.io/hardware/camera-1300a.html
+
+IDS Imaging - Industrial Camera Modules
+  https://www.ids-imaging.us/
+  https://de.ids-imaging.com/
+
+NXP Image Processing Partners - NXP Partners
+  https://www.nxp.com/company/about-nxp/smarter-world-blog/BL-INT-IMAGE-SIGNAL-PROCESSING-W-NXP-PARTNERS
+
+https://www.youtube.com/watch?v=YLIh8ElDajI
+  at 35:20
+  NXP Partners who can calibrate:
+    Basler, Ahrensburg, Germany
+    InnoWave Cleveland, Ohio
+    IMDT, Israel
+    FRAMOS, Munich, Germany
+    einfochips San Jose, CA
+    PHYTEC Mainz, Germany
+    Leopard Imaging, Fermont, CA
+    Yosun ISC, Taiwan
+    Image Quality Labs, Durham, NC
+  at 36:00
+    NPU
+  at 36:00
+    Deep Sleep power of 19.5 mW
+  at 38:50
+    from TensorFlow, PyTorch
+  at 39:40
+    Gstreamer and Gstreamer Plugins
+    NNStreamer
+    NNStreamer and GStreamer integrated in BSPs
+
+GalaxyCore gc05a2 and gc08a3 Image sensors.
+  Supported from libcamera v o.4.9
+  https://en.gcoreinc.com/products/index?cid=2&subcid=5
+
+Pine ROCKPro64 13 Megapixel Camera Module – Standard Model
+  Based on 13 Megapixel Sony IMX214 sensor.
+  https://pine64.com/product/rockpro64-13-megapixel-camera-module-standard-model/
+    "60 degree lens and micro motor build-in for auto focus"
+    "The ROCKPro64 can install with two MiPi-CSI camera modules"
+
+PINE64’s New Smart Camera Runs Linux
+https://pine64.org/2024/11/21/november_2024/
+https://www.howtogeek.com/pine64-pinecam-reveal/
+  "The PineCam has 512MB of RAM, enough to run a Linux-based operating system like MotionEyeOS. It comes with a 2MP camera module, the same as the PineTab 2/-V, and connects through a MIPI CSI connector."
+  Mentioned above.
+
+PineCube Camera
+https://pine64.org/devices/pinecube/
+  5 MPx OV5640 sensor
+  128MB DDR3
+PineCube room, Rock64 21:33 Sunday 15 December 2024 "<d​simic> PineCube is dead, unfortunately :/"
+
+Pine A64 5 Megapixes Camera Module
+https://pine64.com/product/pine64-5-megapixel-camera-module/
+Seems to have been superceded by the above.
