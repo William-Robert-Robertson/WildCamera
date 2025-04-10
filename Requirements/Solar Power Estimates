@@ -1,0 +1,33 @@
+Solar Power Estimates
+
+This paper roughly estimates that "approximately 9 % of the open-field radiation reached the forest floor"
+
+https://www.sciencedirect.com/science/article/pii/S037811272400478X
+
+So that 180 W solar panel would give about 18 W on the forest floor in theoretical ideal conditions - the reality is likely to be a lot lower than that though.
+
+Environmental Research Laboratories
+Air Resources
+Atmospheric Turbulence and Diffusion Laboratory
+Oak Ridge, Tennessee
+Boyd A. Hutchison and Detlef R. Matt
+"Hutchison & Matt 1977"
+The Distribution of Solar Radiation Within a Deciduous Forest
+National Oceanic and Atmospheric Administration
+Ecological Monographs (1977) 47: pp. 185-207
+Spring 1977
+https://repository.library.noaa.gov/view/noaa/33615/noaa_33615_DS1.pdf
+
+Please see spreadsheet: https://docs.google.com/spreadsheets/d/1w2clQSW-RGAsttdx2i8g7BqFutrK2kV236JA8Dwr6eU/edit?gid=0#gid=0
+
+"To convert millilangleys (mly) to joules per square metre
+(J / m2 ), multiply by 41.84."
+January 16. 1973
+p190
+  Flux density millilangleys per minute
+  c. 40 difuse - so c. 1,648 J per square meter per minute or 27.89333333 J per second at c. 20% efficiency gives 6 J per second
+  c. 200 total - so c. 8368 J per square meter per minute 139.4666667 J per second at c. 20% efficiency gives 28 J per second
+p191
+  c. 10% total on average
+  c. 10% direct on average
+  c. 20% difuse on average
