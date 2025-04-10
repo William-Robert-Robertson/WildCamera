@@ -1,0 +1,42 @@
+Sample Code
+
+Very good!
+https://www.raspberrypi.com/news/raspberry-pi-camera-module-more-on-video-capture/
+
+  Recording in response to a signal
+  For those familiar with Linux signals, an alternative to pressing a key is to send a signal instead. To do this, simply use -s or --signal instead of -k (or --keypress).
+
+  To send a record/pause signal to libcamera-vid, first start it and then type the following into another terminal window:
+
+  kill -SIGUSR1 `pidof libcamera-vid`
+
+  And you can force libcamera-vid to quit with:
+
+  kill -SIGUSR2 `pidof libcamera-vid`
+
+  Note: User Signals SIGUSR1 and SIGUSR2 mentioned at 18:00 of https://www.youtube.com/watch?v=RU0ULe2f6hI
+
+  This should be familiar as it matches libcamera-still’s behaviour!
+
+Linux Signals
+  https://faculty.cs.niu.edu/~hutchins/csci480/signals.htm
+  https://www.youtube.com/watch?v=RU0ULe2f6hI
+  https://www.baeldung.com/linux/signals-vs-interrupts
+
+Very good!
+Linux Start Guide for ST BrightSense image sensors
+  https://www.st.com/resource/en/product_presentation/linux-startguide-stbrightsense.pdf
+
+https://www.youtube.com/watch?v=6C3CqQJFYlI
+
+  libcamera-hello -t 0
+
+  libcamera-helo -t 0
+
+  Ctrl C to close
+
+  libcamera-vid -t 10000 -o test.h264
+
+  -t 10000 means 10 seconds
+  hyphen O not hyphen zero in the above
+  "test.h264" is the file name
