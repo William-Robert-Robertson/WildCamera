@@ -335,12 +335,10 @@ Worst case based on "The Distribution of Solar Radiation Within a Deciduous Fore
 
 - c. 6 Watts per meter diffuse
 - c. 28 Watts per meter total
-- 
+
 ---
 
-### **10. Example Power Budget**	
-
-Other Languages
+### **10. Other Languages**
 
 English: WildCamera Open Source Wildlife Camera / Camera trap
 Deutsch: WildKamera Open Source Wildtierkamera
