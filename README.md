@@ -144,7 +144,7 @@ WildCamera Open Source Wildlife Camera
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
 - **Long Range Sub-GHz** BeagleConnect Freedom - TI SimpleLink CC1352P7 wireless μC, Zephyr and MicroPython, 2.4GHz and sub-1GHz IEEE 802.15.4 wireless network
 - **Satellite Communications Module** Allows status information, videos and photos to be sent where no mobile network is present however can be expensive
-- **Audio Output Module** Inexpensively provides an audible distress call if CritterCam is experiencing a problem or needs help, can also play pre-recorded sounds to attract or repel animals
+- **Audio Output Module** Inexpensively provides an audible distress call if WildCamera is experiencing a problem or needs help, can also play pre-recorded sounds to attract or repel animals
 - **Wind Speed and Direction** 
 - **Always-On Camera** Low quality, low power camera which is always on to detect creatures which PIR cannot detect
 	- **Active Area Selection** Active areas of always on camera can be selected
@@ -239,7 +239,7 @@ WildCamera Open Source Wildlife Camera
 
 ### **8. FAQs Frequently Asked Questions**	
 
-- **How long can CritterCam power itself independently?** In practice this depends on:
+- **How long can WildCamera power itself independently?** In practice this depends on:
 	- **Solar Panels** the size and efficiency of the solar panels selected
 	- **Shade** whether the solar panels are shaded for part or all of the day
 	- **Battery Size** the size of the battery selected
@@ -248,14 +248,14 @@ WildCamera Open Source Wildlife Camera
 	- **Intensity of LED Illumination** using more NIR (Near Infra Red) illumination in low light levels or at night increases power consumption
 		- **Image Sensor Used** selecting a specialist low noise, high sensitivity image sensor for night time use may increase the cost of the image sensor but reduces the need for power for NIR (Near Infra Red) LED illumination
 		- **Distance From Target** Being closer to the target reduces the need for power for NIR (Near Infra Red) LED illumination
-	- **AI - Neural Networks** Running neural networks, e.g,. for object recognition, etc. on the CritterCam will increase power consumption depending on complexity of NN
+	- **AI - Neural Networks** Running neural networks, e.g,. for object recognition, etc. on WildCamera will increase power consumption depending on complexity of NN
 	- **Optional Add-On Modules** will increase power consumption
 	- **Weather** bad weather or snow on solar panels decreases the solar energy available
 	- **Duration of Daylight** depending on latitude and time of year
 - **How do I align the camera?**
 	- **Real Time Video Stream via WiFi** With WiFi activated, a real time video stream from the camera and data on PIR activation is sent to a smartphone, tablet or laptop within range
 - **How do I get the SD card out of the box?**
-	- **Use WiFi or Ethernet** Data download via WiFi or Ethernet from CritterCam to a laptop is preferred because it eliminates the need to fiddle with SD cards, to climb trees to reach the SD card or to disturb the wildlife being observed.
+	- **Use WiFi or Ethernet** Data download via WiFi or Ethernet from WildCamera to a laptop is preferred because it eliminates the need to fiddle with SD cards, to climb trees to reach the SD card or to disturb the wildlife being observed.
 - **How long until storage is full?** this depends on
 	- **Frequency of Activation**
 	- **Compression** Activating photo and video compression will greatly reduce the storage space used but also somewhat increase power consumption.
@@ -264,7 +264,7 @@ WildCamera Open Source Wildlife Camera
 	- **Video FPS** The more frames per second selected, the greater the storage space required for video
 - **Why is the solar panel larger than commercial wildlife cameras?**
 	- **Larger Solar Panels** harvest the energy needed for the system to be highly flexible and support advanced functionality - because of competition between solar panel manufacturers the cost of the larger solar panel is low compared to the improvement in flexibility and functionality.
-- **Does CritterCam work with reptiles, beetles and insects?**
+- **Does WildCamera work with reptiles, beetles and insects?**
 	- **Yes** via the optional always-on camera module and LED illumination if required (constant LED illumination will increase power consumption)
 - **This sounds complicated - I'm not sure if I can handle it?:**
 	- Building a Linux kernel for an embedded system is difficult - we provide that ready made and ready to go.
@@ -274,24 +274,24 @@ WildCamera Open Source Wildlife Camera
 - **What optics can be used?:**
 	- **Optics in Camera Modules** The optics built-in to camera modules support most use cases
 	- **Custom Optics** Any off-the-shelf or custom designed lens system that's compatible with an M12 mounting.
-- **Will CritterCam let me know if something is wrong?**
+- **Will WildCamera let me know if something is wrong?**
 	- **Yes** If a mobile signal is present and an optional 4G LTE module is present, if the optional Long Range Sub-GHz module is present and you're within Sub-GHz range (1 to 10 km depending on conditions), if an optional Satellite Communications Module is present or if you're within WiFi range, visually via an optional ePaper display module if present, audibly via audible distress calls from an optional audio output module if present or visually via LEDs.
-- **Where are all CritterCam's buttons and controls?**
-	- **On a Smartphone or Tablet** Because of the advanced functionality available in CritterCam, for ease of use, for flexibility, to optimise optimum waterproofing, to make manufacture as efficient as possible and to minimise cost, CritterCam does not have fiddly buttons - instead it exposes its user interface via a web page which is made available over WiFi (or other communications protocols if optional add-on modules are present) and can be displayed on a mobile phone, tablet or laptop.
-- **Why do I have to ask CritterCam to wake up WiFi before using WiFi functionality?**
+- **Where are all WildCamera's buttons and controls?**
+	- **On a Smartphone or Tablet** Because of the advanced functionality available in WildCamera, for ease of use, for flexibility, to optimise optimum waterproofing, to make manufacture as efficient as possible and to minimise cost, WildCamera does not have fiddly buttons - instead it exposes its user interface via a web page which is made available over WiFi (or other communications protocols if optional add-on modules are present) and can be displayed on a mobile phone, tablet or laptop.
+- **Why do I have to ask WildCamera to wake up WiFi before using WiFi functionality?**
 	- **Power consumption** WiFi allows very fast transmission of photo and video files over many 10s of meters but consumes a lot of power so is only switched on when needed.
-- **What happens when an image sensor used by CritterCam is superseded?**
-	- **CritterCam's Modular Design** allows users to benefit from new image sensors for which drivers are available by plugging them in and putting them to work
-- **What happens when a microprocessor used by High Power, High Flexibility CritterCam is superseded?**
-	- **Hardware independence** allows CritterCam software, sensors and optional add-on modules to take advantage of new capabilities of new microprocessors
+- **What happens when an image sensor used by WildCamera is superseded?**
+	- **WildCamera's Modular Design** allows users to benefit from new image sensors for which drivers are available by plugging them in and putting them to work
+- **What happens when a microprocessor used by High Power, High Flexibility WildCamera is superseded?**
+	- **Hardware independence** allows WildCamera software, sensors and optional add-on modules to take advantage of new capabilities of new microprocessors
 - **Does it have EMC, RoHS, CE, UKCA, FCC, etc. Compliance?**
-	- **The manufacturers of modules** used by CritterCam are responsible for ensuring that their modules comply with all regulations in force where the modules are sold and organising compliance testing and certification - leading module designers and manufacturers generally achieve full compliance in most major markets. Buying modules from a high quality electronics supplier with a good reputation is recommended and generally ensures that the modules have the required compliance.
+	- **The manufacturers of modules** used by WildCamera are responsible for ensuring that their modules comply with all regulations in force where the modules are sold and organising compliance testing and certification - leading module designers and manufacturers generally achieve full compliance in most major markets. Buying modules from a high quality electronics supplier with a good reputation is recommended and generally ensures that the modules have the required compliance.
 - **Can cheap modules from unknown suppliers be used?**
 	- **This may or may not work and is not recommended** modules purchased from unknown suppliers may be built using illegally manufactured fake semiconductors or may be constructed with inadequate quality control so they may not function as specified at all or may not function as specified in all conditions - this introduces the risk of faults or problems which are extremely difficult and expensive to diagnose, the modules may also fail to comply with regulations
 - **The volume of data collected is too large to handle efficiently - what do I do?**
 	- **Members of the Community** can estimate costs and implement automated upload of data, photos and videos to a private central database (PostgreSQL, MySQL, SQL Server, etc.) or a public database (e.g. observation.org) from which data can be selected using SQL, analysed using QGIS or QGIS Server, statistical analysis done using Python or R or data exported to spreadsheets, files, other databases, other GIS systems or other software.
 - **Can data from sensors be recorded without a camera attached?**
-	- **Yes** CritterCam can function as a highly flexible data logger with or without a camera module
+	- **Yes** WildCamera can function as a highly flexible data logger with or without a camera module
 - **I can't do electronic construction - what do I do?**
 	- **Members of the Community** who have the skills and facilities can estimate costs and help with this
 - **I need to add software functionality but I'm not a software engineer - what do I do?**
@@ -301,11 +301,11 @@ WildCamera Open Source Wildlife Camera
 - **I need to use a specialised camera for which drivers aren't available - what do I do?**
 	- **Members of the Community** with camera driver development experience can estimate the cost, develop a driver and open source it to benefit other users
 - **Why is it much cheaper, much better and much more flexible than commercial wildlife cameras?**
-	- **Intense Competition** CritterCam has been designed from the ground up to benefit from extremely intense competition between leading microprocessor manufacturers and leading image sensor manufacturers who compete for the valuable smartphone, building automation, domestic appliance, autonomous and semi-autonomous vehicle and industrial monitoring and control markets. This very intense competition drives improvements in functionality, improvements in energy efficiency and reductions in cost.
-	- **Not For Profit Community** CritterCam was founded to benefit conservation research not to make money.
-	- **Open Source** The software and electronics at the heart of CritterCam are freely available for everyone to make use of. Independent research groups can win funding to add functionality and improvements which then benefit the entire community.
-	- **Fast Pace and Advanced Technology** CritterCam uses the Agile and Open Source methodologies used in leading-edge professional software engineering, allowing it to move much faster than proprietary commercial counterparts and stay at the forefront of technology - optimising functionality and minimising cost
-	- **Standing on the Shoulders of Giants** CritterCam is designed to benefit from the work of the world's most advanced microprocessor and image sensor design teams, the Linux kernel team and the libcamera team.
+	- **Intense Competition** WildCamera has been designed from the ground up to benefit from extremely intense competition between leading microprocessor manufacturers and leading image sensor manufacturers who compete for the valuable smartphone, building automation, domestic appliance, autonomous and semi-autonomous vehicle and industrial monitoring and control markets. This very intense competition drives improvements in functionality, improvements in energy efficiency and reductions in cost.
+	- **Not For Profit Community** WildCamera was founded to benefit conservation research not to make money.
+	- **Open Source** The software and electronics at the heart of WildCamera are freely available for everyone to make use of. Independent research groups can win funding to add functionality and improvements which then benefit the entire community.
+	- **Fast Pace and Advanced Technology** WildCamera uses the Agile and Open Source methodologies used in leading-edge professional software engineering, allowing it to move much faster than proprietary commercial counterparts and stay at the forefront of technology - optimising functionality and minimising cost
+	- **Standing on the Shoulders of Giants** WildCamera is designed to benefit from the work of the world's most advanced microprocessor and image sensor design teams, the Linux kernel team and the libcamera team.
 
 ---
 
@@ -345,6 +345,6 @@ A full list of references to research literature can be found here:
 
 ### **Note**	
 
-National Geographic have a Crittercam project designing cameras which can be attached to marine animals which is not related to CritterCam.
+National Geographic have a Crittercam project designing cameras which can be attached to marine animals which is not related to WildCamera.
 
 <https://www.nationalgeographic.com/magazine/article/see-the-ingenious-crittercams-used-to-photograph-elusive-animals/>
