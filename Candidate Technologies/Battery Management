@@ -1,0 +1,19 @@
+Battery Management
+
+TI provide this that supports multiple battery chemistries:
+https://www.ti.com/product/BQ34Z100-R2
+
+A kernel driver exists for the BQ34Z100
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/power/supply/bq27xxx_battery.c
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/power/supply/bq27xxx_battery_i2c.c
+
+or this one for lead acid only (lead acid is still by far the most reliable battery chemistry at low temperatures)
+https://www.ti.com/product/BQ34Z110
+
+AD seem to do a lot in this area as well:
+https://www.analog.com/en/product-category/battery-management.html#subcategories
+
+https://www.analog.com/en/products/ltc2959.html
+
+or chips like this that can measure at the level of individual cells within the battery:
+https://www.analog.com/en/products/adbms1804.html
