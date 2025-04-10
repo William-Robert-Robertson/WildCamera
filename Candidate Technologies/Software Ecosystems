@@ -1,0 +1,74 @@
+libcamera
+https://libcamera.org/contributing.html
+https://lists.libcamera.org/listinfo/libcamera-devel
+libcamera.org use the 
+DEBIX Model A Industrial Single Board Computer
+  https://debix.io/hardware/model-a.html
+This is part of the DEBIX N Series SBCs
+  "There are low-cost development
+  boards, such as the Debix Model A that we use for development (note that
+  its camera connector is not standard, but they have a Debix I/O board
+  that can interface the Model A camera connector to a Raspberry Pi 15
+  pins connector)."
+
+https://community.st.com/t5/stm32-mcus-embedded-software/stm32n6-video-capture-from-mipi-csi-2-image-sensor-sony-st/m-p/756882#M58415
+  RomainR.
+  ST Employee
+‎  2024-12-28 03:27 AM
+  Hello @Will_Robertson 
+  You can refer to the following examples project using Sony IMX335 5MPx CMOS camera with CSI.
+  These demos also use VENC. 
+  Bare metal version:
+  STM32Cube_FW_N6_V1.0.0\Projects\STM32N6570-DK\Applications\VENC\VENC_SDCard
+  ThreadX version:
+  STM32Cube_FW_N6_V1.0.0\Projects\STM32N6570-DK\Applications\VENC\VENC_SDCard_ThreadX
+  Best regards,
+  Romain,
+
+https://www.st.com/en/embedded-software/stm32cuben6.html
+
+https://community.st.com/t5/developer-news/new-stm32cube-ecosystem-update/bc-p/756888#M67
+
+https://github.com/STMicroelectronics
+
+VENC (Video ENCoder)
+  https://wiki.st.com/stm32mpu/wiki/VENC_internal_peripheral
+  The VENC (Video ENCoder) peripheral is an hardware accelerator for video compressed content encoding such as H264 or VP8 bitstream and for still-image content encoding such as JPEG or WebP bitstream.
+
+FreeRTOS
+  https://www.freertos.org/
+  https://www.freertos.org/Partners/Semiconductor
+  https://www.freertos.org/Documentation/02-Kernel/03-Supported-devices/00-Supported-devices
+
+ThreadX
+  https://threadx.io/
+  Azure RTOS Is Now Eclipse ThreadX The First Open Source RTOS Certified for Safety-Critical Applications
+  On October 8, 2024, the Eclipse launched the ThreadX Alliance
+  https://techcommunity.microsoft.com/blog/iotblog/microsoft-contributes-azure-rtos-to-open-source/3986318
+  "UPDATE April 4, 2024:  The Azure RTOS transition to open-source is now complete and the first release of ThreadX real-time operating system Eclipse ThreadX 6.4.1 now available under MIT license."
+
+Zephyr RTOS
+Zephyr list of supported cameras
+https://github.com/zephyrproject-rtos/zephyr/issues/76378
+  Galaxycore GC2145 - year 2013 according to DataSheet 
+  Onsemi/Aptina/Micron MT9M114 - year 2017 from https://www.onsemi.com/download/eval-board-manual/pdf/evbum2524-d.pdf
+  Omnivision OV2640 year 2005
+  Omnivision OV5640 year 2010
+  Omnivision OV7670 year 2005 
+  Omnivision OV772X year 2007
+https://docs.zephyrproject.org/latest/samples/drivers/video/capture/README.html
+Supported Boards and Shields
+https://docs.zephyrproject.org/latest/boards/index.html#
+Video Controls
+https://docs.zephyrproject.org/apidoc/latest/group__video__controls.html
+Video Interface
+https://docs.zephyrproject.org/apidoc/latest/group__video__interface.html
+
+ACPI - not supported by many SoMs
+https://en.wikipedia.org/wiki/ACPI
+  "Advanced Configuration and Power Interface (ACPI)"
+  "The specification is central to the Operating System-directed configuration and Power Management (OSPM) system. "
+Use suspend-to-ram instead
+  # echo mem > /sys/power/state
+  https://www.kernel.org/doc/html/v5.4/admin-guide/pm/sleep-states.html#suspend-to-ram
+  see https://www.embeddedartists.com/wp-content/uploads/2020/11/iMX_Power_Consumption.pdf
