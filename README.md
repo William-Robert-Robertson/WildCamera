@@ -1,7 +1,4 @@
 # WildCamera
-WildCamera Open Source Wildlife Camera
-WildKamera Open Source Wildtierkamera
-WildCamera Open Source Wildcamera
 
 ---
 
