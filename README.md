@@ -340,7 +340,7 @@ Worst case based on "The Distribution of Solar Radiation Within a Deciduous Fore
 
 ---
 
-### **12. Quick non-Technical Summary**
+### **10. Quick non-Technical Summary**
 
 https://new-homes-for-old-friends.cairnwater.com/wildcamera/
 
