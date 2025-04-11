@@ -331,10 +331,12 @@ In a brighter location but with little direct sunlight
 
 - 160 to 190 Wh per day
 
+Measurements on a Swiss forest floor are in directory [/Power Harvesting/](https://github.com/William-Robert-Robertson/WildCamera/tree/main/Power%20Harvesting)
+
 Worst case based on "The Distribution of Solar Radiation Within a Deciduous Forest" Hutchison & Matt 1977 - on forest floor on 16 January 1973 and 20% efficiency
 
-- c. 6 Watts per meter diffuse
-- c. 28 Watts per meter total
+- c. 6 Watts per square meter diffuse
+- c. 28 Watts per square meter total
 
 ---
 
