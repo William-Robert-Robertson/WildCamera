@@ -340,7 +340,13 @@ Worst case based on "The Distribution of Solar Radiation Within a Deciduous Fore
 
 ---
 
-### **10. Other Languages**
+### **12. Quick non-Technical Summary**
+
+https://new-homes-for-old-friends.cairnwater.com/wildcamera/
+
+---
+
+### **11. Other Languages**
 
 - English: WildCamera Open Source Wildlife Camera / Camera trap
 - Deutsch: WildKamera Open Source Wildtierkamera
