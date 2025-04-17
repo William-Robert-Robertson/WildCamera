@@ -29,13 +29,29 @@ https://www.meteoswiss.admin.ch/local-forecasts/lange-rande.html#forecast-tab=de
 or for postcode 8213 at
 https://www.meteosuisse.admin.ch/previsions-locales/neunkirch/8213.html#forecast-tab=weekly-overview
 
-# Note that Thursday 17th April 2025 was a day of consistently dull, rainy weather throughout Switzerland the whole day.
+# Note that Thursday 17th April 2025 was a day of consistently dull, rainy weather throughout Switzerland for the whole day.
 # Details in
 # /data/randelab/Meteosuisse Forecast for Thursday 17 April 2025 for Lange Tande RandeLab.PNG
 # and
 # /data/randelab/Meteosuisse Forecast for Thursday 17 April 2025 for Postcode 8213 RandeLab.PNG
 
 --
+
+Zürich
+
+JA Solar
+Type JAM54D40-445/LB
+Peak Power (Pmax) 445 Watt
+Open circuit voltage (Voc) 39.1 V
+Max. power voltage (Vmp) 32.65 V
+Short circuit current (Isc) 14.40 A
+Max.power current (Imp) 13.63 A
+Power Selection 0-+5 W (no idea what this means)
+
+All technical data at standard test condition:
+AM=1.5 E=10000W/m3 Tc=25 °C
+
+Abmessung 1762mm x 1134mm x 30mm
 
 # 25 January 2025
 # Zürich
