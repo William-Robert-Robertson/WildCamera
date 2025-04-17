@@ -100,8 +100,10 @@
 			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
 			- **NXP i.MX95** Preproduction: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
 			- **ST STM32MP2 Series** On ST roadmap. CSI-2 #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
-			- **Raspberry Pi (RPi) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
-			- **Raspberry Pi (RPi) Zero 2** Power consumption and lack of sleep mode are a problem but worth testing.
+			- **Raspberry Pi 4 (RPi 4) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
+			- **Raspberry Pi 5 (RPi 5) SBCs** Lack of hardware video encoder, high power consumption and lack of low power sleep mode are a very significant problem.
+			- **Raspberry Pi Zero 2 (RPi Zero 2)** Power consumption, lack of sleep mode and speed of video encoder (19 FPS for 1080p) are a problem but may be worth testing.
+			- **Raspberry Pi Zero (RPi Zero)** Video encoder is too slow (1.2 FPS 1080p).
 			- Chips Integrating **Mali-C55 ISP**
 				- **Renesas RZ/V2H** Mali-C55 ISPC
 			- Chips Integrating **Mali C52 ISP**
