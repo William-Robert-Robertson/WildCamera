@@ -118,6 +118,7 @@
 	- **ST BrightSense RGB and NIR** e.g. VD1940 5.1 Mpixel, VB1740 2.7 Mpixel, etc.
 	- **ST BrightSense NIR Optimised** e.g. VG5761 2.3Mp HDR ultra low-noise
 	- **OmniVision OV64A40** e.g. VG5761 2.3Mp HDR ultra low-noise
+	- **OmniVision OX05B1S** RGB-IR 5Mp image sensor
 	- **Global Shutter** undistorted photography of fast moving events - Sony and ST
 	- **Others** Other image sensors supporting libcamera
 - **Candidate Enclosures**
