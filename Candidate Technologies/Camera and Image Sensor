@@ -120,6 +120,9 @@ Raspberry Pi Camera Module 3 NoIR
   https://www.raspberrypi.com/products/camera-module-3/
   https://www.pi-shop.ch/raspberry-pi-camera-3-noir
   https://www.raspberrypi.com/news/raspberry-pi-camera-module-more-on-video-capture/
+# IMX708 image sensor
+    https://www.sony-semicon.com/files/62/pdf/p-13_IMX477-AACK_Flyer.pdf
+#    "R, G and B pigment" 
 
 Raspberry Pi AI Camera
   https://www.raspberrypi.com/products/ai-camera/
@@ -128,6 +131,8 @@ Raspberry Pi Camera Module 2
   https://www.raspberrypi.com/products/camera-module-v2/
   April 2016
   Sony IMX219 8-megapixel sensor
+  https://www.opensourceinstruments.com/Electronics/Data/IMX219PQ.pdf
+    "R, G, B primary colour pigment mosaic"
 
 Raspberry Pi High Quality Camera
   https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/
@@ -142,6 +147,13 @@ Raspberry Pi Global Shutter Camera
   "Sensor: Sony IMX296LQR-C"
   Sony IMX296 sensor
   C/CS-mount
+  https://www.sony-semicon.com/files/62/flyer_industry/IMX296LQR_Flye.pdf
+    Limited information here.
+  https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/1.58MP-IMX296/#common-specs
+    States "Color Filter Array	Quad-Bayer RGB"
+
+Summary of Sony image sensors:
+https://www.sony-semicon.com/en/products/is/camera/index.html
 
 RPi Zero V1.3 Camera
   https://www.waveshare.com/wiki/RPi_Zero_V1.3_Camera
