@@ -227,6 +227,20 @@ GalaxyCore gc05a2 and gc08a3 Image sensors.
   Supported from libcamera v o.4.9
   https://en.gcoreinc.com/products/index?cid=2&subcid=5
 
+Omnivision OX05B1S
+  5MP RGB-IR image sensor launched in 2022 (note that the S in OX05B1S indicates IR - a version is available without this)
+  RGB-IR so better night time performance than the RGB image sensors
+  https://www.ovt.com/wp-content/uploads/2022/01/OX05B1S-PB-v1.1-WEB.pdf
+  Work seems to be in progress in autumn 2024 and spring 2025 to add support for the OX05B1S 
+  to the Linux kernel and libcamera - for example:
+  https://lkml.iu.edu/2501.3/00678.html
+  https://lore.kernel.org/lkml/7cee3358-bf8c-4ae5-a688-12ff18d4b7e0@nxp.com/
+    and search for OX05B1S
+  It appears that NXP do support it for their i.MX processors:
+    https://www.nxp.com/docs/en/reference-manual/IMX_REFERENCE_MANUAL.pdf then search for OX05B1S
+  WaveShareseem to be working on a board as of April 2025:
+    https://www.crowdsupply.com/waves-vision/5mp-gs-pi-camera
+
 Pine ROCKPro64 13 Megapixel Camera Module – Standard Model
   Based on 13 Megapixel Sony IMX214 sensor.
   https://pine64.com/product/rockpro64-13-megapixel-camera-module-standard-model/
