@@ -117,7 +117,7 @@ Raspberry Pi Camera software - detailed information
   In April 2025 the section "Raspberry Pi’s implementation of libcamera supports the following cameras:" reads
   (,with notes after hyphen - ):
   Official cameras:
-    OV5647 (V1) - discontinued
+    OV5647 (V1) - discontinued by RPi
     IMX219 (V2) - RGB - see notes below
     IMX708 (V3) - RGB - autofocus - 12 Megapixel - see notes below
     IMX477 (HQ) - RGB - 12.3 megapixel - see notes below
@@ -170,11 +170,28 @@ Raspberry Pi Global Shutter Camera
 Summary of Sony image sensors:
   https://www.sony-semicon.com/en/products/is/camera/index.html
 
+IMX519
+Only information on IMX519 was via Arducam and WaveShare:
+  https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/16MP-IMX519/
+  https://www.waveshare.com/wiki/IMX519-78_16MP_AF_Camera
+
+IMX298 in Arducam IMX298
+  https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/IMX298/
+  "Arducam 5MP OV5647 Motorized IR-CUT Camera Modules are designed for both daylight and night vision photography" - not sure why this is under IMX298 but interesting.
+
+OV64A40 in Arducam 64MP OwlSight
+  https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/64MP-OV64A40/#product
+  "Integral IR-cut Filter, visible light only"
+
 Omnivision OV9281
   https://www.ovt.com/products/ov9281/
   "with best-in-class near-infrared (NIR) quantum efficiency (QE) to meet high-resolution and low-latency requirements"
   Download OV9281-PB-v1.4-WEB.pdf
   "active: 156 mW"
+  https://www.ovt.com/press-releases/omnivisions-new-1-megapixel-high-speed-global/
+    Launched in 2017
+  https://www.pi-shop.ch/ov9281-120-mono-camera-for-raspberry-pi
+    Used in a WaveShare camera module for the RPi
 
 RPi Zero V1.3 Camera
   https://www.waveshare.com/wiki/RPi_Zero_V1.3_Camera
@@ -274,8 +291,10 @@ Omnivision OX05B1S
     and search for OX05B1S
   It appears that NXP do support it for their i.MX processors:
     https://www.nxp.com/docs/en/reference-manual/IMX_REFERENCE_MANUAL.pdf then search for OX05B1S
-  WaveShareseem to be working on a board as of April 2025:
+  WaveShare seem to be working on a board as of April 2025:
     https://www.crowdsupply.com/waves-vision/5mp-gs-pi-camera
+  WaveShare previously launches a module with the Omnivision OV9281 image sensor:
+    https://www.pi-shop.ch/ov9281-120-mono-camera-for-raspberry-pi
 
 Pine ROCKPro64 13 Megapixel Camera Module – Standard Model
   Based on 13 Megapixel Sony IMX214 sensor.
