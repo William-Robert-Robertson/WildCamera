@@ -117,7 +117,7 @@ Raspberry Pi Camera software - detailed information
   In April 2025 the section "Raspberry Pi’s implementation of libcamera supports the following cameras:" reads
   (,with notes after hyphen - ):
   Official cameras:
-    OV5647 (V1) - discontinued by RPi
+    OV5647 (V1) - discontinued by RPi but ArduCam version available with motorized IR cut filter - see below
     IMX219 (V2) - RGB - see notes below
     IMX708 (V3) - RGB - autofocus - 12 Megapixel - see notes below
     IMX477 (HQ) - RGB - 12.3 megapixel - see notes below
@@ -170,6 +170,9 @@ Raspberry Pi Global Shutter Camera
 Summary of Sony image sensors:
   https://www.sony-semicon.com/en/products/is/camera/index.html
 
+WaveShare Cameras
+  https://www.waveshare.com/wiki/Main_Page#RPi-Cameras
+
 IMX519
 Only information on IMX519 was via Arducam and WaveShare:
   https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/16MP-IMX519/
@@ -178,6 +181,10 @@ Only information on IMX519 was via Arducam and WaveShare:
 IMX298 in Arducam IMX298
   https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/IMX298/
   "Arducam 5MP OV5647 Motorized IR-CUT Camera Modules are designed for both daylight and night vision photography" - not sure why this is under IMX298 but interesting.
+
+OV5647
+  https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/5MP-OV5647/
+  "The motorized IR cut filter can be switched ON/OFF automatically"
 
 OV64A40 in Arducam 64MP OwlSight
   https://docs.arducam.com/Raspberry-Pi-Camera/Native-camera/64MP-OV64A40/#product
