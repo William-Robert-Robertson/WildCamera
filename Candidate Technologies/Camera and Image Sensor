@@ -113,7 +113,22 @@ Sony Image Sensors
 https://www.sony-semicon.com/en/products/is/index.html
 
 Raspberry Pi Camera software - detailed information
-https://www.raspberrypi.com/documentation/computers/camera_software.html
+  https://www.raspberrypi.com/documentation/computers/camera_software.html
+  In April 2025 the section "Raspberry Pi’s implementation of libcamera supports the following cameras:" reads
+  (,with notes after hyphen - ):
+  Official cameras:
+    OV5647 (V1) - discontinued
+    IMX219 (V2) - RGB - see notes below
+    IMX708 (V3) - RGB - autofocus - 12 Megapixel - see notes below
+    IMX477 (HQ) - RGB - 12.3 megapixel - see notes below
+    IMX500 (AI)
+    IMX296 (GS)
+  Third-party sensors:
+    IMX290
+    IMX327
+    IMX378
+    IMX519
+    OV9281 - monochrome - 1‑Megapixel - 165 mW in active mode - see notes below
 
 Raspberry Pi Camera Module 3 NoIR
   Based on 12 Megapixel Sony IMX708 sensor.
@@ -153,7 +168,13 @@ Raspberry Pi Global Shutter Camera
     States "Color Filter Array	Quad-Bayer RGB"
 
 Summary of Sony image sensors:
-https://www.sony-semicon.com/en/products/is/camera/index.html
+  https://www.sony-semicon.com/en/products/is/camera/index.html
+
+Omnivision OV9281
+  https://www.ovt.com/products/ov9281/
+  "with best-in-class near-infrared (NIR) quantum efficiency (QE) to meet high-resolution and low-latency requirements"
+  Download OV9281-PB-v1.4-WEB.pdf
+  "active: 156 mW"
 
 RPi Zero V1.3 Camera
   https://www.waveshare.com/wiki/RPi_Zero_V1.3_Camera
