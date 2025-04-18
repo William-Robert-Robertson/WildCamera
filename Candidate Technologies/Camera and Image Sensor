@@ -131,8 +131,11 @@ Raspberry Pi Camera Module 2
 
 Raspberry Pi High Quality Camera
   https://www.raspberrypi.com/products/raspberry-pi-high-quality-camera/
-  "12.3 megapixel Sony IMX477 sensor, 7.9mm diagonal image size"
-  C/CS-mount
+    "12.3 megapixel Sony IMX477 sensor, 7.9mm diagonal image size"
+    C/CS-mount
+  https://www.sony-semicon.com/files/62/pdf/p-13_IMX477-AACK_Flyer.pdf
+    Only RGB - not RGB-IR:
+    "R, G and B pigment primary color mosaic filter"
 
 Raspberry Pi Global Shutter Camera
   https://www.raspberrypi.com/products/raspberry-pi-global-shutter-camera/
