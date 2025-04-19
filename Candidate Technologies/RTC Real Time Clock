@@ -1,5 +1,14 @@
 RTC Real Time Clock
 
+Note: RPi 5 has an RTC but no hardware video encoder, RPi 4 has a hardware video encoder but no RTC. 
+
 DS1302 RTC
 https://www.waveshare.com/wiki/DS1302_RTC_Board
 https://raspberrypi.stackexchange.com/questions/136071/how-to-use-rtc-module-ds1302-to-specifically-execute-a-program-at-a-certain-ti
+
+DS3231SN high precision RTC
+This integrates a temperature sensor beside the oscilator crystal to adjust for temperature variations:
+  https://www.waveshare.com/product/modules/others/rtc/rtc-watchdog-hat-b.htm
+  https://www.adafruit.com/product/3013
+Install DS3231 Real Time Clock - Latest Info
+  https://forums.raspberrypi.com/viewtopic.php?t=161133
