@@ -28,5 +28,7 @@ https://debix.io/Uploads/detail/2022-07-28/62e1f571ebab3.pdf
 DEBIX IO Board User Manual-V1.1.pdf
   states:
   "RTC chip model is HYM8563S, I2C address is 0x51"
+  On Debix IO Board circuit board "BM8562" is U9 (very difficult to read) - right next to X1
   https://www.kernel.org/doc/Documentation/devicetree/bindings/rtc/haoyu%2Chym8563.txt
   "Haoyu Microelectronics HYM8563 Real Time Clock"
+  "BM8562" is a "High precision, low power consumption I2C interface real-time clock/calendar"
