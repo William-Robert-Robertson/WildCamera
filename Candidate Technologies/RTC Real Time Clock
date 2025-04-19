@@ -1,6 +1,7 @@
 RTC Real Time Clock
 
 Note: RPi 5 has an RTC but no hardware video encoder, RPi 4 has a hardware video encoder but no RTC. 
+Note: Debix Model A does not include an RTC but the Debix IO Board does
 
 DS1302 RTC
 https://www.waveshare.com/wiki/DS1302_RTC_Board
@@ -12,3 +13,12 @@ This integrates a temperature sensor beside the oscilator crystal to adjust for 
   https://www.adafruit.com/product/3013
 Install DS3231 Real Time Clock - Latest Info
   https://forums.raspberrypi.com/viewtopic.php?t=161133
+
+Debix model a io board reduced
+https://debix.io/Uploads/detail/2022-07-28/62e1f571ebab3.pdf
+  "CR1220 3.0V"
+  however a CR1225 cell seems to fit
+  Details of CR1220
+  https://www.ovaga.com/blog/fast-charging-technology/cr1220-battery-equivalent-cross-reference-chart
+  "CR1220: Diameter of 12mm, thickness of 2.0mm."
+  "CR1225: Diameter of 12mm, thickness of 2.5mm."
