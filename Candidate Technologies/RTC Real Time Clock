@@ -25,3 +25,8 @@ https://debix.io/Uploads/detail/2022-07-28/62e1f571ebab3.pdf
   https://www.ovaga.com/blog/fast-charging-technology/cr1220-battery-equivalent-cross-reference-chart
   "CR1220: Diameter of 12mm, thickness of 2.0mm."
   "CR1225: Diameter of 12mm, thickness of 2.5mm."
+DEBIX IO Board User Manual-V1.1.pdf
+  states:
+  "RTC chip model is HYM8563S, I2C address is 0x51"
+  https://www.kernel.org/doc/Documentation/devicetree/bindings/rtc/haoyu%2Chym8563.txt
+  "Haoyu Microelectronics HYM8563 Real Time Clock"
