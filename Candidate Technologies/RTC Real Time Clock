@@ -11,7 +11,9 @@ WaveShare DS1302 RTC uses CR 1220 3V cell (baseed on photo on WaveShare website)
 DS3231SN high precision RTC
 This integrates a temperature sensor beside the oscilator crystal to adjust for temperature variations:
   https://www.waveshare.com/product/modules/others/rtc/rtc-watchdog-hat-b.htm
+  "CR1220 RTC battery holder"
   https://www.adafruit.com/product/3013
+  "CR1220"
 Install DS3231 Real Time Clock - Latest Info
   https://forums.raspberrypi.com/viewtopic.php?t=161133
 
