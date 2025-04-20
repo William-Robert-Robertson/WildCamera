@@ -4,8 +4,10 @@ Raspberry Pi 4 B Power Consumption
 # PRi 4 B and Camera Module V3 - Storage Power and Energy Consumption
 
 # The 7 inch LCD Touchscreen consumes c. 3 to 4 W of power so is disconnected in the following tests:
-# WiFi network and ethernet not connected durign tests:
+# WiFi network and ethernet not connected during tests:
 # RPi 4 SBC used because the RPI 5 SBC does not have a hardware video encoder and RPi Zero 2 W cannot currently handle the frame rate and resolution required.
+# SD Card is 128 GB Samsung Evo Plus A3 V30
+# Default RPi image with no ammendments.
 
 # RPi 4 SBC with RPi V3 Camera connected
 #   c. 1.77 to 1.86 W when idle
@@ -24,6 +26,8 @@ ls -l
 # Energy consumed:
 #   26230 mWh or 26.2 Wh
 #   05206 mAh or 5.21 Ah (included to double check the above) at c. 5.0 to 5.1 V
+# Estimated energy per day based on this:
+#   78.6 Wh
 # File generated:
 #  26209760804 Bytes
 #  24995.57572 MB
@@ -42,6 +46,8 @@ c. 2.52 to 2.8 W during run
 # Energy consumed:
 #   2645 mWh or 2.6 Wh
 #   513 mAh or 5.1 Ah (included to double check the above) at c. 5.0 to 5.1 V
+# Estimated energy per day based on this:
+#    
 # File generated:
 #   91198832 Bytes
 #   86.97398376 MB
