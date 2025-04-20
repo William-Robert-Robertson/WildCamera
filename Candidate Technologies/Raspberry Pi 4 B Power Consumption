@@ -11,7 +11,7 @@ Raspberry Pi 4 B Power Consumption
 #   c. 1.77 to 1.86 W when idle
 
 # Task:
-# Record, compress and store HDR video from RPi V3 camera to .mp4 file for 8 hours.
+# Record, compress and store HDR 1080p video from RPi V3 camera to .mp4 file for 8 hours.
 # --codec libav 
 # --width 1920 
 # --height 1080 
