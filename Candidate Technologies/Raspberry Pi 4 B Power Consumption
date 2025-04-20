@@ -56,6 +56,7 @@ c. 2.52 to 2.8 W during run
 #   202664.0711 bits per second
 
 # Task:
+# Idle
 # Do nothing for 10 minutes after a fresh boot (WiFi network connected in this case).
 # c. 1.8 to 1.9 W
 # 325 mWh
