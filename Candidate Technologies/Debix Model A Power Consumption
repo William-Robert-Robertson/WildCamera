@@ -10,7 +10,8 @@ Debix Model A Getting Started and Power Consumption
 # Connect USB keyboard and mouse
 # Connect Ethernet cable.
 
-# RTC battery is CR1225
+# RTC battery is CR1225 or CR1220
+# Both CR1225 and CR1220 fit but CR1220 is mentioned in circuit diagram.
 
 DEBIX Model A 2GB RAM
 
