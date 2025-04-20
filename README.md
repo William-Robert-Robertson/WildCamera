@@ -325,6 +325,22 @@ Debix Model A (2GB LPDDR4)
 - **Sleep Mode** 0.375~0.380 W
 - **Active** Example: Local video playback 4.105~4.735 W
 
+Raspberry Pi 4 B
+
+ - Record, compress and store HDR 1080p video:
+ - 78.6 Wh of energy or
+ - c. 3.1 to 3.2 W
+
+ - Idle:
+ - c. 1.8 to 1.9 W
+
+Power available:
+
+ - Between 23 March and 13 April on forest floor in Switzerland:
+ - Worst day: 170 Wh per day Yield
+
+Measurements on a Swiss forest floor are in directory [/Power Harvesting/](https://github.com/William-Robert-Robertson/WildCamera/tree/main/Power%20Harvesting)
+
 Worst case measured in a shaded location in Zürich in early to mid February 2025 with a 445 W nominal photovoltaic panel (solar energy availabel in mid-March is c. 3 x more than in mid-February):
 
 - 30 to 40 Wh per day during days of overcast and rainy weather
@@ -333,8 +349,6 @@ Worst case measured in a shaded location in Zürich in early to mid February 202
 In a brighter location but with little direct sunlight
 
 - 160 to 190 Wh per day
-
-Measurements on a Swiss forest floor are in directory [/Power Harvesting/](https://github.com/William-Robert-Robertson/WildCamera/tree/main/Power%20Harvesting)
 
 Worst case based on "The Distribution of Solar Radiation Within a Deciduous Forest" Hutchison & Matt 1977 - on forest floor on 16 January 1973 and 20% efficiency
 
