@@ -1,0 +1,42 @@
+Raspberry Pi 4 B Power Consumption
+
+# More details in spreadsheet:
+# PRi 4 B and Camera Module V3 - Storage Power and Energy Consumption
+
+# The 7 inch LCD Touchscreen consumes c. 3 to 4 W of power so is disconnected in the following tests:
+# WiFi network and ethernet not connected durign tests:
+# RPi 4 SBC used because the RPI 5 SBC does not have a hardware video encoder and RPi Zero 2 W cannot currently handle the frame rate and resolution required.
+
+# Task:
+# Record, compress and store HDR video from RPi V3 camera to .mp4 file for 8 hours.
+# --codec libav 
+#    for more info on libav codec see https://ffmpeg.org/libavcodec.html
+#    possible codecs are:
+#    h264 - H.264 Advanced Video Coding (AVC) - max. 1920 x 1080 - supported by most moderen hardware video encoders.
+#    libav - default is H.264 within an mp4 file.
+#    mjpeg - generally not as good compression efficiency as H.264
+#    yuv420 - uncompressed
+# --width 1920 
+# --height 1080 
+# bitrate -b 9000000 (default units for bit rate are bits (not bytes) per second)
+# --save-pts - Attempt to save timestamp for each frame - this is not supported by the libav codec
+libcamera-vid --codec libav --width 1920 --height 1080 -b 9000000 --hdr sensor -o test_08x60x60S_w1920_h1080_b9000000_HDR_01.mp4 -t $((8*60*60*1000)) --save-pts test_08x60x60S_w1920_h1080_b9000000_HDR_01.txt
+ls -l
+# Energy consumed:
+#   26230 mWh or 26.2 Wh
+#   05206 mAh or 5.21 Ah (included to double check the above) at c. 5.0 to 5.1 V
+# File generated:
+#  26209760804 Bytes
+#  24995.57572 MB
+
+# Task
+# Record, compress and store video from RPi V3 camera to .mp4 file for 1 hour with default settings.
+# -t 1 hour is 3600 seconds
+libcamera-vid --codec libav -o test_3600S_02.mp4 -t 3600000
+ls-l
+# 2645 mWh or 2.6 Wh
+# 513 mAh or 5.1 Ah (included to double check the above) at c. 5.0 to 5.1 V
+# 91198832 Bytes
+# 86.97398376 MB
+# 3600 Seconds
+# 197.9141319 Kbits per second
