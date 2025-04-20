@@ -327,6 +327,7 @@ Debix Model A (2GB LPDDR4)
 
 Raspberry Pi 4 B
 
+ - Measured:
  - Record, compress and store HDR 1080p video:
  - 78.6 Wh of energy or
  - c. 3.1 to 3.2 W
@@ -336,7 +337,7 @@ Raspberry Pi 4 B
 
 Power available:
 
- - Between 23 March and 13 April on forest floor in Switzerland:
+ - Between 23 March and 13 April on forest floor in Switzerland from 1.78x1.04 m panel:
  - Worst day: 170 Wh per day Yield
 
 Measurements on a Swiss forest floor are in directory [/Power Harvesting/](https://github.com/William-Robert-Robertson/WildCamera/tree/main/Power%20Harvesting)
