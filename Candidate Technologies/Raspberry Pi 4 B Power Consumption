@@ -55,6 +55,11 @@ c. 2.52 to 2.8 W during run
 #   197.9141319 Kbits per second
 #   202664.0711 bits per second
 
+# Task:
+# Do nothing for 10 minutes after a fresh boot (WiFi network connected in this case).
+# c. 1.8 to 1.9 W
+# 325 mWh
+
 # JT-AT34 USB energy meter
 # To reset energy meter long press button on back and hold until broom icon is highlighted then release.
 
