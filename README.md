@@ -313,7 +313,7 @@
 
 ### **9. Example Power Budget**	
 
-Debix Model A (2GB LPDDR4)
+Debix Model A SBC (2GB LPDDR4)
 
 - Measured:
 
@@ -325,7 +325,9 @@ Debix Model A (2GB LPDDR4)
 - **Sleep Mode** 0.375~0.380 W
 - **Active** Example: Local video playback 4.105~4.735 W
 
-Raspberry Pi 4 B
+- Note: Model A SoM provides 2 MIPI CSI-2 interfaces and Model A SBC provides 1.
+
+Raspberry Pi 4 B SBC
 
  - Measured:
  - Record, compress and store HDR 1080p video:
