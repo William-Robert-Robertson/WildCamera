@@ -16,6 +16,7 @@ Made in Austria
 10.92 A maximum power current 
 
 Victron BlueSolar charge controller MPPT 75 15
+# (Note that Victron BlueSolar MPPT controllers need a Bluetooth dongle for Bluetooth communications but Victron SmartSolar MPPT controllers have built-in Bluetooth.)
 
 Varta Silver AGM Dynamic 12 V 70 Ah 760 A  battery 
 
