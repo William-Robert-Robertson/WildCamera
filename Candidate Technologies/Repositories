@@ -1,6 +1,7 @@
 Repositories
 
 Mainline DTS and DTSI files for ST
+STM32 seems to have been 32 bit until the STM32MP2 series which are 64 bit...
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts/st
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/st
 
