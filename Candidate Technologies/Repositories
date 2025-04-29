@@ -1,10 +1,17 @@
 Repositories
 
 Mainline DTS (Device Tree Source) file for the NXP i.MX 8 M Plus on the Debix Model A SoM and Debix Model A SoM I/O Board (product number BMB-08)
-
+This is in the freescale directory - named before the Freescale NXP merger.
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
 
-DTOs for the Debix 200a camera, Debix 500a camera and IMX335 image sensor for the i.MX 8 M Plus:
-
+DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX335 image sensor for the i.MX 8 M Plus:
 https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
 
+DTS (Device Tree Strucure) for the official NXP i.MX 8 M Plus evaluation board.
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
+Note that several DTSI and DTSO files with names beginning imx8mp-evk are available for different configurations in the freescale directory - named before the Freescale NXP merger:
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/
+
+Mainline DTSI (Device Tree Structure Include) for the i.MX 8 M Plus chip
+This is in the freescale directory - named before the Freescale NXP merger.
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp.dtsi
