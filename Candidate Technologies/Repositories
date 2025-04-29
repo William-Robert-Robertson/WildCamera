@@ -29,5 +29,12 @@ https://github.com/buildroot/buildroot/blob/master/configs/polyhex_debix_model_a
 buildroot build for Debix Model A SBC
 https://github.com/buildroot/buildroot/tree/master/board/polyhex/debix-model-a
 
+Yocto DTS for Debix Model A SBC
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts
+for Debix Model A SoM I/O Board
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
+and DTSI for Debix Model A SoM
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a.dtsi
+
 libcamera repository
 https://git.libcamera.org/libcamera/libcamera.git
