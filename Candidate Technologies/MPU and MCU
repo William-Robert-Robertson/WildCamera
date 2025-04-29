@@ -1,0 +1,785 @@
+Candidate Dev. Boards, System-on-Module (SoM), System-in-Package (SiP), Processor SoCs, μP and μC:
+
+STM32N6 μCs
+https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html
+A dedicated computer vision pipeline with a MIPI CSI-2 interface and image signal processing (ISP) ensures compatibility with a wide range of cameras. 
+The STM32N6 also features an H264 hardware encoder
+STM32N6x7 MCUs Artificial intelligence line
+https://www.st.com/en/microcontrollers-microprocessors/stm32n6x7.html
+  "MIPI CSI-2"
+  "Dimensioned for 5-megapixel camera @ 30 fps"
+  "H.264 encoder: 720p/1080p @ 30 fps" - H.264 is Advanced Video Coding (AVC) or MPEG-4 Part 10 video compression standard 
+  "Dedicated image signal processor (ISP):"
+  "STM32-ISP-IQTune tool to manage ISP tuning"
+STM32N6x5 MCUs General-purpose line
+https://www.st.com/en/microcontrollers-microprocessors/stm32n6x5.html
+  404 error
+
+AN5946 How to optimize low-power modes on STM32N6 MCUs
+https://www.st.com/resource/en/application_note/an5946-how-to-optimize-lowpower-modes-on-stm32n6-mcus-stmicroelectronics.pdf
+  Figure 5. STM32N6 power figures
+  under 10 mW by reducing clock speed
+
+STM32N6 μC dev. boards
+  NUCLEO-N657X0-Q 
+    Doesn't seem to be available in Europe yet as of December 2024
+    "Affordable prototyping"
+    "Camera connector compatible with Raspberry."
+    Couldn't find any SD card.
+    https://www.st.com/en/evaluation-tools/nucleo-n657x0-q.html
+    https://www.st.com/resource/en/user_manual/um1727-getting-started-with-stm32-nucleo-board-software-development-tools-stmicroelectronics.pdf
+    https://www.st.com/resource/en/data_brief/nucleo-n657x0-q.pdf
+  STM32N6570-DK
+    https://www.st.com/en/evaluation-tools/stm32n6570-dk.html
+    Doesn't seem to be available in Europe yet as of December 2024
+    "microSD card"
+    "Advanced prototyping including AI"
+    Includes camera, ToF sensor and touchscreen.
+
+Image Signal Processing (ISP) tuning tool for STM32 developers
+  https://www.st.com/en/development-tools/stm32-isp-iqtune.html
+
+STM32MP255 MPU 
+  From STM32MP25 Line - Arm® Cortex®-A35 dual core and an Arm® Cortex®-M33
+  https://www.st.com/en/microcontrollers-microprocessors/stm32mp257.html
+  https://www.st.com/en/microcontrollers-microprocessors/stm32mp257f.html
+  STM32MP255 (five) and STM32MP257 (seven) are identical except for the STM32MP257 having an Ethernet switch.
+  https://wiki.stmicroelectronics.cn/stm32mpu/wiki/STM32MP25_microprocessor#STM32MP2-lines
+
+**ST STM32MP2 Series** Camera interface #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
+
+STM32 Summit
+https://www.st.com/content/st_com/en/events/stm32-summit.html
+  Tech dive 1 Discover an AI-accelerated STM32
+    23:30
+    Native:
+      TensorFlow
+      Keras
+    Through ONNX:
+      PyTorch, etc.
+    32:20 Different ISP for images for computer vision and human aesthetics
+    35:10 "compatible with a lot of the cameras out there"
+    47:00 FreeRTOS
+    47:40 Power consumption when running NN several tens of mW to several hundred mW "not going into the Watts range of course" "couple of hundred mW for demos"
+    52:20 185 USD for discovery kit including camera
+  Tech dive 2 Accelerate your design with the edge AI ecosystem
+    43:30 MIPI CSI-2 Support on Zephyr RTOS is "on the list"
+    45:00 "In 2025 you might also see some non-ST boards appear on the market"
+    Louis Gobin
+      AI Product Marketing Engineer
+      STMiicroelectronics
+    Edwin Hilkens
+      STM32 Product Marketing Manager,
+      STMicroelectronics
+edge.ai at st com
+
+OpenST Linux distribution
+  https://wiki.st.com/stm32mpu/wiki/OpenSTLinux_distribution
+  Applicable for	STM32MP13x lines  STM32MP15x lines  STM32MP23x lines  STM32MP25x lines
+OpenSTLinux is open source and mainline 🙂
+  "As a mainlined open-source Linux distribution, OpenSTLinux Distribution is a key element of the STM32 embedded software solution"
+  https://www.st.com/en/embedded-software/stm32-mpu-openstlinux-distribution.html
+STM32 seems to have been 32 bit until the STM32MP2 series which are 64 bit...
+https://www.st.com/content/st_com/en/campaigns/stm32mp2-64-bit-processor-neural-processing-unit-z12.html
+A lot seems to be under arm not arm64 in mainline Linux
+  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm not https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64
+  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts/st
+https://github.com/STMicroelectronics
+https://github.com/STMicroelectronics/meta-st-openstlinux
+
+https://www.st.com/resource/en/datasheet/stm32mp257f.pdf
+	STM32MP251C/F STM32MP253C/F STM32MP255C/F STM32MP257C/F Datasheet
+
+	Arm® based dual Cortex®-A35 1.5 GHz + Cortex®-M33 MPU, AI, 3D GPU,
+	video encoder/decoder, TFT/DSI/LVDS, USB 3.0, PCIe®, crypto
+
+	• Camera interface #1 (5 Mpixels @30 fps)
+	– MIPI CSI-2®, 2× data lanes up to 2.5 Gbit/s each
+	– 8- to 16-bit parallel, up to 120 MHz
+	– RGB, YUV, JPG, RawBayer with Lite-ISP
+	– Lite-ISP, demosaicing, downscaling, cropping, 3 pixel pipelines
+	• Camera interface #2 (1 Mpixels @15 fps)
+	– 8- to 14-bit parallel, up to 80 MHz
+	– RGB, YUV, JPG
+	– Cropping
+	• Digital parallel interface up to 16-bit input or output
+
+Android-based OpenSTDroid
+STM32 MPU OpenSTDroid Distribution
+  https://www.st.com/en/embedded-software/stm32-mpu-openstdroid-distribution.html?ecmp=tt41800_gl_social_nov2024
+  https://wiki.st.com/stm32mpu/index.php?title=Category:Android-based_OpenSTDroid_embedded_software&sfr=stm32mpu
+  Only supported for STM32MP255 line and STM32MP257 line 
+
+ST Development Boards
+  https://wiki.st.com/stm32mpu/wiki/Category:STM32_MPU_boards#More_about_STM32MP25_boards
+
+  STM32MP257F-DK
+  05 Nov 2024
+  https://community.st.com/t5/stm32-mpus-boards-and-hardware/stm32mp257f-dk2-availability/td-p/747755
+    "STM32MP257F-DK will be available on distri side by Jan 2025."
+  https://www.st.com/en/evaluation-tools/stm32mp257f-dk.html
+    STMicroelectronics STM32MP257FAK3 based on the Arm® Cortex® A35 and M33
+    STMicroelectronics power management STPMIC25
+    32‑Gbit LPDDR4 DRAM N.B. Low Power DDR4
+      N.B. No NOR flash - NOR flash is present on the STM32MP257F-EV1 board but not on the STM32MP257F-DK board.
+    64-Gbit eMMC v5.1
+    USB 3.0 SuperSpeed PD (DRP/DRD)
+    Wi‑Fi® 802.11b/g/n
+    microSD™ card holder
+    GPIO
+  https://www.st.com/en/evaluation-tools/stm32mp257f-dk.html#documentation
+    Product Specifications - DB5299 Discovery kit with STM32MP257F MPU
+      "32‑Gbit LPDDR4 DRAM"
+      "Demonstration software The STM32 MPU OpenSTLinux Distribution and STM32CubeMP2 base demonstration software are preloaded in
+      the microSD™ to demonstrate the device peripherals in standalone mode easily. The latest versions of the
+      demonstration source code and associated documentation can be downloaded from www.st.com."
+
+  STM32MP257F-EV1
+  01 Jul 2024
+  https://www.st.com/en/evaluation-tools/stm32mp257f-ev1.html
+    STM32MP257FAI3 microprocessor based on the Arm® dual‑core Cortex®‑A35 1.5 GHz and Cortex®‑M33 400 MHz
+    ST power management STPMIC25
+    Two 16‑Gbit DDR4 DRAMs
+    512-Mbit S‑NOR flash memory - N.B. NOR flash is present on the STM32MP257F-EV1 board but not on the STM32MP257F-DK board.
+    32-Gbit eMMC v5.0
+    USB Type-C® DRP
+    ? Is there WiFi - please double-check! 
+    microSD™ card holder
+    GPIO
+  https://www.st.com/en/evaluation-tools/stm32mp257f-ev1.html#documentation
+    Product Specifications - DB5260 Evaluation board with STM32MP257F MPU
+      "Two 16‑Gbit DDR4 DRAMs"
+      "Demonstration software The STM32 MPU OpenSTLinux distribution and STM32CubeMP2 base demonstration software are preloaded in
+      the microSD™ for easy demonstration of the device peripherals in standalone mode. The latest versions of the
+      demonstration source code and associated documentation can be downloaded from www.st.com."
+
+STM32 MPU ecosystem v6.0 How to define your low-power strategy
+  https://wiki.st.com/stm32mpu/wiki/How_to_define_your_low-power_strategy#Overview_2
+
+Accessories for STM32 dev. boards
+  https://www.st.com/en/evaluation-tools/accessories-for-stm32-boards/products.html?querycriteria=productId=LN2448$$5362=STM32%20MPU&aggOrder=0%7C1%7C2%7C3%7C4%7C5%7C6%7C7%7C8%7C9%7C10%7C11%7C12%7C13%7C14%7C15%7C16%7C17%7C18?icmp=tt39255_gl_lnkon_jun2024
+  B-CAMS-IMX Camera module bundle for STM32 boards 77 USD
+    https://www.st.com/en/evaluation-tools/b-cams-imx.html
+  B-LVDS7-WSVGA LVDS TFT LCD module for STM32 boards 177 USD
+    https://www.st.com/en/evaluation-tools/b-lvds7-wsvga.html
+
+STM32MP257 SoM, SiP or SBC
+https://community.st.com/t5/stm32-mpus-boards-and-hardware/stm32mp257-som-sip-or-sbc/m-p/754923
+
+ST understand the relative advantages of System-on-Module (SoM) System-in-Package (SiP) and fully discrete for STM32:
+  https://www.st.com/content/st_com/en/support/learning/stm32-education/scalable-solutions-stm32mp1-mpu-design.html
+ST have a list of partners providing SoM and SiP here:
+  https://www.st.com/en/partner-products-and-services/hardware-integrated-devices-from-partners.html
+and products here
+  https://www.st.com/en/partner-products-and-services/hardware-integrated-devices-from-partners/products.html
+  This can be filtered by device - as of 16 December 2024 stm32mp157 is a filter option but stm32mp257 isn't.
+Engicam produce SoM and SiP for other STM32 devices e.g. the i.Core STM32MP25
+https://www.st.com/content/st_com/en/partner/partner-program/partnerpage/Engicam.html
+Contacted via https://www.engicam.com/support/contacts on 16 December 2024 - replied 17 December 2024 cairnwater.com
+massimo.manetti at engicam com CC francesca.delre at engicam com
+  Hi Will,
+  please find attached our i.Core STM32MP2 manuals.
+  Thanks
+  Massimo
+  i.Core STM32MP2 HW manual 1.0.2.pdf
+  engicam-stm32mp257-mickledore(1).pdf
+https://www.st.com/content/st_com/en/partner/partner-program/partnerpage/emtrion.html
+  https://www.emtrion.de/en/contact-us/
+  Contacted via mail@emtrion.de on 16 December 2024 bounced cairnwater.com
+  Contacted via https://www.emtrion.de/en/contact-us/ on 16 December 2024 cairnwater.com.
+https://www.st.com/content/st_com/en/partner/partner-program/partnerpage/Ka-Ro.html
+  https://www.karo-electronics.com/
+  https://www.karo-electronics.com/contact/team
+  Contacted via mv at karo-electronics de not info at karo-electronics de on 16 December 2024 - replied 17 Decemebr 2024 cairnwater.com
+  Dear Will,
+  https://www.karo-electronics.com/products/product-selection
+  Look at the Multimedia Tab for modules with a CSI interface
+  Look at the Power consumption tab for power consumption in Sleep mode.
+  Distributors:
+  https://www.karo-electronics.com/contact/distribution
+https://www.phytec.eu/en/unternehmen/kontakt/
+  Contacted via contact at phytec de on 16 December 2024 cairnwater.com
+
+@Olivier GALLIEN at ST mentioned:
+https://www.digi.com/products/models/cc-wst-j17d-nk
+  "1 GB DDR4"
+https://www.digi.com/products/models/cc-st-j17d-zk
+  "1 GB DDR4"
+Contacted via https://www.digi.com/contactus/digi-sales on 18 December 2024 cairnwater.com
+https://www.myirtech.com/list.asp?id=781
+  Chinese company.
+  "1GB/2GB LPDDR4"
+  "MIPI-CSI interface"
+
+DEBIX SOM A i.MX 8M Plus Core Board DEBIX SOM A
+  https://debix.io/hardware/debix-som-a.html
+  2 x MIPI CSI
+  Power Input 3.5V~5V/2A
+  Note: DEBIX A SoM exposes 2 MIPI CSI-2 interface and DEBIX A SBC exposes only 1 MIPI CSI-2 interface
+DEBIX SOM A I/O Board BMB-08
+  https://debix.io/hardware/debix-som-a-io-board.html
+  2 x 4-lane MIPI CSI 
+  Power Input DC 12V/2A for default, support wide voltage range of DC 12V~36V
+  https://debix.io/Uploads/Temp/file/20250207/DEBIX%20SOM%20A%20IO%20Board%20User%20Manual-V1.2.pdf
+  2.2.5. MIPI CSI on p36 of 118 says "2*10 Pin / 1.25 mm header"
+  2.2.6.2. Audio Internal Interface on p41 of 118 says "There is a 2*5Pin audio internal interface (J14), in addition to the internal pins of theheadphone and microphone input combination interface (J13)"
+  This is confirmed by:
+  https://debix.io/Uploads/Temp/file/20240129/Camera%20Adapter%20Board%20for%20DEBIX%20SOM%20A%20IO%20Board%20User%20Manual%20V1.0.pdf
+  "20pin/1.25mm MIPI_CSI socket"
+  This looks like a 2 mm header rather than a 2.5 mm header but this isn't clear.
+  Device tree for this board "BMB-08" is upstream:
+  https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
+
+Support for the H.264 Video Encoder on the i.MX 8M Plus is expected to be added to libcamera during 2025
+
+DEBIX produce Model A, C, S and Infinity SBCs and Model A SoM as of December 2024
+  teksupport at debix io emailed 22 December 2024 cairnwater.com address - replied on 23 December.
+  "Sleep and wake-up can be achieved by pulling the ON/OFF pin on the J2 connector low and high. The schematic for the J2 connector pinout is attached. Please review. And the Debix Model A Power Consumption Data Sheet is also attached for your review"
+  Polyhex Technology Co., Ltd.
+  Debix Model A Power Consumption Data Sheet
+  Date 2024/11/22
+  Device Model Debix Model A (2GB LPDDR4+16GB eMMC)
+  Software Version Debix-ModelAB-2GBDDR-Installation-Disk-V2.4-20230224.img
+  OS Ubuntu20.04 (Kernel version: 5.10.72)
+  Sleep mode PWR Consumption Range (W) 0.375~0.380
+  75 to 76 mA
+# Please see power consumption measurements for details of power consumption.
+  c. 74 CHF for DEBIX Model A https://www.conrad.ch/de/p/okdo-debix-model-a-2-gb-4-x-1-8-ghz-2625844.html
+
+Very simple app. for libcamera
+https://git.libcamera.org/libcamera/simple-cam.git
+
+DEBIX I/O Board EMB-AS-E01
+https://debix.io/hardware/io-board.html
+OKDO DEBIX Model A I/O Board Erweiterungsboard
+https://www.conrad.ch/de/p/okdo-debix-model-a-i-o-board-erweiterungsboard-1-st-2625846.html?refresh=true
+
+NXP i.MX 8/RT MIPI DSI/CSI-2 Application Note
+  https://www.nxp.com/docs/en/application-note/AN13573.pdf
+
+			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
+			- **NXP i.MX95** Preproduction: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
+
+https://www.phytec.de/produkte/system-on-modules/phycore-imx-8m-plus/
+phyCORE®-i.MX 8M Plus data sheet
+  2x MIPI CSI-2
+  Linux (Yocto based), Android
+  i.MX 8M Plus Dual/Quad
+  LPDDR4 RAM
+phyBOARD-Pollux
+  https://www.phytec.de/produkte/single-board-computer/phyboard-pollux/?utm_campaign=messen22&utm_medium=print&utm_source=datasheet
+  "Das phyBOARD-Pollux kann entweder als Entwicklungsplattform für die phyCORE-i.MX 8M Plus Module oder als leistungsstarker, industriekompatibler Single Board Computer (SBC) zur sofortigen Implementierung Ihrer Produktidee eingesetzt werden.”
+  2x MIPI CSI-2
+  i.MX 8M Plus Prozessor
+Hardware Manual - phyCORE-i.MX 8M Plus/phyBOARD-Pollux
+  section phyCORE-i.MX 8M Plus Power Consumption Test Scenarios
+  "Situations such as suspending to RAM, suspend freeze, and standby mode must be tested on a case by case basis to ensure the application's power consumption stays within the guideline stated above."
+phyCAM-M Serie camera modules
+  https://www.phytec.de/produkte/embedded-vision/
+  MIPI CSI-2 Dateninterface
+  phyCAM other than phyCAM-M don't use MIPI CSI-2
+contact at phytec de emailed on 22 December 2024 from cairnwater.com email address.
+
+SolidRun Unleashing the Power of AI Edge Processing Webinar | SolidRun, NXP, and Hailo Collaboration
+https://www.youtube.com/watch?v=YLIh8ElDajI
+(Details of this video also in "Camera and Image Sensor")
+  at 35:20
+  NXP Partners who can calibrate:
+    Basler, Ahrensburg, Germany
+    InnoWave Cleveland, Ohio
+    IMDT, Israel
+    FRAMOS, Munich, Germany
+    einfochips San Jose, CA
+    PHYTEC Mainz, Germany
+    Leopard Imaging, Fermont, CA
+    Yosun ISC, Taiwan
+    Image Quality Labs, Durham, NC
+  at 36:00
+    NPU
+  at 36:00
+    Deep Sleep power of 19.5 mW
+  at 38:50
+    from TensorFlow, PyTorch
+  at 39:40
+    Gstreamer and Gstreamer Plugins
+    NNStreamer
+    NNStreamer and GStreamer integrated in BSPs
+
+TQ i.MX 8 Product Family
+  German SoM manufacturer
+  https://www.tq-group.com/en/products/tq-embedded/special-features-of-the-imx-8-product-family/
+
+bytes at work AG
+  NXP i.MX8M Plus
+  Based in Winterthur, Switzerland
+  https://www.bytesatwork.io/en/product/byteengine-imx8m-plus-quad/
+
+QSXP based on NXP i.MX 8M Plus Processor
+https://www.karo-electronics.com/qsxp
+  2 x MIPI CSI
+  86 mW in sleep mode
+https://www.nxp.com/products/IMX8MPLUS
+Linux® Software and Development Tools
+  https://www.nxp.com/design/design-center/software/embedded-software/linux-software-and-development-tools:CW_BSP
+  i.MX - Embedded Linux for i.MX Applications Processors
+  https://www.nxp.com/design/design-center/software/embedded-software/i-mx-software/embedded-linux-for-i-mx-applications-processors:IMXLINUX
+  NXP Debian Linux SDK Distribution for i.MX and Layerscape
+  https://www.nxp.com/design/design-center/software/embedded-software/linux-software-and-development-tools/nxp-debian-linux-sdk-distribution-for-i-mx-and-layerscape:NXPDEBIAN
+  Layerscape Linux Distribution POC - not sure how much use this is
+  https://www.nxp.com/design/design-center/software/embedded-software/linux-software-and-development-tools/layerscape-linux-distribution-poc:LAYERSCAPE-SDK
+DART-MX8M-PLUS SoM
+  https://www.variscite.com/lp/i-mx8m-plus/?utm_source=google&utm_medium=cpc
+  https://www.variscite.com/product/system-on-module-som/cortex-a53-krait/dart-mx8m-plus-nxp-i-mx-8m-plus/
+  https://www.variscite.com/wp-content/uploads/2020/10/DART-MX8M-PLUS_Product_Brief.pdf
+    "Dual MIPI CSI2 serial input"
+    "Optimized power consumption in both operational 
+  and suspend modes"
+  https://www.variscite.com/wp-content/uploads/2024/10/DART-MX8M-PLUS_V2_Datasheet.pdf
+  p111 
+  9.5 Power Consumption
+  Table 74: DART-MX8M-PLUS Power Consumption
+  "TBD"
+  Contacted via sales at variscite com on 19 December 2024 cairnwater.com
+
+Embedded Artists AB
+  www.embeddedartists.com
+  To select SoMs with MIPI CSI-2:
+  https://www.embeddedartists.com/product-selector/
+  iMX 6/7/8 Power consumption, sleep and wake-up
+  https://www.embeddedartists.com/wp-content/uploads/2020/11/iMX_Power_Consumption.pdf
+    iMX8M Mini uCOM is 95 mW in Suspend-toram (mem, deep)
+    # echo mem > /sys/power/state
+
+Toradex
+  https://www.toradex.com/de/computer-on-modules/colibri-arm-family/nxp-imx-8x
+    NXP® i.MX 8QuadXPlus (i.MX 8QXP), i.MX 8DualXPlus (i.MX 8DXP), i.MX 8DualX (i.MX 8DX)
+    Up to 2GB LPDDR4 (32 bit)
+    MIPI/CSI-2 in data sheet but not on website.
+  They also sell carrier boards that turn the modules into SBCs - these are much cheaper than their eval. boards
+    https://www.toradex.com/de/single-board-computers
+  VC MIPI Cameras with GMSL2
+    for up to 10 meters of cable length
+
+NXP i.MX RT Crossover MCUs
+  https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
+
+NXPS32V2 Processors for Vision, Machine Learning and Sensor Fusion
+  https://www.nxp.com/products/S32V234
+    Embedded image sensor processing (ISP) for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
+    MIPI CSI2 and parallel image sensor interfaces
+
+i.MX 8/RT MIPI DSI/CSI-2 - AN13573
+  https://www.nxp.com/docs/en/application-note/AN13573.pdf
+
+i.MX RT1170: 1 GHz Crossover MCU with Arm® Cortex® Cores
+  Some variants have MIPI CSI-2
+  https://www.nxp.com/products/i.MX-RT1170
+  https://www.nxp.com/part/MIMXRT1172AVM8A
+i.MX 8/RT MIPI DSI/CSI-2 - AN13573 - August 2024
+  https://www.nxp.com/docs/en/application-note/AN13573.pdf
+i.MX RT1170 Evaluation Kit - MIMXRT1170-EVKB
+  https://www.nxp.com/design/design-center/development-boards-and-designs/i-mx-evaluation-and-development-boards/i-mx-rt1170-evaluation-kit:MIMXRT1170-EVKB
+  "MIPI camera sensor connector"
+Getting Started with the i.MX RT1170 Evaluation Kit
+  https://www.nxp.com/document/guide/getting-started-with-the-i-mx-rt1170-evaluation-kit:GS-MIMXRT1170-EVK
+Camera Interfaces - Getting Started with the i.MX RT1170 Evaluation Kit
+  https://www.nxp.com/document/guide/getting-started-with-the-i-mx-rt1170-evaluation-kit:GS-MIMXRT1170-EVK?section=camera-interfaces
+Developing a Camera Application with i.MX RT Series - AN12110 - dated 2017 and based on an older chip
+  https://www.nxp.com/docs/en/application-note/AN12110.pdf
+Development of H.264 Video Encode on RT Series - AN13205
+  https://www.nxp.com/docs/en/application-note/AN13205.pdf
+
+			- **Renesas RZ/V2H** Mali-C55 ISP
+
+Renesas RZ/G2 64-Bit MPUs
+  Renesas RZ/V2H is preferred because it has an ISP
+  https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg-series/rzg2-mpus
+Renesas RZ/G2 64-Bit MPUs
+  "1×MIPI CSI-2 or 1×Digital Parallel input"
+  "2×MIPI-CSI2"
+  No mention of a sleep or low power mode but in one of the data sheets "Cortex-A55 Sleep Mode...94"
+  https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg-series/rzg2-mpus
+SolidRun’s RZ/G2 & RZ/V family of SOMs
+  https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/
+  e.g. https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2ul-som/
+  "1x MIPI-CSI-2"
+  "Default: 1 GB DDR4, Up to 2 GB DDR4." - only DDR
+https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-v2l-som/
+https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2l-som/
+https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/rz-g2lc-som/
+  All the 3 above use DDR4
+https://www.solid-run.com/embedded-industrial-iot/renesas-rz-family/hummingboard-rz-sbcs-series/hummingboard-rz-g2l-iiot-sbc/#specifications
+  Uses DDR4 as well.
+
+  Contacted https://www.solid-run.com/contact-us/ on 16 December 2024.
+  info@solid-run.com
+RZ/G2L-EVKIT
+  https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2l-evkit-evaluation-board-kit-rzg2l-mpu
+  "DDR4 SDRAM: 2GB"
+  Future electronics have them for CHF 242,21
+  https://www.futureelectronics.com/de/p/1176223?utm_source=octopart.com&utm_medium=cpcbuynow&utm_content=instock&utm_campaign=Octopart_Ext_Referals
+https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2m-hihope-rzg2m-reference-board
+  Not currently available.
+
+Ka-Ro TXRZ based on RENESAS RZ/G2L processor
+  https://www.karo-electronics.com/txrz
+  MIPI CSI (4-lanes)
+  985 mW in sleep mode :-(
+Renesas seem to support Civil Infrastructure Platform™ (CIP™) Linux
+  https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rz-partner-solutions/civil-infrastructure-platform-cip
+  "Renesas is contributing to CIP activities through our development of the Verified Linux Packages for the RZ series of MPUs."
+  https://www.cip-project.org/members
+Renesas can also to use 3rd party commercial Linux:
+  https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rz-partner-solutions/enea-linux
+
+Beacon RZ/G2 SoM
+  https://beaconembedded.com/new-rz-g2-system-on-module/
+    Renesas Alliance Partner
+  https://beaconembedded.com/project/rz-g2-som/
+    "One MIPI CSI-2 (4 lanes)
+    One MIPI CSI-2 (2 lanes)"
+    "H.264 encode/decode and H.265 decode Video Codecs"
+    "RZ/G2N: Up to 2GB of 32-bit wide LPDDR4 memory
+    RZ/G2M and RZ/G2H: Up to 8GB of 64-bit wide LPDDR4 memory"
+
+https://www.raspberrypi.com/products/raspberry-pi-pico-2/
+  This can't support a MIPI CSI-2 interface but might be good to supervise booting the main MPU
+  "2.4GHz 802.11n wireless LAN and Bluetooth 5.2 (Raspberry Pi Pico 2 W only)"
+  "3 x ADC channels"
+  "Supported input voltage 1.8–5.5V DC"
+
+A talk by Naushir Patuck from Raspberry Pi in November 2024 mentioned that Raspberry Pi were considering the possibility of a μC with MIPI CSI-2 support.
+  (Registration required to access webinar)
+  https://www.digikey.com/en/blog/webinar-introduction-raspberry-pi-imaging-and-computer-vision-tools
+  Times are from beginning ofthe webinar not Naushir Patuck's part of the webinar:
+  18:40 Hailo 8 26 TOPS versus Hailo 8 L 13 TOPS - both of these connect over the PCIe link with the Raspberry PI and because of this they're only compatible with Raspberry Pi 5
+  22:10 you can run the very same models on the CPU but instead of 30 FPS you'd be running at 1 or a half FPS - like a 30 times speed up at least in these cases here
+  27:00 Raspberry Pi AI Camera - AI HAT can only be used on Rapberry Pi 5 because of PCIe thing - Raspberry Pi AI Camera can be run on any Raspberry PI - IMX500 has AI built-in - up to 2 TOPS - in-line with the sensor frame so very low latency - including the Pi Zeros
+  39:40 Q&A begins
+  39:44 Will the RPi camera work with Pico? Right now no because we use a standard RPi camera connector - there's no socket on the Pico 2 W that attaches to this interface - we're looking at this to see what we can do 
+  45:30 Power consumption? Depends on workload 1 to 1.5 W for AI Camera typically at 30 FPS object recognition network, for AI Hat boards higher closer to 2 to 2.5 W range.
+  47:00 Synchronisation? For GS cameras electronic connection. Still working on software synchronisation for V3 cameras - still in beta
+  53:00 OpenCV? Indirectly yes - OpenCV does not interface directly with libcamera - opening a camera source in OpenCV is possible but not easy - working with OpenCV team to integrate libcamera directly with their library
+  56:50 PCIe? Only one PCIe connector on the board - either the AI HAT or M.2 drive the would occupy that - can buy 3rd party PCIe switch hat for multiple PCIe devices.
+  61:05 End.
+
+Very useful:
+Raspberry Pi Camera Module: More on video capture
+https://www.raspberrypi.com/news/raspberry-pi-camera-module-more-on-video-capture/
+
+Raspberry Pi Zero
+  https://www.raspberrypi.com/products/raspberry-pi-zero/
+  "CSI camera connector (v1.3 only)"
+  "All models of Raspberry Pi Zero require a Raspberry Pi Zero camera cable"
+  https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/raspberry-pi/power-supplies.adoc
+  "Typical bare-board active current consumption" 
+  "Zero 100mA
+  "Zero W 150mA
+  "Zero 2 W 350mA
+  For RPi Zero 2 it looks like the video pipeline on it - and particularly the encoder - is too slow for a wildlife camera:
+  "For anyone working with webcams or other video footage, the good news continues: Video transcoding is now possible, at least if you're happy to drop the resolution or frame rate down a bit, with the Zero 2 W hitting an average of 19 frames per second using the hardware H.264 encoder via v4l2 when encoding a 1080p video — compared to the original Zero's paltry 1.2 FPS. To get over 30 FPS at that resolution, though, still requires a Raspberry Pi 4."
+  https://www.hackster.io/news/raspberry-pi-zero-2-w-review-hands-on-with-the-fastest-zero-ever-b85b155905a5
+  Though the data sheet suggests that 30 FPS should be possible:
+  "H.264 encode (1080p30)"
+  https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
+
+Microchip SAMA7G54
+  It's a MPU with a CSI-2 interface and is also aimed at low power consumption according to
+  https://www.elektormagazine.com/news/first-single-core-mpu-with-mipi-csi-2-camera-interface-and-advanced-audio-features
+  "Microchip is committed to maintaining the lowest power MPU portfolio in the market. The SAMA7G54 extends this low-power trend into the 1GHz performance class of Linux®-capable MPUs by providing flexible low-power modes, as well as voltage and frequency scaling."
+  Obviously, adoption will be greatly enhanced by the marketing genius at Microchip who wants 350 EUR to shove the thing on a circuit board:
+  https://www.microchip.com/en-us/development-tool/EV21H18A
+  Microchip do produce a SOM based on it for 70 EUR 
+  https://www.microchipdirect.com/dev-tools/EA16Z43A
+  Or 3 for 200 USD:
+  https://www.microchip.com/en-us/development-tool/ea16z43a
+  but:
+    "It is not recommended to use industrial automated reflow process with oven to solder the product on the mother board, as the process might impact the System-On-Module reliability.
+    Work Around: Solder the System-On-Module on the mother board manually."
+    I'm not sure if it can be treated as a competitor given that there's no built-in WiFi (another module has to be added for that) and the soldering problem with the SOM (I'd thought that SOM manufacturers had solved that some time ago - sometimes simply by popping a metal can over most of the SOM).
+    With the soldering problem with the SOM the only way to get the thing into a production design would be if Microchip provide good PCB reference design files.
+    The SAMA7G54 is over 2 years old now so Microchip may have produced something newer.
+  Posted a question on Microchip forums on 23 December 2024
+  μC or μP With MIPI CSI-2 Support
+  https://forum.microchip.com/s/topic/a5CV40000002iY1MAI/t399263
+
+  https://www.microchip.com/en-us/tools-resources/evaluation-boards/curiosity
+  PIC64GX Curiosity Kit
+  https://www.microchip.com/en-us/development-tool/curiosity-pic64gx1000-kit-es
+    MIPI CSI-2 input (Raspberry Pi MIPI Connector)
+
+There's also the MAX78002 AI MCU
+  https://www.analog.com/en/resources/evaluation-hardware-andsoftware/evaluation-boards-kits/max78002evkit.html#eb-documentation
+  An eval. board that's far too expensive for production use but does include
+  "MAX78002EVKIT Gerber Files - Design Files"
+  so it might be that those files could be used as a reference design?  Not sure what AD are like for this.
+
+Rockchip
+  Chinese fabless semiconductor manufacturer.
+  https://www.cnx-software.com/2024/12/21/rockchip-rk3588-mainline-linux-support-current-status-and-future-work-for-2025/
+RK3399 which is used by PinePhone Pro has been supported for some time by libcamera https://ftp.fau.de/fosdem/2023/UD2.120%20(Chavanne)/linux_camera_apps.webm
+  https://opensource.rock-chips.com/wiki_RK3399
+  "Rockchip RK3399 SoC integrates dual-core Cortex-A72 and quad-core Cortex-A53 with separate NEON coprocessor, and with ARM Mali-T864 GPU."
+  V1.0 Development Guide was 2017-01-14 so 7 years old now https://opensource.rock-chips.com/images/f/f9/RK3399_Linux_Debain_V1.1_Development_Guide170620.pdf
+
+Samsung Exynos processors
+https://semiconductor.samsung.com/processor/mobile-processor/
+https://semiconductor.samsung.com/processor/mobile-processor/exynos-2400/
+Wasn't able to find a SoM or SiP based on these.
+
+Will mentions the SAMA7G54, MAX78002 and STMIPID02 deserialiser here:
+https://community.st.com/t5/stm32-mpus-products/support-for-csi-2/m-p/729724#M12073
+
+Pine Ecosystem in seperate file.
+
+Key Hardware Features:
+
+  MIPI CSI-2 camera module expansion connector
+    https://www.st.com/en/evaluation-tools/stm32mp257f-ev1.html#overview
+    https://www.st.com/en/evaluation-tools/stm32mp257f-dk.html#overview
+
+  Power overview - stm32mpu - GPIO wake-up wake up - low power sleep mode hibernate mode
+    https://wiki.st.com/stm32mpu/wiki/Power_overview#GPIO_wake-up
+
+Raspberry Pi 5
+  Camera and DSI display connectors are interchangeable, so you can have one of each, or two the same.
+  Broadcom BCM2712 quad-core Arm Cortex A76 processor @ 2.4GHz, 
+  BUT: No hardware support for low power sleep mode so wake up time is limited to Linux boot time.
+  BUT: Hardware video encoding does not appear to be supported:
+  https://www.raspberrypi.com/documentation/computers/processors.html#bcm2712
+  "4Kp60 HEVC hardware decode"
+  "Other CODECs run in software"
+  "H264 1080p30 encode (from ISP) ~30–40% CPU"
+  https://forums.raspberrypi.com/viewtopic.php?t=378329
+  "There is no hardware H264 or H265 encoder on Pi5. The CPUs can do 4k30 in software with libx264 as long as you don't enable too many of the encode bells and whistles. Yes it increases CPU load."
+  https://raspberrypi.stackexchange.com/questions/144475/did-the-raspberry-pi-5-drop-hardware-encoding-support
+  "The Pi5 has no hardware support for video encoding."
+  https://forums.raspberrypi.com/viewtopic.php?p=2139082#p2139126
+  "There is no codec hardware acceleration except for HEVC decode."
+  https://www.raspberrypi.com/news/introducing-raspberry-pi-5/#comment-1594055
+  "Ok, this is a big one… The problem is that video encoding is not a standard. You can put as much or as little effort into encoding as you like, on Pi 1, 2, 3, & 4 the encoding quality (for the bitrate) was relatively poor. The nice thing about using the processors to do this is you get to choose exactly what balance between quality and bitrate you want. Obviously, the bad thing is the power consumption, but actually it only takes around 1 processor to encode 1080p60 with our default settings (which is still better quality than the PI 4 hardware encoder). We think it might be possible with the right settings to be able to hit 4K encode at around 24fps, but we’ve not been optimising in that direction yet.
+  In future we’ll have to do something, but for Pi 5 we feel the hardware encode is a mm^2 too far."
+  
+Raspberry Pi Zero has a CSI-2 connector from v1.3
+  https://www.raspberrypi.com/products/raspberry-pi-zero/
+  c. 11 CHF
+
+Raspberry Pi Zero W
+  https://www.raspberrypi.com/products/raspberry-pi-zero-w/
+  "wireless LAN and Bluetooth"
+  To switch off WiFi
+  https://forums.raspberrypi.com/viewtopic.php?t=342095
+    "rfkill block wifi"
+    "rfkill unblock wifi"
+    "rfkill"
+  https://raspberrypi.stackexchange.com/questions/100215/is-there-a-way-to-physically-disable-wireless-networking-capabilities
+    systemctl disable wpa_supplicant
+    systemctl disable bluetooth
+    systemctl disable hciuart
+    dtoverlay=pi3-disable-wifi
+    dtoverlay=pi3-disable-bt
+  https://forums.raspberrypi.com/viewtopic.php?t=370761
+    Pi Lite
+
+Raspberry Pi Zero 2W
+  https://www.pi-shop.ch/raspberry-pi-zero-2-w
+  512MB LPDDR2 DRAM
+  c. 20 CHF
+
+  https://www.jeffgeerling.com/blogs/jeff-geerling/raspberry-pi-zero-power
+    "Idle, HDMI disabled, LED disabled" "80 mA (0.4W)"
+    "Idle, HDMI disabled, LED disabled, USB WiFi adapter" "120 mA (0.7W)"
+
+  https://github.com/raspberrypi/documentation/blob/develop/documentation/asciidoc/computers/raspberry-pi/power-supplies.adoc
+    Zero 100mA
+    Zero W 150mA
+
+beagleboard.org
+
+BeaglePlay
+  https://www.beagleboard.org/boards/beagleplay
+  "Texas Instruments AM625 processor"
+    https://www.ti.com/product/AM625
+    "1 Arm Cortex-A53, 2 Arm Cortex-A53, 4 Arm Cortex-A53"
+    Warning: No HWISP!
+    https://patchwork.libcamera.org/patch/20424/
+      "The j721e-csi2rx driver pipeline uses no converters, so enable the
+      software ISP plugin support. This is handy for boards with AM62 SoC
+      (like BeaglePlay) that have no HW ISP."
+    https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1158239/am625-isp-inbuilt
+      "The AM625 do not have an inbuilt ISP. Regarding CSI sensors tested with AM62x, please refer to this thread: https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1136610/sk-am62-which-csi-camera-we-can-use-for-am62-sk-evm."
+    https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1136610/sk-am62-which-csi-camera-we-can-use-for-am62-sk-evm
+      "Since the AM62x doesn't have ISP, we recommend to use sensors with built-in ISP. The AM62x Linux SDK has the driver for the OV5640 sensor. In addition, the AM62x SK-EVM has a Raspberry PI connector. So only camera modules with a Raspberry PI connector can work on the AM62x SK-EVM. The following camera modules have been tested with the AM62x SK-EVM:"
+    https://www.technexion.com/products/embedded-vision/image-sensors/tevi-ov5640/
+      "OmniVision OV5640 5MP rolling shutter image sensor with ISP for advanced vision embedded applications."
+      "Platform Support TI Sitara™ AM62 / AM62A / AM67"
+
+BeaglePlay suspend to RAM at EOSS
+  https://www.youtube.com/watch?v=4jbOXl_o4uo&list=PLrqLsMlJSsZYxN-ez9_g33pDBLNdWuwKq&index=11
+  c. 1 or 2 seconds to wake up - but that includes video streams, network connection, etc.
+
+  Texas Instruments Simplelink™ CC1352P7 wireless MCU
+  Dual-band Sub-1 GHz and 2.4 GHz operation
+    They say this works up to 1 km away.
+  https://docs.beagleboard.org/beagleplay.pdf
+    "TPS6521901 Power Management IC"
+    "TPS65219 is a Power Management IC (PMIC) "
+    "Note: The voltage drop from 1.8V to 1.0V is rated up to 0.3A (240mW), but the typical current from the
+    DP83TD51E data sheet (SNLS656C) is stated at 3.5mA (2.8mW) and the maximum is 7.5mA (6mW). This isn’t
+    overly significant on a board typically consuming 400mA at 5V (2W). However, this is an area where some
+    power optimization could be performed if concerned about sleep modes"
+    "3.4.2 2ch 10bit ADC"
+    "The SimpleLink™ CC1352P7 device is a multiprotocol and multi-band Sub-1 GHz and 2.4-GHz wireless microcontroller (MCU) supporting Thread, Zigbee®, Bluetooth® 5.2 Low Energy, IEEE 802.15.4g, IPv6-enabled smart
+    objects (6LoWPAN), mioty®, Wi-SUN®, proprietary systems, including the TI 15.4-Stack (Sub-1 GHz and 2.4
+    GHz), "
+    "TI HDC2010 humidity/temperature sensor"
+
+  BeagleConnect™ Freedom
+    https://www.beagleboard.org/boards/beagleconnect-freedom
+    "Texas Instruments SimpleLink™ CC1352P7"
+      SimpleLink™ Arm® Cortex®-M4F multiprotocol sub-1 GHz and 2.4-GHz wireless MCU integrated power amp
+      https://www.ti.com/product/CC1352P7
+    "utilizing the 2.4GHz and sub-1GHz IEEE 802.15.4 wireless networks"
+  https://www.youtube.com/watch?v=J615Rps-6oE&list=PLrqLsMlJSsZYxN-ez9_g33pDBLNdWuwKq
+    "Up to 100 km range" with long range antenna at 1:30
+
+  Convenient but expensive Click Boards for above:
+    https://www.mikroe.com/click
+
+  BeagleY-AI
+    https://www.beagleboard.org/boards/beagley-ai
+      "2x MIPI CSI"
+      "4GB LPDDR4"
+      "Quad-core 64-bit Arm®Cortex®-A53 CPU subsystem at 1.4GHz" and "Cortex-R5"
+      "AM67A"
+      https://www.ti.com/product/AM67A
+        "Arm®Cortex®-A53 4 TOPS vision SoC with RGB-IR ISP for 4 cameras, machine vision, robotics, smart HMI"
+      https://git.beagleboard.org/wohali/linux/-/tree/6.1.80-ti-rt-arm64-r40/drivers
+        ACPI seems to be supported with last comit 10 months ago:
+        "ACPI: APEI: set memory failure flags as MF_ACTION_REQUIRED on synchronous events"
+    https://docs.beagleboard.org/beagley-ai.pdf
+    
+    N.B. in Google Shopping search for "Beagle Y-AI" NOT "Beagle board Y-AI" or "Beaglebone Y-AI"
+    CHF 86.00 inkl. MwSt. at https://www.elektor.de/products/beagley-ai-sbc-with-gpu-dsp-and-ai-accelerators
+    C. 120 CHF elsewhere
+
+  BeagleBone AI-64
+    https://www.beagleboard.org/boards/beaglebone-ai-64
+    "Texas Instruments TDA4VM SOC with dual 64-bit Arm® Cortex®-A72, C7x DSP"
+    https://www.ti.com/product/TDA4VM
+      "1 Deep learning accelerator, 1 Depth and Motion accelerator, 1 Vision Processing accelerator, 1 video encode/decode accelerator"
+    https://www.ti.com/lit/ds/symlink/tda4vm.pdf
+      "Vision Processing Accelerators (VPAC) with Image
+      Signal Processor (ISP) and multiple vision assist
+      accelerators"
+      https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1230147/sk-tda4vm-issue-in-isp-tuning
+      "ISP tuning in general is supported on SK-TDA4VM. There are guides for J721E EVM (which has the same SoC as SK-TDA4VM) and SK-AM6xA (which has the same software support as SK-TDA4VM) that can be used as reference:"
+    "4GB LPDDR4"
+    "2* 4-Lane CSI connector for popular camera options"
+    There may be problems with sleep / suspend mode:
+      What is required to suspend and wake up a BBAI64?
+      https://forum.beagleboard.org/t/what-is-required-to-suspend-and-wake-up-a-bbai64/33727
+    c. 190 CHF
+
+  BeagleBone® Black
+    https://www.beagleboard.org/boards/beaglebone-black
+    https://docs.beagle.cc/boards/beaglebone/black/ch07.html
+    No MIPI CSI-12
+
+  BeagleV®-Fire
+    https://www.beagleboard.org/boards/beaglev-fire
+    "Microchip’s PolarFire® MPFS025T 5x core RISC-V System on Chip (SoC) with FPGA fabric"
+    "2x image signal processor (ISP)"
+    "2GB LPDDR4"
+    "CSI 22-pin camera connector"
+    c. 141 CHF DigiKey
+
+  BeagleV®-Ahead
+    https://www.beagleboard.org/boards/beaglev-ahead
+    "Alibaba T-Head TH1520 SoC"
+    "2GHz quad-core RISC-V 64GC Xuantie C910"
+    "4GB LPDDR4"
+    "2 x CSI"
+
+https://forum.beagleboard.org/t/how-to-enable-standby-power-mode-in-newer-debian-releases/1764
+
+Coral Dev Board
+  https://coral.ai/products/dev-board/
+  NXP i.MX 8M SoC (quad Cortex-A53, Cortex-M4F)
+  1 or 4 GB LPDDR4
+  24-pin FFC connector for MIPI-CSI2 camera (4-lane) N.B. RPi is 22 pin or 15 pin camera connector
+    Does not seem to work with RPi cameras https://github.com/google-coral/edgetpu/issues/535
+  Acts as a carier board for Coral System-on-Module (SoM)
+  Connect a camera to the Dev Board
+    https://coral.ai/docs/dev-board/camera/
+
+Suspend-To-Idle and Suspend-To-RAM for Google Coral Dev Board #314
+  https://github.com/google-coral/edgetpu/issues/314
+  sudo sh -c “echo enabled > /sys/class/tty/ttymxc0/power/wakeup” (enabling wakeup on UART1)
+  sudo sh -c “echo deep > /sys/power/mem_sleep" (set to Suspend-to-RAM)
+  sudo sh -c “echo mem > /sys/power/state” (enter Suspend-To-RAM)
+  PM: resume devices took 0.032 seconds
+  MNote: ttymxc0 is UART1
+
+Coral Power Savings Application Note
+  https://github.com/mbrooksx/draft-coral-appnotes/blob/main/PowerSavings.pdf
+
+Coral Dev Board Mini
+  https://coral.ai/products/dev-board-mini/
+  MediaTek 8167s SoC (Quad-core Arm Cortex-A35)
+  2 GB LPDDR3
+  24-pin FFC connector for MIPI-CSI2 camera (4-lane)
+  https://wikimovel.com/index.php/MediaTek_MT8167#google_vignette
+    MT8167 is a tablet processor from MediaTek, announced in 2017
+  Mediatek are based in Taiwan and make some interesting stuff 
+    https://www.mediatek.com/products/smartphones/mediatek-dimensity-8400
+  https://www.mediatek.com/products/smartphones/mediatek-helio
+  "MediaTek's industry‑leading power‑efficiency expertise is applied throughout every chip, ensuring it maximizes performance without adversely affecting battery‑life."
+
+MediaTek Genio 510
+  https://www.mediatek.com/tek-talk-blogs/mediatek-genio-510-empowers-smart-retail-industrial-factory-automation-and-more
+  "4K video decoding (multimedia playback for advertising) and 4K encoding engine (camera recording)
+  Support for two cameras with state-of-the-art visual quality based on MediaTek’s proven technologies"
+  "multi-core"
+Contacted via https://www.mediatek.com/company/contact-us 28 Dedcember 2024 cairnwater.com email address
+
+MediaTek Imagiq for Smartphone Cameras
+  Likely not useful
+  https://www.mediatek.com/technology/imagiq-multi-camera
+
+SoMs using MediaTek SoCs
+  https://www.viatech.com/en/edge/via-intelligent-edge-modules-and-boards/
+VIA SOM-7000
+  https://www.viatech.com/en/edge/som-7000/
+  MediaTek Genio 1200 Octa-core SoC
+  highly integrated low-power module
+  dual MIPI CSI-2 camera support
+  four Cortex-A78 cores running at 2.2GHz and four Cortex-A55 cores running at 2.0GHz
+  VIA SOM-7000 BSP supports Android 13, Yocto 4.0, and Debian 12
+  https://cdn.viaembedded.com/products/docs/som-7000/datasheet/VIA_SOM-7000_datasheet_v240913.pdf
+    2 MIPI CSI-2 (1 4-Lane, 1 2-Lane)
+  https://www.viatech.com/en/edge/contact/?solution=2
+VIA SOM-3000
+  https://www.viatech.com/en/edge/som-3000/
+  MediaTek Genio 350 Quad-Core SoC
+Contacted via https://www.viatech.com/en/edge/contact/ on 28 December 2024 using cairnwater.com email address.
+
+Coral System-on-Module (SoM)
+  https://coral.ai/products/som/
+  NXP's iMX 8M system-on-chip (SoC) NXP i.MX 8M SoC (quad Cortex-A53, Cortex-M4F)
+  Coral Dev Board acts as a carrier board for this.
+  https://coral.ai/docs/som/get-started/
+
+Coral Dev Board Micro
+  https://coral.ai/static/files/Coral-Dev-Board-Micro-datasheet.pdf
+    NXP i.MX RT1176 MCU
+    2-lane MIPI CSI also available for add-on boards
+    On-board color camera (324 x 324 px)
+    ARM Cortex-M7 @ 800 MHz
+    ARM Cortex-M4 @ 400 MHz
+    Copyright 2022 Google LLC.
+
+Spresense Main Board
+  https://developer.sony.com/spresense/products/spresense-main-board
+  "Camera input Dedicated parallel interface"
+
