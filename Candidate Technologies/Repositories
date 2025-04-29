@@ -1,5 +1,9 @@
 Repositories
 
+Mainline DTS and DTSI files for ST
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts/st
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/st
+
 Mainline DTS (Device Tree Source) file for the NXP i.MX 8 M Plus on the Debix Model A SoM (System on Module) mounted on the Debix Model A SoM I/O Board (product number BMB-08)
 This is in the freescale directory - named before the Freescale NXP merger.
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
