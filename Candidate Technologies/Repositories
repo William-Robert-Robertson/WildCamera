@@ -23,5 +23,11 @@ Mainline DTSI (Device Tree Structure Include) for the i.MX 8 M Plus chip
 This is in the freescale directory - named before the Freescale NXP merger.
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp.dtsi
 
+buildroot default configuration for Debix Model A SBC
+https://github.com/buildroot/buildroot/blob/master/configs/polyhex_debix_model_a_defconfig
+
+buildroot build for Debix Model A SBC
+https://github.com/buildroot/buildroot/tree/master/board/polyhex/debix-model-a
+
 libcamera repository
 https://git.libcamera.org/libcamera/libcamera.git
