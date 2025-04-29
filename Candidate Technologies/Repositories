@@ -49,3 +49,6 @@ https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale
 
 libcamera repository
 https://git.libcamera.org/libcamera/libcamera.git
+
+PowerTOP - a Linux tool to diagnose issues with power consumption and power management.
+https://github.com/fenrus75/powertop
