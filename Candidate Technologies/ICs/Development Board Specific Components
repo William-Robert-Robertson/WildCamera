@@ -1,0 +1,50 @@
+Development Board Specific Components
+
+For Debix Model A SoM I/O Board:
+20 pin/1.25mm Pitch MIPI_CSI plug
+(The DEBIX cameras use a 24 pin/0.5mm Pitch FPC ribbon cable.)
+Based on:
+https://debix.io/Uploads/Temp/file/20240129/Camera%20Adapter%20Board%20for%20DEBIX%20SOM%20A%20IO%20Board%20User%20Manual%20V1.0.pdf
+
+For Debix Camera Adapter Board
+20 pin
+FPC_0.5mm_24P
+Based on:
+Camera Adapter Board Schematics
+Drawing Title: EMB-AS-08
+https://debix.io/Uploads/Temp/file/20230504/EMB-AS-08_V1.0-SCH.pdf
+2 x 10Pin
+Based on:
+https://debix.io/Uploads/Temp/file/20240403/Camera%20Adapter%20Board.pdf
+
+For Debix Model A SBC:
+FPC 0.5mm 24P - note that this directly connects to Debix camera modules
+Based on:
+CSI1 INPUT
+https://debix.io/Uploads/Temp/file/20230331/DEBIX%20Model%20A%20Schematics.pdf
+
+For Debix Model A I/O Board:
+CSI 1.0mm Pitch FPC Connnector 15 pin - compatible with RPi Cameras
+Based on:
+https://debix.io/Uploads/detail/2022-07-28/62e1f571ebab3.pdf
+
+For Raspberry Pi 5 RPi 5
+22-way 0.5mm-pitch connection
+For Raspberry Pi Camera
+15-way 1mm-pitch
+based on:
+https://www.pi-shop.ch/raspberry-pi-camera-cable-standard-mini-300mm
+
+NXP Evaluation Kit for the i.MX 8M Plus Applications Processor
+8MPLUSLPD4-EVK
+CON 2X18 - mini-SAS CN
+Based on:
+Camera CSI Interface
+In 8MPLUS-BB i.MX8M Plus Reference Base Board
+Drawing Title: 8MPLUS-BB
+Page Title: MIPI CSI
+Which is zipped up as part of:
+i.MX 8M Plus EVK Base Board Design Files
+available for download under:
+https://www.nxp.com/design/design-center/development-boards-and-designs/8MPLUSLPD4-EVK
+
