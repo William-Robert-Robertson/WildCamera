@@ -1,0 +1,15 @@
+DC-DC Converters
+
+For Prototyping - for production a less expensive module can be used 
+because the production system is unlikely to need 3A / 15 W at 5V:
+
+https://www.digikey.ch/en/products/detail/gaptec-electronic/LC78-05-3-0/13692361
+DigiKey Part Number
+3182-LC78_05-3.0-ND
+Manufacturer Product Number
+LC78_05-3.0
+Description
+NON-ISOLATED POL MODULE DC DC CO
+Detailed Description
+👍 Non-Isolated PoL Module DC DC Converter 1 Output 5V 3A 6.5V - 28V Input
+https://gaptec-electronic.com/datenblaetter/LC78_3.0.pdf
