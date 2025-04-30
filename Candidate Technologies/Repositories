@@ -59,3 +59,6 @@ https://git.libcamera.org/libcamera/libcamera.git
 
 PowerTOP - a Linux tool to diagnose issues with power consumption and power management.
 https://github.com/fenrus75/powertop
+
+FourThirdsEye: Opensource Micro Four Thirds camera module based on IMX294
+https://github.com/will127534/FourThirdsEye
