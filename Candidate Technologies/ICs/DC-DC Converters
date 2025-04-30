@@ -1,7 +1,7 @@
 DC-DC Converters
 
-For Prototyping - for production a less expensive module can be used 
-because the production system is unlikely to need 3A / 15 W at 5V:
+For Prototyping - for production a much less expensive SMT module can be used 
+the production system is also unlikely to need 3A / 15 W at 5V:
 
 https://www.digikey.ch/en/products/detail/gaptec-electronic/LC78-05-3-0/13692361
 DigiKey Part Number
@@ -13,3 +13,34 @@ NON-ISOLATED POL MODULE DC DC CO
 Detailed Description
 👍 Non-Isolated PoL Module DC DC Converter 1 Output 5V 3A 6.5V - 28V Input
 https://gaptec-electronic.com/datenblaetter/LC78_3.0.pdf
+
+Example of much cheaper SMD module with 5 V 15 W output:
+https://www.digikey.ch/en/products/detail/texas-instruments/TPSM843321RCJR/26283123
+DigiKey Part Number
+296-TPSM843321RCJRTR-ND - Tape & Reel (TR)
+296-TPSM843321RCJRCT-ND - Cut Tape (CT)
+296-TPSM843321RCJRDKR-ND - Digi-Reel®
+Manufacturer
+Texas Instruments
+Manufacturer Product Number
+TPSM843321RCJR
+Description
+3.8V TO 18V INPUT, 3A, 200KHZ TO
+Detailed Description
+👍 Non-Isolated PoL Module DC DC Converter 1 Output 5V 3A 3.8V - 18V Input
+
+Example of much cheaper SMD module with 5 V 15 W output:
+https://www.digikey.ch/en/products/detail/tdk-corporation/FS1603-5000-AL/24765542
+DigiKey Part Number
+445-FS1603-5000-ALTR-ND - Tape & Reel (TR)
+445-FS1603-5000-ALCT-ND - Cut Tape (CT)
+445-FS1603-5000-ALDKR-ND - Digi-Reel®
+Manufacturer
+TDK Corporation
+Manufacturer Product Number
+FS1603-5000-AL
+Description
+TDK MPOL POWER MODULE, 5.0V
+Detailed Description
+Non-Isolated PoL Module DC DC Converter 1 Output 5V 3A 4.5V - 16V Input
+
