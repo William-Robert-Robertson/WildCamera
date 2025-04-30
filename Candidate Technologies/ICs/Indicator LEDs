@@ -4,6 +4,22 @@ https://www.digikey.ch/en/products/filter/led-indication-discrete/105?s=N4IgjCBc
 
 Note that for final prototype a much wider range of SMT LEDs is available than TTH LEDs runnign from 3.3 V
 
+It appears that the i.MX 8M Plus can drive up to 82.5 mA
+https://community.nxp.com/t5/i-MX-Processors/I-MX8M-GPIO-output-impedance/td-p/1180807
+"A1: Yes, this feature is the Drive Strength Field (DSE) for 3.3V goes from 40 - 255 Ohm."
+"A3: This is calculated in terms of buffer impedance, so to say in case of the lower impedance (40 ohm) the maximum current provided is roughly 82.5mA,"
+https://community.nxp.com/t5/i-MX-Processors/i-MX8M-GPIO-current-source-amp-sink-capability-Drive-Strength/td-p/1850050?utm_source=chatgpt.com
+DSE Drive Strength Field
+000 Hi-Z
+001 255_Ohm
+010 105_Ohm
+...
+111 40 Ohm
+"Q1: If DSE is 001 and VDD is 3.3V then the current I can source or sink through that pin would be equal to 3.3V/255Ohm = 12.9mA ? or is there more to it that needs to be considered?"
+"Q1: Yes, that is correct, and it is the only thing you need to consider. You can use this thread as reference." - "this" links to the thread above
+"So just to be clear, does this means that even if I connect 3.3V supply directly to I/O pin and set the pin as output and drive it as low (or vice versa i.e. connect GND to I/O pin and drive it high), the amount of current that will flow will limit by this series resistance / output impedance and will not be a short circuit?  "
+"Yes, that is correct. But it is recommended to limit that current and do not "short circuit" the GPIO on that way."
+
 https://www.digikey.ch/en/products/detail/liteon/LTL1CHTBK3LC/3198417
 DigiKey Part Number
 LTL1CHTBK3LC-ND
