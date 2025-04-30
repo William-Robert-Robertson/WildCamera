@@ -35,6 +35,11 @@ For Raspberry Pi Camera
 based on:
 https://www.pi-shop.ch/raspberry-pi-camera-cable-standard-mini-300mm
 
+SolidRun
+https://solidrun.atlassian.net/wiki/spaces/developer/pages/197493766/i.MX8M+Plus+SOM+Hardware+User+Manual#MIPI-CSI
+28 pin FPC connector - diagram "FPC-0.5-B" suggests 0.5 pitch
+"The i.MX8M-PLUS SOM supports a 4-Lanes MIPI CSI-2 interface. A 28 pins FPC connector on the SOM board enables a direct connection to Basler’s MIPI cameras. The following figure describes the interface signals."
+
 NXP Evaluation Kit for the i.MX 8M Plus Applications Processor
 8MPLUSLPD4-EVK
 NXP i.MX 8M Plus Evaluation Kit Enabling Power Measurement
