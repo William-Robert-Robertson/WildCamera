@@ -22,6 +22,13 @@ DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX
 Note that these were written for the Debix Model A SBC so may need to be adjusted for the Debix Model A SoM and Debix Model A SoM I/O board.
 https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
 
+Overlays for Raspberry Pi OS 6.12
+https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
+
+Overlays for the Sony IMX 708 Image Sensor used in the RPi V3 camera
+https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708-overlay.dts
+https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708.dtsi
+
 DTS (Device Tree Strucure) for the official NXP i.MX 8 M Plus evaluation board.
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
 Note that several DTSI and DTSO files with names beginning imx8mp-evk are available for different configurations in the freescale directory - named before the Freescale NXP merger:
