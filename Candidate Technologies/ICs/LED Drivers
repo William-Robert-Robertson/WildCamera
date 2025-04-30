@@ -1,0 +1,28 @@
+
+Accepted:
+DigiKey Part Number
+1866-NLDD-700H-ND
+Manufacturer Product Number
+NLDD-700H
+Detailed Description
+700mA 6 ~ 52V Constant Current LED Driver Buck Topology 1 Output
+https://www.meanwellusa.com/upload/pdf/NLDD-H/NLDD-H-spec.pdf
+700 mA max output current
+NLDD-H Series
+Model encoding
+NLDD-350HW
+NLDD-max. output current in mA-H-W for Wire or blank for TTH
+👍H: >2.5~5VDC or open circuit
+Data sheet
+NLDD-H-spec.pdf
+
+Rejected:
+DigiKey Part Number
+1866-3109-ND
+Manufacturer Product Number
+LDD-350L
+350mA 2 ~ 32V Constant Current LED Driver Buck Topology 1 Output
+PWM input 
+⚠ Voltage required for PWM input is 3.8 V - too high
+SMT, TTH or with leads
+https://www.meanwellusa.com/upload/pdf/LDD-L/LDD-L-spec.pdf
