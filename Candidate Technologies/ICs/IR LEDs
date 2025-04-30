@@ -1,0 +1,58 @@
+IR LEDs
+
+Quantum Efficiency of CCDs (Charge Coupled Devices) at visible and IR wavelengths:
+https://hamamatsu.magnet.fsu.edu/articles/quantumefficiency.html
+
+Based on quantum efficiency curves above, it seems best to aim for under c. 870 nm
+
+https://www.digikey.ch/en/products/filter/led-emitters-infrared-uv-visible/94?s=N4IgjCBcoCwAxVAYygMwIYBsDOBTANCAPZQDaIATAJxxUCsdIhA7DBTM1UyABxxg0AbN2Zw%2BAZnHdqtQQkI8YMKjy6EYPQYLbSqYfRRHLRjFmC0rdBtZT3NxhltopjdFB8xABdQgAcALlAgAMr%2BAE4AlgB2AOYgAL6EAqqIICiQGDgExGQgCF6JIAC0htBpUOEArtkkkOSMBYWl5AAyAKIAIt7xQA
+
+TTH devices have been selected for prototyping - select a SMD device for production.
+
+Selected:
+https://www.digikey.ch/en/products/detail/inolux/INL-3AIR30/10384803
+DigiKey Part Number
+1830-INL-3AIR30-ND
+Manufacturer
+Inolux
+Manufacturer Product Number
+INL-3AIR30
+Description
+THROUGH HOLE / STANDARD 3MM T1
+Detailed Description
+Infrared (IR) Emitter 850nm 1.4V 100mA 6mW/sr @ 20mA 30° Radial
+Data Sheet
+https://www.inolux-corp.com/datasheet/IR/Emitter/3mm%20Lamp/INL-3AIR30_V1.0.pdf
+👍 Peak wavelength λp=850nm
+Absolute Maximum Rating at 25°C 
+👍 Pd (mW) 160
+👍 IF (mA) 100
+
+https://www.digikey.ch/en/products/detail/vishay-semiconductor-opto-division/VSLY3850/3340196
+DigiKey Part Number
+VSLY3850-ND
+Manufacturer
+Vishay Semiconductor Opto Division
+Manufacturer Product Number
+VSLY3850
+Description
+EMITTER IR 850NM 100MA RADIAL
+Detailed Description
+Infrared (IR) Emitter 850nm 1.65V 100mA 35mW/sr @ 100mA 36° Radial
+Data sheet
+https://www.vishay.com/docs/82395/vsly3850.pdf
+
+https://www.digikey.ch/en/products/detail/ams-osram-usa-inc/SFH-4550/806365
+DigiKey Part Number
+475-SFH4550-ND
+Manufacturer
+ams-OSRAM USA INC.
+Manufacturer Product Number
+SFH 4550
+Description
+EMITTER IR 860NM 100MA RADIAL
+Detailed Description
+Infrared (IR) Emitter 860nm 1.5V 100mA 1100mW/sr @ 100mA 6° Radial
+Data sheet
+https://look.ams-osram.com/m/7d214b223a9adb85/original/SFH-4550.pdf
+
