@@ -1,3 +1,41 @@
+PIR (Passive Infra Red) Sensors
+
+Note:
+WL Series - Consumption current 1µA to 6µA
+Part number EKMB...
+VZ Series - Consumption current 170µA
+Part number EKMC...
+NaPiOn series - Consumption current 170µA
+Part number AMN...
+ANM3... Digital
+ AMN31... Standard
+ AMN32... Slight motion
+ AMN33... Spot
+ AMN34... 10m
+ANM2... Analog
+
+From https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2240/EKMB_MC_AMN2_3_Rev_Sep_2012.pdf
+
+3. Detection object: human body
+(size is 700mm × 250mm 27.559inch × 9.843inch)
+(for the slight motion detection type, 200mm × 200mm 7.874inch × 7.874inch)
+
+Vout Vdd-0.5V
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMC1609111/13618562
+DigiKey Part Number
+255-EKMC1609111-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+EKMC1609111
+Description
+SENSOR PIR 170UA DIGITAL WHITE
+Detailed Description
+Sensor Motion, Pyroelectric, PIR (Passive Infrared) 137.795" (3.5m) Ultra Slight Motion Lens, White Module
+Datasheet
+https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/235512
+VZ series・Ultra slight motion detection type (170μA / Digital output)
 
 https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMB1191111/9356195
 DigiKey Part Number
@@ -74,3 +112,71 @@ Sensor PIR (Passive Infrared) 98.425" (2.5m) Slight Motion Lens, Black Module
 https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2240/EKMB_MC_AMN2_3_Rev_Sep_2012.pdf
 Data sheet provides a usful summarry of many detectors.
 
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMC1608111/13618557
+DigiKey Part Number
+255-EKMC1608111-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+EKMC1608111
+Description
+SENSOR PIR 170UA DIGITAL WHITE
+Detailed Description
+Sensor Motion, Pyroelectric, PIR (Passive Infrared) 232" (5.9m) 19.4' Wide Area Lens, White Module
+Data Sheet
+https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/235520
+VZ Seried Wide detection type (170μA / Digital output)
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMB1306111K/9356908
+DigiKey Part Number
+255-6264-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+EKMB1306111K
+Description
+SENSOR MOTION PIR LONG DIST
+Detailed Description
+Sensor PIR (Passive Infrared) 472" (12m) 39.4' High Density Lens, White Module
+https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2458/EKMB130611xK_Ver%202.4_Spec.pdf
+VZ series・High density long distance detection type (6μA / Digital output)
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/AMN31111/2125642
+DigiKey Part Number
+255-2643-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+AMN31111
+Description
+SENSOR MOTION STD DETECT BLK LEN
+Detailed Description
+Sensor PIR (Passive Infrared) 197" (5m) 16.4' Standard Lens, Black Cylinder
+Datasheet
+https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2240/EKMB_MC_AMN2_3_Rev_Sep_2012.pdf
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMC2611113K/21484635
+DigiKey Part Number
+255-EKMC2611113K-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+EKMC2611113K
+Description
+ULUW LENS, 170UA, ADJUSTABLE SEN
+Detailed Description
+Sensor PIR (Passive Infrared) 394" (10m) 32.8' Ultra Wide and Long Distance Lens, Pearl White Module
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMC4611113K/21484632
+DigiKey Part Number
+255-EKMC4611113K-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+EKMC4611113K
+Description
+ULUW LENS, 170UA, HIGH SENSITIVI
+Detailed Description
+Sensor PIR (Passive Infrared) 590.55" (15m) 49.2' Ultra Wide and Long Distance Lens, Pearl White Module
+https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/250914
+VZ series・Ultra wide & Long distance detection type (170μA / Digital output / High sensitivity)
