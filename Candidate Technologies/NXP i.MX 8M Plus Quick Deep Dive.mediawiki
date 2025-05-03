@@ -1,0 +1,79 @@
+== NXP i.MX 8M Plus == 
+
+This document was originally written for SGMK – Schweizerische Gesellschaft für Mechatronische Kunst 🙂
+
+NXP's [https://www.nxp.com/products/IMX8MPLUS i.MX 8 M Plus] has some fairly powerful capabilities and an [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp.dtsi upstream device tree]. 🙂
+
+Source repositories for the i.MX series of processors are often under [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale Freescale¨] not NXP because they were named before the merger of Freescale and NXP.
+
+Some features of the i.MX 8M Plus make it particularly valuable for designing systems for both small scale and large scale production.
+
+The i.MX 8M Plus allows Linux to go into and rapidly wake out of a low power sleep mode to conserve energy - very valuable for saving resources and for battery powered applications. Two MIPI CSI-2 (more on that later...) interfaces allow two high quality low cost camera modules to be connected, a powerful ISP (Image Signal Processor) processes the data from these cameras and a choice of H.264 or H.265 hardware video encoders compresses it for storage or for streaming over a network. It also has an NPU (Neural Processing Unit) on chip to allow neural networks to be applied to incoming data without transferring the data to a more energy intensive machine with an NPU or GPU (Graphics Processing Unit).
+
+== i.MX 8M Plus Evaluation Boards==
+
+NXP provide two official evaluation boards for the i.MX 8M Plus
+
+[https://www.nxp.com/design/design-center/development-boards-and-designs/8MPLUSLPD4-EVK Evaluation Kit for the i.MX 8M Plus Applications Processor]
+
+[https://www.nxp.com/design/design-center/development-boards-and-designs/8MPLUSLPD4-PEVK i.MX 8M Plus Evaluation Kit Enabling Power Measurement]
+
+With [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts upstream device tree].
+
+== Polyhex Debix Model A SBC==
+
+Polyhex have designed a range of inexpensive [https://debix.io/hardware/model-a.html Debix Model A] SBCs (Single Board Computers) based on the NXP i.MX 8M Plus. Prices vary depending on the amount or RAM (Random Access Memory) on the board and whether eMMC (embedded Multi Media Card) non-volatile storage is included on the the board.
+
+For embedded Linux a Debix Model A with the minimum 2GB of RAM and no eMMC storage is fine (the Linux image and data can be stored on an SD card instead of on eMMC).
+
+The upstream device tree for the Debix Model A is [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts here]
+
+The Debix Model A SBC can connect direct to Debix 200A, 500A or 1300A camera modules via their 24Pin/0.5mm Pitch FPC cable.
+
+Both the Raspberry Pi ecosystem and the i.MX 8 M Plus on the Debix Model A use the modern industry-standard [https://www.mipi.org/specifications/csi-2 MIPI-CSI2] (Mobile Industry Processor Interface Camera Serial Interface 2) camera interface (the interface used by almost all modern smartphone cameras and almost all modern cameras for semi-autonomous vehicles).
+
+However... they have a different numbers of pins:
+
+The Debix Model A SBCs and Debix cameras use a 24Pin/0.5mm Pitch FPC connector.
+
+The RPi cameras and RPi SBCs before the RPi 5 use a 15-way 1mm-pitch connector.
+
+The RPi 5 and RPi Zero 2 W use a 22-pin 0.5 mm pitch connector.
+
+🙈
+
+A [https://debix.io/hardware/io-board.html DEBIX IO Board] (product number EMB-AS-E01) converts from the connectors on the Debix Model A to connectors the Raspberry Pi V2 and V3 Camera modules. The DEBIX IO Board also provides an PRi compatible GPIO header, a real time clock and other features that can be helpful for prototyping.
+
+== Polyhex Debix SoM A==
+
+The SoM (System on Module) A provides the NXP i.MX 8M Plus on a small circuit board. This is intended for production use and for prototyping it may be best to use it with the [https://debix.io/hardware/debix-som-a-io-board.html Debix SOM A I/O Board] (often referred to in source code repositories by its product number BMB-08).
+
+The upstream device tree for the Debix SoM A is [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a.dtsi here]
+
+The upstream device tree for the Debix SoM A mounted on the Debix SoM A I/O= board is [https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts here]
+
+The Debix SOM A I/O Board uses yet another camera connector 🙈
+
+The Debix SOM A I/O Board uses a dual in line 20pin/1.25mm Pitch connector [https://debix.io/Uploads/Temp/file/20240129/Camera%20Adapter%20Board%20for%20DEBIX%20SOM%20A%20IO%20Board%20User%20Manual%20V1.0.pdf see details in the Camera Adapter Board for DEBIX SOM A I/O Board User Guide].
+
+To connect a Debix SOM A I/O to a Debix camera requires a [https://debix.io/hardware/camera-adapter-board.html DEBIX Camera Adapter Board] (product number EMB-AS-08).
+
+The schematic for the DEBIX Camera Adapter Board [https://debix.io/Uploads/Temp/file/20230504/EMB-AS-08_V1.0-SCH.pdf here] shows the two connectors (labeled J1 and J2), 3 0.1 uF decoupling capacitors (labelled C1, C2 and C3), a resistor (labelled R1) and a 24MHz clock generator (labelled X1).
+
+By now you're probably getting a bit confused by some of the naming:
+
+the "Debix Model A" and the "Debix S0M A" are not the same board 😉
+
+the "DEBIX I/O Board" and the " Debix SOM A I/O Board" are not the same board 😉
+
+== bytesatwork i.MX 8M Plus SoM==
+
+bytesatwork in Winterthur also produce a [https://www.bytesatwork.io/en/product/byteengine-imx8m-plus-quad/ i.MX 8M Plus SoM]
+
+For prototyping, they provide the [https://www.bytesatwork.io/en/product/bytedevkit-3/ byteDEVKIT 3]
+
+== Roll Your Own Linux==
+
+All sounding too good to be true...?
+
+The catch is that to attach peripherals like MIPI CSI-2 cameras to these platforms the correct kernel drivers have to be added to the device tree to form a custom Linux distribution for your application... that's difficult and will be the subject of the next section...
