@@ -377,6 +377,12 @@ This document is prepared in English - for translation to other languages please
 
 ---
 
+### **12. Review**
+
+Prepared by Will Robertson, reviewed by Goedele Verbeylen.
+
+---
+
 A full list of references to research literature can be found here:
 
 <https://new-homes-for-old-friends.cairnwater.com/references/>
