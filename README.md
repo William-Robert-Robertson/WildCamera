@@ -140,6 +140,7 @@
 - **Ambient Light Sensor**
 - **Microphone**
 - **Ultrasonic Microphone**
+- **Heterodyne Detector** To shift ultrasonic bat calls to the audible range befor recording
 - **RFID** to read ID from tagged animals
 - **ePaper Screen** displaying system status
 - **Touchscreen**
