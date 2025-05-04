@@ -380,7 +380,7 @@ This document is prepared in English - for translation to other languages please
 
 ### **12. Review**
 
-Prepared by Will Robertson, reviewed by Goedele Verbeylen.
+Prepared by Will Robertson, reviewed by Goedele Verbeylen and Conor Kelleher.
 
 ---
 
