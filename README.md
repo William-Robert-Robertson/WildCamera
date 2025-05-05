@@ -3,9 +3,9 @@
 ---
 
 ## Planning phase
-
-### **1. Requirements Analysis**
 <img align="right" width="200" src="https://www.rd.com/wp-content/uploads/2018/02/25_Hilarious-Photos-that-Will-Get-You-Through-the-Week_280228817_Doty911.jpg" />
+### **1. Requirements Analysis**
+
 - **Why:**
 	- **Ecologists and zoologists** identify shortcomings with commercial wildlife camera systems:
 		- **Limited reliability** particularly with small, fast moving mammals
