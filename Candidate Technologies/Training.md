@@ -5,6 +5,6 @@
 
 [buildroot](https://bootlin.com/doc/training/buildroot/)
 
-[Embedded linux](https://bootlin.com/doc/training/embedded-linux/)
+[Embedded Linux](https://bootlin.com/doc/training/embedded-linux/)
 
 [Embedded Linux kernel and driver development training](https://bootlin.com/doc/training/linux-kernel/)
