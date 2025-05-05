@@ -121,10 +121,6 @@
 
 https://github.com/user-attachments/assets/d1ab55a6-7842-48e9-b8cc-b1a6a0280b40
 
-
-
-<video src="Images/A_10100014 - Eliomys Quercinus.mp4" width="320" height="240" controls></video>
-
 	- **Sony** PRi Camera Module 3 IMX708 or RPi High Quality Camera IMX477
 	- **ST BrightSense RGB and NIR** e.g. VD1940 5.1 Mpixel, VB1740 2.7 Mpixel, etc.
 	- **ST BrightSense NIR Optimised** e.g. VG5761 2.3Mp HDR ultra low-noise
