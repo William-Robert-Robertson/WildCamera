@@ -1,5 +1,5 @@
 
-#Bootlin Open Source Training Material
+# Bootlin Open Source Training Material
 
 [https://bootlin.com/doc/training/yocto/](Yocto)
 [https://bootlin.com/doc/training/buildroot/](buildroot)
