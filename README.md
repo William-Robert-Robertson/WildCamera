@@ -407,7 +407,10 @@ img {
 </div>
 
 <div style="text-align:center"><img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" style="width:50%" alt="Glis glis © Stiftung Wildstation Landshut"/></div>
-
+**Align center:**
+<p align="center" width="100%">
+    <img width="33%" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG"> 
+</p>
 ### **Note**	
 
 National Geographic have a Crittercam project designing cameras which can be attached to marine animals which is not related to WildCamera.
