@@ -118,6 +118,9 @@
 		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware
 		- **NXP S32V2** Embedded ISP for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
 - **Candidate Cameras and Image Sensors**
+
+<video src="Images/A_10100014 - Eliomys Quercinus.mp4" width="320" height="240" controls></video>
+
 	- **Sony** PRi Camera Module 3 IMX708 or RPi High Quality Camera IMX477
 	- **ST BrightSense RGB and NIR** e.g. VD1940 5.1 Mpixel, VB1740 2.7 Mpixel, etc.
 	- **ST BrightSense NIR Optimised** e.g. VG5761 2.3Mp HDR ultra low-noise
