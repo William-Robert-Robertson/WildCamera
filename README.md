@@ -177,6 +177,8 @@
 
 ### **5. Software Architecture**
 
+<img align="right" width="400" src="Images/Will Robertson - Looking-to-the-Future-DJI_0490-2048x1536 - cropped - 90.jpeg" alt="Will Robertson"/>
+
 - **High Quality, High Flexibility**
 	- **Operating System:** Linux-based distribution (e.g., Yocto or Buildroot), Android.
 	- **Camera Stack:** libcamera (Use of V4L2 and Media Controller APIs is possible but discouraged.)
