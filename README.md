@@ -4,7 +4,7 @@
 
 ## Planning phase
 
-<img align="right" width="200" src=Images/Will 20240827_142415 Rotation Corrected.jpeg" />
+<img align="right" width="200" src="Images/Will 20240827_142415 Rotation Corrected.jpeg" />
 
 ### **1. Requirements Analysis**
 
