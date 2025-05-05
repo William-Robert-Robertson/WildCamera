@@ -118,11 +118,7 @@
 		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware
 		- **NXP S32V2** Embedded ISP for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
 
-<video controls src="https://github.com/user-attachments/assets/d1ab55a6-7842-48e9-b8cc-b1a6a0280b40" alt="Eliomys quercinus © Goedele Verbeylen"></video>
-
-
 <video controls src="https://github.com/user-attachments/assets/248f8eea-008a-45c1-bc7c-6e400344eacd" alt="Eliomys quercinus © Goedele Verbeylen"></video>
-
 
 - **Candidate Cameras and Image Sensors**
 	- **Sony** PRi Camera Module 3 IMX708 or RPi High Quality Camera IMX477
