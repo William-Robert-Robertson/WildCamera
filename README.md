@@ -401,7 +401,7 @@ img {
   width: 50%;
 }
 </style>
-<img align="centre" width="400" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Glis glis © Stiftung Wildstation Landshut"/>
+<img align="center" width="400" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Glis glis © Stiftung Wildstation Landshut"/>
 <div>
   <img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Paris" style="width:50%">
 </div>
