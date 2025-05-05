@@ -4,7 +4,7 @@
 
 ## Planning phase
 
-<img align="right" width="400" src="Images/Will 20240827_142415 Rotation Corrected.jpeg" />
+<img align="right" width="400" src="Images/Will 20240827_142415 Rotation Corrected.jpeg" alt="Will Robertson"/>
 
 ### **1. Requirements Analysis**
 
@@ -27,6 +27,8 @@
 		- **Availability** preferred makes and models may not be available in the future
 		- **Dated technology** large amounts of proprietary firmware and electronics and limited competition make commercial wildlife camera manufacturers slow to adopt new technologies and unable to catch up with rapidly advancing and highly competitive image sensor and processor technology
 		- **Technical data** is often sales focused, omitting important information or known limitations
+
+<img align="right" width="400" src="Images/Goedele - September 2024 - Cropped - P8280995.jpeg" alt="Goedele verbeylan" />
 
 - **Objectives:**
 	- **Video** from animals nearby and at a distance via a flexible choice of image sensors and optics
