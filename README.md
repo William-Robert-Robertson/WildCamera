@@ -406,8 +406,7 @@ img {
   <img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Paris" style="width:50%">
 </div>
 
-
-<div style="text-align:center"><img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" /></div>
+<div style="text-align:center"><img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" style="width:50%" alt="Glis glis © Stiftung Wildstation Landshut"/></div>
 
 ### **Note**	
 
