@@ -119,6 +119,10 @@
 		- **NXP S32V2** Embedded ISP for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
 - **Candidate Cameras and Image Sensors**
 
+https://github.com/user-attachments/assets/d1ab55a6-7842-48e9-b8cc-b1a6a0280b40
+
+
+
 <video src="Images/A_10100014 - Eliomys Quercinus.mp4" width="320" height="240" controls></video>
 
 	- **Sony** PRi Camera Module 3 IMX708 or RPi High Quality Camera IMX477
