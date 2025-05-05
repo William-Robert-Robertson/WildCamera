@@ -392,7 +392,7 @@ A full list of references to research literature can be found here:
 
 <https://new-homes-for-old-friends.cairnwater.com/references/>
 
-<img align="centre" width="400" src="Images/Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Glis glis © Stiftung Wildstation Landshut"/>
+<img align="centre" width="400" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Glis glis © Stiftung Wildstation Landshut"/>
 
 ### **Note**	
 
