@@ -391,8 +391,20 @@ Prepared by Will Robertson, reviewed by Goedele Verbeylen and Conor Kelleher.
 A full list of references to research literature can be found here:
 
 <https://new-homes-for-old-friends.cairnwater.com/references/>
+<style>
+div {
+  display: flex;
+  justify-content: center;
+}
 
+img {
+  width: 50%;
+}
+</style>
 <img align="centre" width="400" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Glis glis © Stiftung Wildstation Landshut"/>
+<div>
+  <img src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG" alt="Paris" style="width:50%">
+</div>
 
 ### **Note**	
 
