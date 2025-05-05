@@ -2,8 +2,10 @@
 
 ---
 
-## Planning phase
 <img align="right" width="200" src="https://www.rd.com/wp-content/uploads/2018/02/25_Hilarious-Photos-that-Will-Get-You-Through-the-Week_280228817_Doty911.jpg" />
+
+## Planning phase
+
 ### **1. Requirements Analysis**
 
 - **Why:**
