@@ -37,6 +37,9 @@ DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX
 Note that these were written for the Debix Model A SBC so may need to be adjusted for the Debix Model A SoM and Debix Model A SoM I/O board.
 https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
 
+AR1335 (Used by Debix Camera 1300A) Driver for NXP i.MX Chips
+https://github.com/nxp-imx/isp-vvcam/tree/lf-6.12.y_1.0.0/vvcam/v4l2/sensor/ar1335
+
 Overlays for Raspberry Pi OS 6.12
 https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
 
