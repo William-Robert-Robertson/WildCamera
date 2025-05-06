@@ -1,5 +1,21 @@
 Candidate Camera Modules and Image Sensors:
 
+List of image sensors with mainline kernel support:
+(Note that the directory is named "i2c" but this includes MIPI CSI-2 image sensors)
+https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/media/i2c
+
+"MIPI Camera CSI" under "Video Capture drivers" in the release notes for the current IMX Linux version 
+https://www.nxp.com/docs/en/release-note/IMX_LINUX_RELEASE_NOTES.pdf 
+lists image sensors.
+For the March 2025 veryion of IMX Linux this reads:
+"Supports 2-lane CSI MIPI camera OV5640 with 720p30, 640x480@30, 320x240@30, 720x480@30, 1080p@30, 2592x1944@15, 176x144@30.
+Supports CSI MIPI camera OV10635 with 1280x800@30, ov10635 max supports 1280x800@30, and ISI does not support upscale, so 1080p, 2592x1944 cannot be supported on i.MX 8QuadMax and 8QuadXPlus.
+Supports 4-lane Basler CSI MIPI cameras AR0821 with 4K@30 with ISP on i.MX8M Plus.
+Supports 4-lane CSI MIPI camera OS08A20 with 4K with ISP on i.MX 8M Plus and i.MX 95.
+Supports 2-lane CSI MIPI camera AP1302+AR0144 with 1080p@45, 1280x800@60, 720P@60 and 640x480@60 on i.MX 93.
+Supports 4-lane CSI MIPI camera AP1302+AR0144 with 1080p@60, 1280x800@60 on i.MX 95.
+Supports 4-lane CSI MIPI camera OX03C10 + MAX96717/MAX96724 GMSL2 SerDes (4 cameras) with ISP on i.MX 95."
+
 OwlSight Ultra-high Resolution Cameras - OV64A40
   https://www.arducam.com/64mp-ov64a40-camera-module/
 
