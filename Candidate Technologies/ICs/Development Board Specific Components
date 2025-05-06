@@ -9,6 +9,7 @@ https://debix.io/Uploads/Temp/file/20240129/Camera%20Adapter%20Board%20for%20DEB
 For Debix Camera Adapter Board
 20 pin
 FPC_0.5mm_24P
+X1 24 MHz clock, C1, C2, C3 0.1 uF decoupling capacitor and R1 10 kΩ resistor.
 Based on:
 Camera Adapter Board Schematics
 Drawing Title: EMB-AS-08
