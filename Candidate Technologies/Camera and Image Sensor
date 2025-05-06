@@ -3,6 +3,7 @@ Candidate Camera Modules and Image Sensors:
 List of image sensors with mainline kernel support:
 (Note that the directory is named "i2c" but this includes MIPI CSI-2 image sensors)
 https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/media/i2c
+https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/media/i2c?h=next-20250505
 
 "MIPI Camera CSI" under "Video Capture drivers" in the release notes for the current IMX Linux version 
 https://www.nxp.com/docs/en/release-note/IMX_LINUX_RELEASE_NOTES.pdf 
