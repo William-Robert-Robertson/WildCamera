@@ -14,6 +14,71 @@ ANM3... Digital
  AMN34... 10m
 ANM2... Analog
 
+Much more detailed information here:
+https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/251032
+
+EKM PaPIRs: 3rd generation 
+EKMB (WL) digital output for battery-operated devices (1, 2, 6μA)
+EKMC (VZ) digital and analog output for battery-free devices (170μA)
+AMN NaPiOn: 2nd generation
+AMN3 digital output for battery-free devices (170μA)
+
+EKM - B or C - Lens Type 01 to 93 - 11 for no apparen reason - Suffix
+Sensor Type
+EKM B - B11, B12, B13, B43 - WL Series 6μA
+B11 1µA
+B12 2µA
+B13 6µA 
+B43 and C46 are "Special" high sensitivity - see table at base of page 15
+EKM C - C16, C26, C46 - VZ Series 170μA
+C16 170µA
+C26 170µA, Analog Output, Adjustable Sensitivity
+C46 170µA, Analog Output, High Sensitivity
+
+Lens type
+01︓Standard
+03︓Long Distance
+04︓Wall Installation
+05︓Horizontally Wide
+06︓High Density Long Distance
+07︓Low Profile
+08︓Wide Detection
+09︓Ultra Slight Motion
+10︓Flat Square
+11︓Ultra Wide & Long Distance
+91︓Slight Motion
+93︓Standard & Slight Motion
+
+Lens color
+1︓White
+2︓Black
+3︓Pearl white
+
+EKM - Ultra Slight Motion Detection Type
+Specified detection distance (Note 1) 2.5m ~ 4.1m
+Note 1:
+› ∆T ≥ 4°C
+› Object speed: 0.5m/s (Slight motion) 1.0m/s (Standard motion)
+› Object size: 200 x 200mm (Slight motion) 700 x 250mm (Standard motion)
+› Crossing 1 detection zones
+
+EKM - Slight Motion Detection Type
+Specified detection distance (Note 1) up to 2.5m - 4m
+Note 1:
+› ∆T ≥ 4°C
+› Object speed: 0.5m/s
+› Object size: 200 x 200mm
+› Crossing 1 detection zone
+
+AMN - Slight Motion Detection Type
+Specified detection distance (Note 1) up to 2m - 3.3m
+Note 1:
+› ∆T ≥ 4°C
+› Object speed: 0.5m/s
+› Object size: 200mm x 200mm
+› Crossing 1 detection zone
+
+
 From https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2240/EKMB_MC_AMN2_3_Rev_Sep_2012.pdf
 
 3. Detection object: human body
@@ -29,6 +94,8 @@ Manufacturer
 Panasonic Electric Works
 Manufacturer Product Number
 EKMC1609111
+EKM - C16 - 09 - 111
+👍 EKM - C16 170μA - 09 Ultra Slight Motion - 11 - 1 White
 Description
 SENSOR PIR 170UA DIGITAL WHITE
 Detailed Description
@@ -36,6 +103,20 @@ Sensor Motion, Pyroelectric, PIR (Passive Infrared) 137.795" (3.5m) Ultra Slight
 Datasheet
 https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/235512
 VZ series・Ultra slight motion detection type (170μA / Digital output)
+
+https://www.digikey.ch/en/products/detail/panasonic-electric-works/AMN32112/2125645
+DigiKey Part Number
+255-2646-ND
+Manufacturer
+Panasonic Electric Works
+Manufacturer Product Number
+AMN32112
+Description
+SENSOR SLIGHT MOTION 5V WHT LEN
+Detailed Description
+Sensor PIR (Passive Infrared) 78.7" (2m) 6.6' Slight Motion Lens, White Cylinder
+Datasheet
+
 
 https://www.digikey.ch/en/products/detail/panasonic-electric-works/EKMB1191111/9356195
 DigiKey Part Number
