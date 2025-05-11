@@ -1,0 +1,36 @@
+https://www.digikey.ch/en/products/detail/ftdi-future-technology-devices-international-ltd/TTL-234X-3V3-2MM/6823716
+DigiKey Part Number
+768-1320-ND
+Manufacturer
+FTDI, Future Technology Devices International Ltd
+Manufacturer Product Number
+TTL-234X-3V3-2MM
+Description
+CABLE USB TO UART 3.3V 2MM CONN
+Detailed Description
+USB to TTL Serial 3.3V Cable 5.90' (1.80m) Unshielded
+Datasheet
+https://ftdichip.com/wp-content/uploads/2023/07/DS_TTL234X-SERIES-RANGE-OF-CABLES.pdf
+# The TTL-234X-3V3-2mm is 2mm pitch - this matches the 2.0 mm pitch of the Debix Model A baord.
+# See Figure 7.1 TTL-234X-3V3-2mm, 8 Way Header Pin Out
+# See Figure 7.2 TTL-234X-3V3-2mm, 2mm pitch, Keyed, 8 way Header Mechanical Details
+# Note that this includes a kay however.
+# FT234XD chip
+
+https://www.digikey.ch/en/products/detail/ftdi-future-technology-devices-international-ltd/TTL-232R-RPI/4382044
+DigiKey Part Number
+768-1204-ND
+Manufacturer
+FTDI, Future Technology Devices International Ltd
+Manufacturer Product Number
+TTL-232R-RPI
+Description
+CABLE USB-SERIAL RASPBERRYPI
+Detailed Description
+USB to UART, Raspberry Pi (RPi) Cable 3.28' (1.00m) Unshielded
+Datasheet
+https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232R_RPi.pdf
+# FT232RQ chip
+
+https://ftdichip.com/wp-content/uploads/2020/08/DS_C232HD_UART_CABLE.pdf
+# FT232HL chip
