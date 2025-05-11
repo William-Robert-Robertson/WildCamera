@@ -1,10 +1,14 @@
 PIR (Passive Infra Red) Sensors
 
 Note:
+
+EKM PaPIRs: 3rd generation 
 WL Series - Consumption current 1µA to 6µA
-Part number EKMB...
+ Part number EKMB...
 VZ Series - Consumption current 170µA
-Part number EKMC...
+ Part number EKMC...
+
+AMN NaPiOn: 2nd generation
 NaPiOn series - Consumption current 170µA
 Part number AMN...
 ANM3... Digital
