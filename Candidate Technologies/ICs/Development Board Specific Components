@@ -23,7 +23,8 @@ FPC 0.5mm 24P - note that this directly connects to Debix camera modules
 Based on:
 CSI1 INPUT
 https://debix.io/Uploads/Temp/file/20230331/DEBIX%20Model%20A%20Schematics.pdf
-GPIO 2.0 mm DIL (Note: 2.0 mm not 2.5 mm)
+GPIO 2.0 mm DIL (Note: 2.0 mm not 2.5 mm, 40 way
+For connector and ribon cable please see document "Board to Board Connectors"
 
 For Debix Model A I/O Board:
 CSI 1.0mm Pitch FPC Connnector 15 pin - compatible with RPi Cameras
