@@ -24,8 +24,15 @@ For PIRs listed:
 Vout Vdd-0.5V
 If Vdd = 5V
 Vout = 5 - 0.5 = 4.5 V
-
 4.5 V is higher than 4.1 V so a small voltage divider is required.
+
+If Vdd = 3.3V ( See Table 12. Operating ranges (continued) )
+Vout = 3.3 - 0.5 = 2.8 V
+This should be OK 🙂
+Table 26. GPIO DC parameters gives:
+VIH Min 0.7 x VDD
+VIH = 0.7 x 3.3 = 2.31
+2.8 V is above 2.31 V so this should work well 🙂
 
 i.MX 8M Plus Applications Processor Datasheet
 Table 9. Absolute maximum ratings
@@ -44,3 +51,29 @@ NVCC_ECSPI_HDMI,
 NVCC_GPIO,
 NVCC_I2C_UART,
 NVCC_CLK
+
+i.MX 8M Plus Applications Processor Datasheet
+Table 26. GPIO DC parameters
+High-level output voltage
+VOH (3.3 V) 
+IOH = 2/4/8/12 mA (3.3 V)
+Min 0.8 x VDD
+Max VDD
+High-level input voltage
+VIH
+Min
+0.7 x VDD
+Max
+VDD + 0.3
+Low-level input voltage
+VIL
+Min
+-0.3
+Max 
+0.3 x VDD
+
+Table 21. Chip power in different LP mode
+SUSPEND
+Total Sum of the listed supply rails.
+19.20 mW
+
