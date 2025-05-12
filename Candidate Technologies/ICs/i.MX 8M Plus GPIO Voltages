@@ -1,0 +1,46 @@
+NXP i.MX 8M Plus GPIO Voltages
+
+# From:
+# i.MX 8M Plus Applications Processor Datasheet
+# Document Number: IMX8MPCEC Rev. 2, 02/2023
+# https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/216253/1/IMX8MPCEC(Rev.%202).pdf
+
+i.MX 8M Plus Applications Processor Datasheet
+Table 9. Absolute maximum ratings (continued) - on page 19
+Input/output voltage range
+Vin/Vout
+Min
+-0.3 V
+Max
+OVDD1 + 0.3 V
+OVDD is the I/O supply voltage
+
+Based on OVDD = 3.8 V (see GPIO supply voltage further up in Table 9. Absolute maximum ratings)
+
+Vin/Vout Max = 3.8 + 0.3 = 4.1 V
+
+From https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/PIRs
+For PIRs listed:
+Vout Vdd-0.5V
+If Vdd = 5V
+Vout = 5 - 0.5 = 4.5 V
+
+4.5 V is higher than 4.1 V so a small voltage divider is required.
+
+i.MX 8M Plus Applications Processor Datasheet
+Table 9. Absolute maximum ratings
+GPIO supply voltage
+Min
+-0.3 V
+Max
+3.8 V
+Symbol
+NVCC_SD1, NVCC_SD2,
+NVCC_NAND, NVCC_JTAG,
+NVCC_ENET,
+NVCC_SAI1_SAI5,
+NVCC_SAI2_SAI3_SPDIF,
+NVCC_ECSPI_HDMI,
+NVCC_GPIO,
+NVCC_I2C_UART,
+NVCC_CLK
