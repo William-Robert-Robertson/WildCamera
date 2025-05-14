@@ -270,6 +270,12 @@ NXP i.MX 8/RT MIPI DSI/CSI-2 Application Note
 			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
 			- **NXP i.MX95** Preproduction: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
 
+https://www.olimex.com/Products/SOM/NXP-iMX8/
+  iMX8MP-SOM-4GB-IND SoM
+  https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-4GB-IND/open-source-hardware
+  iMX8MP-SOM-EVB-IND Evaluation Board
+    https://www.olimex.com/Products/SOM/NXP-iMX8/iMX8MP-SOM-EVB-IND/open-source-hardware
+
 https://www.phytec.de/produkte/system-on-modules/phycore-imx-8m-plus/
 phyCORE®-i.MX 8M Plus data sheet
   2x MIPI CSI-2
