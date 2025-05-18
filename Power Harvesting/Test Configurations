@@ -42,6 +42,9 @@ https://www.meteosuisse.admin.ch/previsions-locales/neunkirch/8213.html#forecast
 # and
 # /data/randelab/Meteosuisse Forecast - 8 Days From Wednesday 23 April 2025 for Postcode 8213 - RandeLab.PNG
 
+# The data from RandeLab for the 30 days leading up to 2025_05_18 shows the yield dropping dramatically during bad weather
+# Down to 50 to 80 Wh - even 10 to 20 Wh on very bad days.
+
 --
 
 Zürich
