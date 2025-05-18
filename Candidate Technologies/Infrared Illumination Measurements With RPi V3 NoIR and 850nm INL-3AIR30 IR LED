@@ -2,6 +2,7 @@ Infrared Illumination Measurements With RPi V3 NoIR and 850nm INL-3AIR30 IR LED
 Measurements taken in Bitwäschereie SGMK Darkroom
 
 https://www.digikey.ch/en/products/detail/inolux/INL-3AIR30/10384803
+https://www.inolux-corp.com/datasheet/IR/Emitter/3mm%20Lamp/INL-3AIR30_V1.0.pdf
 Peak wavelength λp=850nm
 
 3 LEDs in series - no reseistor in circuit.
