@@ -43,9 +43,13 @@ https://github.com/nxp-imx/isp-vvcam/tree/lf-6.12.y_1.0.0/vvcam/v4l2/sensor/ar13
 Overlays for Raspberry Pi OS 6.12
 https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
 
-Overlays for the Sony IMX 708 Image Sensor used in the RPi V3 camera
+Overlays for the Sony IMX 708 Image Sensor used in the Raspberry Pi RPi V3 Camera
 https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708-overlay.dts
 https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708.dtsi
+YAML
+https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/sony%2Cimx708.yaml
+Driver in C
+https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx708.c
 
 DTS (Device Tree Strucure) for the official NXP i.MX 8 M Plus evaluation board.
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
