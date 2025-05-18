@@ -1,0 +1,32 @@
+Infrared Illumination Measurements With RPi V3 NoIR and 850nm INL-3AIR30 IR LED
+Measurements taken in Bitwäschereie SGMK Darkroom
+
+https://www.digikey.ch/en/products/detail/inolux/INL-3AIR30/10384803
+Peak wavelength λp=850nm
+
+3 LEDs in series - no reseistor in circuit.
+4.22 V (current limited)
+0.020 A (current limited)
+0.080 W
+
+Raspberry Pi Camera Module 3 NoIR (IR filter removed from camera module)
+
+Target: human hand at 200 to 300 mm from camera
+
+Filters tested
+
+Kenko Optical Filter
+Kenko UV 72mm Japan
+
+and
+
+dHD UV Filter 62mm
+
+Scame Serie SCABOX
+Junction box - Grey
+IP56 240x190x90mm
+686.228
+
+Clear plastic cover of box and glass UV filters above were found to cause no severe attenuation of IR light at 850nm.
+
+Overall potical performence was good.
