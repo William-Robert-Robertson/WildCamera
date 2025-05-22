@@ -19,6 +19,7 @@ Mainline DTS (Device Tree Source) file for the NXP i.MX 8 M Plus on the Debix Mo
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts
 
 Yocto Freescale (NXP) Developers Mailing List
+https://lists.yoctoproject.org/g/meta-freescale
 meta-freescale@lists.yoctoproject.org
 
 Yocto DTSI and DST files for NXP chips (named before the Freescale NXP merger.)
@@ -65,6 +66,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm
 
 Dockerfile for buildroot containing current buildroot dependencies
 https://gitlab.com/buildroot.org/buildroot/-/blob/master/support/docker/Dockerfile
+Note that the above was written for testing buildroot and so the list of dependencies was used for the Docker container for buildroot for WildCamera but not other parts of the above file.
 
 Instructions to generate a Linux image for Debix Model A using Buildroot:
 https://github.com/buildroot/buildroot/blob/master/board/polyhex/debix-model-a/readme.txt
