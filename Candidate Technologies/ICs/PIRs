@@ -267,6 +267,11 @@ Sensor PIR (Passive Infrared) 590.55" (15m) 49.2' Ultra Wide and Long Distance L
 https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/250914
 VZ series・Ultra wide & Long distance detection type (170μA / Digital output / High sensitivity)
 
+Omron MEMS Thermal Sensors
+D6T Thermal Sensors
+MEMS Thrmopile up to 32x32 array in 2021
+https://omronfs.omron.com/en_US/ecb/products/pdf/en_D6T_catalog.pdf
+
 ST PIR Sensors 
 https://www.st.com/resource/en/datasheet/sths34pf80.pdf
 "Reach up to 4 meters without lens for objects measuring 70 x 25 cm²"
