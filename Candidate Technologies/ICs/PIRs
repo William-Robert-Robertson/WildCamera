@@ -1,5 +1,6 @@
 PIR (Passive Infra Red) Sensors
 
+Panasonic:
 Note:
 
 EKM PaPIRs: 3rd generation 
@@ -265,6 +266,15 @@ Detailed Description
 Sensor PIR (Passive Infrared) 590.55" (15m) 49.2' Ultra Wide and Long Distance Lens, Pearl White Module
 https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/250914
 VZ series・Ultra wide & Long distance detection type (170μA / Digital output / High sensitivity)
+
+Kemet PIR sensors
+https://search.kemet.com/download/datasheet/SS-430L-W
+2m range without lens, 5m with lens
+
+muRata PIR sensors
+
+mm Wave human presence sensor 
+https://www.waveshare.com/hmmd-mmwave-sensor.htm
 
 Large range of general purpose and specialised PIR sensors commercially available from other suppliers.
 
