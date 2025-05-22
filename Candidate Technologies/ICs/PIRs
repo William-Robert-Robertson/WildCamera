@@ -267,6 +267,12 @@ Sensor PIR (Passive Infrared) 590.55" (15m) 49.2' Ultra Wide and Long Distance L
 https://api.pim.na.industrial.panasonic.com/file_stream/main/fileversion/250914
 VZ series・Ultra wide & Long distance detection type (170μA / Digital output / High sensitivity)
 
+ST PIR Sensors 
+https://www.st.com/resource/en/datasheet/sths34pf80.pdf
+"Reach up to 4 meters without lens for objects measuring 70 x 25 cm²"
+Application Note:
+https://www.st.com/resource/en/application_note/DM00914720.pdf
+
 Kemet PIR sensors
 https://search.kemet.com/download/datasheet/SS-430L-W
 2m range without lens, 5m with lens
