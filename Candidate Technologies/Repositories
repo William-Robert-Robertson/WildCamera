@@ -18,6 +18,9 @@ https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm
 Mainline DTS (Device Tree Source) file for the NXP i.MX 8 M Plus on the Debix Model A SBC (Single Board Computer)
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts
 
+Yocto Freescale (NXP) Developers Mailing List
+meta-freescale@lists.yoctoproject.org
+
 Yocto DTSI and DST files for NXP chips (named before the Freescale NXP merger.)
 https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/
 
