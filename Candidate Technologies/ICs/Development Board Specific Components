@@ -23,14 +23,14 @@ FPC 0.5mm 24P - note that this directly connects to Debix camera modules
 Based on:
 CSI1 INPUT
 https://debix.io/Uploads/Temp/file/20230331/DEBIX%20Model%20A%20Schematics.pdf
-GPIO 2.0 mm DIL (Note: 2.0 mm not 2.5 mm, 40 way
+GPIO 2.0 mm / 0.79" DIL (Note: 2.0 mm not 2.54 mm) 40 way
 For connector and ribon cable please see document "Board to Board Connectors"
 
 For Debix Model A I/O Board:
 CSI 1.0mm Pitch FPC Connnector 15 pin - compatible with RPi Cameras
 Based on:
 https://debix.io/Uploads/detail/2022-07-28/62e1f571ebab3.pdf
-GPIO 2.5 mm DIL
+GPIO 2.54 mm / 0.1" DIL 40 way
 
 For Raspberry Pi 5 RPi 5
 22-way 0.5mm-pitch connection
