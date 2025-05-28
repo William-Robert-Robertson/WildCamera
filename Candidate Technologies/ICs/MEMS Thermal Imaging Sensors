@@ -1,0 +1,16 @@
+MEMS Thermal Imaging Sensors
+
+Omron MEMS Thermal Sensors
+D6T Thermal Sensors
+MEMS Thrmopile up to 32x32 array in 2021
+https://omronfs.omron.com/en_US/ecb/products/pdf/en_D6T_catalog.pdf
+
+T-Lite
+Field of view: 110°×75°
+MLX90640 Sensor
+32×24 Resolution
+Temperature measurement range: -40°C ~ 300°C
+Note: A version with a narrower temperature range exists
+https://docs.m5stack.com/en/app/T-Lite
+https://www.digitec.ch/en/s1/product/m5stack-m5-stick-t-lite-thermal-imaging-camera-development-kit-mlx90640-development-board-accessorie-39134561?supplier=406802&utm_source=google&utm_medium=cpc&utm_campaign=PROD_CH_PMAX_M2_C3
+
