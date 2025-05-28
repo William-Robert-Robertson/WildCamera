@@ -1,4 +1,10 @@
 
+# Chris Simmonds
+
+(https://www.youtube.com/watch?v=gIK1he6Ocpg)
+
+[20 Years Teaching Embedded Linux: Lessons I Learned from My Students](https://www.youtube.com/watch?v=DlJcI9RbOvc)
+
 # Bootlin Open Source Training Material
 
 [Yocto](https://bootlin.com/doc/training/yocto/)
