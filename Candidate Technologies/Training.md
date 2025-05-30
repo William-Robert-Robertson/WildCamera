@@ -11,6 +11,8 @@ Mastering Embedded Linux Programming: Create fast and reliable embedded solution
 
 [We Need to Talk About Systemd: Boot Time Optimization for the New init daemon](https://www.youtube.com/watch?v=NNgZXNQtil8)
 
+[Being Systematic with systemd - Chris Simmonds, 2net Ltd](https://www.youtube.com/watch?v=Ws6zR3rFXa4)
+
 [20 Years Teaching Embedded Linux: Lessons I Learned from My Students](https://www.youtube.com/watch?v=DlJcI9RbOvc)
 
 # Bootlin Open Source Training Material
