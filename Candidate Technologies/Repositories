@@ -93,6 +93,9 @@ https://github.com/fenrus75/powertop
 FourThirdsEye: Opensource Micro Four Thirds camera module based on IMX294
 https://github.com/will127534/FourThirdsEye
 
+Kernel Driver for IMX294
+https://github.com/will127534/imx294-v4l2-driver
+
 OpenEmbedded Machine Search
 https://layers.openembedded.org/layerindex/branch/master/machines/
 
