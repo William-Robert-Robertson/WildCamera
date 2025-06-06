@@ -62,6 +62,8 @@ YAML
 https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/imx219.yaml
 Driver in C in RPi Tree
 https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx219.c
+YAML in Torvalds's Tree (mainline)
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/devicetree/bindings/media/i2c/sony,imx219.yaml
 Driver in C in Torvalds's Tree (mainline)
 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/media/i2c/imx219.c
 
