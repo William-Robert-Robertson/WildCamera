@@ -1,5 +1,8 @@
 DC-DC Converters
 
+32V, 2A LOW IQ Synchronous Buck Converter
+https://www.diodes.com/assets/Datasheets/AP63200Q_AP63201Q_AP63203Q_AP63205Q.pdf
+
 For Prototyping - for production a much less expensive SMT module can be used 
 the production system is also unlikely to need 3A / 15 W at 5V:
 
