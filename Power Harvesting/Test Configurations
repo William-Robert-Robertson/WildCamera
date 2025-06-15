@@ -18,6 +18,11 @@ Made in Austria
 Victron BlueSolar charge controller MPPT 75 15
 # (Note that Victron BlueSolar MPPT controllers need a Bluetooth dongle for Bluetooth communications but Victron SmartSolar MPPT controllers have built-in Bluetooth.)
 
+Data Sheet
+https://www.victronenergy.com/upload/documents/Datasheet-Blue-Solar-Charge-Controller-MPPT-75-10,-75-15,-100-15,-100-20_48V-EN-.pdf
+or
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Power%20Harvesting/Data%20Sheets/Datasheet-Blue-Solar-Charge-Controller-MPPT-75-10%2C-75-15%2C-100-15%2C-100-20_48V-EN-.pdf
+
 Varta Silver AGM Dynamic 12 V 70 Ah 760 A  battery 
 
 12 V, 20 W test load
@@ -78,3 +83,36 @@ Sunday 04 May 2025 started off sunny then became cloudy in Zürich
 Monday 05 May 2025 was a day of constant cloudy weather in Zürich with periods of rain and lower temperatures than previous days.
 Tuesday 06 and Wednesday 07 2025 were cloudy in Zürich.
 Thursday 08 May 2025 was more mixed in Zürich.
+
+--
+-- Details of solar charge controllers under here.
+--
+
+BlueSolar Charge Controller
+  MPPT 75¦15
+  No built-in Bluetooth in BlueSolar charge controllers - a VE.Direct Bluetooth Smart dongle is needed
+    https://www.victronenergy.com/communication-centres/ve-direct-bluetooth-smart-dongle
+  https://github.com/William-Robert-Robertson/WildCamera/blob/main/Power%20Harvesting/Data%20Sheets/Datasheet-Blue-Solar-Charge-Controller-MPPT-75-10%2C-75-15%2C-100-15%2C-100-20_48V-EN-.pdf
+  Self Consumption
+    12V Load on 25 mA Load off 25 mA
+    24V Load on 15 mA Load off 15 mA
+
+SmartSolar Charge Controller
+  MPPT 75¦15
+  Built-in Bluetooth
+  https://github.com/William-Robert-Robertson/WildCamera/blob/main/Power%20Harvesting/Data%20Sheets/Datasheet-SmartSolar-charge-controller-MPPT-75-10%2C-75-15%2C-100-15%2C-100-20_48V-EN.pdf
+  Victron Energy B.V.
+  Battery 12/24V Auto Select
+  Rated Charge Current 15A
+  Nominal PV Power 12V: 220 W
+  Nominal PV Power 24V: 440 W
+  Max. PV short circuit 15A
+  Max. PV open circuit voltage 75V
+  Peak efficiency 98%
+  Self Consumption
+    12V Load on 19 mA Load off 10 mA
+    24V Load on 16 mA Load off 8 mA
+  Charging Voltages
+    Absorption: 14.4 V / 28.8 V
+    Float: 13.8 V / 27.6 V
+  Max. continuous load current: 15A
