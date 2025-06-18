@@ -94,7 +94,7 @@ BlueSolar Charge Controller
     https://www.victronenergy.com/communication-centres/ve-direct-bluetooth-smart-dongle
   https://github.com/William-Robert-Robertson/WildCamera/blob/main/Power%20Harvesting/Data%20Sheets/Datasheet-Blue-Solar-Charge-Controller-MPPT-75-10%2C-75-15%2C-100-15%2C-100-20_48V-EN-.pdf
   Self Consumption
-    12V Load on 25 mA Load off 25 mA
+    12V Load on 25 mA Load off 25 mA = 300mW
     24V Load on 15 mA Load off 15 mA
 
 SmartSolar Charge Controller
@@ -110,7 +110,7 @@ SmartSolar Charge Controller
   Max. PV open circuit voltage 75V
   Peak efficiency 98%
   Self Consumption
-    12V Load on 19 mA Load off 10 mA
+    12V Load on 19 mA Load off 10 mA = 228mW
     24V Load on 16 mA Load off 8 mA
   Charging Voltages
     Absorption: 14.4 V / 28.8 V
