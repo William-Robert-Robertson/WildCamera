@@ -60,7 +60,18 @@ available for download under:
 https://www.nxp.com/design/design-center/development-boards-and-designs/8MPLUSLPD4-EVK
 
 Toradex Verdin (not spelled Torradex)
-X47
+Connector X47 on board layout
 https://docs.toradex.com/116796-verdin_development_board_datasheet.pdf
 2.15.1 MIPI CSI Camera Connector (X47)
 24 Position FFC, FPC, vertical 0.5mm, Hirose FH12-24S-0.5SVA(54)
+
+Toradex Ivy Carrier Board
+https://docs.toradex.com/116799-ivy_carrier_board_datasheet.pdf
+Does not appear to have a MIPI CSI-2 connector.
+
+Toradex Mallow Carrier Board
+https://docs.toradex.com/116791-mallow_carrier_board_datasheet.pdf
+1x Quad Lane MIPI CSI Camera Interface (implementing the Toradex MIPI CSI-2 Interface Standard)
+Connector X3 on board layout
+Connector type: 24 Position FFC, FPC, vertical 0.5mm, Wurth 687124182122
+Note: This connector is on the bottom side of the Toradex Mallow board so is shown on the bottom side board layout in Figure 3 on p 11 but not on the photo of the board on p1.
