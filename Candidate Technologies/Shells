@@ -1,0 +1,12 @@
+Shells
+
+FISH
+Finally, a command line shell for the 90s
+https://github.com/fish-shell/fish-shell/?tab=readme-ov-file#packages-for-linux
+sudo apt-add-repository ppa:fish-shell/release-4
+sudo apt install fish
+fish
+
+BASH
+Bourne Again Shell
+The default shell on Debian-based distributions
