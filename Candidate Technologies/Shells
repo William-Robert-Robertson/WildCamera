@@ -7,6 +7,11 @@ sudo apt-add-repository ppa:fish-shell/release-4
 sudo apt install fish
 fish
 
+To change default shell to fish:
+https://fishshell.com/docs/current/#default-shell
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /bin/bash
+
 BASH
 Bourne Again Shell
 The default shell on Debian-based distributions
