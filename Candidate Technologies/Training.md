@@ -1,7 +1,9 @@
 
 # Chris Simmonds
 
-Mastering Embedded Linux Programming: Create fast and reliable embedded solutions with Linux 5.4 and the Yocto Project 3.1, 3rd Edition
+Mastering Embedded Linux Programming: Create fast and reliable embedded solutions with Linux 6.6 and the Yocto Project 5.0 (Scarthgap), 4th Edition
+27 May 2025
+ISBN 978-1-80323-259-1
 
 [www.2net.co.uk](https://www.2net.co.uk/)
 
@@ -14,6 +16,12 @@ Mastering Embedded Linux Programming: Create fast and reliable embedded solution
 [Being Systematic with systemd - Chris Simmonds, 2net Ltd](https://www.youtube.com/watch?v=Ws6zR3rFXa4)
 
 [20 Years Teaching Embedded Linux: Lessons I Learned from My Students](https://www.youtube.com/watch?v=DlJcI9RbOvc)
+
+# John Madieu
+
+Mastering Linux Device Driver Development by John Madieu
+8 January 2021
+ISBN 978-1-78934-204-8
 
 # Bootlin Open Source Training Material
 
