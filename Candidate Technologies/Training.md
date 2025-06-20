@@ -27,6 +27,7 @@ ISBN 978-1-78934-204-8
 
 The Art of Electronics 3rd Edition\
 Paul Horowitz and Winfield Hill\
+9 April 2015\
 ISBN 978-0-521-80926-9
 
 [Adafruit Interview with Paul Horowitz](https://artofelectronics.net/adafruit-interview-with-paul/)
