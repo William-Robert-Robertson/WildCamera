@@ -23,6 +23,14 @@ Mastering Linux Device Driver Development by John Madieu\
 8 January 2021\
 ISBN 978-1-78934-204-8
 
+# Horowitz and Hill
+
+The Art of Electronics 3rd Edition\
+Paul Horowitz and Winfield Hill\
+ISBN 978-0-521-80926-9
+
+[Adafruit Interview with Paul Horowitz](https://artofelectronics.net/adafruit-interview-with-paul/)
+
 # Bootlin Open Source Training Material
 
 [Yocto](https://bootlin.com/doc/training/yocto/)
