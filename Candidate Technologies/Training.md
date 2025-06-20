@@ -30,6 +30,8 @@ Paul Horowitz and Winfield Hill\
 9 April 2015\
 ISBN 978-0-521-80926-9
 
+https://artofelectronics.net/
+
 [Adafruit Interview with Paul Horowitz](https://artofelectronics.net/adafruit-interview-with-paul/)
 
 # Bootlin Open Source Training Material
