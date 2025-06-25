@@ -39,15 +39,6 @@ https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
 
 https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
 
-DTS (Device Tree Strucure) for the official NXP i.MX 8 M Plus evaluation board.
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
-Note that several DTSI and DTSO files with names beginning imx8mp-evk are available for different configurations in the freescale directory - named before the Freescale NXP merger:
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/
-
-Mainline DTSI (Device Tree Structure Include) for the i.MX 8 M Plus chip
-This is in the freescale directory - named before the Freescale NXP merger.
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp.dtsi
-
 Dockerfile for buildroot containing current buildroot dependencies
 https://gitlab.com/buildroot.org/buildroot/-/blob/master/support/docker/Dockerfile
 Note that the above was written for testing buildroot and so the list of dependencies was used for the Docker container for buildroot for WildCamera but not other parts of the above file.
@@ -67,9 +58,6 @@ for Debix Model A SoM I/O Board
 https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
 and DTSI for Debix Model A SoM
 https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a.dtsi
-
-libcamera repository
-https://git.libcamera.org/libcamera/libcamera.git
 
 OpenEmbedded Machine Search
 https://layers.openembedded.org/layerindex/branch/master/machines/
