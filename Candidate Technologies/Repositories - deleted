@@ -5,19 +5,6 @@ https://github.com/William-Robert-Robertson/WildCamera/tree/main/Candidate%20Tec
 
 https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
 
-Dockerfile for buildroot containing current buildroot dependencies
-https://gitlab.com/buildroot.org/buildroot/-/blob/master/support/docker/Dockerfile
-Note that the above was written for testing buildroot and so the list of dependencies was used for the Docker container for buildroot for WildCamera but not other parts of the above file.
-
-Instructions to generate a Linux image for Debix Model A using Buildroot:
-https://github.com/buildroot/buildroot/blob/master/board/polyhex/debix-model-a/readme.txt
-
-buildroot default configuration for Debix Model A SBC
-https://github.com/buildroot/buildroot/blob/master/configs/polyhex_debix_model_a_defconfig
-
-buildroot build for Debix Model A SBC
-https://github.com/buildroot/buildroot/tree/master/board/polyhex/debix-model-a
-
 OpenEmbedded Machine Search
 https://layers.openembedded.org/layerindex/branch/master/machines/
 
