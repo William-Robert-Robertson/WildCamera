@@ -18,3 +18,11 @@ https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale
 
 i.MX 8M Plus DTSI
 https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp.dtsi
+
+# The following was accidental repetition of hte above:
+Yocto DTS for Debix Model A SBC
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts
+for Debix Model A SoM I/O Board
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
+and DTSI for Debix Model A SoM
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a.dtsi
