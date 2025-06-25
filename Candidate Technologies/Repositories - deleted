@@ -1,4 +1,5 @@
 Repositories
+The contents of this file have been split into files in the Repositories directory.
 
 Mainline DTS and DTSI files for ST
 STM32 seems to have been 32 bit until the STM32MP2 series which are 64 bit...
