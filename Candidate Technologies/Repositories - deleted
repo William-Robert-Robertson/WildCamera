@@ -71,18 +71,6 @@ https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale
 libcamera repository
 https://git.libcamera.org/libcamera/libcamera.git
 
-PowerTOP - a Linux tool to diagnose issues with power consumption and power management.
-https://github.com/fenrus75/powertop
-
-Will Whang
-https://github.com/will127534
-
-FourThirdsEye: Opensource Micro Four Thirds camera module based on IMX294
-https://github.com/will127534/FourThirdsEye
-
-Kernel Driver for IMX294
-https://github.com/will127534/imx294-v4l2-driver
-
 OpenEmbedded Machine Search
 https://layers.openembedded.org/layerindex/branch/master/machines/
 
