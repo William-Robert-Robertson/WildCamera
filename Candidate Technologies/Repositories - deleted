@@ -1,13 +1,5 @@
 Repositories
-The contents of this file have been split into files in the Repositories directory.
-
-Mainline DTS and DTSI files for ST
-STM32 seems to have been 32 bit until the STM32MP2 series which are 64 bit...
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts/st
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/st
-
-ST
-https://github.com/STMicroelectronics
+The contents of this file have been split into multiple files in the Repositories directory to improve readability.
 
 Mainline DTS (Device Tree Source) file for the NXP i.MX 8 M Plus on the Debix Model A SoM (System on Module) mounted on the Debix Model A SoM I/O Board (product number BMB-08)
 This is in the freescale directory - named before the Freescale NXP merger.
@@ -42,41 +34,8 @@ DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX
 Note that these were written for the Debix Model A SBC so may need to be adjusted for the Debix Model A SoM and Debix Model A SoM I/O board.
 https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
 
-AR1335 (Used by Debix Camera 1300A) Driver for NXP i.MX Chips
-https://github.com/nxp-imx/isp-vvcam/tree/lf-6.12.y_1.0.0/vvcam/v4l2/sensor/ar1335
-
 Overlays for Raspberry Pi OS 6.12
 https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
-
-Sony IMX 708 Image Sensor used in the Raspberry Pi RPi V3 Camera
- in RPi Tree
-  Overlays
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708-overlay.dts
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708.dtsi
-  YAML
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/sony%2Cimx708.yaml
-  Driver in C
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx708.c
- in Torvalds's Tree (mainline)
-  Overlays (in git.uk.IdeasOnBoard.com tree not Torvalds's Tree)
-   https://git.uk.ideasonboard.com/camera/dt-overlays/commit/de028032947cad5905cc55865196bef2d24b398f
-
-Sony IMX 219 Image Sensor used in the Raspberry Pi RPi V3 Camera
- in RPi Tree
-  Overlays
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx219-overlay.dts
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx219.dtsi
-  YAML
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/imx219.yaml
-  Driver in C
-   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx219.c
- in Torvalds's Tree (mainline)
-  Overlays (in IdeasOnBoard tree not Torvalds's Tree)
-   https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
-  YAML
-   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/devicetree/bindings/media/i2c/sony,imx219.yaml
-  Driver in C in Torvalds's Tree (mainline)
-   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/media/i2c/imx219.c
 
 https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
 
