@@ -3,10 +3,6 @@ The contents of this file have been split into multiple files in the Repositorie
 
 https://github.com/William-Robert-Robertson/WildCamera/tree/main/Candidate%20Technologies/Repositories
 
-DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX335 image sensor for the i.MX 8 M Plus:
-Note that these were written for the Debix Model A SBC so may need to be adjusted for the Debix Model A SoM and Debix Model A SoM I/O board.
-https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
-
 https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
 
 Dockerfile for buildroot containing current buildroot dependencies
