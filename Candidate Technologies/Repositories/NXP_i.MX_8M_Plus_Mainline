@@ -1,0 +1,10 @@
+Repositories - NXP i.MX 8M Plus - Mainline
+
+DTS (Device Tree Strucure) for the official NXP i.MX 8 M Plus evaluation board.
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-evk.dts
+Note that several DTSI and DTSO files with names beginning imx8mp-evk are available for different configurations in the freescale directory - named before the Freescale NXP merger:
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/
+
+Mainline DTSI (Device Tree Structure Include) for the i.MX 8 M Plus chip
+This is in the freescale directory - named before the Freescale NXP merger.
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp.dtsi
