@@ -1,0 +1,20 @@
+Repositories - Yocto
+
+Yocto Freescale (NXP) Developers Mailing List
+https://lists.yoctoproject.org/g/meta-freescale
+meta-freescale@lists.yoctoproject.org
+
+Yocto DTSI and DST files for NXP chips (named before the Freescale NXP merger.)
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/
+
+Debix Model A SoM I/O Board (product number BMB-08)
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a.dtsi
+
+Debix Model A SoM
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
+
+Debix Model A SBC
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp-debix-model-a.dts
+
+i.MX 8M Plus DTSI
+https://git.yoctoproject.org/linux-yocto-dev/plain/arch/arm64/boot/dts/freescale/imx8mp.dtsi
