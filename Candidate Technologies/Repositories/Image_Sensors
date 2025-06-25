@@ -33,6 +33,10 @@ Sony IMX 219 Image Sensor used in the Raspberry Pi RPi V3 Camera
   Driver in C in Torvalds's Tree (mainline)
    https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/media/i2c/imx219.c
 
+DTOs (Device Tree Overlays) for the Debix 200a camera, Debix 500a camera and IMX335 image sensor for the i.MX 8 M Plus:
+Note that these were written for the Debix Model A SBC so may need to be adjusted for the Debix Model A SoM and Debix Model A SoM I/O board.
+https://git.uk.ideasonboard.com/camera/dt-overlays/src/branch/main/arch/arm64/boot/dts/freescale
+
 Will Whang
 https://github.com/will127534
 
