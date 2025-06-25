@@ -1,0 +1,4 @@
+repositories - Raspberry Pi
+
+Overlays for Raspberry Pi OS 6.12
+https://github.com/raspberrypi/linux/tree/rpi-6.12.y/arch/arm/boot/dts/overlays
