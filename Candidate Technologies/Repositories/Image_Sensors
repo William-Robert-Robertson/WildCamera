@@ -1,0 +1,34 @@
+Repositories - Image Sensors
+
+AR1335 (Used by Debix Camera 1300A) Driver for NXP i.MX Chips
+https://github.com/nxp-imx/isp-vvcam/tree/lf-6.12.y_1.0.0/vvcam/v4l2/sensor/ar1335
+
+Sony IMX 708 Image Sensor used in the Raspberry Pi RPi V3 Camera
+ in RPi Tree
+  Overlays
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708-overlay.dts
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx708.dtsi
+  YAML
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/sony%2Cimx708.yaml
+  Driver in C
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx708.c
+ in Torvalds's Tree (mainline)
+  Overlays (in git.uk.IdeasOnBoard.com tree not Torvalds's Tree)
+   https://git.uk.ideasonboard.com/camera/dt-overlays/commit/de028032947cad5905cc55865196bef2d24b398f
+
+Sony IMX 219 Image Sensor used in the Raspberry Pi RPi V3 Camera
+ in RPi Tree
+  Overlays
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx219-overlay.dts
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/arch/arm/boot/dts/overlays/imx219.dtsi
+  YAML
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/Documentation/devicetree/bindings/media/i2c/imx219.yaml
+  Driver in C
+   https://github.com/raspberrypi/linux/blob/rpi-6.12.y/drivers/media/i2c/imx219.c
+ in Torvalds's Tree (mainline)
+  Overlays (in IdeasOnBoard tree not Torvalds's Tree)
+   https://gitlab.com/ideasonboard/nxp/linux/-/commit/2e3ab4d9815eaca81c236924d3393c7ced345619
+  YAML
+   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/devicetree/bindings/media/i2c/sony,imx219.yaml
+  Driver in C in Torvalds's Tree (mainline)
+   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/media/i2c/imx219.c
