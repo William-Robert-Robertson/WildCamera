@@ -43,3 +43,15 @@ https://artofelectronics.net/
 [Embedded Linux](https://bootlin.com/doc/training/embedded-linux/)
 
 [Embedded Linux kernel and driver development training](https://bootlin.com/doc/training/linux-kernel/)
+
+# Older Books - Not Covering MIPI CSI-2 Drivers
+
+Linux Kernel Development, Third Edition\
+Robert Love\
+2010 - reprinted 2024\
+ISBN 978-0-672-32946-3 or 978-81-317-5818-2
+
+Essential Linux Device Drivers, 1st Edition\
+Sreekrishnan Venkateswaran\
+2008\
+ISBN 978-0-132-39655-4
