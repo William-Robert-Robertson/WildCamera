@@ -437,6 +437,11 @@ RZ/G2L-EVKIT
 https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2m-hihope-rzg2m-reference-board
   Not currently available.
 
+Kakip 8GB (Renesas RZ/V2H)
+  https://www.kakip.ai/en/products/renesas-rz-v2h-2gb-4gb-8gb-ram/
+  Kakip, a Single Board Computer equipped with the new generation AI-MPU Renesas RZ/V2H, has AI inference processing performance of up to 80 TOPS with the powerful NPU DRP-AI3 and multi-core capability to run multiple OSs simultaneously. It can be used for the development and integration of various applications including robotics, as it is equipped with many interfaces including a 4-channel camera input.
+  Core MPU: Renesas “RZ/V2H”
+
 Ka-Ro TXRZ based on RENESAS RZ/G2L processor
   https://www.karo-electronics.com/txrz
   MIPI CSI (4-lanes)
