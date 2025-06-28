@@ -75,3 +75,17 @@ https://docs.toradex.com/116791-mallow_carrier_board_datasheet.pdf
 Connector X3 on board layout
 Connector type: 24 Position FFC, FPC, vertical 0.5mm, Wurth 687124182122
 Note: This connector is on the bottom side of the Toradex Mallow board so is shown on the bottom side board layout in Figure 3 on p 11 but not on the photo of the board on p1.
+
+Toradex i.MX 95 Board
+Toradex support confirmed by email that this will use a different camera connector from the Toradex i.MKX 8M Plus boards. (27 June 2025)
+
+ST BrightSense
+https://www.st.com/content/st_com/en/campaigns/st-brightsense-imag-mccmos.html
+P-Board
+https://www.st.com/en/evaluation-tools/steval-cam-m0i.html
+"Use the FFC connector and included flex cable to connect easily to Raspberry Pi, STM32N6, STM32MP2, NVIDIA, etc."
+S-Board
+https://www.st.com/en/evaluation-tools/imaging-evaluation-tools/products.html?icmp=tt39950_gl_lnkon_jul2024&querycriteria=productId=SC627$$1=STEVAL-56G3MAI%7CSTEVAL-66GYMAI%7CSTEVAL-55G0MBI%7CSTEVAL-55G1MBI&aggOrder=0%7C1%7C2%7C3
+In June 2025 there are 5 S-Boards available.
+https://www.st.com/en/evaluation-tools/steval-55g0mbi.html
+"Use the FFC connector and included flex cable to connect easily to Raspberry Pi, STM32N6, STM32MP2, NVIDIA, etc."
