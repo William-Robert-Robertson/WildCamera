@@ -84,8 +84,15 @@ https://www.st.com/content/st_com/en/campaigns/st-brightsense-imag-mccmos.html
 P-Board
 https://www.st.com/en/evaluation-tools/steval-cam-m0i.html
 "Use the FFC connector and included flex cable to connect easily to Raspberry Pi, STM32N6, STM32MP2, NVIDIA, etc."
+https://www.st.com/resource/en/data_brief/steval-cam-m0i.pdf
+"Pinout 22 pins"
+Shows a photo of an S-Board connected directly to an RPi 5
 S-Board
 https://www.st.com/en/evaluation-tools/imaging-evaluation-tools/products.html?icmp=tt39950_gl_lnkon_jul2024&querycriteria=productId=SC627$$1=STEVAL-56G3MAI%7CSTEVAL-66GYMAI%7CSTEVAL-55G0MBI%7CSTEVAL-55G1MBI&aggOrder=0%7C1%7C2%7C3
 In June 2025 there are 5 S-Boards available.
 https://www.st.com/en/evaluation-tools/steval-55g0mbi.html
 "Use the FFC connector and included flex cable to connect easily to Raspberry Pi, STM32N6, STM32MP2, NVIDIA, etc."
+file:///home/will/Downloads/steval-55g0mbi.pdf
+Shows a photo of an S-Board connected directly to an RPi 5
+"Cable pinout 22 pins"
+"Other pinouts (ex: 15 pins) are possible by plugging other off-the-shelf cable adaptors available from various providers."
