@@ -103,3 +103,6 @@ Kabel & Leitungen
 Konfektionierte Kabel
 Expand options
 This doesn't seem to be going anywhere...
+
+# ST BrightSense P-Board and S-Board seem to use a Raspberry Pi 5 (RPi 5) compatible connector - see details in:
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Development%20Board%20Specific%20Components
