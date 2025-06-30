@@ -8,7 +8,7 @@ https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers
 "MIPI Camera CSI" under "Video Capture drivers" in the release notes for the current IMX Linux version 
 https://www.nxp.com/docs/en/release-note/IMX_LINUX_RELEASE_NOTES.pdf 
 lists image sensors.
-For the March 2025 veryion of IMX Linux this reads:
+For the March 2025 version of IMX Linux this reads:
 "Supports 2-lane CSI MIPI camera OV5640 with 720p30, 640x480@30, 320x240@30, 720x480@30, 1080p@30, 2592x1944@15, 176x144@30.
 Supports CSI MIPI camera OV10635 with 1280x800@30, ov10635 max supports 1280x800@30, and ISI does not support upscale, so 1080p, 2592x1944 cannot be supported on i.MX 8QuadMax and 8QuadXPlus.
 Supports 4-lane Basler CSI MIPI cameras AR0821 with 4K@30 with ISP on i.MX8M Plus.
@@ -263,11 +263,14 @@ Coral Environmental Sensor Board
 DEBIX Camera Adapter Board
   EMB-AS-08
   https://debix.io/hardware/camera-adapter-board.html
-  DEBIX Camera 200A Module
+
+  DEBIX Camera 200A Module - GC2145 image sensor
   https://debix.io/hardware/200a-camera.html
-  DEBIX Camera 500A Module
+
+  DEBIX Camera 500A Module - OV5640 image sensor
   https://debix.io/hardware/500a-camera.html
-  DEBIX Camera 1300A Module
+
+  DEBIX Camera 1300A Module - AR1335 image sensor
   https://debix.io/hardware/camera-1300a.html
 
 IDS Imaging - Industrial Camera Modules
