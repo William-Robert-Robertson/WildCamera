@@ -1,6 +1,6 @@
 Candidate Camera Modules and Image Sensors:
 
-List of image sensors with mainline kernel support:
+List of image sensors with mainline kernel support (this is also present in file Image_Sensors):
 (Note that the directory is named "i2c" but this includes MIPI CSI-2 image sensors)
 https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/media/i2c
 https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/tree/drivers/media/i2c?h=next-20250505
