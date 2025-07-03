@@ -21,6 +21,11 @@ Sony IMX 708 Image Sensor used in the Raspberry Pi RPi V3 Camera
   Overlays (in git.uk.IdeasOnBoard.com tree not Torvalds's Tree)
    https://git.uk.ideasonboard.com/camera/dt-overlays/commit/de028032947cad5905cc55865196bef2d24b398f
 
+RidgeRun Driver for Sony IMX708 Image Sensor in RPi V3 Camera Written for NVIDIA
+ https://github.com/RidgeRun/NVIDIA-Jetson-IMX708-RPIV3
+ Detailled article on the above:
+ https://developer.ridgerun.com/wiki/index.php/Raspberry_Pi_Camera_Module_3_IMX708_Linux_driver_for_Jetson
+
 Sony IMX 219 Image Sensor used in the Raspberry Pi RPi V2 Camera
  in RPi Tree
   Overlays
