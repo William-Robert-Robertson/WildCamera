@@ -1,5 +1,7 @@
 ## To generate this file run the following:
 # code --list-extensions | xargs -L 1 echo code --install-extension
+## Full instructions to generate this file and to upload it into a new VSCode instance can be found at:
+# https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list
 
 code --install-extension gitlab.gitlab-workflow
 code --install-extension microhobby.linuxkerneldev
