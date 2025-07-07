@@ -1,0 +1,10 @@
+## To generate this file run the following:
+# code --list-extensions | xargs -L 1 echo code --install-extension
+
+code --install-extension gitlab.gitlab-workflow
+code --install-extension microhobby.linuxkerneldev
+code --install-extension mlinha.yocto-project-dependency-visualizer
+code --install-extension ms-azuretools.vscode-containers
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension yocto-project.yocto-bitbake
