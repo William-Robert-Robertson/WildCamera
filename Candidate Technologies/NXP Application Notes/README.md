@@ -23,7 +23,7 @@ https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/22358
 UG10165: i.MX Porting Guide
 https://www.nxp.com/doc/IMX_PORTING_GUIDE
 
-NXP AN13713: 8MP ISP New Camera Porting
+AN13713: 8MP ISP New Camera Porting
 https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/206209/1/AN13713(8MP%20ISP%20New%20Camera%20Porting).pdf
 
 NXP — wordmark and logo are trademarks of NXP B.V.
