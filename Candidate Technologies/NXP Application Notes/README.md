@@ -26,4 +26,10 @@ https://www.nxp.com/doc/IMX_PORTING_GUIDE
 AN13713: 8MP ISP New Camera Porting
 https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/206209/1/AN13713(8MP%20ISP%20New%20Camera%20Porting).pdf
 
+IMX8MPCDUG_6.6.23_2.0.0 i.MX 8M Plus Camera and Display Guide Rev. LF6.6.23_2.0.0 — 28 June 2024
+https://www.nxp.com.cn/docs/en/user-guide/IMX8MPCDUG.pdf
+
+Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
+[https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
+
 NXP — wordmark and logo are trademarks of NXP B.V.
