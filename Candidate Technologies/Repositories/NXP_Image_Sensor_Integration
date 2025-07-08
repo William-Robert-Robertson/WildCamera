@@ -1,0 +1,10 @@
+NXP Image Sensor Integration
+
+Image Sensor Integration for i.MX 8M Plus chips.
+
+Application Notes and other resources for this are found in:
+
+Candidate Technologies/NXP Application Notes
+
+Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
+[https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
