@@ -1,4 +1,5 @@
-NXP Application Notes
+NXP Application Notes\
+
 All files in this directory are copyright NXP B.V.
 
 AN14104: i.MX 8M Plus Stereo Vision
