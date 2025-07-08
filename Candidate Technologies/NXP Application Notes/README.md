@@ -1,4 +1,4 @@
-NXP Application Notes\
+NXP Application Notes
 
 All files in this directory are copyright NXP B.V.
 
