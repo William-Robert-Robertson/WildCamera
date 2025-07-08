@@ -31,5 +31,6 @@ https://www.nxp.com.cn/docs/en/user-guide/IMX8MPCDUG.pdf
 
 Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
 [https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
+(The above is also listed under Repositories.)
 
 NXP — wordmark and logo are trademarks of NXP B.V.
