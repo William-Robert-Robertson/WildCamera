@@ -1,6 +1,6 @@
 NXP Application Notes
 
-All files in this directory are copyright NXP B.V.
+All files in this directory are copyright NXP B.V. - please see [LICENSE.md](LICENSE.md) for more details.
 
 AN14104: i.MX 8M Plus Stereo Vision
 https://docs.nxp.com/bundle/AN14104/page/topics/introduction.html
