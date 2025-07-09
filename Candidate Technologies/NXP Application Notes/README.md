@@ -2,7 +2,7 @@ NXP Application Notes and USer Guides
 
 All files in this directory are copyright NXP B.V. - please see [LICENSE.md](LICENSE.md) for more details.
 
-These documents provide a snapshot of the NXP application notes and other NXP documents used in WildCamera development - over time more up-to-date versions of these documents and new documents may become available on NXP's website. Some NXP documents are available to all visitors to the NXP website and access to some documents requires a free account to be set up on the NXP website. To access complete NXP documentation, please create a free account here:
+These documents provide a snapshot of the NXP application notes and other NXP documents used in WildCamera development - over time more up-to-date versions of these documents and new documents may become available on NXP's website. Some NXP documents are available to all visitors to the NXP website while access to other documents requires a free account to be set up on the NXP website. To access complete NXP documentation, please create a free account here:
 
 https://www.nxp.com/design/design-center/software/embedded-software/i-mx-software/embedded-linux-for-i-mx-applications-processors:IMXLINUX
 
