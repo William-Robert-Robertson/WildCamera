@@ -1,4 +1,4 @@
-NXP Application Notes
+NXP Application Notes and USer Guides
 
 All files in this directory are copyright NXP B.V. - please see [LICENSE.md](LICENSE.md) for more details.
 
@@ -21,6 +21,11 @@ https://community.nxp.com/t5/i-MX-Processors-Knowledge-Base/i-MX-8-GStreamer-Use
 AN13709: Linux Boot Time Optimizations for i.MX8M Family\
 Rev. 0 — 18 August 2022\
 https://www.nxp.com/docs/en/application-note/AN13709.pdf
+
+UG10165: i.MX Porting Guide\
+Rev. LF6.12.3_1.0.0 — 31 March 2025\
+This covers Kernel and U-Boot porting and debugging as well as as well as chapter 14 Supporting Cameras with CSI.\
+https://www.nxp.com/docs/en/user-guide/UG10165.pdf
 
 UG10215: i.MX 95 Camera Porting Guide\
 Rev. 2.0 — 26 June 2025\
