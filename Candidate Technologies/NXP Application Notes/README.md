@@ -6,6 +6,23 @@ These documents provide a snapshot of the NXP application notes and other NXP do
 
 https://www.nxp.com/design/design-center/software/embedded-software/i-mx-software/embedded-linux-for-i-mx-applications-processors:IMXLINUX
 
+UG10165: i.MX Porting Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+This covers Kernel and U-Boot porting and debugging as well as as well as chapter 14 Supporting Cameras with CSI.\
+https://www.nxp.com/doc/IMX_PORTING_GUIDE
+
+UG10215: i.MX 95 Camera Porting Guide\
+Rev. 2.0 — 26 June 2025\
+https://www.nxp.com/docs/en/user-guide/UG10215.pdf
+
+UG10168 i.MX 8M Plus Camera and Display Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+https://www.nxp.com/docs/en/user-guide/UG10168.pdf
+
+UG10164: i.MX Yocto Project User's Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+https://www.nxp.com/docs/en/user-guide/UG10164.pdf
+
 AN14104: i.MX 8M Plus Stereo Vision\
 Last updated Dec 8, 2023\
 https://docs.nxp.com/bundle/AN14104/page/topics/introduction.html
@@ -22,38 +39,21 @@ AN13709: Linux Boot Time Optimizations for i.MX8M Family\
 Rev. 0 — 18 August 2022\
 https://www.nxp.com/docs/en/application-note/AN13709.pdf
 
-UG10165: i.MX Porting Guide\
-Rev. LF6.12.3_1.0.0 — 31 March 2025\
-This covers Kernel and U-Boot porting and debugging as well as as well as chapter 14 Supporting Cameras with CSI.\
-https://www.nxp.com/docs/en/user-guide/UG10165.pdf
-
-UG10215: i.MX 95 Camera Porting Guide\
-Rev. 2.0 — 26 June 2025\
-https://www.nxp.com/docs/en/user-guide/UG10215.pdf
-
 UM11933: RPi-CAM-MIPI Board User Manual\
 Last updated Jul 4, 2023\
 https://docs.nxp.com/bundle/UM11933/page/topics/rpi-cam-mipi_functional_description.html
-
-UG10168 i.MX 8M Plus Camera and Display Guide\
-Rev. LF6.12.20_2.0.0 — 26 June 2025\
-https://www.nxp.com/docs/en/user-guide/UG10168.pdf
 
 Replaced: IMX8MPCDUG i.MX 8M Plus Camera and Display Guide\
 Replaced: Rev. LF6.6.23_2.0.0 — 28 June 2024\
 Replaced: https://www.nxp.com.cn/docs/en/user-guide/IMX8MPCDUG.pdf
 
-IMX8MPCSPUG: i.MX 8M Plus Camera Sensor Porting User Guide\
-Rev. 1, March 2021\
-https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/223588/1/IMX8MPCSPUG.pdf
-
-UG10165: i.MX Porting Guide\
-Rev. LF6.12.20_2.0.0 — 26 June 2025\
-https://www.nxp.com/doc/IMX_PORTING_GUIDE
-
 AN13713: 8MP ISP New Camera Porting\
 Rev. 0 — 24 August 2022\
 https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/206209/1/AN13713(8MP%20ISP%20New%20Camera%20Porting).pdf
+
+IMX8MPCSPUG: i.MX 8M Plus Camera Sensor Porting User Guide\
+Rev. 1, March 2021\
+https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/223588/1/IMX8MPCSPUG.pdf
 
 UG10166 i.MX Machine Learning User's Guide\
 Rev. LF6.12.20_2.0.0 — 26 June 2025\
@@ -62,10 +62,6 @@ https://www.nxp.com/docs/en/user-guide/UG10166.pdf
 AN14680: Debugging Kernel Space Using GDB and KGDB\
 Last updated May 16, 2025\
 https://docs.nxp.com/bundle/AN14680/page/topics/introduction.html
-
-UG10164: i.MX Yocto Project User's Guide\
-Rev. LF6.12.20_2.0.0 — 26 June 2025\
-https://www.nxp.com/docs/en/user-guide/UG10164.pdf
 
 Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
 [https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
