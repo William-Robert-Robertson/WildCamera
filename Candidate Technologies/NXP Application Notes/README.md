@@ -58,6 +58,10 @@ AN14680: Debugging Kernel Space Using GDB and KGDB\
 Last updated May 16, 2025\
 https://docs.nxp.com/bundle/AN14680/page/topics/introduction.html
 
+UG10164: i.MX Yocto Project User's Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+https://www.nxp.com/docs/en/user-guide/UG10164.pdf
+
 Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
 [https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
 (The above is also listed under Repositories.)
