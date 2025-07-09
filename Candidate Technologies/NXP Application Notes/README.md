@@ -46,6 +46,10 @@ IMX8MPCDUG_6.6.23_2.0.0 i.MX 8M Plus Camera and Display Guide\
 Rev. LF6.6.23_2.0.0 — 28 June 2024\
 https://www.nxp.com.cn/docs/en/user-guide/IMX8MPCDUG.pdf
 
+UG10166 i.MX Machine Learning User's Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+https://www.nxp.com/docs/en/user-guide/UG10166.pdf
+
 Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
 [https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
 (The above is also listed under Repositories.)
