@@ -30,8 +30,8 @@ UM11933: RPi-CAM-MIPI Board User Manual\
 Last updated Jul 4, 2023\
 https://docs.nxp.com/bundle/UM11933/page/topics/rpi-cam-mipi_functional_description.html
 
-UG10168 i.MX 8M Plus Camera and Display Guide
-Rev. LF6.12.20_2.0.0 — 26 June 2025
+UG10168 i.MX 8M Plus Camera and Display Guide\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
 https://www.nxp.com/docs/en/user-guide/UG10168.pdf
 
 Replaced: IMX8MPCDUG i.MX 8M Plus Camera and Display Guide\
