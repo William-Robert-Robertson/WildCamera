@@ -1,4 +1,4 @@
-NXP Application Notes and USer Guides
+NXP Application Notes and User Guides
 
 All files in this directory are copyright NXP B.V. - please see [LICENSE.md](LICENSE.md) for more details.
 
