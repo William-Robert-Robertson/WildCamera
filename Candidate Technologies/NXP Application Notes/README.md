@@ -31,6 +31,10 @@ AN14272: Computer Vision with i.MX MPUs\
 Last updated Feb 18, 2025\
 https://docs.nxp.com/bundle/AN14272/page/topics/introduction.html
 
+AN13712: OS08A20 ISP Sensor on i.MX 8M Plus EVK
+Rev. 3 — 9 October 2024.pdf
+https://www.nxp.com/docs/en/application-note/AN13712.pdf
+
 i.MX 8 GStreamer User Guide\
 Last update: ‎23 September 2020\
 https://community.nxp.com/t5/i-MX-Processors-Knowledge-Base/i-MX-8-GStreamer-User-Guide/ta-p/1098942
@@ -55,9 +59,13 @@ IMX8MPCSPUG: i.MX 8M Plus Camera Sensor Porting User Guide\
 Rev. 1, March 2021\
 https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/223588/1/IMX8MPCSPUG.pdf
 
-UG10166 i.MX Machine Learning User's Guide\
+UG10166: i.MX Machine Learning User's Guide\
 Rev. LF6.12.20_2.0.0 — 26 June 2025\
 https://www.nxp.com/docs/en/user-guide/UG10166.pdf
+
+RM00293: i.MX Linux Reference Manual\
+Rev. LF6.12.20_2.0.0 — 26 June 2025\
+https://www.nxp.com/docs/en/reference-manual/RM00293.pdf
 
 AN14680: Debugging Kernel Space Using GDB and KGDB\
 Last updated May 16, 2025\
