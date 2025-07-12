@@ -6,3 +6,18 @@ https://www.youtube.com/watch?v=Vabq-s62IVM
 Rosahl electric micro-dehumidifiers - Electrolosys Type Micro Dehumidifier
   https://micro-dehumidifier.com/
   Manufactured by Ryosai Techhnica (Mistubishi Electric) in Japan
+
+A data sheet in English for the full rabnge is available here:
+  https://www.ryosai.co.jp/products/catalog/ROSAHL_E_2025_03/data/ROSAHL_E_2025_03.pdf
+
+For ROSAHL PD2 Electric Micro Dehumidifier
+
+  Use a constant voltage 2.9 to 3.3 Volt DC supply which can provide up to 500 mA
+  Because the PD2 takes a high initial inrush current it should have its own independent supply.
+  (It should should not be supplied from the same power supply as logic circuits because of the high initial inrush current and should not be supplied from a constant current supply.)
+
+  Use M12 x 0.5mm nut (M12 with 0.5mm pitch)
+  for example:
+  https://www.digikey.com/en/products/detail/basler-inc/2000035198/13245663
+  https://www2.baslerweb.com/media/downloads/documents/accessories_datasheets/other_accessories/DG00216203000_Tech_Spec_for_SAP_2000035198.pdf
+
