@@ -16,6 +16,8 @@ For ROSAHL PD2 Electric Micro Dehumidifier
   Because the PD2 takes a high initial inrush current it should have its own independent supply.
   (It should should not be supplied from the same power supply as logic circuits because of the high initial inrush current and should not be supplied from a constant current supply.)
 
+  The terminal with the "indication of polarity" spot is the positive terminal.
+
   Use M12 x 0.5mm nut (M12 with 0.5mm pitch)
   for example:
   https://www.digikey.com/en/products/detail/basler-inc/2000035198/13245663
