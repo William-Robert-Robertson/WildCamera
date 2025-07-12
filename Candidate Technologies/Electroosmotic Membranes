@@ -23,3 +23,5 @@ For ROSAHL PD2 Electric Micro Dehumidifier
   https://www.digikey.com/en/products/detail/basler-inc/2000035198/13245663
   https://www2.baslerweb.com/media/downloads/documents/accessories_datasheets/other_accessories/DG00216203000_Tech_Spec_for_SAP_2000035198.pdf
 
+  I noticed that the instructions for the PD2 suggest that care is needed when silicone gasket materials are used which may emit traces of oxime or siloxane gasses and that secondary heat treatment at 200 °c for 6 hours may be needed where these are involved ("Recommended Materials" on page 6 of the data sheet enclosed with the PD2).
+
