@@ -401,6 +401,11 @@ A full list of references to research literature can be found here:
     <img width="33%" src="Images/Glis glis - Stiftung Wildstation Landshut -  IMG_1950.JPG"> 
 </p>
 
+### **Copyright**
+
+© Copyright 2025 Will Robertson
+Licenced under AGPL-3.0-or-later
+
 ### **Note**	
 
 National Geographic have a Crittercam project designing cameras which can be attached to marine animals which is not related to WildCamera.
