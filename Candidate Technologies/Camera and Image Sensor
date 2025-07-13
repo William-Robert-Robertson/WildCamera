@@ -123,8 +123,13 @@ VD56G3 Compact and high-sensitivity 1.5 megapixel monochrome global shutter imag
   "Benefits both visible and NIR imaging (850 nm and 940 nm)."
   "Multiple features to optimize data size and frame rates such as crop, binning, and programmable sequences."
 
+Raspberry Pi Camera Module 3 Sensor Assembly
+Published July 2025
 It looks like ST are mentioning a lot about MIPI CSI-2 in the summary information about their newest image sensors - this seems to suggest the likelihood of a commitment to CSI-2 throughout their ecosystem.
 https://www.st.com/content/st_com/en/campaigns/st-brightsense-imag-mccmos.html
+
+https://datasheets.raspberrypi.com/camera/sensor-assembly-product-brief.pdf
+https://datasheets.raspberrypi.com/camera/camera-module-3-schematics.pdf
 
 Sony Image Sensors
 https://www.sony-semicon.com/en/products/is/index.html
