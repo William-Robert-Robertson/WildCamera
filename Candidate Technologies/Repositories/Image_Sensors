@@ -71,6 +71,19 @@ Soho-Enterprise
   C/CS lens
   STARVIS2
 
+Framos Imaging
+With tanks to Simon Vogl and KocH
+https://framos.com/
+  https://github.com/framosimaging/
+  https://github.com/framosimaging/framos-nxp-drivers
+  https://github.com/framosimaging/meta-imx8mp-framos.git
 
-
+Basler
+www.baslerweb.com
+www.baslerweb.com/en/
+  https://github.com/basler
+Robot Operating System ROS Drivers https://wiki.ros.org/
+ROS-Driver for Basler Cameras
+  https://github.com/basler/pylon-ros-camera
+  https://github.com/magazino/pylon_camera
 
