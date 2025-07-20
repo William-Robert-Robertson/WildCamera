@@ -804,3 +804,6 @@ Spresense Main Board
   https://developer.sony.com/spresense/products/spresense-main-board
   "Camera input Dedicated parallel interface"
 
+Teensy
+  MCUs with integrated analog signal processing units
+  https://www.pjrc.com/teensy/
