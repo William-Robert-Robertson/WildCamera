@@ -71,8 +71,14 @@ AN14680: Debugging Kernel Space Using GDB and KGDB\
 Last updated May 16, 2025\
 https://docs.nxp.com/bundle/AN14680/page/topics/introduction.html
 
+8MP ISP New Camera Porting - AN13713.pdf
+
 Yocto layer enableing IMX219 camera sensor ISP support on IMX8MP evk
 [https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219](https://github.com/nxp-imx-support/meta-imx8mp-isp-imx219)
 (The above is also listed under Repositories.)
+
+AN14376: i.MX Camera Software Pack
+Rev. 2.0 — 28 March 2025
+https://www.nxp.com/docs/en/application-note/AN14376.pdf
 
 NXP — wordmark and logo are trademarks of NXP B.V.
