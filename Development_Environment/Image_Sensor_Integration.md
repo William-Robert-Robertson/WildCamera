@@ -1,12 +1,12 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
-This doscument assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS release would be more appropriate.
+This doscument assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS (Long Term Support) release would be more appropriate.
 
-In order to ensure that all dependencies are clearly documented, we carry out the build in a docker container.
+In order to ensure that all dependencies are clearly documented, we carry out the build in a docker container. Users who prefer to have the option of managing and viewing docker containers via a graphical useer interface instead of the comand line can use portainer.io .
 
 For Docker installed according to Docker's official instructions, docker commands have to be run as sudo.
 
-We use the FISH shell rather than the BASH shell for readability.
+We use the FISH (Friendly Interactive SHell) shell rather than the BASH shell for readability.
 
 ```
 sudo fish
