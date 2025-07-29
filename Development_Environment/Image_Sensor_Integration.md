@@ -49,6 +49,8 @@ ssh debix@imx8mp-debix
 
 uname --kernel-release # Can be shortened to uname -r
 
+# uname --all which can be shortened to uname -a can be used to get complete information on the Linux version
+
 cd /proc/
 
 ls
@@ -56,6 +58,19 @@ ls
 
 ```
 
+In this case, this returns kernel release 6.1.22 so we can search for this in the clone of the Linux repository that we created above on our build machine:
+
 ```
-uname --all # Can be shortened to uname -a
+cd linux-stable/
+git tag -l | grep 6.1.22
+
+git checkout -b imx8mp_6.1.22 v6.1.22 # -b creaes a new branch
+# GIT will create the new branch and switch to it with the message:
+# Switched to a new branch 'imx8mp_6.1.22'
+
+```
+
+
+```
+
 ```
