@@ -18,4 +18,6 @@ export PATH=$PATH:/opt/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-g
 
 # What does the : in the above do?
 
+git clone --depth=1 --branch lf_6.12.3-debix_model_ab https://github.com/debix-tech/linux
+
 ```
