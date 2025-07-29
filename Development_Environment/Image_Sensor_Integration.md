@@ -35,7 +35,7 @@ yocto_build_container_01:latest
 
 The --interactive and --tty options are usually shortened to -it and we'll use this abbreviation in future.
 
-Now, get the entire Linux repository - this will take time and require some disk space so is best done on a machine with a good internet connection and plenty of storage.
+Now, get the entire Linux repository - this will take time and require some disk space (just over 5 GB in July 2025) so is best done on a machine with a good internet connection and plenty of storage.
 
 ```
 cd linux_build/
