@@ -4,24 +4,24 @@ This doscument assumes that you're working from a Linux distribution based on De
 
 For Docker installed according to Docker's official instructions, docker comands have to be run as sudo.
 
-We use the FISH shell rather than BASH for readability.
+We use the FISH shell rather than the BASH shell for readability.
 
-'''
+```
 sudo fish
-'''
+```
 
 List all Docker containers including those which are not working
 
-'''
+```
 docker container ls --all
-'''
+```
 
-'''
+```
 docker volume create peristent_volume_for_yocto
-'''
+```
 
-'''
+```
 docker run yocto_build_container_01:latest --name yocto_build_container_01_instance_04
-'''
+```
 
 
