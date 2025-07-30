@@ -14,7 +14,7 @@ sudo wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-a/
 tar xpf gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
 ## In SH or BASH shells run this
 export PATH=$PATH:/opt/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin
-## The : in the above seperates PATH entries in BASH and SH but causes severe problems in FISH
+## The : in the above separates PATH entries in BASH and SH but causes severe problems in FISH
 ## in FISH shell run this
 PATH="$PATH /opt/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin"
 
