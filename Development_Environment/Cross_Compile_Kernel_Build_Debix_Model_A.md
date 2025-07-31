@@ -1,8 +1,10 @@
 Cross Compile Kernel Build Debix Model A
 
-Based on
+Based on\
 https://github.com/debix-tech/linux-nxp-debix?tab=readme-ov-file#11-cross-compiling-the-kernel
 
+Note - the above may not be the best documentation to follow - try\
+https://github.com/debix-tech/linux-nxp-debix/tree/lf_6.12.3-debix_model_ab?tab=readme-ov-file#1-download-debix-kernel-source-code
 ```
 sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 
