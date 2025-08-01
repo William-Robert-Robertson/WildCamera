@@ -404,7 +404,7 @@ A full list of references to research literature can be found here:
 ### **13. Copyright**
 
 Text Copyright © 2025 Will Robertson
-Texh licenced under AGPL 3.0 or later
+Text licenced under AGPL 3.0 or later
 
 Photography and videography copyright © Stiftung Wildstation Landshut, Goedele Verbeylen and Will Robertson.
 
