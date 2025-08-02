@@ -78,7 +78,7 @@ This uses the Linux kernel source repository that we got into the /linux/ direct
 ```
 sudo apt-get -y install libncurses-dev
 
-cd linux
+cd ~/linux/
 
 zcat /proc/config.gz > .config
 
@@ -141,6 +141,7 @@ Building the modules takes about 5 minutes:
 
 ```
 make modules
+# Completes without errors.
 ```
 
 ```
@@ -156,6 +157,19 @@ Now back to the directory where we
 ```
 cd ~/linux/
 sudo make modules_install
+# Throws this error:
+# debix@imx8mp-debix:~/linux$ sudo make modules_install
+#   DEPMOD  /lib/modules/6.12.3
+# depmod: ERROR: /lib/depmod.d/exclude.conf:1: ignoring bad line starting with 'exclude'
+
+sudo make modules_install -d
+# More but not much help
+
+debix@imx8mp-debix:/$ cat /lib/depmod.d/exclude.conf
+exclude .debug
+debix@imx8mp-debix:/$ 
+
+
+
+
 ```
-
-
