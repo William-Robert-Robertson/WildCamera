@@ -1,8 +1,10 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
-This doscument assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS (Long Term Support) release would be more appropriate.
+#### Cross-Compile Image Sensor Integration
 
-In order to ensure that all dependencies are clearly documented, we carry out the build in a docker container. Users who prefer to have the option of managing and viewing docker containers via a graphical useer interface instead of the comand line can use portainer.io .
+This document assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS (Long Term Support) release would be more appropriate.
+
+In order to ensure that all dependencies are clearly documented, we can carry out the build in a docker container. Users who prefer to have the option of managing and viewing docker containers via a graphical useer interface instead of the comand line can use portainer.io .
 
 For Docker installed according to Docker's official instructions, docker commands have to be run as sudo.
 
@@ -69,8 +71,76 @@ git checkout -b imx8mp_6.1.22 v6.1.22 # -b creaes a new branch
 # Switched to a new branch 'imx8mp_6.1.22'
 
 ```
+#### Local Image Sensor integration
 
+```
+sudo apt-get -y install libncurses-dev
+
+cd linux
+
+zcat /proc/config.gz > .config
+
+# Note that ls does not display .config files - instead ls -all or ls -a for short is needed
+
+make menuconfig
 
 ```
 
+in menuconfig hit / to search
+
+IMX219 is mainline and is found (the RPi V2 camera)
+
+IMX500 is not mainline and is not found.
+
 ```
+ Symbol: VIDEO_IMX219 [=m]                                               │  
+  │ Type  : tristate                                                        │  
+  │ Defined at drivers/media/i2c/Kconfig:150                                │  
+  │   Prompt: Sony IMX219 sensor support                                    │  
+  │   Depends on: MEDIA_SUPPORT [=y] && VIDEO_DEV [=y] && VIDEO_CAMERA_SENS │  
+  │   Location:                                                             │  
+  │     -> Device Drivers                                                   │  
+  │       -> Multimedia support (MEDIA_SUPPORT [=y])                        │  
+  │         -> Media ancillary drivers                                      │  
+  │           -> Camera sensor devices (VIDEO_CAMERA_SENSOR [=y])           │  
+  │ (1)         -> Sony IMX219 sensor support (VIDEO_IMX219 [=m])           │  
+  │ Selects: V4L2_CCI_I2C [=y]              
+```
+
+Hit 1 to add this
+
+M for Module is selcted by default
+
+```
+.config - Linux/arm64 6.12.3 Kernel Configuration
+ > Search (IMX219) > Camera sensor devices ────────────────────────────────────
+  ┌───────────────────────── Camera sensor devices ─────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty │  
+  │  submenus ----).  Highlighted letters are hotkeys.  Pressing <Y>        │  
+  │  includes, <N> excludes, <M> modularizes features.  Press <Esc><Esc> to │  
+  │  exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ]         │  
+  │ ┌────^(-)─────────────────────────────────────────────────────────────┐ │  
+  │ │    < >   Hynix Hi-556 sensor support                                │ │  
+  │ │    < >   Hynix Hi-846 sensor support                                │ │  
+  │ │    < >   Hynix Hi-847 sensor support                                │ │  
+  │ │    < >   Sony IMX208 sensor support                                 │ │  
+  │ │    < >   Sony IMX214 sensor support                                 │ │  
+  │ │    <M>   Sony IMX219 sensor support                                 │ │  
+  │ │    < >   Sony IMX258 sensor support                                 │ │  
+  │ │    < >   Sony IMX274 sensor support                                 │ │  
+  │ │    < >   Sony IMX283 sensor support                                 │ │  
+  │ │    < >   Sony IMX290 sensor support                                 │ │  
+  │ └────v(+)─────────────────────────────────────────────────────────────┘ │  
+  ├─────────────────────────────────────────────────────────────────────────┤  
+  │        <Select>    < Exit >    < Help >    < Save >    < Load >         │  
+  └─────────────────────────────────────────────────────────────────────────┘  
+```
+Building the modules takes about 5 minutes:
+
+```
+make modules
+```
+
+cd /lib
+
+
