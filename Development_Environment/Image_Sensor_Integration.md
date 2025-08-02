@@ -73,6 +73,8 @@ git checkout -b imx8mp_6.1.22 v6.1.22 # -b creaes a new branch
 ```
 #### Local Image Sensor integration
 
+This uses the Linux kernel source repository that we got into the /linux/ directory in https://github.com/William-Robert-Robertson/WildCamera/blob/main/Development_Environment/Native_Kernel_Build_Debix_Model_A.md
+
 ```
 sudo apt-get -y install libncurses-dev
 
@@ -141,6 +143,19 @@ Building the modules takes about 5 minutes:
 make modules
 ```
 
+```
+# Go into the lib directory of the OS (lib is an abbreviation of library)
 cd /lib
+
+# Create a backup of the modules subdirectory
+sudo cp -rp modules modules-original-backup-2-Aug-2025
+
+```
+Now back to the directory where we 
+
+```
+cd ~/linux/
+sudo make modules_install
+```
 
 
