@@ -6,6 +6,7 @@ https://github.com/debix-tech/linux-nxp-debix?tab=readme-ov-file#10-building-the
 Run on 29 July 2025 on a Debix Model A with 2 GB of RAM the final step takes a long time...
 
 ```
+# This can be run from the current user's home directory:
 cd ~
 
 # Run apt update and apt upgrade is these have not been run recently:
