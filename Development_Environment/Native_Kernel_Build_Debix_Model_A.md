@@ -32,7 +32,10 @@ cd linux/
 # cd debix-kernel
 sudo make imx_v8_defconfig
 
+# To run the build process over 4 threads 
 sudo make -j4
+# The maximum numbwer of threads available is double the number of CPU cores so depending on the memory availabe, the build time can usually be optimised using the following (beware though that on systems with insufficient RAM the system may run out of RAM):
+sudo make -j$(nproc)
 sudo make INSTALL_MOD_STRIP=1 modules_install
 sudo cp arch/arm64/boot/dts/freescale/*.dtb /boot/.
 sudo cp arch/arm64/boot/Image /boot/.
