@@ -47,3 +47,5 @@ To keep an eye on CPU, memory and disk usage during a build
 ```
 htop
 ```
+
+During the kernel rebuild the board consumes 0.7 Amps at 5.1 Volts.
