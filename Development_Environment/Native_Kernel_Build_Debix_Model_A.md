@@ -41,3 +41,9 @@ sudo cp arch/arm64/boot/dts/freescale/*.dtb /boot/.
 sudo cp arch/arm64/boot/Image /boot/.
 
 ```
+
+To keep an eye on CPU, memory and disk usage
+
+```
+htop
+```
