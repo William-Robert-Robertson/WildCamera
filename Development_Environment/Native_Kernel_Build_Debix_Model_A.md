@@ -42,7 +42,7 @@ sudo cp arch/arm64/boot/Image /boot/.
 
 ```
 
-To keep an eye on CPU, memory and disk usage
+To keep an eye on CPU, memory and disk usage during a build
 
 ```
 htop
