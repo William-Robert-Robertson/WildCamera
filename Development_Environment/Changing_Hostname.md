@@ -6,7 +6,7 @@ hostnamectl hostname imx8mp-debix-2
 reboot
 ```
 
-nmap Network Mapper can be used to scan networks however note that scanning outside one's locala network is illegal in some countries:
+nmap Network Mapper can be used to scan networks however note that scanning outside one's locaal network is illegal in some countries:
 
 ```
 sudo apt install net-tools
