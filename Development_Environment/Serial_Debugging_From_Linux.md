@@ -9,4 +9,8 @@ On the Linux development machine, search for USB to serial adapters
 ```
 ll /sys/class/tty/ttyUSB*
 ```
+```
+sudo apt install -y minicom
 
+sudo minicom -s --color=on --device /dev/ttyUSB0
+```
