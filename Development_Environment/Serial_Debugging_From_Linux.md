@@ -17,7 +17,7 @@ sudo minicom -s --color=on --device /dev/ttyUSB0
 
 Now restart the Debix board and the sreults should appear in minicom.
 
-To get into the u- boot comand line hit enter within the first second or so of restarting
+To get into the u - boot comand line hit enter within the first second or so of restarting
 
 ```
 Fastboot: Normal                                                                
