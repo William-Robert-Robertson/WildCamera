@@ -6,6 +6,13 @@ https://github.com/debix-tech/linux-nxp-debix?tab=readme-ov-file#10-building-the
 Run on 29 July 2025 on a Debix Model A with 2 GB of RAM the final step takes a long time...
 
 ```
+cd ~
+
+# Run apt update and apt upgrade is these have not been run recently:
+sudo apt update
+sudo apt upgrade
+sudo reboot
+
 sudo apt install -y git bc bison flex libssl-dev make
 
 # This will simply get the current kernel version:
