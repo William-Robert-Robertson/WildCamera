@@ -25,6 +25,8 @@ sudo apt install -y git bc bison flex libssl-dev make
 
 git clone --depth=1 --branch lf_6.12.3-debix_model_ab https://github.com/debix-tech/linux
 
+# this will create the directory named linux and clone the 6.12.3 kernel into it.
+
 cd linux/
 cd debix-kernel
 make imx_v8_defconfig
