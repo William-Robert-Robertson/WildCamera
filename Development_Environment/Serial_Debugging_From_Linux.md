@@ -14,3 +14,5 @@ sudo apt install -y minicom
 
 sudo minicom -s --color=on --device /dev/ttyUSB0
 ```
+
+Now restart the Debix board and the sreults should appear in minicom.
