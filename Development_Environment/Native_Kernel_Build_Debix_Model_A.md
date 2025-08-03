@@ -6,7 +6,7 @@ https://github.com/debix-tech/linux-nxp-debix?tab=readme-ov-file#10-building-the
 Run on 29 July 2025 on a Debix Model A with 2 GB of RAM the final step takes a long time...
 
 ```
-# This can be run from the current user's home directory:
+# This can be run from the default "debix" user's home directory:
 cd ~
 
 # Run apt update and apt upgrade is these have not been run recently:
@@ -28,12 +28,13 @@ git clone --depth=1 --branch lf_6.12.3-debix_model_ab https://github.com/debix-t
 # this will create the directory named linux and clone the 6.12.3 kernel into it.
 
 cd linux/
-cd debix-kernel
-make imx_v8_defconfig
+# On older distributions this directory had a different name
+# cd debix-kernel
+sudo make imx_v8_defconfig
 
-make -j4 
+sudo make -j4
 sudo make INSTALL_MOD_STRIP=1 modules_install
-sudo cp arch/arm64/boot/dts/freescale/*.dtb /boot/. 
+sudo cp arch/arm64/boot/dts/freescale/*.dtb /boot/.
 sudo cp arch/arm64/boot/Image /boot/.
 
 ```
