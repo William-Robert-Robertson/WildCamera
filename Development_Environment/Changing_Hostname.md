@@ -23,8 +23,13 @@ nmap -sP 10.168.0.198/24
 
 # To also scan ports up to 2024 (this takes longer):
 sudo nmap -sS 10.168.0.198/24
+```
+To find the IPV6 address of a machine:
 
 ```
+ip -6 addr
+```
+
 net-tools can also be helpful:
 
 ```
