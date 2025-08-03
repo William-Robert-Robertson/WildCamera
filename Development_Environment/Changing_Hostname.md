@@ -9,15 +9,24 @@ reboot
 nmap Network Mapper can be used to scan networks however note that scanning outside one's local network is illegal in some countries:
 
 ```
-sudo apt install net-tools
+# First, find the IP address of the current machine including the subnet mask
 
-route -n | grep 'UG[ \t]' | awk '{print $2}'
-## This reports the IP of the default gateway.
+ip a # short for ip address
+
+# In one of the network connections this will show up something like
+# 10.168.0.198/24
 
 sudo apt install nmap
 
-nmap -sP 192.168.1.0/24 -F
+# To only ping the IP addresses:
+nmap -sP 10.168.0.198/24
 
-nmap -sP 192.168.1.0/24
+# To also scan ports up to 2024 (this takes longer):
+sudo nmap -sS 10.168.0.198/24
 
+```
+
+
+```
+sudo apt install net-tools
 ```
