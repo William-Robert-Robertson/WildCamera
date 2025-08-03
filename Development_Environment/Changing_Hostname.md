@@ -25,7 +25,7 @@ nmap -sP 10.168.0.198/24
 sudo nmap -sS 10.168.0.198/24
 
 ```
-
+net-tools can also be helpful:
 
 ```
 sudo apt install net-tools
