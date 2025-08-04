@@ -10,9 +10,11 @@ Is the tip clean? Wiping the tip of the soldering iron on a small sponge soaked 
 
 #### Could a glue help?
 
-Different sorts of glue are used frequently in electronic manufacture. For small components, glues are typically used in very tiny quantities and put in place using a very fine syringe applicator so that the glue can hold the component in place but not contaminate the solder pads. Electronic glue manufacturers give summaries of the applications for each sort of glue - the manufacturers favor their own products but many of them provide multiple glue chemistries and so can give a balanced summary of the applications of each and the advantages and disadvantages of each - for example:
+Different sorts of glue are used frequently in electronic manufacture. For hand soldering of small components, glues are typically used in very tiny quantities and put in place using a very fine syringe applicator so that the glue can hold the component in place but not contaminate the solder pads. Electronic glue manufacturers give summaries of the applications for each sort of glue - the manufacturers favor their own products but many of them provide multiple glue chemistries and so can give a balanced summary of the applications of each and the advantages and disadvantages of each - for example:
 
 https://www.anypcba.com/pcb-solutions/the-ultimate-guide-to-pcb-glue-types-applications-best-practices.html
+
+https://www.panacol.com/adhesive-applications/pcb/attaching-components
 
 #### Are fumes a problem?
 
