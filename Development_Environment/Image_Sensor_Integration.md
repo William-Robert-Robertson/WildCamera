@@ -183,6 +183,7 @@ sudo dmesg | tail -n30
 # debix@imx8mp-debix:/$ 
 
 cd ~/linux/arch/arm64/boot/dts/freescale/
+cp imx8mp-debix-core-ov5640.dts mx8mp-debix-core-ov5640-backup-copy-4-August.dts
 
 nano imx8mp-debix-core-ov5640.dts
 
