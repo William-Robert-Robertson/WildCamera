@@ -28,4 +28,10 @@ u-boot=>
 u-boot=>                                                                     
 ```
 
+From the serial debugging console we can check the device tree:
+
+```
+printenv
+```
+
 To exit minicom Ctrl A Q or Ctrl A, Z then X
