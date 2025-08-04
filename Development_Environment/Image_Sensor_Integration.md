@@ -84,7 +84,7 @@ zcat /proc/config.gz > .config
 
 # Note that ls does not display .config files - instead ls -all or ls -a for short is needed
 
-make menuconfig
+sudo make menuconfig
 
 ```
 
@@ -137,19 +137,20 @@ M for Module is selcted by default
   │        <Select>    < Exit >    < Help >    < Save >    < Load >         │  
   └─────────────────────────────────────────────────────────────────────────┘  
 ```
-Building the modules takes about 5 minutes:
+Building the modules takes about 5 to 10 minutes:
 
 ```
-make modules
+sudo make modules
 # Completes without errors.
 ```
 
 ```
-# Go into the lib directory of the OS (lib is an abbreviation of library)
+# Go into the lib directory in the root file system of the OS (lib is an abbreviation of library)
 cd /lib
 
 # Create a backup of the modules subdirectory
 sudo cp -rp modules modules-original-backup-2-Aug-2025
+sudo cp -rp modules modules-original-backup-4-Aug-2025
 
 ```
 Now back to the directory where we 
@@ -157,19 +158,32 @@ Now back to the directory where we
 ```
 cd ~/linux/
 sudo make modules_install
-# Throws this error:
+# Throws this error - when this error occurrs allow sudo make modules_install to continue running - it appears that this error can be ignored:
 # debix@imx8mp-debix:~/linux$ sudo make modules_install
 #   DEPMOD  /lib/modules/6.12.3
 # depmod: ERROR: /lib/depmod.d/exclude.conf:1: ignoring bad line starting with 'exclude'
 
-sudo make modules_install -d
-# More but not much help
+sudo depmod -a
+# Also throuws the above error - allow it to continue running.
 
-debix@imx8mp-debix:/$ cat /lib/depmod.d/exclude.conf
-exclude .debug
-debix@imx8mp-debix:/$ 
+sudo modprobe imx291
+# modprobe: FATAL: Module imx291 not found in directory /lib/modules/6.12.3
 
+sudo lsmod
+# imx219 isn't listed
 
+sudo dmesg | tail -n30
+# No sign of anything related to this
 
+# sudo make modules_install -d
+# More info but not much help
+
+# debix@imx8mp-debix:/$ cat /lib/depmod.d/exclude.conf
+# exclude .debug
+# debix@imx8mp-debix:/$ 
+
+cd ~/linux/arch/arm64/boot/dts/freescale/
+
+nano imx8mp-debix-core-ov5640.dts
 
 ```
