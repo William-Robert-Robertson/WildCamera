@@ -28,7 +28,7 @@ u-boot=>
 u-boot=>                                                                     
 ```
 
-From the serial debugging console we can check the device tree:
+From the u -boot serial debugging console we can check the device tree:
 
 ```
 printenv
