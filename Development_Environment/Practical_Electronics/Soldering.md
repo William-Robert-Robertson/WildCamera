@@ -48,6 +48,14 @@ A pair of small, fine electronic pliers or forceps can be a big help to conduct 
 
 Make sure that the surfaces to be soldered are clean. Small pen-style cleaners with fine glass wool core are perfect for this - if one of these isn't available then a small piece of very fine sandpaper is an option - fine steel wool can be used but this is not recommended because tiny fragments of steel wool can short-circuit delicate electronics. After physical cleaning, a layer of flux in solvent keeps the surface fresh and safe from oxidation.
 
+#### Special Situations
+
+Conventional soldering covers almost all requirements but there are some rare special situations where specialist techniques are required - for example ultrasonic soldering to attach terminals to batteries which would be damaged by heat.
+
+#### Horror stories
+
+There are horror stories from the past about attempts to use plumbing solder or plumbing flux for electronics - this doesn't end well and seldom seems to happen now.
+
 #### Ask for help
 
 I'm usually here to help with things like this 🙂
