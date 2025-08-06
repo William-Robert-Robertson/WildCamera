@@ -3,7 +3,15 @@ In the following fully expanded arguments are used for readability - for example
 ```
 sudo apt install gcc-aarch64-linux-gnu
 
+mkdir ~/simon2
+cd ~/simon2
+git clone https://github.com/svogl/linux-nxp-debix
+cd linux-nxp-debix/
+
+
 # Warning - this over-rides the .config file !
+# Start Menuconfig with defconfig:
+ sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  menuconfig imx_v8_defconfig
 # sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  imx_v8_defconfig -j12
 
 # If - as an alternative to the above - we've taken the .config from an old kernel on the board do this
@@ -12,6 +20,7 @@ sudo apt install gcc-aarch64-linux-gnu
 # Just hit enter for most of them
 # ALWAYS include ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- on every line otherwise wrong architecture can be used!
 sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  oldconfig
+#
 sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  menuconfig
 
 sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  bindeb-pkg -j12
