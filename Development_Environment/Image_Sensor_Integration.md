@@ -103,6 +103,11 @@ cp .config .config_backup_6_August
 ssh debix@imx8mpevk 'zcat /proc/config.gz' > .config
 #
 
+# To monitor resource usage during compilation
+sudo apt install -y htop
+htop
+#
+
 # Note that ls does not display .config files - instead ls -all or ls -a for short is needed
 
 sudo make menuconfig
@@ -111,6 +116,18 @@ In menuconfig hit / to search and add IMX219 then 1 to select and M to add as a 
 
 # Make modules takes some time on NXP Debian with 6.6 kernel so a cross-compile rather than a native build is reccomended:
 sudo make modules
+
+# For cross-compile:
+# sudo make modules # Gives inefficient use of processor cores.
+# To make much more efficient use of processor cores on native compile or cross compile 🙂:
+# To get the number of processor cores :
+echo $(nproc)
+sudo make modules -j$(( $(nproc) * 2 ))
+# Native:
+# The above gives 100 % CPU usage on all 4 cores while consuming up to 1.29 GB of 1.59 GB RAM
+# During CC drivers/extcon/extcon-usb-gpio.o memory usage went up to 1.43 G and the compile appeared to crash but spontaneously started going again.
+# Cross compile
+# The above gives 100 % CPU usage on all 12 cores while consuming up to 9.1 GB of 32 GB RAM
 # Cross compile started at 18:23 hrs on development machine 
 
 # Modules are located in the lib directory in the root file system of the OS (lib is an abbreviation of library)
