@@ -82,7 +82,7 @@ sudo reboot
 
 sudo apt-get -y install libncurses-dev
 
-sudo apt install -y git
+sudo apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 
 mkdir simon
 cd simon
@@ -97,14 +97,21 @@ git checkout lf_6.12.3-debix_model_ab_4w
 
 zcat /proc/config.gz > .config
 
+# For cross compile:
+sudo apt install -y libelf-dev
+cp .config .config_backup_6_August
+ssh debix@imx8mpevk 'zcat /proc/config.gz' > .config
+#
+
 # Note that ls does not display .config files - instead ls -all or ls -a for short is needed
 
 sudo make menuconfig
 
-in menuconfig hit / to search and add IMX219
+In menuconfig hit / to search and add IMX219 then 1 to select and M to add as a Module
 
-# Make modules takes some time on NXP Debian so a cross-compile rather than a native build is reccomended:
+# Make modules takes some time on NXP Debian with 6.6 kernel so a cross-compile rather than a native build is reccomended:
 sudo make modules
+# Cross compile started at 18:23 hrs on development machine 
 
 # Modules are located in the lib directory in the root file system of the OS (lib is an abbreviation of library)
 # Create a backup of the modules subdirectory
