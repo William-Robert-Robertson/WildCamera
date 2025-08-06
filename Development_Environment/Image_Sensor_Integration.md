@@ -71,6 +71,37 @@ git checkout -b imx8mp_6.1.22 v6.1.22 # -b creaes a new branch
 # Switched to a new branch 'imx8mp_6.1.22'
 
 ```
+#### Cross Compile Try 2
+```
+sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
+sudo mkdir /opt/toolchain
+cd /opt/toolchain
+sudo wget https://armkeil.blob.core.windows.net/developer/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
+# sudo is missed out below in the Debix instructions
+sudo tar xpf gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
+export PATH=$PATH:/opt/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin
+
+sudo git clone https://github.com/svogl/linux-nxp-debix
+
+cd linux-nxp-debix/
+
+sudo git branch -a
+
+sudo git checkout lf_6.12.3-debix_model_ab_4w
+
+# A backup of the existing .config isn't required for cross-compile
+# sudo cp .config .config_backup_6_August
+
+sudo scp debix@imx8mpevk:/proc/config.gz .
+sudo gzip -d config.gz
+# Creates a file named "config" not ".config" so rename it
+sudo mv config .config
+sudo make menuconfig
+sudo echo $(nproc)
+sudo make modules -j$(( $(nproc) * 2 ))
+
+```
+
 #### Local Image Sensor integration
 
 Using Debian and working from Simon's Fork:
@@ -100,7 +131,19 @@ zcat /proc/config.gz > .config
 # For cross compile:
 sudo apt install -y libelf-dev
 cp .config .config_backup_6_August
-ssh debix@imx8mpevk 'zcat /proc/config.gz' > .config
+# This is abandonned due to problems:
+# sudo ssh debix@imx8mpevk 'zcat /proc/config.gz' must be run before ssh debix@imx8mpevk 'zcat /proc/config.gz' > .config
+# otherwise permissions error occurrs.
+# sudo ssh debix@imx8mpevk 'zcat /proc/config.gz'
+# sudo ssh debix@imx8mpevk 'zcat /proc/config.gz' > .config
+# Use this instead:
+sudo scp debix@imx8mpevk:/proc/config.gz .
+sudo gzip -d config.gz
+# Creates config file
+sudo mv config .config
+sudo make menuconfig
+sudo echo $(nproc)
+sudo make modules -j$(( $(nproc) * 2 ))
 #
 
 # To monitor resource usage during compilation
@@ -115,7 +158,7 @@ sudo make menuconfig
 In menuconfig hit / to search and add IMX219 then 1 to select and M to add as a Module
 
 # Make modules takes some time on NXP Debian with 6.6 kernel so a cross-compile rather than a native build is reccomended:
-sudo make modules
+# sudo make modules
 
 # For cross-compile:
 # sudo make modules # Gives inefficient use of processor cores.
