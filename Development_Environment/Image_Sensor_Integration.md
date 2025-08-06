@@ -103,7 +103,12 @@ sudo make menuconfig
 
 in menuconfig hit / to search
 
+# make modules takes about 10 minutes
+sudo make modules
 
+# Modules are located in the lib directory in the root file system of the OS (lib is an abbreviation of library)
+# Create a backup of the modules subdirectory
+sudo cp -rp /lib/modules /lib/modules-original-backup-6-Aug-2025
 
 ```
 
@@ -234,11 +239,6 @@ Hit 1 to add this
 
 M for Module is selcted by default
 
-```
-.config - Linux/arm64 6.12.3 Kernel Configuration
- > Search (IMX219) > Camera sensor devices ────────────────────────────────────
-
-```
 Building the modules takes about 5 to 10 minutes:
 
 ```
