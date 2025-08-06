@@ -73,6 +73,27 @@ git checkout -b imx8mp_6.1.22 v6.1.22 # -b creaes a new branch
 ```
 #### Local Image Sensor integration
 
+Using Debian and working from Simon's Fork:
+
+```
+sudo apt update
+sudo apt upgrade
+sudo reboot
+
+mkdir simon
+cd simon
+
+git clone https://github.com/svogl/linux-nxp-debix
+
+cd linux-nxp-debix/
+
+git branch -a
+
+git checkout lf_6.12.3-debix_model_ab_4w
+
+
+```
+
 This uses the Linux kernel source repository that we got into the /linux/ directory in https://github.com/William-Robert-Robertson/WildCamera/blob/main/Development_Environment/Native_Kernel_Build_Debix_Model_A.md
 
 ```
