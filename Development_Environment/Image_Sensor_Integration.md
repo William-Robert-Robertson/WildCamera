@@ -1,5 +1,7 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
+sudo apt install gcc-14-aarch64-linux-gnu
+
 #### Cross-Compile Image Sensor Integration
 
 This document assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS (Long Term Support) release would be more appropriate.
