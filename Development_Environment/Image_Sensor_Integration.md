@@ -168,7 +168,7 @@ echo $(nproc)
 sudo make modules -j$(( $(nproc) * 2 ))
 # Native:
 # The above gives 100 % CPU usage on all 4 cores while consuming up to 1.29 GB of 1.59 GB RAM - occassionally running out of RAM if GNOME is running at the same time so use this instead:
-sudo make modules -j$(( ($(nproc) -1) * 2 ))
+sudo make modules -j$(( ($(nproc) -1) * 2 )) # Makes full use of all 4 CPU cores without running out of RAM.
 # During CC drivers/extcon/extcon-usb-gpio.o memory usage went up to 1.43 G and the compile appeared to crash but spontaneously started going again.
 # Cross compile
 # The above gives 100 % CPU usage on all 12 cores while consuming up to 9.1 GB of 32 GB RAM
@@ -179,6 +179,15 @@ sudo make modules -j$(( ($(nproc) -1) * 2 ))
 sudo cp -rp /lib/modules /lib/modules-original-backup-6-Aug-2025
 
 sudo make modules_install
+
+# The above ends with:
+#  INSTALL /lib/modules/6.12.3/kernel/net/qrtr/qrtr-tun.ko
+#  DEPMOD  /lib/modules/6.12.3
+#  Warning: modules_install: missing 'System.map' file. Skipping depmod.
+
+sudo depmod -a
+
+sudo modprobe imx291
 
 ```
 
