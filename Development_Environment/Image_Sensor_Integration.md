@@ -103,12 +103,14 @@ sudo make menuconfig
 
 in menuconfig hit / to search
 
-# make modules takes about 10 minutes
+# Make modules takes some time on NXP Debian so a cross-compile rather than a native build is reccomended:
 sudo make modules
 
 # Modules are located in the lib directory in the root file system of the OS (lib is an abbreviation of library)
 # Create a backup of the modules subdirectory
 sudo cp -rp /lib/modules /lib/modules-original-backup-6-Aug-2025
+
+sudo make modules_install
 
 ```
 
