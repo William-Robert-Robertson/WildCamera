@@ -1,6 +1,22 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
+```
 sudo apt install gcc-aarch64-linux-gnu
+
+# Warning - this over-rides the .config file !
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  imx_v8_defconfig -j12
+
+# If - as an alternative to the above - we've taken the .config from an old kernel on the board do this
+# n/m/y/? n = no m = module y = yes ?= get help text
+# the option in upper case in the above is the defgault
+# Just hit enter for most of them
+# ALWAYS include ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- on every line otherwise wrong architecture can be used!
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  oldconfig
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  menuconfig
+
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  bindeb-pkg -j12
+
+```
 
 #### Cross-Compile Image Sensor Integration
 
@@ -96,7 +112,7 @@ sudo git checkout lf_6.12.3-debix_model_ab_4w
 
 sudo scp debix@imx8mpevk:/proc/config.gz .
 sudo gzip -d config.gz
-# Creates a file named "config" not ".config" so rename it
+# Creates a file named "config" not ".config" so rename it (this is just the way gzip works)
 sudo mv config .config
 sudo make menuconfig
 sudo echo $(nproc)
