@@ -1,13 +1,36 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
+### 1 am Local build try
+```
+# Start with completely new Debian image:
+mkdir ~/simon2
+cd ~/simon2
+
+sudo apt install gcc-aarch64-linux-gnu
+sudo apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev
+
+git clone https://github.com/svogl/linux-nxp-debix
+
+cd linux-nxp-debix/
+git checkout lf_6.12.3-debix_model_ab_4w
+
+zcat /proc/config.gz > .config
+
+make menuconfig
+
+sudo make modules -j$(( ($(nproc) -1 ) * 2 )) # Makes full use of all 4 CPU cores without running out of RAM.
+```
+
 ```
 sudo apt install gcc-aarch64-linux-gnu
+
+# For local
+sudo apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 
 mkdir ~/simon2
 cd ~/simon2
 git clone https://github.com/svogl/linux-nxp-debix
 cd linux-nxp-debix/
-
 
 # Warning - this over-rides the .config file !
 # Start Menuconfig with defconfig:
@@ -23,8 +46,17 @@ sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  oldconfig
 #
 sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  menuconfig
 
-sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  bindeb-pkg -j12
+# This failed
+# sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  bindeb-pkg -j12
+  LD [M]  drivers/gpu/drm/nouveau/nouveau.o
+  AR      drivers/gpu/built-in.a
+make[3]: *** [Makefile:1825: drivers] Error 2
+make[2]: *** [debian/rules:7: build-arch] Error 2
+dpkg-buildpackage: error: debian/rules binary subprocess returned exit status 2
+make[1]: *** [scripts/Makefile.package:83: bindeb-pkg] Error 2
+make: *** [Makefile:1553: bindeb-pkg] Error 2
 
+sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j12
 ```
 
 ### install
@@ -134,12 +166,14 @@ sudo tar xpf gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
 export PATH=$PATH:/opt/toolchain/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin
 
 sudo git clone https://github.com/svogl/linux-nxp-debix
+git clone https://github.com/svogl/linux-nxp-debix
 
 cd linux-nxp-debix/
 
 sudo git branch -a
 
 sudo git checkout lf_6.12.3-debix_model_ab_4w
+git checkout lf_6.12.3-debix_model_ab_4w
 
 # A backup of the existing .config isn't required for cross-compile
 # sudo cp .config .config_backup_6_August
