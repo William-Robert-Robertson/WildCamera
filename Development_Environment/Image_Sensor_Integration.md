@@ -80,6 +80,10 @@ sudo apt update
 sudo apt upgrade
 sudo reboot
 
+sudo apt-get -y install libncurses-dev
+
+sudo apt install -y git
+
 mkdir simon
 cd simon
 
@@ -91,7 +95,7 @@ git branch -a
 
 git checkout lf_6.12.3-debix_model_ab_4w
 
-
+zcat /proc/config.gz > .config
 ```
 
 This uses the Linux kernel source repository that we got into the /linux/ directory in https://github.com/William-Robert-Robertson/WildCamera/blob/main/Development_Environment/Native_Kernel_Build_Debix_Model_A.md
