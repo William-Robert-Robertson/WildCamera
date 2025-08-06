@@ -96,12 +96,22 @@ git branch -a
 git checkout lf_6.12.3-debix_model_ab_4w
 
 zcat /proc/config.gz > .config
+
+# Note that ls does not display .config files - instead ls -all or ls -a for short is needed
+
+sudo make menuconfig
+
+in menuconfig hit / to search
+
+
+
 ```
 
 This uses the Linux kernel source repository that we got into the /linux/ directory in https://github.com/William-Robert-Robertson/WildCamera/blob/main/Development_Environment/Native_Kernel_Build_Debix_Model_A.md
 
 ```
 sudo apt-get -y install libncurses-dev
+sudo apt install git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 
 cd ~/linux/
 
@@ -111,16 +121,49 @@ zcat /proc/config.gz > .config
 
 sudo make menuconfig
 
-```
-
 in menuconfig hit / to search
 
-IMX219 is mainline and is found (the RPi V2 camera)
+Add IMX219
 
-IMX500 is not mainline and is not found.
-
-```
  Symbol: VIDEO_IMX219 [=m]                                               │  
+  │ Type  : tristate                                                        │  
+  │ Defined at drivers/media/i2c/Kconfig:150                                │  
+  │   Prompt: Sony IMX219 sensor support                                    │  
+  │   Depends on: MEDIA_SUPPORT [=y] && VIDEO_DEV [=y] && VIDEO_CAMERA_SENS │  
+  │   Location:                                                             │  
+  │     -> Device Drivers                                                   │  
+  │       -> Multimedia support (MEDIA_SUPPORT [=y])                        │  
+  │         -> Media ancillary drivers                                      │  
+  │           -> Camera sensor devices (VIDEO_CAMERA_SENSOR [=y])           │  
+  │ (1)         -> Sony IMX219 sensor support (VIDEO_IMX219 [=m])           │  
+  │ Selects: V4L2_CCI_I2C [=y]              
+
+Hit 1 to add this
+
+M for Module is selcted by default
+
+.config - Linux/arm64 6.12.3 Kernel Configuration
+ > Search (IMX219) > Camera sensor devices ────────────────────────────────────
+  ┌───────────────────────── Camera sensor devices ─────────────────────────┐
+  │  Arrow keys navigate the menu.  <Enter> selects submenus ---> (or empty │  
+  │  submenus ----).  Highlighted letters are hotkeys.  Pressing <Y>        │  
+  │  includes, <N> excludes, <M> modularizes features.  Press <Esc><Esc> to │  
+  │  exit, <?> for Help, </> for Search.  Legend: [*] built-in  [ ]         │  
+  │ ┌────^(-)─────────────────────────────────────────────────────────────┐ │  
+  │ │    < >   Hynix Hi-556 sensor support                                │ │  
+  │ │    < >   Hynix Hi-846 sensor support                                │ │  
+  │ │    < >   Hynix Hi-847 sensor support                                │ │  
+  │ │    < >   Sony IMX208 sensor support                                 │ │  
+  │ │    < >   Sony IMX214 sensor support                                 │ │  
+  │ │    <M>   Sony IMX219 sensor support                                 │ │  
+  │ │    < >   Sony IMX258 sensor support                                 │ │  
+  │ │    < >   Sony IMX274 sensor support                                 │ │  
+  │ │    < >   Sony IMX283 sensor support                                 │ │  
+  │ │    < >   Sony IMX290 sensor support                                 │ │  
+  │ └────v(+)─────────────────────────────────────────────────────────────┘ │  
+  ├─────────────────────────────────────────────────────────────────────────┤  
+  │        <Select>    < Exit >    < Help >    < Save >    < Load >         │  
+  └─────────────────────────────────────────────────────────────────────────┘   Symbol: VIDEO_IMX219 [=m]                                               │  
   │ Type  : tristate                                                        │  
   │ Defined at drivers/media/i2c/Kconfig:150                                │  
   │   Prompt: Sony IMX219 sensor support                                    │  
@@ -161,6 +204,40 @@ M for Module is selcted by default
   ├─────────────────────────────────────────────────────────────────────────┤  
   │        <Select>    < Exit >    < Help >    < Save >    < Load >         │  
   └─────────────────────────────────────────────────────────────────────────┘  
+
+sudo make modules
+
+```
+
+in menuconfig hit / to search
+
+IMX219 is mainline and is found (the RPi V2 camera)
+
+IMX500 is not mainline and is not found.
+
+```
+ Symbol: VIDEO_IMX219 [=m]                                               │  
+  │ Type  : tristate                                                        │  
+  │ Defined at drivers/media/i2c/Kconfig:150                                │  
+  │   Prompt: Sony IMX219 sensor support                                    │  
+  │   Depends on: MEDIA_SUPPORT [=y] && VIDEO_DEV [=y] && VIDEO_CAMERA_SENS │  
+  │   Location:                                                             │  
+  │     -> Device Drivers                                                   │  
+  │       -> Multimedia support (MEDIA_SUPPORT [=y])                        │  
+  │         -> Media ancillary drivers                                      │  
+  │           -> Camera sensor devices (VIDEO_CAMERA_SENSOR [=y])           │  
+  │ (1)         -> Sony IMX219 sensor support (VIDEO_IMX219 [=m])           │  
+  │ Selects: V4L2_CCI_I2C [=y]              
+```
+
+Hit 1 to add this
+
+M for Module is selcted by default
+
+```
+.config - Linux/arm64 6.12.3 Kernel Configuration
+ > Search (IMX219) > Camera sensor devices ────────────────────────────────────
+
 ```
 Building the modules takes about 5 to 10 minutes:
 
