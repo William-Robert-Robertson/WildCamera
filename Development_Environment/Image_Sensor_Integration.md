@@ -1,6 +1,6 @@
 In the following fully expanded arguments are used for readability - for example, "--all" instead of "-a".
 
-sudo apt install gcc-14-aarch64-linux-gnu
+sudo apt install gcc-aarch64-linux-gnu
 
 #### Cross-Compile Image Sensor Integration
 
