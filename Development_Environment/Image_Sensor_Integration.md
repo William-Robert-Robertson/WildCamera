@@ -124,7 +124,8 @@ sudo make modules
 echo $(nproc)
 sudo make modules -j$(( $(nproc) * 2 ))
 # Native:
-# The above gives 100 % CPU usage on all 4 cores while consuming up to 1.29 GB of 1.59 GB RAM
+# The above gives 100 % CPU usage on all 4 cores while consuming up to 1.29 GB of 1.59 GB RAM - occassionally running out of RAM if GNOME is running at the same time so use this instead:
+sudo make modules -j$(( ($(nproc) -1) * 2 ))
 # During CC drivers/extcon/extcon-usb-gpio.o memory usage went up to 1.43 G and the compile appeared to crash but spontaneously started going again.
 # Cross compile
 # The above gives 100 % CPU usage on all 12 cores while consuming up to 9.1 GB of 32 GB RAM
