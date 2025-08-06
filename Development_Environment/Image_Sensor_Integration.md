@@ -101,7 +101,7 @@ zcat /proc/config.gz > .config
 
 sudo make menuconfig
 
-in menuconfig hit / to search
+in menuconfig hit / to search and add IMX219
 
 # Make modules takes some time on NXP Debian so a cross-compile rather than a native build is reccomended:
 sudo make modules
