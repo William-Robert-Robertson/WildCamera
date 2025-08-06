@@ -99,6 +99,7 @@ sudo mv config .config
 sudo make menuconfig
 sudo echo $(nproc)
 sudo make modules -j$(( $(nproc) * 2 ))
+sudo make -j$(( $(nproc) * 2 )) ARCH=arm64 CROSS_COMPILE=aarch64-none-linux-gnu-
 
 ```
 
