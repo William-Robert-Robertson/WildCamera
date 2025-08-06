@@ -18,6 +18,31 @@ sudo make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-  bindeb-pkg -j12
 
 ```
 
+### install
+
+```
+# temporary directory for kernel
+mkdir /tmp/armkernel
+
+# modules - puts them into right place under there
+make ARCH=arm64 INSTALL_MOD_PATH=/tmp/armkernel modules_install
+
+# kernel itself - but this time needs /boot added
+mkdir /tmp/armkernel/boot
+make ARCH=arm64 INSTALL_PATH=/tmp/armkernel/boot install
+
+# device tree files, these normally go into even deeper subdirectories
+make ARCH=arm64 INSTALL_DTBS_PATH=/tmp/armkernel/boot dtbs_install
+
+# did everything above without root (as to not break the host system) - fix ownership now
+sudo chown -R root: .
+
+# pack everything up with tar into a single data stream, pass it into ssh, and unpack it on the target system
+tar cv boot lib/modules | ssh debix@imx8mpevk sudo tar xvC /
+```
+
+kernel is now named /boot/vmlinuz-something on the target system, but u-boot actually loads /boot/Image (and also /boot/imx8mp-evk.dtb as devicetree) so Image needs to be overwritten 
+
 #### Cross-Compile Image Sensor Integration
 
 This document assumes that you're working from a Linux distribution based on Debian - setup of the development environment is described in our document INSERT LINK. When writing this document I'm using Ubuntu Linux 6.14 (the current release in July 2025) though for most users the current LTS (Long Term Support) release would be more appropriate.
