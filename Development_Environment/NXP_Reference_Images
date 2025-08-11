@@ -1,0 +1,16 @@
+NXP Reference Images
+
+From here 
+https://www.nxp.com/design/design-center/software/embedded-software/i-mx-software/embedded-linux-for-i-mx-applications-processors:IMXLINUX
+choose the appropriate download for the board:
+i.MX 8M Plus EVK
+
+unzip LF_v6.6.52-2.2.1_images_IMX8MPEVK.zip
+
+cd LF_v6.6.52-2.2.1_images_IMX8MPEVK/
+
+# To show everything:
+lsblk
+
+# THis comand takes a bit of time to run:
+sudo dd if=~/Downloads/LF_v6.6.52-2.2.1_images_IMX8MPEVK/imx-image-full-imx8mpevk.wic of=/dev/sda
