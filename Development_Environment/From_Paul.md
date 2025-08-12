@@ -35,10 +35,13 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules 
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) modules_install dtbs
 # Select the following:
 # > 1. Don't compress debug information (DEBUG_INFO_COMPRESSED_NONE)
-
 ```
 
 The command finished, then I changed .config to have "CONFIG_VIDEO_IMX219=m", run "make ARCH=arm64 oldconfig" and again built the modules.
+
+```
+
+```
 
 Copied drivers/media/v4l2-core/v4l2-cci.ko and drivers/media/i2c/imx219.ko to the target and manually insmod'd them for testing while observing "dmesg -w".
 
