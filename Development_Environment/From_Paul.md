@@ -80,6 +80,8 @@ sudo depmod
 # modprob automatically scans the index for lib/modules/ created by depmod above abd finds dependencies.
 sudo modprobe imx219
 
+# sysfs path for camera - not a command, a directory to look around in
+# /sys/devices/platform/soc@0/30800000.bus/30a30000.i2c/i2c-1/1-0010
 
 ```
 
