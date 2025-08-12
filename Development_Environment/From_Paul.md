@@ -96,6 +96,8 @@ sudo modprobe imx219
 #							nr-link-frequencies = <1>;            /* THIS */
 #							link-frequencies = <0 456000000>;     /* AND THIS */
 
+# u-boot-config still loads imx8mp-evk.dtb, but now using a different one in kernel...
+scp arch/arm64/boot/dts/freescale/imx8mp-debix-core-imx219.dtb debix@imx8mpevk:/boot/imx8mp-evk.dtb
 ```
 
 In general no matter what kernel source was used and what build system was used (be it Debian, OpenEmbedded or Buildroot) if I have information about how any specific image was built I can extract it and reproduce with manual compilation of the kernel to get the same version, compatible modules etc.
