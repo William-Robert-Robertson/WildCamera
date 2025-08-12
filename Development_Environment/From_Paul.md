@@ -31,6 +31,9 @@ Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image mod
 
 ```
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) Image modules
+# Select the following:
+# > 1. Don't compress debug information (DEBUG_INFO_COMPRESSED_NONE)
+
 ```
 
 The command finished, then I changed .config to have "CONFIG_VIDEO_IMX219=m", run "make ARCH=arm64 oldconfig" and again built the modules.
