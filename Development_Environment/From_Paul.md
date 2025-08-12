@@ -87,6 +87,15 @@ sudo modprobe imx219
 #[34721.144764] imx219 1-0010: link-frequency property not found in DT
 # kernel source has, for 2 lanes (other values would be rejected):
 # #define IMX219_DEFAULT_LINK_FREQ        456000000
+
+# missing bit in devicetree:
+#			i2c@30a30000 {
+#				imx219_mipi@10 {
+#					port {
+#						endpoint {
+#							nr-link-frequencies = <1>;            /* THIS */
+#							link-frequencies = <0 456000000>;     /* AND THIS */
+
 ```
 
 In general no matter what kernel source was used and what build system was used (be it Debian, OpenEmbedded or Buildroot) if I have information about how any specific image was built I can extract it and reproduce with manual compilation of the kernel to get the same version, compatible modules etc.
