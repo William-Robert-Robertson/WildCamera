@@ -3,6 +3,19 @@ From Paul Fertser
 
 Judging by /boot/buildinfo , uname -r and quick search on the Internet I decided to try this NXP source: "mkdir linux; cd linux; git init; git fetch --depth=1 https://github.com/nxp-imx/linux-imx refs/tags/lf-6.6.3-1.0.0; git checkout FETCH_HEAD" , of course you can do same thing in many different ways, but you get the idea.
 
+```
+# Run on Ubuntu development machine 12 august 2025
+# uname -a
+# ...6.14.0-27-generic #27~24.04.1-Ubuntu...
+
+mkdir paul;
+cd paul;
+mkdir linux;
+cd linux;
+git init;
+git fetch --depth=1 https://github.com/nxp-imx/linux-imx refs/tags/lf-6.6.3-1.0.0; git checkout FETCH_HEAD
+```
+
 Then I did "zcat config.gz > .config" (and btw, checked that it's identical to /boot/config-6.6.3 from the board)
 
 Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image modules" and it asked me /few/ questions about config (so apparently I wasn't exactly correct in choosing the kernel source and it didn't fully match what was the author of the image using) and I pressed Enter few times to pick defaults.
