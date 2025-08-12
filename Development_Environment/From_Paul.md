@@ -50,6 +50,8 @@ nano .config
 # Change it to:
 CONFIG_VIDEO_IMX219=m
 # Ctrl O, Ctrl X
+
+
 ```
 
 Copied drivers/media/v4l2-core/v4l2-cci.ko and drivers/media/i2c/imx219.ko to the target and manually insmod'd them for testing while observing "dmesg -w".
