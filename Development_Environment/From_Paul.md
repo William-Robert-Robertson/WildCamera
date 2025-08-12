@@ -30,7 +30,7 @@ zcat config.gz > .config
 Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image modules" and it asked me /few/ questions about config (so apparently I wasn't exactly correct in choosing the kernel source and it didn't fully match what was the author of the image using) and I pressed Enter few times to pick defaults.
 
 ```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules modules_install -j$(nproc) Image modules
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules Image modules modules_install -j$(nproc)
 # Select the following:
 # > 1. Don't compress debug information (DEBUG_INFO_COMPRESSED_NONE)
 
