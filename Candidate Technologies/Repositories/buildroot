@@ -1,7 +1,7 @@
 Repositories - buildroot
 
 Dockerfile for buildroot for WildCamera containing current buildroot dependencies:
-https://gitlab.com/openwildlife/linux-build
+# Nologner Valid - Will will replace this link: https://gitlab.com/openwildlife/linux-build
 This was originally based on:
 https://gitlab.com/buildroot.org/buildroot/-/blob/master/support/docker/Dockerfile
 Note that the above was written for testing buildroot and so the list of dependencies was used for the Docker container for buildroot for WildCamera but not other parts of the above file.
