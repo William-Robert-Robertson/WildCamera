@@ -57,6 +57,13 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules 
 
 Copied drivers/media/v4l2-core/v4l2-cci.ko and drivers/media/i2c/imx219.ko to the target and manually insmod'd them for testing while observing "dmesg -w".
 
+```
+# Both these files exist 🙂
+ls drivers/media/v4l2-core/v4l2-cci.ko
+ls drivers/media/i2c/imx219.ko
+
+```
+
 In general no matter what kernel source was used and what build system was used (be it Debian, OpenEmbedded or Buildroot) if I have information about how any specific image was built I can extract it and reproduce with manual compilation of the kernel to get the same version, compatible modules etc.
 
 
