@@ -31,8 +31,11 @@ Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image mod
 
 ```
 # Image with a capital I not a lower case i.
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) Image modules 
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) modules_install dtbs
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) Image 
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) modules
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) dtbs
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) modules_install
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules -j$(nproc) dtbs_install 
 # Select the following:
 # > 1. Don't compress debug information (DEBUG_INFO_COMPRESSED_NONE)
 ```
