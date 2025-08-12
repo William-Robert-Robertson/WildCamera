@@ -52,7 +52,8 @@ CONFIG_VIDEO_IMX219=m
 # Now re-run the above:
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules LOCALVERSION="" -j$(nproc) Image 
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules LOCALVERSION="" -j$(nproc) modules dtbs
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules LOCALVERSION="" -j$(nproc) modules_install dtbs_install 
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules LOCALVERSION="" INSTALL_DTBS_PATH=build-dtbs
+ -j$(nproc) modules_install dtbs_install 
 ```
 
 Copied drivers/media/v4l2-core/v4l2-cci.ko and drivers/media/i2c/imx219.ko to the target and manually insmod'd them for testing while observing "dmesg -w".
