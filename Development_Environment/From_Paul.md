@@ -71,8 +71,16 @@ scp drivers/media/i2c/imx219.ko         debix@imx8mpevk:/tmp/
 
 ssh debix@imx8mpevk
 
-cp /tmp/v4l2-core/v4l2-cci.ko           /lib/modules/6.6.3/updates/
-cp /tmp/media/imx219.ko                 /lib/modules/6.6.3/updates/
+sudo cp /tmp/v4l2-cci.ko               /lib/modules/6.6.3/updates/
+sudo cp /tmp/imx219.ko                 /lib/modules/6.6.3/updates/
+
+# Update the index used by modprobe - important!
+sudo depmod
+
+# modprob automatically scans the index for lib/modules/ created by depmod above abd finds dependencies.
+sudo modprobe imx219
+
+
 ```
 
 In general no matter what kernel source was used and what build system was used (be it Debian, OpenEmbedded or Buildroot) if I have information about how any specific image was built I can extract it and reproduce with manual compilation of the kernel to get the same version, compatible modules etc.
