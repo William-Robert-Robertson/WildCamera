@@ -43,7 +43,13 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- INSTALL_MOD_PATH=build-modules 
 The command finished, then I changed .config to have "CONFIG_VIDEO_IMX219=m", run "make ARCH=arm64 oldconfig" and again built the modules.
 
 ```
-
+nano .config
+# Ctrl W then find CONFIG_VIDEO_IMX219
+# We find this:
+# CONFIG_VIDEO_IMX219 is not set
+# Change it to:
+CONFIG_VIDEO_IMX219=m
+# Ctrl O, Ctrl X
 ```
 
 Copied drivers/media/v4l2-core/v4l2-cci.ko and drivers/media/i2c/imx219.ko to the target and manually insmod'd them for testing while observing "dmesg -w".
