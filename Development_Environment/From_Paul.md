@@ -30,7 +30,7 @@ zcat config.gz > .config
 Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image modules" and it asked me /few/ questions about config (so apparently I wasn't exactly correct in choosing the kernel source and it didn't fully match what was the author of the image using) and I pressed Enter few times to pick defaults.
 
 ```
-make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image modules
+make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j$(nproc) Image modules
 ```
 
 The command finished, then I changed .config to have "CONFIG_VIDEO_IMX219=m", run "make ARCH=arm64 oldconfig" and again built the modules.
