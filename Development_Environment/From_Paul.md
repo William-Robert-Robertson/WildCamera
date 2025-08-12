@@ -18,6 +18,15 @@ git fetch --depth=1 https://github.com/nxp-imx/linux-imx refs/tags/lf-6.6.3-1.0.
 
 Then I did "zcat config.gz > .config" (and btw, checked that it's identical to /boot/config-6.6.3 from the board)
 
+```
+# /proc/config.gz and /boot/config-6.6.3/config.gz should have the same contents.
+# Copy the config.gz file from the Debix Model A board to the build machine then unzip it:
+
+# scp <source> <destination>
+scp debix@imx8mpevk:/proc/config.gz config.gz
+zcat config.gz > .config
+```
+
 Then I run "make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- -j`nproc` Image modules" and it asked me /few/ questions about config (so apparently I wasn't exactly correct in choosing the kernel source and it didn't fully match what was the author of the image using) and I pressed Enter few times to pick defaults.
 
 ```
