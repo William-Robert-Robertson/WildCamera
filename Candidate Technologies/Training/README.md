@@ -44,6 +44,10 @@ https://artofelectronics.net/
 
 [Embedded Linux kernel and driver development training](https://bootlin.com/doc/training/linux-kernel/)
 
+# Integrating a VIO capable MIPI-CSI2 camera on the iMX93
+
+[Integrating a VIO capable MIPI-CSI2 camera on the iMX93](https://www.virtanatech.com/blog/indoor-nano-drones-integrating-a-vio-capable-mipi-csi2-camera-on-the-imx93)
+
 # Older Books - Not Covering MIPI CSI-2 Drivers
 
 Linux Kernel Development, Third Edition\
