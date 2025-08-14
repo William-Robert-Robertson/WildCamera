@@ -17,6 +17,15 @@ Supports 2-lane CSI MIPI camera AP1302+AR0144 with 1080p@45, 1280x800@60, 720P@6
 Supports 4-lane CSI MIPI camera AP1302+AR0144 with 1080p@60, 1280x800@60 on i.MX 95.
 Supports 4-lane CSI MIPI camera OX03C10 + MAX96717/MAX96724 GMSL2 SerDes (4 cameras) with ISP on i.MX 95."
 
+onsemi list almost 300 image sensors in status "Active"
+https://www.onsemi.com/products/sensors/image-sensors
+grabbing one example:
+https://www.onsemi.com/products/sensors/image-sensors/python1300
+in the PDF
+"The following references are available to customers
+under NDA at the onsemi Image Sensor Portal:"
+https://www.onsemi.com/PowerSolutions/myon/erCispFolder.do
+
 OwlSight Ultra-high Resolution Cameras - OV64A40
   https://www.arducam.com/64mp-ov64a40-camera-module/
 
