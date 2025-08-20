@@ -2,3 +2,6 @@ U-Boot
 
 NXP (Freescale) U-Boot
 https://github.com/Freescale/u-boot-fslc
+
+Debix U-Boot (select a recent branch of this)
+https://github.com/debix-tech/uboot-nxp-debix
