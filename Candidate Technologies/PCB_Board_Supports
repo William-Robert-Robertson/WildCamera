@@ -1,5 +1,8 @@
 PCB Board Supports
 
+Debix Model A c. 2.5 mm diameter
+RPi Camera module V2 and V3 c. 2.1 mm
+
 www.digikey.ch
 Product Index
 Hardware, Fasteners, Accessories
@@ -23,3 +26,4 @@ Mounting Hole Diameter
 0.098" (2.50 mm)
 0.100" (2.54 mm)
 
+Note: conrad do not supply board supports narrow enough for the mounting holes in the Debix Model A or RPi Camera Modules.
