@@ -23,6 +23,12 @@ Mastering Linux Device Driver Development by John Madieu\
 8 January 2021\
 ISBN 978-1-78934-204-8
 
+# Scott Chacon and Ben Straub
+Pro Git\
+Scott Chacon and Ben Straub\
+2nd Edition (2014)\
+https://git-scm.com/book/en/v2
+
 # Horowitz and Hill
 
 The Art of Electronics 3rd Edition\
