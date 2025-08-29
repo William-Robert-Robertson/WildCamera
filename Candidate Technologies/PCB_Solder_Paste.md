@@ -1,5 +1,15 @@
 PCB Solder Paste
 
+digikey.ch
+
+Product Index
+Soldering, Desoldering, Rework Products
+Solder
+
+In Stock
+Solder Paste
+Product Status Active
+
 Lead Free No-Clean Solder Paste Sn96.5Ag3Cu0.5 (96.5/3/0.5) Syringe, 0.53 oz (15g), 5cc
 https://www.digikey.ch/en/products/detail/chip-quik-inc/NC191SNL15/11480380
 Fr.10.36000
