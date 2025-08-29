@@ -59,3 +59,5 @@ gives a rule of thumb approach:
 "Loosely couple the positive and negative lines of each lane (for example, Data Line 0 positive; Data Line 0 negative) because the positive and negative lines are differential in HS mode but are single-ended in LP mode. "
 
 https://www.analog.com/en/resources/app-notes/an-1337.html
+
+All files in this directory remain the intellectual property of their authors and are made available under the license terms specified by their authors.
