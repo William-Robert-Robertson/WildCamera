@@ -1,4 +1,10 @@
 
+Texas Instruments High-Speed Interface Layout Guidelines
+https://www.ti.com/lit/an/spraar7j/spraar7j.pdf?ts=1756456220970&ref_url=https%253A%252F%252Fwww.bing.com%252F
+
+Texas Instruments Ethernet PHY PCB Design Layout Checklist
+https://www.ti.com/lit/an/snla387/snla387.pdf?ts=1756454051471&ref_url=https%253A%252F%252Fwww.google.com%252F
+
 Sections
 
 1. Guidelines for MIPI-CSI and MIPI-DSI (RZ/G2L, RZ/G2LC, RZ/G2UL (MIPI-DSI not supported), RZ/V2L, and RZ/A3UL
