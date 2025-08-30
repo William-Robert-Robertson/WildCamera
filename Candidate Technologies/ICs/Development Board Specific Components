@@ -1,5 +1,7 @@
 Development Board Specific Components
 
+MIPI CSI-2 interface has 100 Ω differential impedance and 50 Ω single-ended impedance with estimates of acceptable tolerance varying from 10% to 25% - for details please see directory GHz_PCB_Design_And_Signal_Routing
+
 For Debix Model A SoM I/O Board:
 20 pin/1.25mm Pitch MIPI_CSI plug
 (The DEBIX cameras use a 24 pin/0.5mm Pitch FPC ribbon cable.)
