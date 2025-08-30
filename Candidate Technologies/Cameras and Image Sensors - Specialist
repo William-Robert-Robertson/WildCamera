@@ -3,6 +3,12 @@ Cameras and Image Sensors - Specialist
 Sony STARVIS and STARVIS2
  https://www.sony-semicon.com/en/technology/security/index.html
 
+AMS Osram ams Mira220
+ https://ams-osram.com/products/sensor-solutions/cmos-image-sensors/ams-mira220
+ https://look.ams-osram.com/m/7591efdbe4af32dc/original/Mira220-1-2-7-2-2-MP-NIR-enhanced-global-shutter-image-sensor.pdf
+ "Available in monochrome, RGB and RGBIR variants"
+ Data sheet shows good performance in the IR with a QE of 0.2 at 1000 nm dropping to 0 at 1100 nm
+
 Contact @meawoppl:matrix.org about the following:
 
  HWK4123
