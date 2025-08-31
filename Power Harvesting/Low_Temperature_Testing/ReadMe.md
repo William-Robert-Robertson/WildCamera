@@ -28,3 +28,18 @@ Boot successful
 13:50
 -17.2 °C (Compressor in freezer running.)
 Boot successful
+
+14:01
+-17.4°C
+Boot successful
+
+14:10
+-17.2 °C
+Boot successful
+
+14:19
+-17.1 °C
+Boot successful
+
+Turned down freezer to maximum (lowest temperature).
+
