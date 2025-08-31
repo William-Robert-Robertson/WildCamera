@@ -7,7 +7,8 @@ Debix Model A board with NXP Yocto on SD card placed in the freezer.
 Enclosed in single layer plastic bag sealed with tape.
 Power via USB C port.
 Boot monitored via HDMI screen.
-Criterion for successful boot: Desktop coprrectly displayed.
+Criterion for successful boot: Desktop correctly displayed.
+Power disconnected between boot attempts.
 
 13:14 hrs
 Thermocouple temperature meter battery indicator showing - replace battery.
