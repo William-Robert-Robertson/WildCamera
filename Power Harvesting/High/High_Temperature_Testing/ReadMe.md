@@ -42,7 +42,14 @@ Boot successful
 60.1 °C
 Boot successful
 
-17:38
-54.2 °C
+17:55
+60.2 °C
 Boot successful
 
+17:56
+60.6 °C
+Boot successful
+
+18:00
+59.7 °C
+Boot successful
