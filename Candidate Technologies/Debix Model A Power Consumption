@@ -4,7 +4,7 @@ Debix Model A Getting Started and Power Consumption
 # https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/195119/1/AN13054.pdfn-notes/AN13054.pdf
 # "4.1.1 Suspend mode"
 # "This mode is called either “Dormant mode” or “Deep sleep mode” in the Linux BSP."
-" Total P(mW) 15.14"
+# " Total P(mW) 15.14"
 
 # Follow instructions here:
 # https://debix.io/Document/manual_info/id/9.html
