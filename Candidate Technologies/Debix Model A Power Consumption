@@ -198,6 +198,19 @@ With screen and USB mouse disconnected
 Zero 2 W can go down to about 400 mW with HDMI disabled:
 https://www.cnx-software.com/2021/12/09/raspberry-pi-zero-2-w-power-consumption/
 
+ip l
+ip l set dev ens34 down
+ip l set dev ens33 down
+# The above is short for:
+# ip link set device
+
+systemctl suspend
+
+0.162W
+0.032 A
+4.93 V
+The above measurements taken with I/O board connected only via Ethernet linkers
+
 # The following example data from a solar panel is moved to Power Harvesting / Test Configurations
 # 25 January 2025
 # Zürich
