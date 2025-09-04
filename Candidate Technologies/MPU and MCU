@@ -385,6 +385,9 @@ Toradex
     https://www.toradex.com/de/single-board-computers
   VC MIPI Cameras with GMSL2
     for up to 10 meters of cable length
+  Verdin iMX8M Plus Power Consumption
+    "Suspend mode to RAM" "0.15 W"
+    https://developer.toradex.com/hardware/hardware-resources/power-consumption/verdin-imx8m-plus-power-consumption/
 
 NXP i.MX RT Crossover MCUs
   https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus:IMX-RT-SERIES
