@@ -248,6 +248,17 @@ DEBIX produce Model A, C, S and Infinity SBCs and Model A SoM as of December 202
   75 to 76 mA
 # Please see power consumption measurements for details of power consumption.
   c. 74 CHF for DEBIX Model A https://www.conrad.ch/de/p/okdo-debix-model-a-2-gb-4-x-1-8-ghz-2625844.html
+The Debix Model A uses the following chips:
+  U14A and U14B PCA9450 - NXP Power management for i.MX 8M Plus:
+    "six high efficiency step-down regulators"
+    "5 LDOs"
+    "one 400 mA load switch"
+  U8 and U12 RTL8211E - Realtek Ethernet
+  U38A and U38B RTS5411S - Realtek 4 port USB Hub
+  U32 SPI Flash - Not populated by default
+  U33 USB Type-C - Not populated on Model A - see email on 28 July 2025
+  U13 Keiiot K019 WiFi and Bluetooth
+  U37 ES8316 - Everest Low power audio codec
 
 Very simple app. for libcamera
 https://git.libcamera.org/libcamera/simple-cam.git
