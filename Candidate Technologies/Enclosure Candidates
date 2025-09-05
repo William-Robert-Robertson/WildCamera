@@ -56,7 +56,22 @@ For demonstrations:
   7" Display
     124 mm wide with mounting tabs
     106.5 mm wide without mounting tabs
-    165 mm long plus HDMI and USB Micro B connectors - search for "USB Micro B angle"
+    165 mm long plus HDMI and USB Micro B connectors - search for "USB Micro B angle" and "HDMI angle"
+    200 mm long including HDMI connector...
+
+  To connect HDMI display to SBC:
+  Product Index -> Development Boards, Kits, Programmers -> Accessories
+  HDMI Adapters
+    https://www.digikey.ch/en/products/filter/accessories/783?s=N4IgTCBcDaICIFkCSACAhgEzQBwC4FMAnAZxAF0BfIA
+    HDMI Right Angle Plug
+    https://www.digikey.ch/en/products/detail/adafruit-industries-llc/3549/7623051
+    JHDMI Straight Plug
+    https://www.digikey.ch/en/products/detail/adafruit-industries-llc/3548/7623050
+  Product Index-> Cable Assemblies -> Flat Flex Ribbon Jumpers, Cables
+    HDMI ribon cable
+    e.g. Adafruit Industries LLC CABLE JUMPER 7.87" DigiKey Part Number 1528-2375-ND
+    https://www.digikey.ch/en/products/detail/adafruit-industries-llc/3561/7623063
+    https://www.digikey.ch/en/products/filter/flat-flex-ribbon-jumpers-cables/457?s=N4IgTCBcDaIBIBECyBJABAJwJYCMD2AdmgMYCGOANgKYgC6AvkA
 
   SCABOX Series IP56 ( https://www.scame.com/web/scame-global/g/scabox-series-639169 )
     See answer from Zanotti Daniele at scame.com to cairnwater.com email address on 2024-11-11 13:45
