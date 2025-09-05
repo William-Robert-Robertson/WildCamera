@@ -259,6 +259,10 @@ The Debix Model A uses the following chips:
   U33 USB Type-C - Not populated on Model A - see email on 28 July 2025
   U13 Keiiot K019 WiFi and Bluetooth
   U37 ES8316 - Everest Low power audio codec
+  J801 is marked PWR on silkscreen.
+  K1 is markes "RST" on silkscreen.
+  K2 is marked "ON/OFF" on silkscreen.
+  J1 is SD Card socket
 
 Very simple app. for libcamera
 https://git.libcamera.org/libcamera/simple-cam.git
