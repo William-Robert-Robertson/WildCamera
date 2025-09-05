@@ -286,6 +286,12 @@ Evaluation Kit for the i.MX 8M Plus Applications Processor
 8MPLUSLPD4-EVK
 	https://www.nxp.com/design/design-center/development-boards-and-designs/8MPLUSLPD4-EVK
 
+For reference:
+	https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/195119/1/AN13054.pdfn-notes/AN13054.pdf
+	"4.1.1 Suspend mode"
+	"This mode is called either “Dormant mode” or “Deep sleep mode” in the Linux BSP."
+	"Total P(mW) 15.14"
+
 NXP i.MX 8/RT MIPI DSI/CSI-2 Application Note
   https://www.nxp.com/docs/en/application-note/AN13573.pdf
 
