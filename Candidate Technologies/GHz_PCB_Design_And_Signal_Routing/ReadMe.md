@@ -10,7 +10,7 @@ https://jlcpcb.com/blog/flex-pcb-design-guidelines
 
 ##### PCB Manufacturing & Assembly Capabilities - Flex PCBs
 https://jlcpcb.com/capabilities/flex-pcb-capabilities
-Note that as of September 2025 parameters for flexible PCBs seem to have to be enrered manually 
+Note that as of September 2025 parameters for flexible PCBs seem to have to be entered manually rather than imported automatically.
 
 ##### Export Additional JLC Specific Layers
 "Some boards you have manufactured will require additional layers in your Gerber. For example, when manufacturing flex PCBs with a stiffener, JLC requires a layer outlining the stiffener layer (top/bottom), dimensions and the stiffener material properties (material, thickness etc). Export these additional JLC speciific layers in your production files with a simple modification.
