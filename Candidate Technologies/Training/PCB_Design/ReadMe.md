@@ -1,8 +1,18 @@
-PCB Design Videos
+### PCB Design Videos
 
-Note: For GHz routing please see directory GHz_PCB_Design_And_Signal_Routing
+Note: For GHz routing documents please see directory GHz_PCB_Design_And_Signal_Routing
 
-Build a KiCad Project Schematic | Part 1\
+#### Phil’s Lab
+
+KiCad 6 STM32 PCB Design Full Tutorial - Phil's Lab #65\
+https://www.youtube.com/watch?v=aVUqaB0IMh4
+
+FPGA + PCIe Hardware Accelerator Design Walkthrough (DDR3, M.2, ..) - Phil's Lab #82 - Includes PCIe Routing Guidelines, time matching and impedance matching\
+https://www.youtube.com/watch?v=8bw80LiCl7g
+
+#### HTM Workshop
+
+Build a KiCad Project Schematic | Part 1v
 https://www.youtube.com/watch?v=vLnu21fS22s
 
 KiCad Custom Parts | Part 2\
@@ -25,3 +35,4 @@ https://www.youtube.com/watch?v=iKfWoDcxpL4
 
 KiCad Final Checks and Customization | Part 8\
 https://www.youtube.com/watch?v=AqmRq6QjX6o
+
