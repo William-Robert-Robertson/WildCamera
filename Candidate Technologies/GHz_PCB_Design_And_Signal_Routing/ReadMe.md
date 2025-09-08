@@ -1,6 +1,9 @@
 
 MIPI CSI-2 interface has 100 Ω differential impedance and 50 Ω single-ended impedance with estimates of acceptable tolerance varying from 10% to 25%.
 
+7 Essential Design Guidelines for Flex PCBs
+https://jlcpcb.com/blog/flex-pcb-design-guidelines
+
 Texas Instruments High-Speed Interface Layout Guidelines
 https://www.ti.com/lit/an/spraar7j/spraar7j.pdf?ts=1756456220970&ref_url=https%253A%252F%252Fwww.bing.com%252F
 
