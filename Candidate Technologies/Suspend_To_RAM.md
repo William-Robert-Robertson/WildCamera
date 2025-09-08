@@ -19,9 +19,9 @@ Power (mW) (SBC ORCA)\
 1089 Suspend to RAM\
 https://wiki.dave.eu/index.php/ORCA_SOM/ORCA_Hardware/Electrical_Thermal_and_Mechanical_Features/Operational_characteristics
 
-Phytec
-phyCORE-i.MX 8M Plus Power Consumption
-lists power consumption in all scenarios as "TBD" as of September 2025
+Phytec\
+phyCORE-i.MX 8M Plus Power Consumption\
+lists power consumption in all scenarios as "TBD" as of September 2025\
 https://www.phytec.de/cdocuments/?doc=fAC7E
 
 Phytec documentation includes an important warning:
