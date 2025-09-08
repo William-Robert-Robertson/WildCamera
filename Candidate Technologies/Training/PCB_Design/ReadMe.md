@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=8bw80LiCl7g
 
 #### HTM Workshop
 
-Build a KiCad Project Schematic | Part 1v
+Build a KiCad Project Schematic | Part 1\
 https://www.youtube.com/watch?v=vLnu21fS22s
 
 KiCad Custom Parts | Part 2\
