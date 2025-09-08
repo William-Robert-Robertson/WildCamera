@@ -1,26 +1,32 @@
-GHz PCB Design And Signal Routing
+### GHz PCB Design And Signal Routing
 
 Note: Other resources can be found under: Training/PCB_Design/
 
 MIPI CSI-2 interface has 100 Ω differential impedance and 50 Ω single-ended impedance with estimates of acceptable tolerance varying from 10% to 25%.
 
-7 Essential Design Guidelines for Flex PCBs\
+##### 7 Essential Design Guidelines for Flex PCBs
 Section 7. Validate Thickness and Impedance Requirement provides a useful Target Impedance table\
 https://jlcpcb.com/blog/flex-pcb-design-guidelines
 
-Export Additional JLC Specific Layers\
+##### PCB Manufacturing & Assembly Capabilities - Flex PCBs
+https://jlcpcb.com/capabilities/flex-pcb-capabilities
+Note that as of September 2025 parameters for flexible PCBs seem to have to be enrered manually 
+
+##### Export Additional JLC Specific Layers
 "Some boards you have manufactured will require additional layers in your Gerber. For example, when manufacturing flex PCBs with a stiffener, JLC requires a layer outlining the stiffener layer (top/bottom), dimensions and the stiffener material properties (material, thickness etc). Export these additional JLC speciific layers in your production files with a simple modification.
 Additional layers can be exported by creating layers with JLC_ as the prefix of the layer name. You can access and edit the layer names in Board Setup/Board Stackup/Board Editor Layers
 This tool will automatically export all additional layers with the JLC_ prefix and add them to the production files in GERBER-<projectname>.zip"
 [https://github.com/Bouni/kicad-jlcpcb-tools](https://github.com/Bouni/kicad-jlcpcb-tools?tab=readme-ov-file#export-additional-jlc-specific-layers)
 
-Texas Instruments High-Speed Interface Layout Guidelines\
+##### Texas Instruments High-Speed Interface Layout Guidelines\
 https://www.ti.com/lit/an/spraar7j/spraar7j.pdf?ts=1756456220970&ref_url=https%253A%252F%252Fwww.bing.com%252F
 
-Texas Instruments Ethernet PHY PCB Design Layout Checklist\
+##### Texas Instruments Ethernet PHY PCB Design Layout Checklist\
 https://www.ti.com/lit/an/snla387/snla387.pdf?ts=1756454051471&ref_url=https%253A%252F%252Fwww.google.com%252F
 
-Sections
+##### Renesas PCB Design Guidelines for MIPI-CSI, MIPI-DSI, USB2.0, and PCI Express Gen2
+
+seems to provide detailed guidance on this with diagrams in sections - stating a 20% tolerance.:
 
 1. Guidelines for MIPI-CSI and MIPI-DSI (RZ/G2L, RZ/G2LC, RZ/G2UL (MIPI-DSI not supported), RZ/V2L, and RZ/A3UL
 
@@ -28,17 +34,9 @@ and
 
 1.2 Guidelines for PCB Signal Lines
 
-of
-
-Renesas PCB Design Guidelines for MIPI-CSI, MIPI-DSI, USB2.0, and PCI Express Gen2
-
-seems to provide detailed guidance on this with diagrams:
-
 https://www.renesas.com/en/document/apn/pcb-design-guidelines-mipi-csi-mipi-dsi-usb20-and-pci-express-gen2
 
-the above states a 20% tolerance.
-
-Other documents also suggest that we've got fairly wide tolerance for this:
+##### i.MX 8M Plus Hardware Developer’s Guide
 
 Section
 
@@ -47,31 +45,25 @@ Table 24. Trace impedance recommendations
 
 of
 
-i.MX 8M Plus Hardware Developer’s Guide
-
 states a tolerance of 10% for impedance.
 
 https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/192210/1/IMX8MPHDG%20new.pdf
+
+##### Toradex Carrier Board Design Guide
 
 Section
 
 7.13 Camera Serial Interface (MIPI/CSI-2 with D-PH
 
-of
-
-Toradex Carrier Board Design Guide
-
 states "90Ω ±15% differential; 50Ω ±15% single ended" and specifies maximum skew.
 
 https://docs.toradex.com/102492-layout-design-guide.pdf
 
+##### AN-1337: Design Considerations for Connecting Analog Devices Video Decoders to MIPI CSI-2 Receivers
+
 Section
 
 Layout of MIPI CSI-2 Traces
-
-of this document by AD:
-
-AN-1337: Design Considerations for Connecting Analog Devices Video Decoders to MIPI CSI-2 Receivers
 
 gives a rule of thumb approach:
 
