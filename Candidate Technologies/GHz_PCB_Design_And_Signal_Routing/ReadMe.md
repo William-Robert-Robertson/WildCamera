@@ -1,3 +1,6 @@
+GHz PCB Design And Signal Routing
+
+Note: Other resources can be found under: Training/PCB_Design/
 
 MIPI CSI-2 interface has 100 Ω differential impedance and 50 Ω single-ended impedance with estimates of acceptable tolerance varying from 10% to 25%.
 
