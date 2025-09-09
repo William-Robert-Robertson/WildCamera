@@ -12,17 +12,23 @@ https://jlcpcb.com/blog/flex-pcb-design-guidelines
 https://jlcpcb.com/capabilities/flex-pcb-capabilities
 Note that as of September 2025 parameters for flexible PCBs seem to have to be entered manually rather than imported automatically.
 
+##### Gold Fingers Polyimide(PI) Thickness Calculator
+https://jlcpcb.com/gold-fingers-PI-thickness
+
+##### Gold Fingers
+https://jlcpcb.com/blog/pcb-gold-fingers-why-it-matters
+
 ##### Export Additional JLC Specific Layers
 "Some boards you have manufactured will require additional layers in your Gerber. For example, when manufacturing flex PCBs with a stiffener, JLC requires a layer outlining the stiffener layer (top/bottom), dimensions and the stiffener material properties (material, thickness etc). Export these additional JLC speciific layers in your production files with a simple modification.
 Additional layers can be exported by creating layers with JLC_ as the prefix of the layer name. You can access and edit the layer names in Board Setup/Board Stackup/Board Editor Layers
 This tool will automatically export all additional layers with the JLC_ prefix and add them to the production files in GERBER-<projectname>.zip"
 [https://github.com/Bouni/kicad-jlcpcb-tools](https://github.com/Bouni/kicad-jlcpcb-tools?tab=readme-ov-file#export-additional-jlc-specific-layers)
 
-##### Texas Instruments High-Speed Interface Layout Guidelines\
-https://www.ti.com/lit/an/spraar7j/spraar7j.pdf?ts=1756456220970&ref_url=https%253A%252F%252Fwww.bing.com%252F
+##### Texas Instruments High-Speed Interface Layout Guidelines
+https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
 
-##### Texas Instruments Ethernet PHY PCB Design Layout Checklist\
-https://www.ti.com/lit/an/snla387/snla387.pdf?ts=1756454051471&ref_url=https%253A%252F%252Fwww.google.com%252F
+##### Texas Instruments Ethernet PHY PCB Design Layout Checklist
+https://www.ti.com/lit/an/snla387/snla387.pdf
 
 ##### Renesas PCB Design Guidelines for MIPI-CSI, MIPI-DSI, USB2.0, and PCI Express Gen2
 
