@@ -19,7 +19,7 @@ A stiffner length of 8 mm seems to be normal. 6 mm minimum is specified by some 
 
 For 0.5 mm pitch FFC Width is 0.5(n+1) where n is the number of contacts - the receptacle is 0.1 mm wider than this with +0.1/-0.05 mm tolerence.
 
-0.30 mm +- 0.02 mm total thickness is specified:
+0.30 mm +- 0.02 mm (300 µm +/- 20 µm) total thickness is specified:
 50 µm dielectric + 17.5 µm for 0.5 oz copper gives 67.5 µm
 Yellow/black coverlay adds 50 µm giving 117.5 µm
 
