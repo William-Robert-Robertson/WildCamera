@@ -15,9 +15,9 @@ Note that as of September 2025 parameters for flexible PCBs seem to have to be e
 ##### Gold Fingers Polyimide(PI) Thickness Calculator
 https://jlcpcb.com/gold-fingers-PI-thickness
 
-A stiffner length of 8 mm seems to be normal. 6 mm minimum is specified by some connector manufacturers.\
+A stiffner length of 8 mm seems to be normal. 6 mm minimum is specified by some connector manufacturers.
 
-For 0.5 mm pitch FFC Width is 0.5(n+1) where n is the number of contacts - the receptacle is 0.1 mm wider than this with +0.1/-0.05 mm tolerence.\
+For 0.5 mm pitch FFC Width is 0.5(n+1) where n is the number of contacts - the receptacle is 0.1 mm wider than this with +0.1/-0.05 mm tolerence.
 
 0.30 mm +- 0.02 mm total thickness is specified:
 50 µm dielectric + 17.5 µm for 0.5 oz copper gives 67.5 µm
