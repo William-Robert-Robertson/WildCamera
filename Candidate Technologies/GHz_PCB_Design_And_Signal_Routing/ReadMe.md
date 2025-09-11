@@ -38,6 +38,8 @@ For 0.5 mm pitch FFC Width is 0.5(n+1) where n is the number of contacts - the r
 ~35 µm
 1.4 mils
 
+For flexible PCB PI (polyimide) gives more predicatble properties than PET.
+
 ##### Gold Fingers
 https://jlcpcb.com/blog/pcb-gold-fingers-why-it-matters
 
