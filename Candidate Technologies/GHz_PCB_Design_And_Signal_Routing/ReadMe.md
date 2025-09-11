@@ -23,16 +23,20 @@ For 0.5 mm pitch FFC Width is 0.5(n+1) where n is the number of contacts - the r
 50 µm dielectric + \
 17.5 µm for 0.5 oz copper gives  \
 67.5 µm \
-50 µm Yellow/black coverlay adds giving \
+50 µm Yellow/black coverlay gives \
 117.5 µm
 => 2.5 mm stiffener
 
 25 µm dielectric + \
 11.5 µm for 0.33 oz copper gives  \
 36.5 µm \
-50 µm Yellow/black coverlay adds giving \
+50 µm Yellow/black coverlay gives \
 76.5 µm
 => 2.5 mm stiffener
+
+1 oz copper
+~35 µm
+1.4 mils
 
 ##### Gold Fingers
 https://jlcpcb.com/blog/pcb-gold-fingers-why-it-matters
