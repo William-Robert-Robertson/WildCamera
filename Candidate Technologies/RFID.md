@@ -4,7 +4,7 @@ An Arduino-Based RFID Platform for Animal Research \
 https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2019.00257/full
 https://osf.io/9j7ax/
 
-Generation 3 RFID reader THE HELPFUL FRIENDLY MANUAL By Eli Bridge and Jay Wilhelm
+Generation 3 RFID reader THE HELPFUL FRIENDLY MANUAL By Eli Bridge and Jay Wilhelm \
 https://osf.io/jn4hr
 
 Uses \
