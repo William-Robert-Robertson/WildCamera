@@ -10,5 +10,6 @@ https://osf.io/jn4hr
 Uses \
 EM4095 RFID Transponder \
 https://www.emmicroelectronic.com/product/rf-reader-ics/em4095
-
+https://www.emmicroelectronic.com/sites/default/files/products/datasheets/em4095_ds.pdf
+https://www.emmicroelectronic.com/sites/default/files/products/datasheets/an404.pdf
 https://github.com/libdriver/em4095/
