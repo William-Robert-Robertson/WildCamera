@@ -5,7 +5,7 @@
 ## Planning phase
 
 <img align="right" width="400" src="Images/Will 20240827_142415 Rotation Corrected.jpeg" alt="Will Robertson"/>
-
+upwards depending on load
 ### **1. Requirements Analysis**
 
 - **Why:**
@@ -48,7 +48,7 @@
 	- **Separate Modules** in separate boxes connected by flexible cables or in one box
 		- **Camera** small with complete freedom of positioning
 		- **PIR** multiple PIR (Passive Infra Red) sensors can be mounted some distance away - wide choice of high sensitivity, wide angle, etc.
-		- **AIR** multiple AIR (Active Infr Red) sensors in addition to or instead of PIR where needed
+		- **AIR** multiple AIR (Active Infra Red) sensors in addition to or instead of PIR where needed
 		- **Processor** larger than camera, may have optional hardware modules added
 		- **Battery** likely the largest module - may be some distance from processor and camera
 		- **Solar Panel(s)** may be mounted some distance from battery and processor to gather light
@@ -68,7 +68,7 @@
 		- **Fixed** via user interface
 		- **Autofocus** via a choice of algorithms
 	- **Daytime** Combined Red, Green, Blue and NIR (Near Infra Red)
-	- **Nighttime** High sensitivity grey and NIR (Near Infra Red)
+	- **Nighttime** High sensitivity monochrome and NIR (Near Infra Red)
 - **Processor**
 	- **High Quality, High Flexibility**
 		- **Image Quality** High
@@ -136,7 +136,7 @@
 - **Data Communication** Wi-Fi (preferred) or Bluetooth for video, photo and data download to a laptop within range.
 - **Wakeup Communication** Low power protocol e.g. Matter IoT, Bluetooth LE, Zigbee or sub-1GHz IEEE 802.15.4 to send wake-up signal to waken up WiFi above.
 - **Power Supply** solar panel(s), external power source.
-- **Battery** Li or LiFePO4 for high temperatures, PbA for lower temperatures.
+- **Battery** Li-Ion for moderate temperatures, LiFePO4 provides power down to -20 °C and can be charged down to 0 °C, PbA for lower temperatures.
 
 ---
 
@@ -234,8 +234,8 @@
 - **Energy Harvesting Tests** With a solar panel in real world conditions.	
 - **Waterproofing Tests** Test waterproof enclosures outdoors.
 - **High Quality, High Flexibility**
-	- **Power Consumption Tests** Measure power consumption in suspend-to-ram
-	- **Wakeup Time Tests** Measure time to wake from suspend-to-ram
+	- **Power Consumption Tests** Measure power consumption in suspend-to-RAM
+	- **Wakeup Time Tests** Measure time to wake from suspend-to-RAM
 - **Low Power**
 	- **Power Consumption Tests** Measure power consumption in running and dormant states
 	- **Wakeup Time Tests** Measure time to wake from dormant state
@@ -255,7 +255,7 @@
 	- **Solar Panels** the size and efficiency of the solar panels selected
 	- **Shade** whether the solar panels are shaded for part or all of the day
 	- **Battery Size** the size of the battery selected
-	- **Battery Chemistry** Lithium (Li) batteries have higher energy density than lead acid (PbA) batteries but lithium batteries cannot be used in cold conditions.
+	- **Battery Chemistry** Lithium (Li) batteries have higher energy density than lead acid (PbA) batteries but lithium ion batteries cannot be used in cold conditions.
 	- **Frequency of Activation** the more often the camera is activated, the higher the power consumption
 	- **Intensity of LED Illumination** using more NIR (Near Infra Red) illumination in low light levels or at night increases power consumption
 		- **Image Sensor Used** selecting a specialist low noise, high sensitivity image sensor for night time use may increase the cost of the image sensor but reduces the need for power for NIR (Near Infra Red) LED illumination
@@ -329,6 +329,7 @@ Debix Model A SBC (2GB LPDDR4)
 
 - **Sleep Mode** 0.17 ~ 0.310 W
 - **Active** 1.49 W upwards depending on load
+- **Neural Network Inference** c. 4 W on live video
 
 - Specifications (Debix Model A (2GB LPDDR4+16GB eMMC)):
 
