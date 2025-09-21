@@ -211,6 +211,10 @@ systemctl suspend
 4.93 V
 The above measurements taken with I/O board connected only via Ethernet linkers
 
+Neural network inference on live video
+
+c. 4 Watts
+
 # The following example data from a solar panel is moved to Power Harvesting / Test Configurations
 # 25 January 2025
 # Zürich
