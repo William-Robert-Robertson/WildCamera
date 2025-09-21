@@ -26,6 +26,7 @@
 		- **PIR sensors** work well for mammals but do not work at all for reptiles or insects
 		- **Availability** preferred makes and models may not be available in the future
 		- **Dated technology** large amounts of proprietary firmware and electronics and limited competition make commercial wildlife camera manufacturers slow to adopt new technologies and unable to catch up with rapidly advancing and highly competitive image sensor and processor technology
+		- **Limited file system** typically limited to 64 GB which fills up rapidly with uncompressed video
 		- **Technical data** is often sales focused, omitting important information or known limitations
 
 - **Objectives:**
