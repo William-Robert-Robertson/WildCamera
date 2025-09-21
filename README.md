@@ -5,7 +5,7 @@
 ## Planning phase
 
 <img align="right" width="400" src="Images/Will 20240827_142415 Rotation Corrected.jpeg" alt="Will Robertson"/>
-upwards depending on load
+
 ### **1. Requirements Analysis**
 
 - **Why:**
@@ -329,7 +329,7 @@ Debix Model A SBC (2GB LPDDR4)
 
 - **Sleep Mode** 0.17 ~ 0.310 W
 - **Active** 1.49 W upwards depending on load
-- **Neural Network Inference** c. 4 W on live video
+- **Neural Network Inference** c. 4 W for neural network inference on live video
 
 - Specifications (Debix Model A (2GB LPDDR4+16GB eMMC)):
 
