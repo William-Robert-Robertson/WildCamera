@@ -27,7 +27,8 @@
 		- **Availability** preferred makes and models may not be available in the future
 		- **Dated technology** large amounts of proprietary firmware and electronics and limited competition make commercial wildlife camera manufacturers slow to adopt new technologies and unable to catch up with rapidly advancing and highly competitive image sensor and processor technology
 		- **Limited file system** typically limited to 64 GB which fills up rapidly with uncompressed video
-		- **Technical data** is often sales focused, omitting important information or known limitations
+		- **Technical data** is often sales
+  - -focused, omitting important information or known limitations
 
 - **Objectives:**
 	- **Video** from animals nearby and at a distance via a flexible choice of image sensors and optics
