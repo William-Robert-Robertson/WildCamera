@@ -39,10 +39,10 @@
 	- **Robustness** through high quality watertight enclosures
 	- **Re-Use** of 2nd hand photovoltaic modules (solar panels) and rechargable batteries
 	- **High Quality and Exceptional Value** through drive for excellence amongst image sensor manufacturers
-	- **Exceptional Capabilities, Flexibility and Value** through drive for excellence amongst processor manufacturers serving foast-growing industrial automation markets
+	- **Exceptional Capabilities, Flexibility and Value** through drive for excellence amongst processor manufacturers serving fast-growing industrial automation markets
 	- **Independence in the Field** via data download within WiFi range, solar power and optional LTE (mobile network) and sub-GHz
 	- **Open Source** users can freely build and use the system and add open source functionality to make available to others
-	- **Hardware Independence** to allow rapid adoption of leading-edge hardware from leading manufacturers - achieveing optimum value for money and eliminating risk of proprietary tie-in
+	- **Hardware Independence** to allow rapid adoption of leading-edge hardware from leading manufacturers - acheiveing optimum value for money and eliminating risk of proprietary tie-in
 	- **Reproducible** researchers can share and precisely reproduce each other's setup
 	- **Future Proof** designed to be widely available in the long term
 	- **Agile** Designed to take advantage of future advances in hardware and software
@@ -258,7 +258,7 @@
 - **How long can WildCamera power itself independently?** In practice this depends on:
 	- **Solar Panels** the size and efficiency of the solar panels selected
 	- **Shade** whether the solar panels are shaded for part or all of the day
-	- **Cleaning** solar pannels perform best when dust is removed every few months
+	- **Cleaning** solar panels perform best when dust is removed every few months
 	- **Battery Size** the size of the battery selected
 	- **Battery Chemistry** 
 		- **Li-Ion** (Lithium Ion) highest energy density but can not be used in cold conditions
