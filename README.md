@@ -144,13 +144,13 @@
 
 ### **4. Optional Add-On Modules**
 
+- **RFID (PIT)** to read ID from tagged animals
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
 - **Ambient Light Sensor**
 - **Microphone**
 - **Ultrasonic Microphone**
 - **Heterodyne Detector** To shift ultrasonic bat calls to the audible range before recording
-- **RFID** to read ID from tagged animals
 - **ePaper Screen** displaying system status
 - **Touchscreen**
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
