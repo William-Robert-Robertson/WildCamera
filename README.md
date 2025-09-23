@@ -16,19 +16,20 @@
 		- **Too slow** for fast moving animals
 		- **Limited ability to focus nearby** resulting in poor image quality for small animals
 		- **Limited optics** can only be changed by sticking extra lenses onto the existing optics with resulting decline in image quality or by time-consuming dismantling, removal of glue, adjustment and rebuilding
-  		- **Limited image quality** particularly at night
-  		- **Batteries** are often primary cells with no possibility to recharge 
+  		- **Batteries** are often primary cells - rechargeable batteries need changed for charging frequently (e.g. weekly)
 		- **Lack of flexibility** adding new features is extremely difficult or impossible, users have no access to electronic or software design
 		- **Reproducibility** because of differences in reliability is is difficult to compare studies carried out with different makes and models of cameras
 		- **Waterproofing** is often inadequate for reliable long term use in damp environments
 		- **High cost** is a major barrier to research but manufacturers are driven by maximising profits
 		- **Expensive proprietary tie-in** for example to specific mobile networks - increasing long-term costs
-		- **PIR sensors** work for large mammals but do not work at all for reptiles or insects
+		- **PIR sensors** work for large mammals but reliability is an issue for small mammals, reptiles or insects
 		- **Availability** preferred makes and models may not be available in the future
 		- **Dated technology** large amounts of proprietary firmware and electronics and limited competition make commercial wildlife camera manufacturers slow to adopt new technologies and unable to catch up with rapidly advancing and highly competitive image sensor and processor technology
+		- **Inability to differentiate** between animals and branches moving in the wind resulting in storage of large volumes of irrelevant video
 		- **Limited file system** typically limited to 64 GB which fills up rapidly with uncompressed video
 		- **Technical data** is often sales-focused, omitting important information or known limitations
-
+  		- **Image quality** varies between models and day/night
+		
 - **Objectives:**
 	- **Video** from animals nearby and at a distance via a flexible choice of image sensors and optics
 	- **Activation** via a flexible choice of activation sensors (PIRs, always-on camera, etc.)
@@ -144,7 +145,7 @@
 ### **4. Optional Add-On Modules**
 
 - **RFID / PIT** to read ID from tagged animals
-- **LASER Spot Allignment** to make the system quicker and easier to allign and set up
+- **LASER Spot Alignment** to make the system quicker and easier to allign in the trees
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
