@@ -33,24 +33,24 @@
 - **Objectives:**
 	- **Video** from animals nearby and at a distance via a flexible choice of image sensors and optics
 	- **Activation** via a flexible choice of activation sensors (PIRs, always-on camera, etc.)
-	- **Data Capture** from a range of optional sensors
+	- **Data Capture** from a range of optional add-on sensors
 	- **Power Management** via an active mode and a low power sleep mode
 	- **Power Supply** from a flexible choice of solar panels, battery chemistries and other supplies
 	- **Robustness** through high quality watertight enclosures
 	- **Re-Use** of 2nd hand photovoltaic modules (solar panels) and rechargable batteries
-	- **Low Cost and High Quality** through intense competition between image sensor manufacturers
-	- **Low Cost and Exceptional Capabilities and Flexibility** through intense competition between processor manufacturers
+	- **High Quality and Exceptional Value** through drive for excellence amongst image sensor manufacturers
+	- **Exceptional Capabilities, Flexibility and Value** through drive for excellence amongst processor manufacturers serving foast-growing industrial automation markets
 	- **Independence in the Field** via data download within WiFi range, solar power and optional LTE (mobile network) and sub-GHz
 	- **Open Source** users can freely build and use the system and add open source functionality to make available to others
-	- **Hardware Independence** can be chosen from multiple leading manufacturers to achieve optimum value for money and eliminate risk of proprietary tie-in and price gouging
+	- **Hardware Independence** to allow rapid adoption of leading-edge hardware from leading manufacturers - achieveing optimum value for money and eliminating risk of proprietary tie-in
 	- **Reproducible** researchers can share and precisely reproduce each other's setup
 	- **Future Proof** designed to be widely available in the long term
 	- **Agile** Designed to take advantage of future advances in hardware and software
 	- **Optional Add-On Modules** to add additional functionality
 	- **Separate Modules** in separate boxes connected by flexible cables or in one box
 		- **Camera** small with complete freedom of positioning
-		- **PIR** multiple PIR (Passive Infra Red) sensors can be mounted some distance away - wide choice of high sensitivity, wide angle, etc.
-		- **AIR** multiple AIR (Active Infra Red) sensors in addition to or instead of PIR where needed
+		- **PIR** multiple PIR (Passive Infra Red) sensors can be mounted some distance away if needed - wide choice of high sensitivity, wide angle, etc.
+		- **AIR** multiple AIR (Active Infra Red) sensors if needed in addition to or instead of PIR where needed
 		- **Processor** larger than camera, may have optional hardware modules added
 		- **Battery** likely the largest module - may be some distance from processor and camera
 		- **Solar Panel(s)** may be mounted some distance from battery and processor to gather light
@@ -70,21 +70,21 @@
 		- **Fixed** via user interface
 		- **Autofocus** via a choice of algorithms
 	- **Daytime** Combined Red, Green, Blue and NIR (Near Infra Red)
-	- **Nighttime** High sensitivity monochrome and NIR (Near Infra Red)
-- **Processor**
+	- **Nighttime** High sensitivity monochrome and IR (Infra Red)
+- **Processor Options**
 	- **High Quality, High Flexibility**
 		- **Image Quality** High
-		- **Choice of Processor** Very wide
+		- **Choice of Processor** Wide
 		- **Choice of Camera Modules** Wide
 		- **Solar Panel and Battery** Larger
-		- **Firmware** Full flexibility of Linux or Android operating system, libcarmera, Python, Rust, .Net, C++, etc.
+		- **Firmware** Full flexibility of Linux operating system, v4l2, libcarmera, Python, Rust, .Net, C++, etc.
 		- **Dependency** Minimal dependencies between software and hardware
 	- **Low Power**
-		- **Image Quality** Limited
+		- **Image Quality** Limited but sufficient
 		- **Choice of Processor** More limited
 		- **Choice of Camera Modules** More limited
 		- **Solar Panel and Battery** Smaller
-		- **Firmware** More limited, C, C++, MicroPython
+		- **Firmware** FreeRTOS, bare metal, C, C++, MicroPython
 		- **Dependency** More dependencies between software and hardware
 - **AI**
  	- Built-in NPUs (Neural Processing Units) allow neural networks to be efficiently implemented on the camera
@@ -147,6 +147,7 @@
 - **RFID / PIT** to read ID from tagged animals
 - **LASER Spot Alignment** to make the system quicker and easier to allign in the trees
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
+- **Thermal Imaging** image sensors extending further into the IR (Infra Red)
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
 - **Ambient Light Sensor**
