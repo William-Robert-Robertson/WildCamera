@@ -102,29 +102,30 @@
 
 - **Candidate Processors**
 	- **High Quality, High Flexibility**
-		- **Supported by libcamera** 
-			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
-			- **NXP i.MX95** Pre-production: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
-			- **ST STM32MP2 Series** On ST roadmap. CSI-2 #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
-			- **Raspberry Pi 4 (RPi 4) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
-			- **Raspberry Pi 5 (RPi 5) SBCs** Lack of hardware video encoder, high power consumption and lack of low power sleep mode are a very significant problem.
-			- **Raspberry Pi Zero 2 (RPi Zero 2)** Power consumption, lack of sleep mode and speed of video encoder (19 FPS for 1080p) are a problem but may be worth testing.
-			- **Raspberry Pi Zero (RPi Zero)** Video encoder is too slow (1.2 FPS 1080p).
-			- Chips Integrating **Mali-C55 ISP**
-				- **Renesas RZ/V2H** Mali-C55 ISPC
-			- Chips Integrating **Mali C52 ISP**
-   				- Possibly in the longer therm
-			- Chips Integrating **Amlogic C3 ISP**
-   				- Currently in development by Amlogic
+		- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
+		- **NXP i.MX95** Pre-production: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
+		- **ST STM32MP2 Series** On ST roadmap. CSI-2 #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
+		- **Raspberry Pi 4 (RPi 4) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
+		- **Raspberry Pi 5 (RPi 5) SBCs** Lack of hardware video encoder, high power consumption and lack of low power sleep mode are a very significant problem.
+		- **Raspberry Pi Zero 2 (RPi Zero 2)** Power consumption, lack of sleep mode and speed of video encoder (19 FPS for 1080p) are a problem but may be worth testing.
+		- **Raspberry Pi Zero (RPi Zero)** Video encoder is too slow (1.2 FPS 1080p).
+		- Chips Integrating **Mali-C55 ISP**
+			- **Renesas RZ/V2H** Mali-C55 ISPC
+		- Chips Integrating **Mali C52 ISP**
+   			- Possibly in the longer therm
+		- Chips Integrating **Amlogic C3 ISP**
+   			- Currently in development by Amlogic
 	- **Low Power**
-		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware
+		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware video encoder
 		- **NXP S32V2** Embedded ISP for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
 
 <video controls src="https://github.com/user-attachments/assets/248f8eea-008a-45c1-bc7c-6e400344eacd" alt="Eliomys quercinus © Goedele Verbeylen"></video>
 
 - **Candidate Cameras and Image Sensors**
-	- **Sony** PRi Camera Module 3 IMX708 or RPi High Quality Camera IMX477
-	- **ST BrightSense RGB and NIR** e.g. VD1940 5.1 Mpixel, VB1740 2.7 Mpixel, etc.
+	- **Sony** PRi Camera Module 3 IMX708, Soho Enterprise Camera Modules or RPi High Quality Camera IMX477
+	- **ST BrightSense RGB and NIR** e.g. VD1940 5.1 MPixel, VB1740 2.7 MPixel
+		- VD56G3 monochrome, VD66GY RGB and VD16GZ RGB-IR - 1.5 MPixel - in production
+		- VD5943 monochrome and VD1943 RGB-IR 5 MPixel in pre-production
 	- **ST BrightSense NIR Optimised** e.g. VG5761 2.3Mp HDR ultra low-noise
 	- **OmniVision OV64A40** e.g. VG5761 2.3Mp HDR ultra low-noise
 	- **OmniVision OX05B1S** RGB-IR 5Mp image sensor
@@ -145,7 +146,7 @@
 ### **4. Optional Add-On Modules**
 
 - **RFID / PIT** to read ID from tagged animals
-- **LASER Spot Alignment** to make the system quicker and easier to allign in the trees
+- **LASER Spot Alignment** to make the system quicker and easier to align in the trees
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
 - **Thermal Imaging** image sensors extending further into the IR (Infra Red)
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
