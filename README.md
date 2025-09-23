@@ -148,7 +148,7 @@
 - **RFID / PIT** to read ID from tagged animals
 - **LASER Spot Alignment** to make the system quicker and easier to align in the trees
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
-- **Thermal Imaging** image sensors extending further into the IR (Infra Red)
+- **Thermal Imaging Camera** image sensors extending further into the IR (Infra Red)
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
 - **Ambient Light Sensor**
@@ -166,20 +166,19 @@
 - **Ethernet** May be used instead of WiFi for faster data download
 - **PoE** May be used to charge or power system over Ethernet cable.
 - **AI on Camera** Camera module with onboard neural network processing - e.g. Sony IMX500 Intelligent Vision Sensor with RP2040
-- **AI on Processor** Use NPU, TPU, GPU or other AI accelerators on processor to run neural networks e.g. CNNs (Convolutional Neural Networks) for image recognition, for sound recognition or for counting animals.
+- **AI on Processor** NPU, TPU, GPU or other AI accelerators on processor to run neural networks e.g. CNNs (Convolutional Neural Networks) for image recognition, for sound recognition or for counting animals.
 - **Optics** Custom optics mounted to image sensor for specialist tasks
 - **Endoscope Cameras** Tiny camera mounted on endoscope and left in situ
-- **Camera Mounts** Open source metal support designs and 3D printed hardware to accurately and reliably mount and align camera.
+- **Camera Mounts** Open source metal support designs and 3D printed hardware to accurately and reliably mount and align camera
 - **Mesh Network** Automatically form a WiFi or sub-1GHz mesh network between cameras which are in range of each other
 - **Weight Measurement** via load cell
 - **USB Camera Modules** Increased flexibility at the cost of increased power consumption
 - **ToF (Time of Flight) Sensor**
 - **Sample Collection** for example via paper roll or adhesive tape roll
-- **Thermal Imaging Camera**
 - **Auto Wake-Up** from change of scene from VD55G1 image sensor in low power (2mW) mode
 - **Automated re-baiting** of small, non-perishable bait items - for example nuts
-- **Live Local Streaming** Via WiFi, Ethernet, or sub-GHz wireless - Caution: High power usage.
-- **Live Internet Streaming** Via free choice of mobile network and LTE - Data charges depend on network.
+- **Live Local Streaming** Via WiFi, Ethernet, or sub-GHz wireless - Caution: High power usage
+- **Live Internet Streaming** Via free choice of mobile network and LTE - Data charges depend on network
 
 ---
 
@@ -187,12 +186,12 @@
 
 <img align="right" width="400" src="Images/Will Robertson - Looking-to-the-Future-DJI_0490-2048x1536 - cropped - 90.jpeg" alt="Will Robertson"/>
 
-- **High Quality, High Flexibility**
-	- **Operating System:** Linux-based distribution (e.g., Yocto or Buildroot), Android.
-	- **Camera Stack:** libcamera (Use of V4L2 and Media Controller APIs is possible but discouraged.)
+- **High Quality, High Flexibility Implementation**
+	- **Operating System:** Linux-based distribution (e.g. Debian, Yocto or Buildroot).
+	- **Camera Stack:** libcamera, V4L2 and Media Controller APIs
 	- **Programming Languages:** Python, Rust, C++, .Net, etc.
-- **Low Power**
-	- **Bare Metal or RTOS Real Time Operating System**
+- **Low Power Implementation**
+	- **Bare Metal or RTOS (Real Time Operating System)**
 		- **FreeRTOS** RTOS
 		- **ThreadX** RTOS
 		- **Zephyr** RTOS
@@ -203,7 +202,7 @@
 	- **Monitoring activation sensors**
 	- **Controlling wake up of CPU**
 	- **Sending CPU to sleep mode**
-	- **Telling CPU to reduce power usage** e.g. by reducing fps, binning pixels, stopping compression, reducing LED intensity if power drops below a threshold
+	- **Telling CPU to reduce power usage** e.g. by reducing fps, binning pixels, stopping compression, reducing LED intensity if power drops below a threshold, etc.
 	- **Shutting down safely** if power is too low to continue
 	- **Powering up correctly** when power is restored
 - **Middleware** Data processing, image and audio capturing, sensor management.	
@@ -238,10 +237,10 @@
 
 - **Energy Harvesting Tests** With a solar panel in real world conditions.	
 - **Waterproofing Tests** Test waterproof enclosures outdoors.
-- **High Quality, High Flexibility**
+- **High Quality, High Flexibility Implementation**
 	- **Power Consumption Tests** Measure power consumption in suspend-to-RAM
 	- **Wakeup Time Tests** Measure time to wake from suspend-to-RAM
-- **Low Power**
+- **Low Power Implementation**
 	- **Power Consumption Tests** Measure power consumption in running and dormant states
 	- **Wakeup Time Tests** Measure time to wake from dormant state
 - **Visible Image Quality Tests** of camera modules in laboratory
@@ -259,20 +258,26 @@
 - **How long can WildCamera power itself independently?** In practice this depends on:
 	- **Solar Panels** the size and efficiency of the solar panels selected
 	- **Shade** whether the solar panels are shaded for part or all of the day
+	- **Cleaning** solar pannels perform best when dust is removed every few months
 	- **Battery Size** the size of the battery selected
-	- **Battery Chemistry** Lithium (Li) batteries have higher energy density than lead acid (PbA) batteries but lithium ion batteries cannot be used in cold conditions.
+	- **Battery Chemistry** 
+		- **Li-Ion** (Lithium Ion) highest energy density but can not be used in cold conditions
+		- **LiFePO4** (Lithium Iron Phosphate) c. 3x higher energy density than lead acid (PbA) batteries, can provide power down to -20 °C and be charged down to 0°C.
+		- **PbA** (Lead Acid) heavy but well-characterised technology
 	- **Frequency of Activation** the more often the camera is activated, the higher the power consumption
-	- **Intensity of LED Illumination** using more NIR (Near Infra Red) illumination in low light levels or at night increases power consumption
-		- **Image Sensor Used** selecting a specialist low noise, high sensitivity image sensor for night time use may increase the cost of the image sensor but reduces the need for power for NIR (Near Infra Red) LED illumination
-		- **Distance From Target** Being closer to the target reduces the need for power for NIR (Near Infra Red) LED illumination
+	- **Intensity of LED Illumination** using more IR (Infra Red) illumination in low light levels or at night increases power consumption
+		- **Image Sensor Used** selecting a specialist low noise, high sensitivity image sensor for night time use may increase the cost of the image sensor but reduces the need for power for IR (Infra Red) LED illumination
+		- **Distance From Target** Being closer to the target reduces the need for power for IR (Infra Red) LED illumination
 	- **AI - Neural Networks** Running neural networks, e.g,. for object recognition, etc. on WildCamera will increase power consumption depending on complexity of NN
 	- **Optional Add-On Modules** will increase power consumption
-	- **Weather** bad weather or snow on solar panels decreases the solar energy available
+	- **Weather** thick clouds or snow on solar panels decreases the solar energy available dramatically
 	- **Duration of Daylight** depending on latitude and time of year
 - **How do I align the camera?**
+	- **LASER** A visible LASER beam is projected from the camera during alignment to help with alignment
 	- **Real Time Video Stream via WiFi** With WiFi activated, a real time video stream from the camera and data on PIR activation is sent to a smartphone, tablet or laptop within range
 - **How do I get the SD card out of the box?**
 	- **Use WiFi or Ethernet** Data download via WiFi or Ethernet from WildCamera to a laptop is preferred because it eliminates the need to fiddle with SD cards, to climb trees to reach the SD card or to disturb the wildlife being observed.
+	- **Open WildCamera** The enclosure is designed to be robust and easy to open when needed
 - **How long until storage is full?** this depends on
 	- **Frequency of Activation**
 	- **Compression** Activating photo and video compression will greatly reduce the storage space used but also somewhat increase power consumption.
