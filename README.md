@@ -143,7 +143,9 @@
 
 ### **4. Optional Add-On Modules**
 
-- **RFID (PIT)** to read ID from tagged animals
+- **RFID / PIT** to read ID from tagged animals
+- **LASER Spot Allignment** to make the system quicker and easier to allign and set up
+- **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
 - **Ambient Light Sensor**
@@ -152,7 +154,6 @@
 - **Heterodyne Detector** To shift ultrasonic bat calls to the audible range before recording
 - **ePaper Screen** displaying system status
 - **Touchscreen**
-- **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
 - **Long Range Sub-GHz** BeagleConnect Freedom - TI SimpleLink CC1352P7 wireless μC, Zephyr and MicroPython, 2.4GHz and sub-1GHz IEEE 802.15.4 wireless network
 - **Satellite Communications Module** Allows status information, videos and photos to be sent where no mobile network is present however can be expensive
 - **Audio Output Module** Inexpensively provides an audible distress call if WildCamera is experiencing a problem or needs help, can also play pre-recorded sounds to attract or repel animals
