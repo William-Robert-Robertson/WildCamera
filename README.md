@@ -23,12 +23,11 @@
 		- **Waterproofing** is often inadequate for reliable long term use in damp environments
 		- **High cost** is a major barrier to research but manufacturers are driven by maximising profits
 		- **Expensive proprietary tie-in** for example to specific mobile networks - increasing long-term costs
-		- **PIR sensors** work well for mammals but do not work at all for reptiles or insects
+		- **PIR sensors** work for large mammals but do not work at all for reptiles or insects
 		- **Availability** preferred makes and models may not be available in the future
 		- **Dated technology** large amounts of proprietary firmware and electronics and limited competition make commercial wildlife camera manufacturers slow to adopt new technologies and unable to catch up with rapidly advancing and highly competitive image sensor and processor technology
 		- **Limited file system** typically limited to 64 GB which fills up rapidly with uncompressed video
-		- **Technical data** is often sales
-  - -focused, omitting important information or known limitations
+		- **Technical data** is often sales-focused, omitting important information or known limitations
 
 - **Objectives:**
 	- **Video** from animals nearby and at a distance via a flexible choice of image sensors and optics
@@ -104,7 +103,7 @@
 	- **High Quality, High Flexibility**
 		- **Supported by libcamera** 
 			- **NXP i.MX 8M Plus** Dual ISPs: up to 12MP and 375MPixels/s
-			- **NXP i.MX95** Preproduction: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
+			- **NXP i.MX95** Pre-production: 500 Mpixel/s MIPI-CSI and ISP (2x 4-lane, 2.5 Gbps/lane)
 			- **ST STM32MP2 Series** On ST roadmap. CSI-2 #1 (5 Mpixels @30 fps with ISP), #2 (1 Mpixels @15 fps no ISP)
 			- **Raspberry Pi 4 (RPi 4) SBCs** High power consumption and lack of low power sleep mode are a significant problem.
 			- **Raspberry Pi 5 (RPi 5) SBCs** Lack of hardware video encoder, high power consumption and lack of low power sleep mode are a very significant problem.
