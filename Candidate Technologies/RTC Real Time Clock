@@ -33,6 +33,7 @@ DEBIX IO Board User Manual-V1.1.pdf
   "Haoyu Microelectronics HYM8563 Real Time Clock"
   "BM8562" is a "High precision, low power consumption I2C interface real-time clock/calendar"
 
-For schematics for real tiem clocks please see:
+For schematics for real time clocks please see:
 UM10301 User Manual for NXP Real Time Clocks PCF85x3 PCF85x63 PCA8565 PCF2123 and PCA21125.pdf
+in directory NXP Application Notes
 p31 and p32 give primary and secondary battery power supply schematics.
