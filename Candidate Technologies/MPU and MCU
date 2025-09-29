@@ -234,6 +234,9 @@ DEBIX SOM A I/O Board BMB-08
   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/dts/freescale/imx8mp-debix-som-a-bmb-08.dts
 
 Support for the H.264 Video Encoder on the i.MX 8M Plus is expected to be added to libcamera during 2025
+The h.264 encoder an IP core from verisilicon, called vc8000e
+sometimes abbreviated to vc8ke
+support is being developed in a driver called hantro
 
 DEBIX produce Model A, C, S and Infinity SBCs and Model A SoM as of December 2024
   teksupport at debix io emailed 22 December 2024 cairnwater.com address - replied on 23 December.
