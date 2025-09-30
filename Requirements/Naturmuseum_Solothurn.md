@@ -8,7 +8,8 @@ Kleine Grösse, Autark (ohne externe Stromquellen für längere Zeiten von mind.
 
 Mich nimmt es sehr wunder, was Mäuse machen, wenn sie in der geschlossenen Falle sind. Gerne würde ich im Feld filmen, wie die Tiere in die Falle kriechen und die Falle auslösen. Ich habe dazu diverse Kameras getestet.
 
-----
+<img align="right" width="400" src="/Images/T%20Brinner%20Mammal%20Trap%20-%20Top.png"/>
+<img align="right" width="400" src="/Images/T%20Brinner%20Mammal%20Trap%20-%20Open.png"/>
 
 Überwachung Amphibienzug: mich nimmt es wunder, wie sich Amphibien bei Zugstellen verhalten (Wie laufen sie in den Kessel? Wie umgehen sie Hindernisse? Wie nutzen sie Leitstrukturen). Klassische Wildtierkameras, welche auf Wärme reagieren, lösen nicht zuverlässig aus.
 
