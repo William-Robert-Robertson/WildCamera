@@ -44,3 +44,6 @@ https://www.ti.com/tool/RI-STU-MRD2
 Series 2000 Reader System
 Micro-reader RI-STU-MRD1 Reference Guide
 https://www.ti.com/lit/ug/scbu027/scbu027.pdf
+
+"The ST25R family provides multiprotocol support for 13.56 MHz communications" - different band from 124 kHz \
+https://www.st.com/en/nfc/st25-nfc-readers.html
