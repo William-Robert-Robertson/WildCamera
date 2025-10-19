@@ -22,7 +22,7 @@ https://www.st.com/resource/en/application_note/an5946-how-to-optimize-lowpower-
 
 STM32N6 μC dev. boards
   NUCLEO-N657X0-Q 
-    Doesn't seem to be available in Europe yet as of December 2024
+    Available in autumn 2025 :-) (Doesn't seem to be available in Europe yet as of December 2024)
     "Affordable prototyping"
     "Camera connector compatible with Raspberry."
     Couldn't find any SD card.
@@ -31,13 +31,19 @@ STM32N6 μC dev. boards
     https://www.st.com/resource/en/data_brief/nucleo-n657x0-q.pdf
   STM32N6570-DK
     https://www.st.com/en/evaluation-tools/stm32n6570-dk.html
-    Doesn't seem to be available in Europe yet as of December 2024
+    Available in autumn 2025 :-) (Doesn't seem to be available in Europe yet as of December 2024)
     "microSD card"
     "Advanced prototyping including AI"
     Includes camera, ToF sensor and touchscreen.
 
 Image Signal Processing (ISP) tuning tool for STM32 developers
   https://www.st.com/en/development-tools/stm32-isp-iqtune.html
+
+AN6211 Introduction to digital camera interface pixel pipeline for STM32 MCUs
+  https://www.st.com/resource/en/application_note/an6211-introduction-to-digital-camera-interface-pixel-pipeline-for-stm32-mcus-stmicroelectronics.pdf
+  https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ST%20Application%20Notes/an6211-introduction-to-digital-camera-interface-pixel-pipeline-for-stm32-mcus-stmicroelectronics.pdf
+
+The STM32N series MCUs use the Hantro VC8000NanoE h.264 video encoder.
 
 STM32MP255 MPU 
   From STM32MP25 Line - Arm® Cortex®-A35 dual core and an Arm® Cortex®-M33
@@ -237,6 +243,15 @@ Support for the H.264 Video Encoder on the i.MX 8M Plus is expected to be added 
 The h.264 encoder an IP core from verisilicon, called vc8000e
 sometimes abbreviated to vc8ke
 support is being developed in a driver called hantro
+
+The Hantro VC8000E video encoder is referreed to here:
+RM00294 - i.MX VPU Application Programming Interface Linux Reference Manual
+"1.2 Hantro
+The Hantro VPU on the i.MX 8M series includes both decoder (G1/G2) and encoder (H1/VC8000E). The early
+VPU wrapper interface (deprecated) is built based on Hantro user library, which communicates with the Hantro
+kernel driver directly. To support the V4L2 interface, one V4L2-based kernel driver is implemented and one
+daemon application is designed accordingly to link the V4L2 driver and Hantro user library."
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/NXP%20Application%20Notes/RM00294%20-%20i.MX%20VPU%20Application%20Programming%20Interface%20Linux%20Reference%20Manual%20-%20Rev.%20LF6.12.34_2.1.0%20%E2%80%94%2025%20September%202025%20.pdf
 
 DEBIX produce Model A, C, S and Infinity SBCs and Model A SoM as of December 2024
   teksupport at debix io emailed 22 December 2024 cairnwater.com address - replied on 23 December.
