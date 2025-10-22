@@ -736,6 +736,13 @@ BeaglePlay suspend to RAM at EOSS
         ACPI seems to be supported with last comit 10 months ago:
         "ACPI: APEI: set memory failure flags as MF_ACTION_REQUIRED on synchronous events"
     https://docs.beagleboard.org/beagley-ai.pdf
+
+	The BeagleY-AI uses a Texas Instruments AM67A - TI AM67A
+		There were problems taking the NPU and ISP - C7xMMA and VPAC - into suspend-to-RAM in 2024 but a fix was under development
+		https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1412890/am62a7-onnxrt-not-working-after-suspend-to-ram
+		asked for update on this in October 2025:
+		https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1579201/am62a7-am62a7---c7xmma-and-vpac-onnxrt-suspend-to-ram
+	https://www.ti.com/product/AM67A
     
     N.B. in Google Shopping search for "Beagle Y-AI" NOT "Beagle board Y-AI" or "Beaglebone Y-AI"
     CHF 86.00 inkl. MwSt. at https://www.elektor.de/products/beagley-ai-sbc-with-gpu-dsp-and-ai-accelerators
