@@ -737,6 +737,14 @@ BeaglePlay suspend to RAM at EOSS
         "ACPI: APEI: set memory failure flags as MF_ACTION_REQUIRED on synchronous events"
     https://docs.beagleboard.org/beagley-ai.pdf
 
+	BeagleY-AI Using Edge AI
+	"In this tutorial, we will set up a BeagleY-AI with an attached camera to run local AI inference using the Texas Instruments Edge AI image."
+	"The Edge AI image includes a collection of computer vision demonstrations including object detection and image classification. It enables AM67A SoC features not yet ported to the Beagleboard Debian distribution, including:"
+	"AI acceleration using C7x MMA cores"
+	"Image signal processing using the VPAC (Vision Processing Accelerator)"
+	"OpenVX + GStreamer orchestration of computer vision pipelines"
+	https://docs-beagleboard-io-bradybeagle-7f06fb4466371884e68566ba99482ee.beagleboard.io/boards/beagley/ai/demos/using-edge-ai.html
+
 	The BeagleY-AI uses a Texas Instruments AM67A - TI AM67A
 		There were problems taking the NPU and ISP - C7xMMA and VPAC - into suspend-to-RAM in 2024 but a fix was under development
 		https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1412890/am62a7-onnxrt-not-working-after-suspend-to-ram
