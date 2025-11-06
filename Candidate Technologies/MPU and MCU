@@ -743,13 +743,34 @@ BeaglePlay suspend to RAM at EOSS
 		asked for update on this in October 2025:
 		https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1579201/am62a7-am62a7---c7xmma-and-vpac-onnxrt-suspend-to-ram
 	https://www.ti.com/product/AM67A
+
+	TI Deep Learning Product User Guide
+		https://software-dl.ti.com/jacinto7/esd/processor-sdk-rtos-j722s/latest/exports/docs/c7x-mma-tidl/ti_dl/docs/user_guide_html/index.html
     
     N.B. in Google Shopping search for "Beagle Y-AI" NOT "Beagle board Y-AI" or "Beaglebone Y-AI"
     CHF 86.00 inkl. MwSt. at https://www.elektor.de/products/beagley-ai-sbc-with-gpu-dsp-and-ai-accelerators
     C. 120 CHF elsewhere
 
+	AM6xA ISP Tuning Guide
+		https://www.ti.com/lit/an/sprad86a/sprad86a.pdf
+
 	AM62x Sitara processors
 		https://www.ti.com/lit/an/spradg1/spradg1.pdf
+
+	Processor SDK RTOS J722S
+		https://software-dl.ti.com/jacinto7/esd/processor-sdk-rtos-j722s/11_01_00_04/exports/docs/psdk_rtos/docs/user_guide/index.html
+		As of November 2025 A53 RTOS is an experimental feature
+		"A53 RTOS is an experimental feature so there is very limited support we can provide. This is noted in the MCU+ SDK documentation: https://software-dl.ti.com/mcu-plus-sdk/esd/AM62AX/11_01_00_16/exports/docs/api_guide_am62ax/RELEASE_NOTES_11_01_00_PAGE.html "
+		https://e2e.ti.com/support/processors-group/processors/f/processors-forum/1579201/am62a7-am62a7---c7xmma-and-vpac-onnxrt-suspend-to-ram/6102204?focus=true
+
+	9.8. Adding new image sensor to PSDK RTOS
+		https://software-dl.ti.com/jacinto7/esd/processor-sdk-rtos-j722s/11_01_00_04/exports/docs/psdk_rtos/docs/user_guide/developer_notes_image_sensor.html
+
+	TI J721E Imaging User Guide
+		https://software-dl.ti.com/jacinto7/esd/processor-sdk-rtos-j722s/11_01_00_04/exports/docs/imaging/docs/user_guide/index.html
+
+	3.9. Video Input/Output Kernels (video_io)
+		https://software-dl.ti.com/jacinto7/esd/processor-sdk-rtos-j722s/11_01_00_04/exports/docs/psdk_rtos/docs/user_guide/sdk_components_j722s.html#imaging
 
   BeagleBone AI-64
     https://www.beagleboard.org/boards/beaglebone-ai-64
