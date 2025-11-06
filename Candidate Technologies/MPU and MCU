@@ -748,6 +748,9 @@ BeaglePlay suspend to RAM at EOSS
     CHF 86.00 inkl. MwSt. at https://www.elektor.de/products/beagley-ai-sbc-with-gpu-dsp-and-ai-accelerators
     C. 120 CHF elsewhere
 
+	AM62x Sitara processors
+		https://www.ti.com/lit/an/spradg1/spradg1.pdf
+
   BeagleBone AI-64
     https://www.beagleboard.org/boards/beaglebone-ai-64
     "Texas Instruments TDA4VM SOC with dual 64-bit Arm® Cortex®-A72, C7x DSP"
