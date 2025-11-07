@@ -158,6 +158,10 @@ https://datasheets.raspberrypi.com/camera/camera-module-3-schematics.pdf
 Sony Image Sensors
 https://www.sony-semicon.com/en/products/is/index.html
 
+For Soho Enterprise camera modules with Sony image sensors please see
+  Cameras and Image Sensors - Specialist
+  https://soho-enterprise.com/
+
 Raspberry Pi Camera software - detailed information
   https://www.raspberrypi.com/documentation/computers/camera_software.html
   In April 2025 the section "Raspberry Pi’s implementation of libcamera supports the following cameras:" reads
@@ -334,12 +338,12 @@ https://www.youtube.com/watch?v=YLIh8ElDajI
     Gstreamer and Gstreamer Plugins
     NNStreamer
     NNStreamer and GStreamer integrated in BSPs
-
 GalaxyCore gc05a2 and gc08a3 Image sensors.
   Supported from libcamera v o.4.9
   https://en.gcoreinc.com/products/index?cid=2&subcid=5
 
 Omnivision OX05B1S
+
   5MP RGB-IR image sensor launched in 2022 (note that the S in OX05B1S indicates IR - a version is available without this)
   RGB-IR so better night time performance than the RGB image sensors
   https://www.ovt.com/wp-content/uploads/2022/01/OX05B1S-PB-v1.1-WEB.pdf
