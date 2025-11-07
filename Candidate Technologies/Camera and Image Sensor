@@ -17,6 +17,12 @@ Supports 2-lane CSI MIPI camera AP1302+AR0144 with 1080p@45, 1280x800@60, 720P@6
 Supports 4-lane CSI MIPI camera AP1302+AR0144 with 1080p@60, 1280x800@60 on i.MX 95.
 Supports 4-lane CSI MIPI camera OX03C10 + MAX96717/MAX96724 GMSL2 SerDes (4 cameras) with ISP on i.MX 95."
 
+e-consystems - TI Texas Instuments collaboration
+https://www.e-consystems.com/texas-instruments-cameras.asp
+
+TechNexion NXP Renesas Texas Instruments (TI) beagleboard.org ST collborations - OnSemi image sensors - global shutter and rolling shutter:
+https://www.technexion.com/products/embedded-vision/
+
 onsemi list almost 300 image sensors in status "Active"
 https://www.onsemi.com/products/sensors/image-sensors
 grabbing one example:
@@ -169,6 +175,9 @@ Raspberry Pi Camera software - detailed information
     IMX378
     IMX519
     OV9281 - monochrome - 1‑Megapixel - 165 mW in active mode - see notes below
+
+Explaination of Clear HDR feature on Sony image sensors including Sony IMX708:
+  https://www.sony-semicon.com/en/technology/security/index.html
 
 Raspberry Pi Camera Module 3 NoIR
   Based on 12 Megapixel Sony IMX708 sensor.
