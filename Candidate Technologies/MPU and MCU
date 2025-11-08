@@ -15,6 +15,18 @@ STM32N6x5 MCUs General-purpose line
 https://www.st.com/en/microcontrollers-microprocessors/stm32n6x5.html
   404 error
 
+Getting Started with the New AI-Accelerated STM32N6
+	https://www.elektormagazine.com/news/getting-started-with-the-new-ai-accelerated-stm32n6
+	Getting Started with the New AI-Accelerated STM32N6 — Webinar
+	ST Cameras at 09:40 - 
+	low power and battery power at 37:30 reduce core clock frequency low power modes sleep mode, stop mode (RAM content preserved), standby mode (most clocks off except wake-up pins and only 80 KB of SRMA preserved) flash-less technology but 4.2 MB embedded RAM so binary stored on external FLASH - if we exit standby mode we need to upload binary again to the RAM - at 40:40 numbers for sleep, stop and standby modes are given in the data sheets - NPU on STM32N6 focused on CNNs - model zoo includes a sound recognition model - 
+	at 46:30 WiFi wireless connecntion L6 Driver STMod+ - 
+	47:70 more than one camera - 
+	47:40 all software totally free - 
+	Good quality (low resistance) USB cable needed for power supply - 
+	55:00 real time voice recognition - 
+	Bartosz Boryna Edouard Dulau Julian Ettarian st.com
+
 AN5946 How to optimize low-power modes on STM32N6 MCUs
 https://www.st.com/resource/en/application_note/an5946-how-to-optimize-lowpower-modes-on-stm32n6-mcus-stmicroelectronics.pdf
   Figure 5. STM32N6 power figures
