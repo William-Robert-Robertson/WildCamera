@@ -737,6 +737,9 @@ BeaglePlay suspend to RAM at EOSS
         "ACPI: APEI: set memory failure flags as MF_ACTION_REQUIRED on synchronous events"
     https://docs.beagleboard.org/beagley-ai.pdf
 
+	BeagleY-AI USB Port Fails To Initialize
+	https://forum.beagleboard.org/t/beagley-ai-usb-port-fails-to-initialize/43011
+
 	BeagleY-AI Using Edge AI
 	"In this tutorial, we will set up a BeagleY-AI with an attached camera to run local AI inference using the Texas Instruments Edge AI image."
 	"The Edge AI image includes a collection of computer vision demonstrations including object detection and image classification. It enables AM67A SoC features not yet ported to the Beagleboard Debian distribution, including:"
