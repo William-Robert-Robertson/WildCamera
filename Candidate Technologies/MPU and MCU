@@ -30,8 +30,14 @@ STM32N6 demo workshop - 11 Video encoder (VENC) in practice
 	VENC_USB
 	VENC_RTSP_Server
 
-x-cube-n6-ai-h264-usb-uvc Application
-	https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc
+x-cube-n6-ai... projects on Github
+https://github.com/orgs/STMicroelectronics/repositories?q=x-cube-n6-ai
+	x-cube-n6-ai-h264-usb-uvc Application
+		https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc
+	x-cube-n6-ai-power-measurement
+		https://github.com/STMicroelectronics/x-cube-n6-ai-power-measurement
+	x-cube-n6-ai-people-detection-tracking
+		https://github.com/STMicroelectronics/x-cube-n6-ai-people-detection-tracking
 
 Getting Started with the New AI-Accelerated STM32N6
 	https://www.elektormagazine.com/news/getting-started-with-the-new-ai-accelerated-stm32n6
