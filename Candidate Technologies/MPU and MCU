@@ -24,6 +24,11 @@ STM32N6 demo workshop - 10 Video encoder (VENC) theory
 STM32N6 demo workshop - 11 Video encoder (VENC) in practice
 	"Computer Vision application demonstrating the deployment of object detection models on the STM32N6570-DK board and stream results through USB using UVC/H264 format."
 	https://www.youtube.com/watch?v=25lEF4GgN8M
+	STM32Cube_FW_N6_V1.1.0\Projects\STM32N6570-DK\Applications\VENC
+	VENC_SDCard_ThreadX - FAT32
+	VENC_SDCard - raw binary
+	VENC_USB
+	VENC_RTSP_Server
 
 x-cube-n6-ai-h264-usb-uvc Application
 	https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc
