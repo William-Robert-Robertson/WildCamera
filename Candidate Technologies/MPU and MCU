@@ -15,6 +15,10 @@ STM32N6x5 MCUs General-purpose line
 https://www.st.com/en/microcontrollers-microprocessors/stm32n6x5.html
   404 error
 
+Introduction to STM32 model zoo services - deploy AI model on STM32N6 MCU - object detection example
+	https://www.youtube.com/watch?v=O7pCXkFWBCM
+	04:40 dedicatesd post processing chain
+
 STM32N6 demo workshop - 08 Camera interface theory
 	https://www.youtube.com/watch?v=maMm1vcSrfg&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=9
 STM32N6 demo workshop - 09 Camera interface in practice
