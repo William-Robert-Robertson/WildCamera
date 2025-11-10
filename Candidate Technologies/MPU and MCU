@@ -15,6 +15,19 @@ STM32N6x5 MCUs General-purpose line
 https://www.st.com/en/microcontrollers-microprocessors/stm32n6x5.html
   404 error
 
+STM32N6 demo workshop - 08 Camera interface theory
+	https://www.youtube.com/watch?v=maMm1vcSrfg&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=9
+STM32N6 demo workshop - 09 Camera interface in practice
+	https://www.youtube.com/watch?v=8xdK1YVf5MM&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=10
+STM32N6 demo workshop - 10 Video encoder (VENC) theory
+	https://www.youtube.com/watch?v=SQD4W-8BPY0&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=11
+STM32N6 demo workshop - 11 Video encoder (VENC) in practice
+	"Computer Vision application demonstrating the deployment of object detection models on the STM32N6570-DK board and stream results through USB using UVC/H264 format."
+	https://www.youtube.com/watch?v=25lEF4GgN8M
+
+x-cube-n6-ai-h264-usb-uvc Application
+	https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc
+
 Getting Started with the New AI-Accelerated STM32N6
 	https://www.elektormagazine.com/news/getting-started-with-the-new-ai-accelerated-stm32n6
 	Getting Started with the New AI-Accelerated STM32N6 — Webinar
