@@ -15,6 +15,15 @@ STM32N6x5 MCUs General-purpose line
 https://www.st.com/en/microcontrollers-microprocessors/stm32n6x5.html
   404 error
 
+Introduction to Hardware Video Encoding with STM32
+	https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32
+
+H264 Hardware Handshake encoding
+	https://wiki.st.com/stm32mcu/wiki/H264_Hardware_Handshake_encoding
+
+H264 power consumption setup
+	https://wiki.st.com/stm32mcu/wiki/H264_power_consumption_setup
+
 Introduction to STM32 model zoo services - deploy AI model on STM32N6 MCU - object detection example
 	https://www.youtube.com/watch?v=O7pCXkFWBCM
 	04:40 dedicatesd post processing chain
