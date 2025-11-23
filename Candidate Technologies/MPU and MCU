@@ -24,6 +24,9 @@ H264 Hardware Handshake encoding
 H264 power consumption setup
 	https://wiki.st.com/stm32mcu/wiki/H264_power_consumption_setup
 
+H264 Encoding Monochrome Video
+	https://community.st.com/t5/stm32-mcus-embedded-software/issue-recording-grayscale-video-in-venc-sdcard-example/td-p/820830
+
 Introduction to STM32 model zoo services - deploy AI model on STM32N6 MCU - object detection example
 	https://www.youtube.com/watch?v=O7pCXkFWBCM
 	04:40 dedicatesd post processing chain
