@@ -272,6 +272,11 @@ https://www.myirtech.com/list.asp?id=781
   "1GB/2GB LPDDR4"
   "MIPI-CSI interface"
 
+STEVAL-EVK-U0I EVK Main: Generic USB kit for evaluating ST BrightSense image sensors on a PC 
+	https://www.st.com/en/evaluation-tools/steval-evk-u0i.html#overview
+this uses the Infineon EZ-USB™ CX3 USB camera controller
+	https://www.infineon.com/products/universal-serial-bus/usb-3-2-peripheral-controllers/ez-usb-cx3-mipi-csi2-to-usb-5gbps-camera-controller
+
 Full list of Debix products and documentation:
 https://debix.io/Document/index.html
 
