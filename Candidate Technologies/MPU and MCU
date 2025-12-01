@@ -47,6 +47,9 @@ STM32N6 demo workshop - 11 Video encoder (VENC) in practice
 	VENC_USB
 	VENC_RTSP_Server
 
+Middleware FatFS MCU Component
+	https://github.com/STMicroelectronics/stm32-mw-fatfs
+
 x-cube-n6-ai... projects on Github
 https://github.com/orgs/STMicroelectronics/repositories?q=x-cube-n6-ai
 	x-cube-n6-ai-h264-usb-uvc Application
