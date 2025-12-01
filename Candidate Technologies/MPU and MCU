@@ -49,6 +49,8 @@ STM32N6 demo workshop - 11 Video encoder (VENC) in practice
 
 Middleware FatFS MCU Component
 	https://github.com/STMicroelectronics/stm32-mw-fatfs
+This and other file systems are listed under:
+	https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Filesystems.md
 
 x-cube-n6-ai... projects on Github
 https://github.com/orgs/STMicroelectronics/repositories?q=x-cube-n6-ai
