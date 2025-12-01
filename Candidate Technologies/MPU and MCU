@@ -22,6 +22,9 @@ VENC_SDCard - This project demonstrates the use of the STM32N6 video encoder and
 VENC_RTSP_Server
 	https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_RTSP_Server
 
+Middleware Video Encoder Wrapper Layer (EWL)
+https://github.com/STMicroelectronics/stm32-mw-venc-ewl/tree/main
+
 Introduction to Hardware Video Encoding with STM32
 	https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32
 
