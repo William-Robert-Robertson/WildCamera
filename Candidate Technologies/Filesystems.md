@@ -20,4 +20,6 @@ https://wiki.st.com/stm32mcu/index.php?title=Introduction_to_FILEX&sfr=stm32mcu
 VENC_SDCard_ThreadX example integrating AzureRTOS FileX above - writing to FAT32
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard_ThreadX
 
+For small cores, littlefs for a wear-levelling storage, works quite nice for the one or other config file.
+
 With thanks to Simon Vogl.
