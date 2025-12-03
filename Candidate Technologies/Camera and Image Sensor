@@ -162,6 +162,12 @@ For Soho Enterprise camera modules with Sony image sensors please see
   Cameras and Image Sensors - Specialist
   https://soho-enterprise.com/
 
+VC MIPI vision-components.com - Sony image sensors integrated with NXP i.MX 8M Plus:
+  https://www.mipi-modules.com/en/mipi-camera-modules/
+Sony IMX900 IMX295 IMX568 IMX565 IMX462-C IMX335
+Ettlingen, November 18, 2025 — For a medical imaging project, ADLINK wanted to integrate VC MIPI Cameras with its I-Pi SMARC IMX8M Plus Development Kit. Vision Components adapted the standard driver for the NXP i.MX 8M Plus processor platform to the ADLINK board, including full ISP support, for features such as color tuning etc. As a result, the ADLINK SMARC Starter Kit now supports all VC MIPI Cameras out of the box and for all customers.
+  https://www.edge-ai-vision.com/2025/11/vc-mipi-cameras-adlink-i-mx-8m-plus-full-driver-support/
+
 Raspberry Pi Camera software - detailed information
   https://www.raspberrypi.com/documentation/computers/camera_software.html
   In April 2025 the section "Raspberry Pi’s implementation of libcamera supports the following cameras:" reads
