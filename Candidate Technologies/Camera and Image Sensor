@@ -386,3 +386,12 @@ PineCube room, Rock64 21:33 Sunday 15 December 2024 "<d​simic> PineCube is dea
 Pine A64 5 Megapixes Camera Module
 https://pine64.com/product/pine64-5-megapixel-camera-module/
 Seems to have been superceded by the above.
+
+ST B-CAMS-IMX
+The camera that comes with the STM32N6570-DK eval. board is a ST B-CAMS-IMX camera board (ST board MB1854) which uses a fairly widely used Sony 5‑Mpx RGB image sensor.
+  https://www.st.com/resource/en/user_manual/dm01077940.pdf
+It's a Sony IMX335 variant: IMX335LQN
+  https://www.sony-semicon.com/files/62/flyer_security/IMX335LQN_Flyer.pdf
+The image quality from it in visible light is good - even at 30 fps in fairly poor lighting conditions.
+As of Autumn 2025, WildCamera hasn't independently tested it in IR yet.
+Sony Starvis which is Sony's line of image sensors with good low-light performance.
