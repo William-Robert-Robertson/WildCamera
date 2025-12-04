@@ -173,6 +173,8 @@ Ettlingen, November 18, 2025 — For a medical imaging project, ADLINK wanted to
   https://github.com/VC-MIPI-modules/vc_mipi_nxp
 OpenEmbedded/Yocto BSP layer for Vision Components MIPI CSI-2 Camera Modules
   https://github.com/VC-MIPI-modules/meta-vc-mipi
+A significant investment in high quality documentation:
+  https://www.mipi-modules.com/fileadmin/external/documentation/hardware/VC_MIPI_Camera_Module/index.html
 
 Raspberry Pi Camera software - detailed information
   https://www.raspberrypi.com/documentation/computers/camera_software.html
