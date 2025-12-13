@@ -38,6 +38,11 @@ export LOCALCP=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/
 ```
 cd ~/STM32CubeIDE/workspace_2.0.0/STM32N6-GettingStarted-ObjectDetection/Application/STM32N6570-DK
 ```
+Set the DKEL - Development Kit External Loader - to the external flash loader for the STM32N6570-DK board and its [MX66UW1G45G](https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/MX66U1G45G%2C%201.8V%2C%201Gb%2C%20v1.4.pdf) flash memory chip.
+```
+export DKEL=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/ExternalLoader/MX66UW1G45G_STM32N6570-DK.stldr
+
+```
 
 ### Thanks
 With thanks to Simon Vogl and Kadir Güzel \
