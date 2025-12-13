@@ -44,16 +44,21 @@ export DKEL=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/Exte
 
 ```
 
-To list USB ports:
-```
-lsusb
-```
 
 ```
 make -j8 # For a 4 core processor.
 
 STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0x8000000 -t fsbl -o build/Application/STM32N6570-DK/Project-Trusted.bin -hv 2.3 -dump "build/Application/STM32N6570-DK/Project-Trusted.bin"
 ```
+
+To list USB ports:
+```
+lsusb
+STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -w build/Application/STM32N6570-DK/Project-Trusted.bin 0x70100000
+
+```
+
+
 
 ### Thanks
 With thanks to Simon Vogl and Kadir Güzel \
