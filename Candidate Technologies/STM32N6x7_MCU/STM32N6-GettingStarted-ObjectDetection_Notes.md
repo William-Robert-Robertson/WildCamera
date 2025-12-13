@@ -15,7 +15,7 @@ Download STM32CubeIDE and STM32CubeProgrammer via a browser
 [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) \
 [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
 
-and instal - for example:
+and install - for example:
 ```
 sudo ./st-stm32cubeide_2.0.0_26820_20251114_1348_amd64.deb_bundle.sh
 sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
@@ -23,7 +23,7 @@ sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
 
 *(Note: If STM32CubeIDE is upgraded from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
 
-The STM32CubeIDE instal automatically installs all neccessarry tools but does ***not*** automatically put them on the path - this can be done using
+The STM32CubeIDE install automatically installs all necessary tools but does ***not*** automatically put them on the path - this can be done using
 
 ```
 export PATH=$PATH:/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.300.202509021040/tools/bin/
