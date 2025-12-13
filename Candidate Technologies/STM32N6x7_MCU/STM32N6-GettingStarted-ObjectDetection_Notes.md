@@ -45,6 +45,8 @@ export DKEL=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/Exte
 ```
 ```
 make -j8 # For a 4 core processor.
+
+STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0x8000000 -t fsbl -o build/Application/STM32N6570-DK/Project-Trusted.bin -hv 2.3 -dump "build/Application/STM32N6570-DK/Project-Trusted.bin"
 ```
 
 ### Thanks
