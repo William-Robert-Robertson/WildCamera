@@ -1,7 +1,7 @@
 
 These notes are for the STM32N6-GettingStarted-ObjectDetection example project:
 
-https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection
+https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection \
 https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 
 *These notes were written in December 2025 using Debian, STM32CubeIDE 2.0.0 and STM32CubeProgrammer 2.21.0 installed to their default locations.*
