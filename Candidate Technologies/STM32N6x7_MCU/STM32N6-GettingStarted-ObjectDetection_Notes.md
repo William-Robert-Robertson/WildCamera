@@ -43,6 +43,12 @@ Set the DKEL - Development Kit External Loader - to the external flash loader fo
 export DKEL=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/ExternalLoader/MX66UW1G45G_STM32N6570-DK.stldr
 
 ```
+
+To list USB ports:
+```
+lsusb
+```
+
 ```
 make -j8 # For a 4 core processor.
 
