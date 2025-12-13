@@ -35,6 +35,9 @@ export CUBEPROG=/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.exte
 
 export LOCALCP=/usr/local/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/
 ```
+```
+cd ~/STM32CubeIDE/workspace_2.0.0/STM32N6-GettingStarted-ObjectDetection/Application/STM32N6570-DK
+```
 
 ### Thanks
 With thanks to Simon Vogl and Kadir Güzel \
