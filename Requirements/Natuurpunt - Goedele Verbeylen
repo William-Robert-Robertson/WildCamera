@@ -153,8 +153,18 @@ WR: and G:
 
 End of relevent part of conversation.
 
-14 December 2025:
-W: 
+01 December 2025:
+W: "You said that you'd like WildCamera to be able to start recording video within something of the order of c. 200 mS of an animal being detected by a PIR sensor.
 
+Is the time within which NN (Neural Network) inference has to start also of the order of c. 200 mS or would a longer time be acceptable for that?
+
+For example would it be acceptable for video recording to start within 200 mS of an animal being detected then NN inference to start after maybe 400 or 1000 or 1500 mS with NN inference not being done on the first 400 or 1000 or 1500 mS of the video but only on later parts of the video?
+
+The reason I'm asking is that after an MPU or MCU comes out of a low-power sleep state it may be necessary to re-load the NN model into the NPU - that can take more time than wakening things like the VENC (Video ENCoder) and other parts of the system.
+
+I thought that perhaps it might be acceptable for NN inference to start later than 200 mS after PIR detection because the NN on the camera is only really looking for whether or not an animal is detected by the NN at any point during the video - if an animal is in the video for only the first second or two and not at any point after then in the video, then the video likely isn't of much practical use because it would give very little information about behaviour.
+
+If this timing requirement for starting NN inference is more relaxed than the timing requirement for starting video recording it may make the engineering significantly easier."
+14 December 2025:
 G: "The camera I use now for the dormouse bridge, has 0.35 s, and the Bushnell's even 0.6 s I think. The faster the better of course, also for the start of the NN inference. If it starts later, some movies with for example only a tip of the tail disappering will not be selected. But I want to use it mainly for dormouse bridges and monitoring hollows, and there, there will be sufficient movies with animals staying much longer in the picture, so longer time for NN inference to start won't be much of a problem I guess."
 
