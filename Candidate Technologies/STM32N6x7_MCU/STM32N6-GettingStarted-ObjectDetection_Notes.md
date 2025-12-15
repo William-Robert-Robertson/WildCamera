@@ -61,6 +61,10 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -w build/Application/STM
 ```
 
 
+### Notes
+In STM32CubeProgrammer the ISP is listed aas:
+DCMIPP Digital Camera Memory Interface Pixel Processor
+
 
 ### Thanks
 With thanks to Simon Vogl and Kadir Güzel \
