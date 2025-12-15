@@ -24,10 +24,10 @@ Boot from flash should be selected:
 \
 
 | Boot0     | Boot1      | Boot Source    | 
-| --------- | ---------- |                | 
+| --------- | ---------- | -------------- | 
 | x         | 1          |Development boot| 
-| 0         | 0          |flash boot      | 
-| 1         | 0          |serial boot     |     
+| 0         | 0          |Flash boot      | 
+| 1         | 0          |Serial boot     |     
 
 More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
 
