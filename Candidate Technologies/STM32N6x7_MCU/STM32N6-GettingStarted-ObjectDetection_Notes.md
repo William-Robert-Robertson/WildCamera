@@ -30,6 +30,14 @@ Boot from flash should be selected:
 
 More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
 
+| JP2       | 5 V is supplied from     |
+| --------- | ------------------------ |
+| 5V_STLK   | USB STLK (CN6)          |
+| USB_SNK   | USB1 (CN18)             |
+| 5V_VIN    | ARDUINO connector (CN8) |
+
+From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
+
 ### Installation
 
 Download STM32CubeIDE and STM32CubeProgrammer via a browser
