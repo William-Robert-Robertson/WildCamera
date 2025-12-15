@@ -21,7 +21,6 @@ Boot from flash should be selected:
 | Boot 0    | L        |
 | Boot 1    | L        |
 
-\
 
 | Boot0     | Boot1      | Boot Source    | 
 | --------- | ---------- | -------------- | 
