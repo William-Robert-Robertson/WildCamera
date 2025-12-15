@@ -9,19 +9,19 @@ https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 
 [Deploy your TFLite Model STM32N6570-DK](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Deploy-your-tflite-Model-STM32N6570-DK.md)
 
-*These notes were written in December 2025 using Debian, STM32CubeIDE 2.0.0 and STM32CubeProgrammer 2.21.0 installed to their default locations.* \
+*These notes were written in December 2025 using Debian 13 trixie, STM32CubeIDE 2.0.0 and STM32CubeProgrammer 2.21.0 installed to their default locations.* \
 *The "7" not the "N" in "STM32N6x7" indicates presence of a hardware NPU.*
 
 ### DIP Switches - Boot Source
 
-To save the software to external non-volatile memory, boot from flash should be selected:
+To run the software from external non-volatile memory, boot from flash should be selected:
 
 | DIP       | Setting |
 | --------- | ---------- |
 | Boot 0    | L        |
 | Boot 1    | L        |
 
-The DIP switches selecting this are:
+The DIP switches selecting boot source are:
 
 | Boot0     | Boot1      | Boot Source     | 
 | --------- | ---------- | --------------- | 
@@ -29,11 +29,11 @@ The DIP switches selecting this are:
 | L         | L          | Flash boot - from external flash.     | 
 | H         | L          | Serial boot | 
 
-Development boot or Serial boot can both program flash from USB when FSBL is damaged.
+Development boot or Serial boot can both program flash from USB when the FSBL is damaged.
 
 More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
 
-### Power selection - JP2
+### Power Supply Selection - JP2
 
 | JP2           | 5 V is supplied from        |
 | ------------- | --------------------------- |
