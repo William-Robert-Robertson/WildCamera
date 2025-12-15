@@ -41,7 +41,7 @@ More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-b
 | 3-4 USB_SNK   | USB1 (CN18)                 |
 | 4-5 5V_VIN    | ARDUINO connector (CN8)     |
 
-Writing firmware to flash from a computer with inadequate power available from the USB port can result in writes which appear to succeed but fail to write firmware to flash.
+Writing firmware to flash from a computer with inadequate power available from the USB port can result in writes which appear to succeed but fail to write firmware to flash - to handle this situation JP2 3-4 USB_SNK was used with a power bank connected to USB1 - a powered USB hub may be another option.
 
 When 3-4 USB_SNK is selected, power must be supplied from **both** USB C sockets - STLINK and USB1 - for the board to boot.
 
