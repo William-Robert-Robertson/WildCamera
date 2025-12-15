@@ -63,6 +63,7 @@ make -j$(nproc)
 
 STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0x8000000 -t fsbl -o build/Application/STM32N6570-DK/Project-Trusted.bin -hv 2.3 -dump "build/Application/STM32N6570-DK/Project-Trusted.bin"
 ```
+### Build Output
 
 Build generates the following files
 | DIP       | Setting |
