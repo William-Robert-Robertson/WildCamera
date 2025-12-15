@@ -8,6 +8,17 @@ https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 *These notes were written in December 2025 using Debian, STM32CubeIDE 2.0.0 and STM32CubeProgrammer 2.21.0 installed to their default locations.* \
 *The "7" not the "N" in "STM32N6x7" indicates presence of a hardware NPU.*
 
+### DIP Switches
+
+Boot from flash should be selected:
+
+| DIP       | Setting |
+| --------- | ---------- |
+| Boot 0    | L        |
+| Boot 1    | L        |
+
+More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
+
 ### Installation
 
 Download STM32CubeIDE and STM32CubeProgrammer via a browser
