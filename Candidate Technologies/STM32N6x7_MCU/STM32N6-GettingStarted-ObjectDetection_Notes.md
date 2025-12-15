@@ -64,6 +64,13 @@ make -j$(nproc)
 STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0x8000000 -t fsbl -o build/Application/STM32N6570-DK/Project-Trusted.bin -hv 2.3 -dump "build/Application/STM32N6570-DK/Project-Trusted.bin"
 ```
 
+Build generates the following files
+| DIP       | Setting |
+| --------- | ---------- |
+| .bin      | Binary        |
+| .hex    | Includes addresdses - can be sparse       |
+| .elf      | Executable Linkable Forma - stays on the host and is used for OpenOCD debugging     |
+
 To list USB ports:
 ```
 lsusb
