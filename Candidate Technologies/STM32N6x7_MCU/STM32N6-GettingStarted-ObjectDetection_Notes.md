@@ -3,7 +3,7 @@ STM32N6 GettingStarted ObjectDetection Notes
 These notes are for the STM32N6-GettingStarted-ObjectDetection example project:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection \
-https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
+https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
 
 [Documentaion](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/tree/main/Doc)
 
