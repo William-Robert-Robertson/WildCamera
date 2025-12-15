@@ -66,7 +66,7 @@ STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0
 ### Build Output
 
 Build generates the following files
-| DIP       | Setting |
+| file       | function |
 | --------- | ---------- |
 | .bin      | Binary        |
 | .hex    | Includes addresdses - can be sparse       |
