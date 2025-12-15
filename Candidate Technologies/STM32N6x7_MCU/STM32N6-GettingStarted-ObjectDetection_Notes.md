@@ -74,7 +74,7 @@ Build generates the following files
 | --------- | ---------- |
 | .bin      | Binary        |
 | .hex    | Includes addresdses - can be sparse       |
-| .elf      | Executable Linkable Forma - stays on the host and is used for OpenOCD debugging     |
+| .elf      | Executable Linkable File - stays on the host and is used for OpenOCD debugging     |
 
 To list USB ports:
 ```
@@ -85,7 +85,7 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -w build/Application/STM
 
 
 ### Notes
-In STM32CubeProgrammer the ISP is listed aas:
+In STM32CubeProgrammer the ISP is listed as:
 DCMIPP Digital Camera Memory Interface Pixel Processor
 
 
