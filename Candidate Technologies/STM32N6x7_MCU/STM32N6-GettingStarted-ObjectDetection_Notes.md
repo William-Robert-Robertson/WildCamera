@@ -12,29 +12,38 @@ https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 *These notes were written in December 2025 using Debian, STM32CubeIDE 2.0.0 and STM32CubeProgrammer 2.21.0 installed to their default locations.* \
 *The "7" not the "N" in "STM32N6x7" indicates presence of a hardware NPU.*
 
-### DIP Switches
+### DIP Switches - Boot Source
 
-Boot from flash should be selected:
+To save the software to external non-volatile memory, boot from flash should be selected:
 
 | DIP       | Setting |
 | --------- | ---------- |
 | Boot 0    | L        |
 | Boot 1    | L        |
 
+The DIP switches selecting this are:
 
-| Boot0     | Boot1      | Boot Source    | 
-| --------- | ---------- | -------------- | 
-| x         | 1          |Development boot| 
-| 0         | 0          |Flash boot      | 
-| 1         | 0          |Serial boot     |     
+| Boot0     | Boot1      | Boot Source     | 
+| --------- | ---------- | --------------- | 
+| x         | H          | Development boot - from internal volatlie RAM.| 
+| L         | L          | Flash boot - from external flash.     | 
+| H         | L          | Serial boot | 
+
+Development boot or Serial boot can both program flash from USB when FSBL is damaged.
 
 More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
+
+### Power selection - JP2
 
 | JP2           | 5 V is supplied from        |
 | ------------- | --------------------------- |
 | 1-2 5V_STLK   | USB STLK (CN6)              |
 | 3-4 USB_SNK   | USB1 (CN18)                 |
 | 4-5 5V_VIN    | ARDUINO connector (CN8)     |
+
+Writing firmware to flash from a computer with inadequate power available from the USB port can result in writes which appear to succeed but fail to write firmware to flash.
+
+When 3-4 USB_SNK is selected, power must be supplied from **both** USB C sockets - STLINK and USB1 - for the board to boot.
 
 From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 
@@ -88,7 +97,7 @@ Build generates the following files
 | file       | function |
 | --------- | ---------- |
 | .bin      | Binary        |
-| .hex    | Includes addresdses - can be sparse       |
+| .hex    | Includes addresses - can be sparse       |
 | .elf      | Executable Linkable File - stays on the host and is used for OpenOCD debugging     |
 
 To list USB ports:
