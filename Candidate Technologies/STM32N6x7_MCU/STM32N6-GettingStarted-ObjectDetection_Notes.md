@@ -47,6 +47,8 @@ When 3-4 USB_SNK is selected, power must be supplied from **both** USB C sockets
 
 From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 
+[USB-A to USB-C cable connecting between on board ST-LINK/V3EC port and laptop is not enough to provide the needed curren](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6570-dk-ai-demo-not-working/td-p/755464)
+
 ### Installation
 
 Download STM32CubeIDE and STM32CubeProgrammer via a browser
