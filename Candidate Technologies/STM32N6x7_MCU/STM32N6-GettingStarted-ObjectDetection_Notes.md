@@ -7,7 +7,6 @@ https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection \
 https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
 
 ```
-https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
 git clone https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 cd STM32N6-GettingStarted-ObjectDetection/
 git checkout feature/video-enc
