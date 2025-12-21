@@ -7,7 +7,7 @@ https://doi.org/10.5194/gi-14-503-2025 \
 https://gi.copernicus.org/articles/14/503/2025
 
 Prior-Jones _et al._ 2025: \
-" The Genasun GV-4, Genasun GV-5 and Eco Energy ASC30W offer the best overall performance, allowing the use of a 5 Ah battery, with a mass of <2 kg. Choosing one of these best-performing regulators results in a 26× reduction in battery mass and a 13× reduction in battery price when compared with the Victron MPPT 75/10." \
+"The Genasun GV-4, Genasun GV-5 and Eco Energy ASC30W offer the best overall performance, allowing the use of a 5 Ah battery, with a mass of <2 kg. Choosing one of these best-performing regulators results in a 26× reduction in battery mass and a 13× reduction in battery price when compared with the Victron MPPT 75/10." \
 Genasun GV5 PbA c. 0.12 mA at 12 V
 
 SmartSolar MPPT \
