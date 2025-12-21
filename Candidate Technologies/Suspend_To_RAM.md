@@ -1,5 +1,7 @@
 Suspend To RAM
 
+Note that self-consumption of MPPT solar charge controllers must also be considered - see Prior-Jones _et al._ 2025.
+
 Power Consumption
 
 NXP AN13054 i.MX 8M Plus Power Consumption Measurement\
