@@ -1,5 +1,10 @@
 Battery Management
 
+Prior-Jones _et al._ 2025 discusses solar charge controller and battery management modules\
+Solar regulators for polar instrumentation: why night consumption matters \
+https://doi.org/10.5194/gi-14-503-2025 \
+https://gi.copernicus.org/articles/14/503/2025
+
 TI provide this that supports multiple battery chemistries:
 https://www.ti.com/product/BQ34Z100-R2
 
