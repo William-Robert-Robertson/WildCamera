@@ -4,6 +4,7 @@ Cpmparison of PbA (SLA - Sealed Lead Acid) and LiFePO4 (Lithium Iron Phosphate) 
 https://www.power-sonic.com/lithium-vs-lead-acid-batteries/
 
 <img src="https://github.com/William-Robert-Robertson/WildCamera/blob/main/Images/Lithium-and-lead-acid-battery-comparison-graph.png" alt="Lithium and lead acid battery comparison © power-sonic.com" />
+Lithium Iron Phosphate and Lead Acid Battery Comparison © power-sonic.com
 
 PbA
 
