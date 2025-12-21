@@ -31,6 +31,15 @@ To run the software from external non-volatile memory, boot from flash should be
 | Boot 0    | L        |
 | Boot 1    | L        |
 
+To debug from the IDE development boot - from internal volatlie RAM. :
+
+| DIP       | Setting |
+| --------- | ---------- |
+| Boot 0    | x        |
+| Boot 1    | H        |
+
+x = doesn't matter - L or H
+
 The DIP switches selecting boot source are:
 
 | Boot0     | Boot1      | Boot Source     | 
