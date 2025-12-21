@@ -139,6 +139,9 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -w build/Application/STM
 
 ```
 
+### VENC_SDCard
+
+https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
 ### Notes
 In STM32CubeProgrammer the ISP is listed as:
