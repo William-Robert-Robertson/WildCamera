@@ -1,5 +1,8 @@
 Battery Chemistries
 
+Cpmparison of PbA (SLA - Sealed Lead Acid) and LiFePO4 (Lithium Iron Phosphate) battery chemistries
+https://www.power-sonic.com/lithium-vs-lead-acid-batteries/
+
 PbA
 
 As an example: \
@@ -14,6 +17,13 @@ Capacity loss per month at 20°C (% approx.) 3 \
 Mass (kg) 14.5 \
 Calculated c. 29 to 33 Wh per kg energy density \
 https://media.distrelec.com/Web/Downloads/_t/ds/SWL1100-12FR_eng_tds.pdf
+
+UPS Battery YUASA SWL1100FR 12V 40.6Ah M5-F \
+Low self-discharge = less than 3% per month \
+https://www.allbatteries.co.uk/ups-battery-yuasa-swl1100fr-12v-40-6ah-m5-f-amp92127.html
+
+Figure 6: Self-discharge of lead acid as a function of temperature [3] \
+https://www.batteryuniversity.com/article/bu-802b-what-does-elevated-self-discharge-do/
 
 LiFePO4
 
