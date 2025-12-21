@@ -122,6 +122,9 @@ Build generates the following files
 
 ### Troubleshooting
 
+RAM Allocation \
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/Thanks_For_The_Memory.md
+
 If the board has an inadequate power supply
 ```
 Error in initializing ST-LINK device.
