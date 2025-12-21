@@ -1,6 +1,7 @@
 Eco Energy
 
-Eco Energy ASC30W c. 0.035 mA at 12 V measured by Prior-Jones _et al._ 2025 so **c. 0.42 mW**
+Eco Energy ASC30W c. 0.035 mA at 12 V measured by Prior-Jones _et al._ 2025 so **c. 0.42 mW** \
+An Eco Energy L3 Load Control would be  0.6 mA strandby (instructions sheet) so c. **7.2 mW**
 
 "automatic
 nighttime shutdown with an intelligent design results in
@@ -35,7 +36,7 @@ https://eco-energy.us/products/solar_controls/S5/product_info.html
 Note that the above appear to be PWM and not MPPT controllers.
 
 The above could be used together with a low voltage disconnect to protect the battery from over-discharging e.g. \
-L3 \
+L3 Load Control \
 https://eco-energy.us/products/L20/L3/product_info.html
 | Characteristic | Vlaue |
 | --- | --- |
