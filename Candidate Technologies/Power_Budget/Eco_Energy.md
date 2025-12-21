@@ -1,4 +1,11 @@
-Eco Energy 
+Eco Energy
+
+Eco Energy ASC30W c. 0.035 mA at 12 V measured by Prior-Jones _et al._ 2025 so **c. 0.42 mW**
+
+"automatic
+nighttime shutdown with an intelligent design results in
+the controller using < 1/10th the power of the industry
+average."
 
 S2.5 / ASC30W \
 https://eco-energy.us/products/solar_controls/S2.5/product_info.html 
