@@ -1,5 +1,7 @@
 Raspberry Pi 4 B Power Consumption
 
+Note that self-consumption of MPPT solar charge controllers must also be considered - see Prior-Jones at al. 2025.
+
 # More details in spreadsheet:
 # PRi 4 B and Camera Module V3 - Storage Power and Energy Consumption
 
