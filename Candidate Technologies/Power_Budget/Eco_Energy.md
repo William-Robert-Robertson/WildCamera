@@ -15,6 +15,7 @@ https://eco-energy.us/products/solar_controls/S2.5/product_info.html
 | Consumption | 7 mA daylight only, 0.5mA when in standby, night time 0 mA |
 | Maximum input | 22 volts DC |
 | Maximum charging current | 2.5 Amps DC |
+| Regulation method | Low frequency On-Off series type |
 
 S3.5 (ASC 50W) \
 https://eco-energy.us/products/solar_controls/S3.5/product_info.html 
@@ -23,6 +24,7 @@ https://eco-energy.us/products/solar_controls/S3.5/product_info.html
 | Consumption | 7 mA daylight only, 0.5mA when in standby, night time 0 mA |
 | Maximum input | 40 volts (12V control), 60V (24V control) |
 | Maximum charging current | 3.5 Amps DC |
+| Regulation method | Low frequency On-Off series type |
 
 S5 \
 https://eco-energy.us/products/solar_controls/S5/product_info.html 
