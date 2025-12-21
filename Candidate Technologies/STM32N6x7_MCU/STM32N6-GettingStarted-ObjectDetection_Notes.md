@@ -116,10 +116,19 @@ STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0
 
 Build generates the following files
 | file       | function |
-| --------- | ---------- |
-| .bin      | Binary        |
-| .hex    | Includes addresses - can be sparse       |
-| .elf      | Executable Linkable File - stays on the host and is used for OpenOCD debugging     |
+| ---------- | ---------- |
+| .bin       | Binary        |
+| .hex       | Includes addresses - can be sparse       |
+| .elf       | Executable Linkable File - stays on the host and is used for OpenOCD debugging     |
+
+### Troubleshooting
+
+If the board has an inadequate power supply
+```
+Error in initializing ST-LINK device.
+Reason: No device found on target.
+```
+This is the case if power from a laptop USB port alone is used -  provide a 2nd power supply to hte board and check that jumper JP2 is in 3-4 position.
 
 To list USB ports:
 ```
