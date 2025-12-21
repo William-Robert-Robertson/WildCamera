@@ -1,5 +1,7 @@
 Debix Model A Getting Started and Power Consumption
 
+Note that self-consumption of MPPT controllers must also be considered - see Prior-Jones at al. 2025.
+
 # For reference:
 # https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/imx-processors/195119/1/AN13054.pdfn-notes/AN13054.pdf
 # "4.1.1 Suspend mode"
