@@ -1,7 +1,7 @@
 Victron Energy
 
 A comparrison with other MPPT Solar Charge controllers can be found in: \
-Prior-Jones _et al._ 20205\
+Prior-Jones _et al._ 2025\
 Solar regulators for polar instrumentation: why night consumption matters \
 https://doi.org/10.5194/gi-14-503-2025 \
 https://gi.copernicus.org/articles/14/503/2025
