@@ -3,7 +3,17 @@ STM32N6 GettingStarted ObjectDetection Notes
 These notes are for the STM32N6-GettingStarted-ObjectDetection example project:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection \
+
 https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
+
+```
+https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
+git clone https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
+cd STM32N6-GettingStarted-ObjectDetection/
+git checkout feature/video-enc
+git submodule update --init
+ls Middlewares/ST/stm32-mw-fatfs/
+```
 
 [Documentaion](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/tree/main/Doc)
 
