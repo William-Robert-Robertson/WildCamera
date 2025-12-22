@@ -15,8 +15,21 @@ MEMORY
   PSRAM (xrw)           : ORIGIN = 0x91000000, LENGTH =  16M
 }
 ```
+
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
 states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
+More detail of the higher sections of memory is given in:
+
+https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Model/my_mpools/stm32n6-app2_STM32N6570-DK.mpool
+which sets out:
+```
+AXISRAM2 cpuRAM2 1024 K,
+AXISRAM3 npuRAM3 448 K,
+AXISRAM4 npuRAM4 448 K,
+AXISRAM5 npuRAM5 448 K,
+AXISRAM6 npuRAM6 448K
+```
+giving a total of 1024 K of CPU SRAM and 1792 K of NPU SRAM defined in the .mpool file.
 
 From the above: \
 0x34180000 - 0x34000400 = 0x17FC00 = 1571840 = 1.57184 MB
