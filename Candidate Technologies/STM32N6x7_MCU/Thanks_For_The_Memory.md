@@ -15,6 +15,11 @@ MEMORY
   PSRAM (xrw)           : ORIGIN = 0x91000000, LENGTH =  16M
 }
 ```
+https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
+states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
+
+From the above: \
+0x34180000 - 0x34000400 = 0x17FC00 = 1571840 = 1.57184 MB
 
 In /STM32N6570-DK_GettingStarted_ObjectDetection/Application/venc.c this is set to
 800*480/8 = 48'000 bytes
