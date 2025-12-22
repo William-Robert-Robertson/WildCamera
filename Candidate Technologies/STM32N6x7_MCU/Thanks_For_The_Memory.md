@@ -21,6 +21,8 @@ states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657x
 From the above: \
 0x34180000 - 0x34000400 = 0x17FC00 = 1571840 = 1.57184 MB
 
+NUCLEO-N657X0-Q anf STM32N6570-DK both have 4.2 MB SRAM
+
 In /STM32N6570-DK_GettingStarted_ObjectDetection/Application/venc.c this is set to
 800*480/8 = 48'000 bytes
 
