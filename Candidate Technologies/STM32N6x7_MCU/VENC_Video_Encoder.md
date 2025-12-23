@@ -30,3 +30,9 @@ It looks like - in theory - the VENC can do H264 encoding without a buffer by us
 "The VENC peripheral on the N6 boasts a hardware handshake path with the DCMIPP peripheral, potentially allowing full compression of each frame to occur with very little active RAM. From what I can find, the DCMIPP capture starts, then the VENC is told to start encoding, and the application only then receives notifications when a frame is complete. "
 
 https://community.st.com/t5/stm32-mcus-products/stm32n6-venc-hardware-handshake-with-mjpeg-encoding/m-p/837174
+
+STM32 Developers on Facebook
+
+https://www.facebook.com/groups/STM32Developers/
+
+
