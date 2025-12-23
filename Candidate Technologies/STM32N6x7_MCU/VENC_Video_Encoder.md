@@ -13,6 +13,10 @@ States
 >
 >In this mode, DCMIPP captures a certain number of lines (typically 32 lines). When done, it directly signals VENC, which in turn encodes this set of lines. This capture/encode sequence is reiterated until the frame is fully encoded. The software is signaled when the whole frame is finished being encoded. This mode does not require storing the complete input frame.
 
+It appears that internal or external memory can be used by the VENC for this:
+
+>Uncompressed frame may be located in Internal or external memory depending on encoding mode (HW handshake, frame resolution,) and memory available.
+
 It looks like - in theory - the VENC can do H264 encoding without a buffer by using a hardware handshake with the DCMIPP - as of December 2025 we haven't tested this yet thought:
 
 "The VENC peripheral on the N6 boasts a hardware handshake path with the DCMIPP peripheral, potentially allowing full compression of each frame to occur with very little active RAM. From what I can find, the DCMIPP capture starts, then the VENC is told to start encoding, and the application only then receives notifications when a frame is complete. "
