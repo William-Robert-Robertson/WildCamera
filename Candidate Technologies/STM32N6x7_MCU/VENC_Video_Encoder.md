@@ -3,8 +3,7 @@ STM32N6x7 VENC Video Encoder
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
 Introduction to Hardware Video Encoding with STM32 \
-https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32
-States
+https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32 states:
 >Frame mode
 >
 >In this mode, DCMIPP captures a complete frame and stores it in external memory. When the software is signaled for frame completion, it is responsible for calling VENC and providing it with the frame location in memory.
