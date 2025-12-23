@@ -13,9 +13,17 @@ https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_S
 >In this mode, DCMIPP captures a certain number of lines (typically 32 lines). When done, it directly signals VENC, which in turn encodes this set of lines. This capture/encode sequence is reiterated until the frame is fully encoded. The software is signaled when the whole frame is finished being encoded. This mode does not require storing the complete input frame.
 >Uncompressed frame may be located in Internal or external memory depending on encoding mode (HW handshake, frame resolution,) and memory available.
 
-It appears that internal or external memory can be used by the VENC for this:
+It appears that internal or external memory can be used by the VENC:
 
 [H264 Hardware Handshake encoding](https://wiki.st.com/stm32mcu/wiki/H264_Hardware_Handshake_encoding)
+
+Sourece code and documentation are in the eubdirectories here:
+
+https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Middlewares/Third_Party/VideoEncoder
+
+source for features including denoise seems to be here 
+
+https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Middlewares/Third_Party/VideoEncoder/source/h264
 
 It looks like - in theory - the VENC can do H264 encoding without a buffer by using a hardware handshake with the DCMIPP - as of December 2025 we haven't tested this yet thought:
 
