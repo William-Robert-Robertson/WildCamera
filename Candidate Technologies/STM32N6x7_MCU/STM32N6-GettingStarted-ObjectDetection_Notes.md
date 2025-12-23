@@ -51,6 +51,8 @@ Development boot or Serial boot can both program flash from USB when the FSBL is
 
 More detail on this can be found [here](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6-boot-pins/td-p/815621)
 
+With a full explaination of how this interacts with the boot ROM [here](https://community.st.com/t5/stm32-mcus/stm32n6-boot-rom-explained/ta-p/763648)
+
 ### Power Supply Selection - JP2
 
 | JP2           | 5 V is supplied from        |
