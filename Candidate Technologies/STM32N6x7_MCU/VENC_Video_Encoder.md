@@ -17,7 +17,7 @@ It appears that internal or external memory can be used by the VENC:
 
 [H264 Hardware Handshake encoding](https://wiki.st.com/stm32mcu/wiki/H264_Hardware_Handshake_encoding)
 
-Sourece code and documentation are in the eubdirectories here:
+Sourece code and documentation are in the subdirectories here:
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Middlewares/Third_Party/VideoEncoder
 
