@@ -7,6 +7,8 @@ git clone https://github.com/STMicroelectronics/STM32CubeN6.git
 cd STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 ```
 
+File -> Import -> STM32CubeMX/STM32CubeIDE -> navigate to local user workspace_2.0.0/STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
+
 Introduction to Hardware Video Encoding with STM32 \
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32 states:
 >Frame mode
