@@ -75,7 +75,7 @@ From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 
 [USB-A to USB-C cable connecting between on board ST-LINK/V3EC port and laptop is not enough to provide the needed current](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6570-dk-ai-demo-not-working/td-p/755464)
 
-### Installation
+### STM32CubeIDE Installation
 
 Download STM32CubeIDE and STM32CubeProgrammer via a browser
 
@@ -91,6 +91,8 @@ sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
 
 The STM32CubeIDE install automatically installs all necessary tools but does ***not*** automatically put them on the path - this can be done using
+
+### VSCode Installation
 
 Optionally, VSCode can also be used:
 ```
