@@ -14,6 +14,12 @@ git submodule update --init
 ls Middlewares/ST/stm32-mw-fatfs/
 ```
 
+Optionally, Claude can be installed:
+```
+curl -fsSL https://claude.ai/install.sh | bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
 [Documentaion](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/tree/main/Doc)
 
 [Deploy your TFLite Model STM32N6570-DK](https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Deploy-your-tflite-Model-STM32N6570-DK.md)
@@ -85,6 +91,21 @@ sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
 
 The STM32CubeIDE install automatically installs all necessary tools but does ***not*** automatically put them on the path - this can be done using
+
+Optionally, VSCode can also be used:
+```
+# https://wiki.debian.org/VisualStudioCode
+# Run the following one line at a time:
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+
+sudo apt-get install code # or code-insiders
+
+# In VSCode install STM32CubeIDE
+```
 
 ```
 export PATH=$PATH:/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.300.202509021040/tools/bin/
