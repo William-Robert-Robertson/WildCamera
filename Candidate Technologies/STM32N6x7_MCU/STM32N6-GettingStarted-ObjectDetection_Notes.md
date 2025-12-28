@@ -81,7 +81,7 @@ Download STM32CubeIDE, STM32CubeProgrammer and STMCubeMX via a browser
 
 [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) \
 [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) \
-[STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
+[STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) - used to create and edit GCC linker scripts .ld
 
 and install - for example:
 ```
@@ -167,6 +167,13 @@ To list USB ports:
 lsusb
 STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -w build/Application/STM32N6570-DK/Project-Trusted.bin 0x70100000
 
+```
+
+In GCC linker scripts .ld created using STM32CubeMX it may be possible to protect manually entered code using (not verified):
+```
+/* USER CODE BEGIN */
+...
+/* USER CODE END */
 ```
 
 ### VENC_SDCard
