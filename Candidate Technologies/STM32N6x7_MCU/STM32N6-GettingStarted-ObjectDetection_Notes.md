@@ -80,7 +80,7 @@ From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 Download STM32CubeIDE, STM32CubeProgrammer and STMCubeMX via a browser
 
 [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) \
-[STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
+[STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) \
 [STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
 
 and install - for example:
@@ -95,23 +95,6 @@ chmod +x SetupSTM32CubeMX-6.16.1
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
 
 The STM32CubeIDE install automatically installs all necessary tools but does ***not*** automatically put them on the path - this can be done using
-
-### VSCode Installation
-
-Optionally, VSCode can also be used:
-```
-# https://wiki.debian.org/VisualStudioCode
-# Run the following one line at a time:
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-
-sudo apt-get update
-
-sudo apt-get install code # or code-insiders
-
-# In VSCode install STM32CubeIDE
-```
 
 ```
 export PATH=$PATH:/opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.linux64_2.2.300.202509021040/tools/bin/
@@ -140,6 +123,24 @@ make -j$(nproc)
 
 STM32_SigningTool_CLI -bin build/Application/STM32N6570-DK/Project.bin -nk -of 0x8000000 -t fsbl -o build/Application/STM32N6570-DK/Project-Trusted.bin -hv 2.3 -dump "build/Application/STM32N6570-DK/Project-Trusted.bin"
 ```
+
+### VSCode Installation
+
+Optionally, VSCode can also be used:
+```
+# https://wiki.debian.org/VisualStudioCode
+# Run the following one line at a time:
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+
+sudo apt-get install code # or code-insiders
+
+# In VSCode install STM32CubeIDE
+```
+
 ### Build Output
 
 Build generates the following files
@@ -159,7 +160,7 @@ If the board has an inadequate power supply
 Error in initializing ST-LINK device.
 Reason: No device found on target.
 ```
-This is the case if power from a laptop USB port alone is used -  provide a 2nd power supply to hte board and check that jumper JP2 is in 3-4 position.
+This is the case if power from a laptop USB port alone is used -  provide a 2nd power supply to the board and check that jumper JP2 is in 3-4 position.
 
 To list USB ports:
 ```
