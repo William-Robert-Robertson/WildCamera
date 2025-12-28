@@ -77,15 +77,19 @@ From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 
 ### STM32CubeIDE Installation
 
-Download STM32CubeIDE and STM32CubeProgrammer via a browser
+Download STM32CubeIDE, STM32CubeProgrammer and STMCubeMX via a browser
 
 [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) \
 [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html)
+[STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
 
 and install - for example:
 ```
 sudo ./st-stm32cubeide_2.0.0_26820_20251114_1348_amd64.deb_bundle.sh
 sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
+unzip stm32cubemx-lin-v6-16-1.zip
+chmod +x SetupSTM32CubeMX-6.16.1
+./SetupSTM32CubeMX-6.16.1
 ```
 
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
