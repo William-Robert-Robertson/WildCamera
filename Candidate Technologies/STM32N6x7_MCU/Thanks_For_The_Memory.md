@@ -4,7 +4,7 @@ Adding the RAM required by the VENC (Video ENCoder) in this region as well requi
 
 https://community.st.com/t5/stm32-mcus-embedded-software/stm32n6x7-memory-allocation-for-isp-npu-and-venc/td-p/866284
 
-/STM32N6570-DK_GettingStarted_ObjectDetection/STM32N657xx.ld \
+The .ld file /STM32N6570-DK_GettingStarted_ObjectDetection/STM32N657xx.ld \
 https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection/blob/main/Application/STM32N6570-DK/STM32CubeIDE/STM32N657xx.ld \
 Defines a region AXISRAM1_S which contains only 1'536 MB of the STM32N6x7's 4.2 MB
 ```
@@ -16,12 +16,37 @@ MEMORY
 }
 ```
 
+main.c seems to define background and screen buffers with 2 bytes per pixel as large 1 dimensional arrays but the foreground buffer by contrast is a **double** buffer uint8_t lcd_fg_buffer**[2]** (will's emphasis) in main.c
+```
+/* Lcd Background Buffer */
+__attribute__ ((aligned (32)))
+uint8_t lcd_bg_buffer[LCD_BG_WIDTH * LCD_BG_HEIGHT * 2];
+/* Lcd Foreground Buffer */
+__attribute__ ((aligned (32)))
+uint8_t lcd_fg_buffer[2][LCD_FG_WIDTH * LCD_FG_HEIGHT * 2];
+static int lcd_fg_buffer_rd_idx;
+/* screen buffer */
+__attribute__ ((aligned (32)))
+static uint8_t screen_buffer[LCD_FG_WIDTH * LCD_FG_HEIGHT * 2];
+```
+Inspecting these arrays via the debugger confirms the above.
+
+A macro is defined for the foreground buffer in main.c which seems to allocate 2 bytes per pixel 
+```
+#define LCD_FG_FRAMEBUFFER_SIZE  (LCD_FG_WIDTH * LCD_FG_HEIGHT * 2)
+```
+It should in theory be possible to greatly reduce the SRAM consumed by the foreground double buffer by greatly reducing the colour depth of the foreground - only a small number of colours plus alpha transparency are used in the foreground layer (typically 1 colour for the box, one colour for the text and one for alpha transparency) so L8 with CLUT (Colour Look Up Table) supporting 256 colours would be more than adequate for the foreground. By using L8 this could be halved from 2 bytes to only 1 byte. (This should work because this specific example does **not** use TouchGFX - TouchGFX does not support L8.)
+
+The question is whether it's simpler to adjust the example to reduce the colour depth of the foreground double buffer to free up SRAM to be used for the buffers required for the VENC to run smoothly or whether we should simply get rid of this foreground buffer since it won't be used in the finished WildCamera?
+
+Or perhaps we just need to define a compiler directive which builds the code in a demonstration mode where the foreground double buffer is used or in production mode where the foreground double buffer is not used and so there's enough SRAM free for buffers for the VENC to be used instead?
+
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
 states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
 More detail of the higher sections of memory is given in:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Model/my_mpools/stm32n6-app2_STM32N6570-DK.mpool
-which sets out:
+which sets out seperate regions for use by the CPU and NPU:
 ```
 AXISRAM2 cpuRAM2 1024 K,
 AXISRAM3 npuRAM3 448 K,
@@ -42,3 +67,6 @@ In /STM32N6570-DK_GettingStarted_ObjectDetection/Application/venc.c this is set 
 ```
 uint32_t output_buffer[800*480/8] __NON_CACHEABLE __attribute__((aligned(8)));
 ```
+
+https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
+states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
