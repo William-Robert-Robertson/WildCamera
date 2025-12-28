@@ -16,7 +16,7 @@ MEMORY
 }
 ```
 
-main.c seems to define background and screen buffers with 2 bytes per pixel as large 1 dimensional arrays but the foreground buffer by contrast is a **double** buffer uint8_t lcd_fg_buffer**[2]** (will's emphasis) in main.c
+main.c seems to define background and screen buffers with 2 bytes per pixel as large 1 dimensional arrays but the foreground buffer by contrast is a **double** buffer uint8_t lcd_fg_buffer[**2**] (will's emphasis) in main.c
 ```
 /* Lcd Background Buffer */
 __attribute__ ((aligned (32)))
@@ -31,11 +31,11 @@ static uint8_t screen_buffer[LCD_FG_WIDTH * LCD_FG_HEIGHT * 2];
 ```
 Inspecting these arrays via the debugger confirms the above.
 
-A macro is defined for the foreground buffer in main.c which seems to allocate 2 bytes per pixel 
+A macro is defined for the foreground buffer in main.c which seems to allocate 2 bytes per pixel (similar macros weren't found for the background buffer or the screen buffer).
 ```
 #define LCD_FG_FRAMEBUFFER_SIZE  (LCD_FG_WIDTH * LCD_FG_HEIGHT * 2)
 ```
-It should in theory be possible to greatly reduce the SRAM consumed by the foreground double buffer by greatly reducing the colour depth of the foreground - only a small number of colours plus alpha transparency are used in the foreground layer (typically 1 colour for the box, one colour for the text and one for alpha transparency) so L8 with CLUT (Colour Look Up Table) supporting 256 colours would be more than adequate for the foreground. By using L8 this could be halved from 2 bytes to only 1 byte. (This should work because this specific example does **not** use TouchGFX - TouchGFX does not support L8.)
+It should in theory be possible to greatly reduce the SRAM consumed by the foreground double buffer by greatly reducing the colour depth of the foreground - only a small number of colours plus alpha transparency are used in the foreground layer (typically 1 colour for the box, one colour for the text and one for alpha transparency) so L8 with CLUT (Colour Look Up Table) supporting 256 colours would be more than adequate for the foreground. By using L8 the size of the buffer could be halved from 2 bytes per pixel to only 1 byte. (This should work because this specific example does **not** use TouchGFX - TouchGFX does not support L8.)
 
 The question is whether it's simpler to adjust the example to reduce the colour depth of the foreground double buffer to free up SRAM to be used for the buffers required for the VENC to run smoothly or whether we should simply get rid of this foreground buffer since it won't be used in the finished WildCamera?
 
