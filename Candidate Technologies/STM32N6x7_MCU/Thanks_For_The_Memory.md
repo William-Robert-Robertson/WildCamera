@@ -55,6 +55,10 @@ Or perhaps put the frame buffers in external RAM - it seems to be fast enough:
 
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/RAM_Transfer_Speed_and_Frame_Buffers.md
 
+and power-efficient in Standby mode:
+
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Power_Budget/APS256XXN_PASR_PSRAM.md
+
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
 states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
 More detail of the higher sections of memory is given in:
