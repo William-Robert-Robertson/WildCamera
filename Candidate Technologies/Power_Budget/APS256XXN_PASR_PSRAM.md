@@ -31,3 +31,7 @@ Table 17: PASR MR4[2:0]
 "The PASR bits restrict refresh operation to a portion of the total memory array. This feature allows the device
 to reduce standby current by refreshing only that part of the memory array required by the host system. The refresh
 options are full array, one-half array, one-quarter array, one-eighth array, or none of the array"
+
+For details of the speed required for frame buffers and the speed of this RAM please see:
+
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/RAM_Transfer_Speed_and_Frame_Buffers.md
