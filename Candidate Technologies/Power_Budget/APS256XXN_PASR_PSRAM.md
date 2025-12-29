@@ -21,6 +21,12 @@ Full 40 μA => c. 80 μW \
 
 VDD Supply Voltage 1.62 1.98 V
 
+Part numbers:
+
+|   A   |    P  |   S   |  256  |  XX   |   N   |   -   |  OB9  |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | 
+| Company | PSRAM | Sync | Density | Width | Vendor define | - | Voltage, Prorocol, etc. | 
+
 Table 17: PASR MR4[2:0]
 "The PASR bits restrict refresh operation to a portion of the total memory array. This feature allows the device
 to reduce standby current by refreshing only that part of the memory array required by the host system. The refresh
