@@ -51,6 +51,10 @@ The question is whether it's simpler to adjust the example to reduce the colour 
 
 Or perhaps we just need to define a compiler directive which builds the code in a demonstration mode where the foreground double buffer is used or in production mode where the foreground double buffer is not used and so there's enough SRAM free for buffers for the VENC to be used instead?
 
+Or perhaps put the frame buffers in external RAM - it seems to be fast enough:
+
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/RAM_Transfer_Speed_and_Frame_Buffers.md
+
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
 states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
 More detail of the higher sections of memory is given in:
