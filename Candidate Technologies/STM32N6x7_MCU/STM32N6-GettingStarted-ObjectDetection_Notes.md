@@ -186,6 +186,9 @@ Command shows "gcc" not "g++" and under "All Options" there's nothing to indicat
 
 Under "MCU GCC Compiler" -> General -> Language Standard it lists "GNU11 (ISO C11 + gnu extensions)" which seems to be clear that it's C and not C++
 
+The numbers in C89, C95, C99, C11, C17, C23 are the year numbers \
+https://en.cppreference.com/w/c.html
+
 ### VENC_SDCard
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
