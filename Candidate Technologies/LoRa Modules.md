@@ -11,6 +11,9 @@ _(Covering a range of frequency bands from 136 MHz to 960 MHz and seperately 2.4
 by By Richard Wallace \
 https://www.ti.com/lit/an/swra161b/swra161b.pdf
 
+ST AN5407 Optimized RF board layout for STM32WL Series \
+https://community.st.com/ysqtg83639/attachments/ysqtg83639/mcu-wireless-forum/9869/1/dm00660594-optimized-rf-board-layout-for-stm32wl-series-stmicroelectronics.pdf
+
 LoRa appears to use different frequencies in North America, Europe and Asia - possible causes of interference also vary with geography - some LoRa frequency bands are listed here: \
 TI Long range Sub-1 GHz products -> Frequency bands tab \
 https://www.ti.com/product-category/wireless-connectivity/sub-1-ghz/overview.html#tab-3
