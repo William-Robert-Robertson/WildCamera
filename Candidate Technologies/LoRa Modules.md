@@ -24,6 +24,9 @@ https://www.ti.com/product-category/wireless-connectivity/sub-1-ghz/overview.htm
 | 470-510MHz | (China). |
 | 450-470MHz | (America). |
 
+Copies of data sheets and application notes can be found in: \
+https://github.com/William-Robert-Robertson/WildCamera/tree/main/Candidate%20Technologies/Antennae/Data_Sheets
+
 Price comparrison:
 
 https://debix.io/hardware/lora-board.html
