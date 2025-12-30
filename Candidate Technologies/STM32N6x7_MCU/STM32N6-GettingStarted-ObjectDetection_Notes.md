@@ -102,6 +102,8 @@ sudo ./stedgeai-linux-onlineinstaller
 # STM32CubeMX -> Help -> Manage embedded software packages -> STMicroelectronics -> X-CUBE-AI -> Artificial intelligence 10.2.0
 # this should now be present under Categories -> X-Cube-AI
 ```
+X-Cube-AI is doecumented here: \
+https://www.st.com/en/embedded-software/x-cube-ai.html
 
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
 
