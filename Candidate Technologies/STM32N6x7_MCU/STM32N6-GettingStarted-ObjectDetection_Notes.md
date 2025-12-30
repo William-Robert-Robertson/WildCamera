@@ -92,11 +92,15 @@ unzip stm32cubemx-lin-v6-16-1.zip
 chmod +x SetupSTM32CubeMX-6.16.1
 ./SetupSTM32CubeMX-6.16.1
 
+# This does not seem to install AI-related functionality in STM32CubeMX:
 unzip stedgeai-lin.zip
 chmod +x stedgeai-linux-onlineinstaller
 cd stedgeai-linux-onlineinstaller
 # Important to run this line as sudo:
 sudo ./stedgeai-linux-onlineinstaller
+
+# STM32CubeMX -> Help -> Manage embedded software packages -> STMicroelectronics -> X-CUBE-AI -> Artificial intelligence 10.2.0
+# this should now be present under X-Cube-AI
 ```
 
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
