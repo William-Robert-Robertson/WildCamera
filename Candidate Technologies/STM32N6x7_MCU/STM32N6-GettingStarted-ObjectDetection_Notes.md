@@ -176,6 +176,16 @@ In GCC linker scripts .ld created using STM32CubeMX it may be possible to protec
 /* USER CODE END */
 ```
 
+### C or C++
+
+ST's coding style seems to be to use some C++-like elements in C code.
+
+In STMCubeIDE 2.0.0 Project Explorer -> select project -> right click -> Properties -> Tool Settings - there "MCU GCC Compiler" is listed not "MCU G++ Compiler" showing that this code is compiled by the IDE as C.
+
+Command shows "gcc" not "g++" and under "All Options" there's nothing to indicate that C++ is intended.
+
+Under "MCU GCC Compiler" -> General -> Language Standard it lists "GNU11 (ISO C11 + gnu extensions)" which seems to be clear that it's C and not C++
+
 ### VENC_SDCard
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
