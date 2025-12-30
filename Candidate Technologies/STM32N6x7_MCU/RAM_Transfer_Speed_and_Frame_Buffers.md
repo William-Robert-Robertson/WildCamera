@@ -4,6 +4,7 @@ STM32N6570 - RAM Transfer Speed and Frame Buffers
 | ----- | ----- | ----- |
 | #define SCREEN_HEIGHT (480)	| 400	| Pixels |
 | #define SCREEN_WIDTH  (800)	| 800 |	Pixels |
+| #define LCD_FG_FRAMEBUFFER_SIZE  (LCD_FG_WIDTH * LCD_FG_HEIGHT * 2)	| 2 | Bytes	per pixel | 
 | This gives a buffer size per frame per buffer for 1 byte L8 pixels of: | 320000 | Bytes |
 | or: | 312.5 | Kilobytes |
 | or: | 0.3051757813 | Megabytes |
