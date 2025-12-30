@@ -2,7 +2,14 @@ LoRa Modules
 
 TI Design Note DN023 \
 868 MHz, 915 MHz and 955 MHz Inverted F Antenna \
+by Fredrik Kervel \
 https://www.ti.com/lit/an/swra228c/swra228c.pdf
+
+TI Application Note AN058 \
+Antenna Selection Guide \
+_(Covering a range of frequency bands from 136 MHz to 960 MHz and seperately 2.4 GHz.)_ \
+by By Richard Wallace \
+https://www.ti.com/lit/an/swra161b/swra161b.pdf
 
 LoRa appears to use different frequencies in North America, Europe and Asia - possible causes of interference also vary with geography - some LoRa frequency bands are listed here: \
 TI Long range Sub-1 GHz products -> Frequency bands tab \
