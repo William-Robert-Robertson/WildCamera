@@ -75,13 +75,14 @@ From 7.4.1 Power source selection of UM3300 Discovery kit with STM32N657X0 MCU
 
 [USB-A to USB-C cable connecting between on board ST-LINK/V3EC port and laptop is not enough to provide the needed current](https://community.st.com/t5/stm32-mcus-boards-and-hardware/stm32n6570-dk-ai-demo-not-working/td-p/755464)
 
-### STM32CubeIDE Installation
+### STM32CubeIDE, STM32CubeProgrammer, STMCubeMX and STEdgeAI-Core Installation
 
-Download STM32CubeIDE, STM32CubeProgrammer and STMCubeMX via a browser
+Download STM32CubeIDE, STM32CubeProgrammer, STMCubeMX and STEdgeAI-Core via a browser
 
 [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) \
 [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) \
-[STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) - used to create and edit GCC linker scripts .ld
+[STMCubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) - used to create and edit GCC linker scripts .ld \
+[ST Edge AI Core](https://www.st.com/en/development-tools/stedgeai-core.html)
 
 and install - for example:
 ```
@@ -90,6 +91,12 @@ sudo ./SetupSTM32CubeProgrammer-2.21.0.linux
 unzip stm32cubemx-lin-v6-16-1.zip
 chmod +x SetupSTM32CubeMX-6.16.1
 ./SetupSTM32CubeMX-6.16.1
+
+unzip stedgeai-lin.zip
+chmod +x stedgeai-linux-onlineinstaller
+cd stedgeai-linux-onlineinstaller
+# Important to run this line as sudo:
+sudo ./stedgeai-linux-onlineinstaller
 ```
 
 *(Note: If STM32CubeIDE is upgraded to 2.0.0 from a prior version of STM32CubeIDE, the upgrade on Debian has to be done by removing the old IDE and installing 2.0.0 as a fresh install. The steps for removal of the old IDE depend on the old IDE version.)*
