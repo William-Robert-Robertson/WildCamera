@@ -19,6 +19,8 @@ Performance: Clock rate up to 250MHz,
 | 500MBps read/write throughput – X8 | 500 | Megabytes per second theoretical maximum for external RAM
 | 1000MBps read/write throughput – X16| 1000 | Megabytes per second theoretical maximum for external RAM
 
+In X8/X16 mode ADQ0 to ADQ7 and DQ8 to DQ15 - ball pitch 1.0mm, ball size 0.4mm - package code BG (in X8 mode A/DQ[7:0] is a shared address and data bus and DQ8 to DQ15 are not used while in X16 mode DQ[15:8] are used as a data bus).
+
 Very approximate calculations for the above are in this sreadsheet:
 
 STM32N6570 - RAM Transfer Speed and Frame Buffers \
