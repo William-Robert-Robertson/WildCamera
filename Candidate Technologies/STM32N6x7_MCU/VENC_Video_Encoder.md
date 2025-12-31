@@ -57,7 +57,9 @@ The memory footprints have been monitored while running real use cases (they are
 >
 >Double buffer: This gives the encoder a possibility to discard a coded frame to fulfill the requirements of HRD (Hypothetical Reference Decoder). This is the default mode.
 >
->The above number is using double buffer. 
+>The above number is using double buffer.
+
+Note: Hypothetical Reference Decoder seems to be for transmitting video over networks rather than saving to local storage https://ieeexplore.ieee.org/abstract/document/1218199
 
 [1.2.2. Encode Data Flow Example](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
 
