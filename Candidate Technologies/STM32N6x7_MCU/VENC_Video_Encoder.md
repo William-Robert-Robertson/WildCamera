@@ -36,10 +36,27 @@ https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-
 
 [1.2.2. Encode Data Flow Example↑](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
 
+This document uses YUV 4:2:0 - so for each block of 4 pixels 4 bytes luma and 2 bytes of chroma or averaged per pixel 8 bits chroma and 4 bits luma:
+https://stackoverflow.com/questions/19677747/how-to-find-out-resolution-and-count-of-frames-in-yuv-420-file
+```
+The "4:2:0" in the name describes how the luma (Y) and chroma (U and V) components are sampled. For every block of 4 pixels (in a 2x2 grid), there are: 
+
+    4 luma (Y) samples, one for each pixel (Width × Height total Y bytes).
+    1 U (Cb) chroma sample, shared by all four pixels.
+    1 V (Cr) chroma sample, also shared by all four pixels. 
+```
+
+The VENC seems to read the chrominance data from the reference frame twice per frame and write the reference frame twice per frame - 8-bit YUV 4:2:0  resulting in an "average bandwidth of 16bpp" for read.
+
 >VENC Reads Reference Frame from memory (YUV 4:2:0)
 >
 >    Note that VENC reads Chrominance (UV) data twice resulting in a average bandwidth of 16bpp
-
+>VENC Writes Reference Frame to memory (YUV 4:2:0)
+>
+>    Reference Frame in external memory depending on its resolution and memory available
+>
+>VENC uses its internal memory (VENCRAM) for encode
+>
 ```
 git clone https://github.com/STMicroelectronics/STM32CubeN6.git
 cd STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
