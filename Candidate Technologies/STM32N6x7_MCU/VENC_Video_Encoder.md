@@ -1,5 +1,30 @@
 STM32N6x7 VENC Video Encoder
 
+The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is © Verisilicon
+
+>4 Memory Requirements \
+>A.1 Input Picture Buffer \
+>The input picture buffer is a memory buffer for hardware use only which must be allocated by external means (i.e., \
+>it is not allocated by the encoder software). \
+>... \
+>4.2 Output Stream Buffer \
+>Output buffer of the encoder is externally allocated memory area where the produced stream data is available to \
+>the application. In all encoding modes the output buffer must be linear and contiguous, and allocated in a memory \
+>area accessible by the hardware.  \
+>... \
+>4.3.1 Hardware Internal Buffers \
+>The hardware internal buffers store the internal reference picture used by the hardware for motion estimation. \
+>The buffers must be linear and contiguous, and allocated in a memory area accessible by the hardware. They also \
+>must be 64-bit aligned. The buffer size depends on the encoded picture resolution. \
+>... \
+>4.3.4 Overall Memory Usage \
+>Table 13. H.264 HW/SW Shared Memory Size in Bytes \
+>720p Total Buffer Size 194'256 bytes \
+>... \
+>4.3.4 Overall Memory Usage \
+>Table 16. Memory Usage of H.264 Encoder With Different Picture Sizes \
+>Total default Buffer Size **4'244 Kbytes** \
+
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
 ```
