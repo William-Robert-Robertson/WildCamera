@@ -24,6 +24,13 @@ The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is 
 >4.3.4 Overall Memory Usage \
 >Table 16. Memory Usage of H.264 Encoder With Different Picture Sizes \
 >Total default Buffer Size **4'244 Kbytes** \
+>... \
+>... \
+>6.7 Recommendations for Memory Allocation/Optimization \
+>Because the memory busload during the encoding can get very high, it makes sense to allocate the hardware \
+>related buffers to the fastest memory area. \
+>For the reference picture memory, the chrominance data is the most critical. Therefore, it is recommended to give \
+>chrominance data a higher priority for using faster memory areas \
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
