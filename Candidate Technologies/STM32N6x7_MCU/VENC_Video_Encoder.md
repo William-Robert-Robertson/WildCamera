@@ -34,6 +34,12 @@ The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is 
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
+[1.2.2. Encode Data Flow Example↑](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
+
+>VENC Reads Reference Frame from memory (YUV 4:2:0)
+>
+>    Note that VENC reads Chrominance (UV) data twice resulting in a average bandwidth of 16bpp
+
 ```
 git clone https://github.com/STMicroelectronics/STM32CubeN6.git
 cd STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
