@@ -45,6 +45,20 @@ The memory footprints have been monitored while running real use cases (they are
 | Internal SRAM   |	H264 Stream 	                       | VENC (Out) 	 | 88.22 KBytes | 31.98 KBytes |	17.81 KBytes |
 | Total           |	-                                      |	- 	         | 12.57 MBytes | **5.59 MBytes**  |	2.37 MBytes |
 
+>(*) Frame mode uses a 'ping-pong' buffer as the input frame.
+>
+>The total size used for the input raw frame is therefore 2 x Frame Height x Frame Length x 1.5 (12 bits per pixel in YUV 4:2:0).
+>
+>(**) The encoder may use one or two references frame:
+>
+>Single buffer: The encoder will use only one reference buffer. This saves some memory but it will restrain the encoder by not being able to discard coded frames.
+>
+>Using a single buffer should be considered if it is needed to be put in the internal memory.
+>
+>Double buffer: This gives the encoder a possibility to discard a coded frame to fulfill the requirements of HRD (Hypothetical Reference Decoder). This is the default mode.
+>
+>The above number is using double buffer. 
+
 [1.2.2. Encode Data Flow Example](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
 
 This document uses YUV 4:2:0 - so for each block of 4 pixels 4 bytes luma and 2 bytes of chroma or averaged per pixel 8 bits luma and 4 bits chroma:
