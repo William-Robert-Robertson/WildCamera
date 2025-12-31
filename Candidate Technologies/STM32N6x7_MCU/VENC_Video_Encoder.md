@@ -34,9 +34,20 @@ The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is 
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
 
-[1.2.2. Encode Data Flow Example↑](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
+[VideoBuffers Footprints](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#VideoBuffers_Footprints) \
+The memory footprints have been monitored while running real use cases (they are measured, not calculated). \
+[Frame Mode Encode](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Frame_Mode_Encode)
 
-This document uses YUV 4:2:0 - so for each block of 4 pixels 4 bytes luma and 2 bytes of chroma or averaged per pixel 8 bits chroma and 4 bits luma:
+| Buffer Location | 	Data                               | 	IP           | 	1080p       | 	720p       | 480p |
+| ---             | ---                                    | ---             | ---          | ---          | ---  | 
+| External RAM    |	Raw Frame(*)                           | DCMIPP          | 5.93 MBytes  | 2.64 MBytes  |	1.10 MBytes |
+| External RAM    |	Reference Frame +VENC buffers (**)     | VENC (Internal) | 6.55 MBytes  | 2.92 MBytes  |	1.25MBytes |
+| Internal SRAM   |	H264 Stream 	                       | VENC (Out) 	 | 88.22 KBytes | 31.98 KBytes |	17.81 KBytes |
+| Total           |	-                                      |	- 	         | 12.57 MBytes | **5.59 MBytes**  |	2.37 MBytes |
+
+[1.2.2. Encode Data Flow Example](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Encode_Data_Flow_Example)
+
+This document uses YUV 4:2:0 - so for each block of 4 pixels 4 bytes luma and 2 bytes of chroma or averaged per pixel 8 bits luma and 4 bits chroma:
 https://stackoverflow.com/questions/19677747/how-to-find-out-resolution-and-count-of-frames-in-yuv-420-file
 ```
 The "4:2:0" in the name describes how the luma (Y) and chroma (U and V) components are sampled. For every block of 4 pixels (in a 2x2 grid), there are: 
@@ -46,7 +57,10 @@ The "4:2:0" in the name describes how the luma (Y) and chroma (U and V) componen
     1 V (Cr) chroma sample, also shared by all four pixels. 
 ```
 
-The VENC seems to read the chrominance data from the reference frame twice per frame and write the reference frame twice per frame - 8-bit YUV 4:2:0  resulting in an "average bandwidth of 16bpp" for read.
+The VENC seems to: \
+Read the chrominance data from the reference frame **twice** per frame - resulting in an "average bandwidth of 16bpp" for read. \
+and \
+write the reference frame twice per frame - YUV 4:2:0
 
 >VENC Reads Reference Frame from memory (YUV 4:2:0)
 >
