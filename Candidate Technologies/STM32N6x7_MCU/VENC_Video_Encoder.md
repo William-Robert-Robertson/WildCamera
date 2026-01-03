@@ -1,5 +1,7 @@
 STM32N6x7 VENC Video Encoder
 
+The section [ST Measured Memory Footprint](https://github.com/William-Robert-Robertson/WildCamera/edit/main/Candidate%20Technologies/STM32N6x7_MCU/VENC_Video_Encoder.md#st-measured-memory-footprint-for-venc) below is the most relevent.
+
 The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is © Verisilicon
 
 >4 Memory Requirements \
@@ -33,6 +35,8 @@ The STM32N6x7 uses the Verisilicon Hantro VC8000NanoE VENC and the following is 
 >chrominance data a higher priority for using faster memory areas \
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
+
+### ST Measured Memory Footprint for VENC
 
 [VideoBuffers Footprints](https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#VideoBuffers_Footprints) \
 The memory footprints have been monitored while running real use cases (they are measured, not calculated). \
