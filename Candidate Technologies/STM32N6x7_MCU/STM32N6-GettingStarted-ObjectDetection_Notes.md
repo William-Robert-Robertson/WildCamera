@@ -156,6 +156,14 @@ sudo apt-get install code # or code-insiders
 # In VSCode install STM32CubeIDE
 ```
 
+These articles by [B.Montanari](https://community.st.com/t5/user/viewprofilepage/user-id/289) at ST are useful for VSCode:
+
+https://community.st.com/t5/stm32-mcus/how-to-debug-the-stm32n6-using-vs-code/ta-p/833499
+
+https://community.st.com/t5/stm32-mcus/how-to-add-post-build-commands-in-vs-code/ta-p/827930
+
+https://community.st.com/t5/stm32-mcus/how-to-debug-an-external-elf-file-in-vs-code/ta-p/827627
+
 ### Build Output
 
 Build generates the following files
