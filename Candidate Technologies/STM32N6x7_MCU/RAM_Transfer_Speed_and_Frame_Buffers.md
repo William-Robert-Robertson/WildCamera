@@ -11,6 +11,10 @@ STM32N6570 - RAM Transfer Speed and Frame Buffers
 | Assuming 30 fps for one buffer one-way this would be | 9375 | Kilobytes per Second |
 | or: | 9.155273438 | Megabytes per Second |
 
+The STM32N6570-DK board uses a PSRAM chip marked "apmemory APS256XXN-OBR" U26. - the "R" on "OBR"
+
+[A newer alternative to the APS256XXN-OBR can also be used - referring to AN5050 "Octo-SPI, Hexadeca-SPI, and XSPI interface can operate in two different low-level protocols: Regular-command and HyperBus"](https://community.st.com/t5/others-stm32-mcus-related/stm32n65-dk-alternative-for-ddram-aps256xxn-obr-bg/td-p/813330)
+
 APS256XXN-OBx9 OPI/HPI Xccela PSRAM - Double-Data-Rate OPI/HPI Xccela PSRAM \
 https://www.apmemory.com/en/downloadFiles/0324112221tz581562 \
 Performance: Clock rate up to 250MHz,
