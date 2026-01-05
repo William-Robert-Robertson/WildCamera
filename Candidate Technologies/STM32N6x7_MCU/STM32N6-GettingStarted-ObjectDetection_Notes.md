@@ -99,8 +99,10 @@ cd stedgeai-linux-onlineinstaller
 # Important to run this line as sudo:
 sudo ./stedgeai-linux-onlineinstaller
 
-# STM32CubeMX -> Help -> Manage embedded software packages -> STMicroelectronics -> X-CUBE-AI -> Artificial intelligence 10.2.0
+# STM32CubeMX -> Help -> Manage embedded software packages
+#  -> STMicroelectronics -> X-CUBE-AI -> Artificial intelligence 10.2.0
 # this should now be present under Categories -> X-Cube-AI
+#  -> STM32Cube MCU Packages -> STM32N6 -> STM32Cube MCU Package for STM32N6 Series (at time of writing 1.3.0 is the most recent)
 ```
 X-Cube-AI is doecumented here: \
 https://www.st.com/en/embedded-software/x-cube-ai.html
