@@ -81,12 +81,22 @@ This would be allocated from the two AXI_SRAM blocks on the internal 400 MHz AXI
 AXI-SRAM1 1024 KB
 AXI-SRAM2 1024 KB
 ```
-The VENC has 128 KM on this bus:
+The VENC has 128 KB on this bus:
 ```
 VENCRAM 128 KB
 ```
 A good description of the memory architecture of the STM32N6 is given from 5:50 onwards by Nicolas Santini at ST here:
 https://www.youtube.com/watch?v=29EUWNwfywI&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=6
+
+Nicolas Santini sumarises the RAM as follows:
+
+| RAM | Bus | Throughput |
+| --- | --- | --- |
+| NPU RAM | 900 MHz | 32 GB/s 4 x 14.4 GB/s |
+| NPU Cache | 400 MHz | 6.4 GB/s |
+| System RAM + FLEXMEM | 400 MHz | 12.8 GB/s |
+| hyperRAM | 200 MHz | 0.8 GB/s |
+| octoFlash | 200 MHz | 0.4 GB/s |
 
 AXISRAM is the fastest RAM on the STM32N6570 and deterministic.
 
