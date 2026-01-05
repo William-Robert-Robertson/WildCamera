@@ -25,6 +25,8 @@ Performance: Clock rate up to 250MHz,
 
 In X8/X16 mode ADQ0 to ADQ7 and DQ8 to DQ15 - ball pitch 1.0mm, ball size 0.4mm - package code BG (in X8 mode A/DQ[7:0] is a shared address and data bus and DQ8 to DQ15 are not used while in X16 mode DQ[15:8] are used as a data bus).
 
+[Some details of how the external PSRAM is configured are referred to here](https://community.st.com/t5/stm32-mcus-embedded-software/stm32h7s78-dk-examples-exceed-external-ram-chip-aps256xxn-obr-bg/td-p/779620)
+
 Very approximate calculations for the above are in this sreadsheet:
 
 STM32N6570 - RAM Transfer Speed and Frame Buffers \
