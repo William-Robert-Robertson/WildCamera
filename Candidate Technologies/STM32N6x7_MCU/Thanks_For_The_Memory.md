@@ -1,6 +1,61 @@
 
-The example projects for the STM32N6x7 place the RAM required by camera pipeline, ISP and NPU in the AXISRAM1_S region. \
+The example projects for the STM32N6x7 place the RAM required by camera pipeline and ISP in the AXISRAM1_S region. \
 Adding the RAM required by the VENC (Video ENCoder) in this region as well requires more RAM than is present in this region.
+
+/STM32N6-GettingStarted-ObjectDetection/Middlewares/ST/VideoEncoder_EWL/ewl_impl.c puts the reference frame for the VENC on the **heap** using **malloc** 🙈:
+```
+/**
+  * @brief  Allocate a frame buffer (contiguous linear RAM memory)
+  * @param  instance     EWL instance associated with the buffer to allocate
+  * @param  size         size in bytes of the requested memory
+  * @param  info         structure containing the allocated memory buffer parameters
+  * @retval i32          0 for success or a negative error code
+  */
+__weak i32 EWLMallocRefFrm(const void *instance, u32 size, EWLLinearMem_t *info)
+{
+  return EWLMallocLinear(instance, size, info);
+}
+```
+that leads us to
+```
+**
+  * @brief  Allocate a contiguous, linear RAM  memory buffer
+  * @note   implementation depends on the OS compatibility setup in ewl_conf.h
+  * @param  instance     EWL instance associated with the buffer to allocate
+  * @param  size         size in bytes of the requested memory
+  * @param  info         structure containing the allocated memory buffer parameters
+  * @retval i32          0 for success or a negative error code
+  */
+__weak i32 EWLMallocLinear(const void *instance, u32 size, EWLLinearMem_t *info)
+{
+  if (instance == NULL)
+  {
+    return EWL_ERROR;
+  }
+  VENC_EWL_TypeDef *inst = (VENC_EWL_TypeDef *) instance;
+  /* make size 8-byte aligned */
+  u32 size_aligned = ALIGNED_SIZE(size);
+  info->size = size_aligned;
+
+#if (EWL_ALLOC_API == EWL_USE_MALLOC_MM)
+  /* allocate using malloc and check return */
+  inst->chunks[inst->totalChunks] = (u32 *)malloc(size_aligned);
+  if (inst->chunks[inst->totalChunks] == NULL)
+  {
+    return EWL_ERROR;
+  }
+```
+That'll work fine as long as that's the only thing on the heap - if there's much else on the heap then it'll run out of SARM for the heap. \
+Lower down there's
+```
+#elif (EWL_ALLOC_API == EWL_USER_MM)
+  return EWL_ERROR;
+#else
+```
+>EWL = Encoder Wrapper Layer
+>MM = Memory Manager
+
+So likely best to implemnt a user MM (Memory Manager) for the EWL that specifies PSRAM for the VENC reference frame and buffers or to override the above functions wiht an implementation that does this.
 
 https://community.st.com/t5/stm32-mcus-embedded-software/stm32n6x7-memory-allocation-for-isp-npu-and-venc/td-p/866284
 
