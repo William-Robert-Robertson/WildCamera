@@ -13,6 +13,12 @@ STM32N6570 - RAM Transfer Speed and Frame Buffers
 
 The STM32N6570-DK board uses a PSRAM chip marked "apmemory APS256XXN-OBR" U26. - the "R" on "OBR"
 
+Note that for the STM32N6570 to reach the fastest possible speeds interacting with external RAM (200 MHz clock) it would be neccessarry to set OTP fuses as described in [How to program the OTP fuse bits in the STM32N6... changing the VDDIOs' voltage to 1.8 V instead of 3.3 V using STM32CubeProgrammer. This allows the STM32N6570-DK to achieve the nominal speed with the external memories.](https://community.st.com/t5/stm32-mcus/how-to-program-the-otp-fuse-bits-in-the-stm32n6/ta-p/782353)
+
+In this article "SB" means Solder Bridge - on the board SB35 and SB36 are two small zero ohm resistors beside U26.
+
+>This article provides a quick guide on what the STM32N6’s OTP bits are and how to program them. It includes step-by-step instructions and explanation on configuring the OTP124, responsible for changing the VDDIOs' voltage to 1.8 V instead of 3.3 V using STM32CubeProgrammer. This allows the STM32N6570-DK to achieve the nominal speed with the external memories.
+
 [A newer alternative to the APS256XXN-OBR can also be used - referring to AN5050 "Octo-SPI, Hexadeca-SPI, and XSPI interface can operate in two different low-level protocols: Regular-command and HyperBus"](https://community.st.com/t5/others-stm32-mcus-related/stm32n65-dk-alternative-for-ddram-aps256xxn-obr-bg/td-p/813330)
 
 APS256XXN-OBx9 OPI/HPI Xccela PSRAM - Double-Data-Rate OPI/HPI Xccela PSRAM \
