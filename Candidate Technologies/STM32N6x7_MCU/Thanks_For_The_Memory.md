@@ -148,11 +148,11 @@ More detail of the higher sections of memory is given in:
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Model/my_mpools/stm32n6-app2_STM32N6570-DK.mpool
 which sets out seperate regions for use by the CPU and NPU:
 ```
-AXISRAM2 cpuRAM2 1024 K,
-AXISRAM3 npuRAM3 448 K,
-AXISRAM4 npuRAM4 448 K,
-AXISRAM5 npuRAM5 448 K,
-AXISRAM6 npuRAM6 448 K
+AXISRAM2 cpuRAM2 1024 K
+AXISRAM3 npuRAM3 448 K - 900 MHz AXI bus
+AXISRAM4 npuRAM4 448 K - 900 MHz AXI bus
+AXISRAM5 npuRAM5 448 K - 900 MHz AXI bus
+AXISRAM6 npuRAM6 448 K - 900 MHz AXI bus
 ```
 giving a total of 1024 K of CPU SRAM and 1792 K of NPU SRAM defined in the .mpool file.
 
