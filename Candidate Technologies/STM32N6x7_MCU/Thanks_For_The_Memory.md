@@ -2,7 +2,7 @@
 The example projects for the STM32N6x7 place the RAM required by camera pipeline and ISP in the AXISRAM1_S region. \
 Adding the RAM required by the VENC (Video ENCoder) in this region as well requires more RAM than is present in this region.
 
-/STM32N6-GettingStarted-ObjectDetection/Middlewares/ST/VideoEncoder_EWL/ewl_impl.c puts the reference frame for the VENC on the **heap** using **malloc** 🙈:
+/STM32N6-GettingStarted-ObjectDetection/Middlewares/ST/VideoEncoder_EWL/ewl_impl.c allocates the reference frame for the VENC using **malloc** - effectively on the heap 🙈:
 ```
 /**
   * @brief  Allocate a frame buffer (contiguous linear RAM memory)
