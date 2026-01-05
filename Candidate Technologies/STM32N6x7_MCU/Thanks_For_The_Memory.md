@@ -81,6 +81,10 @@ This would be allocated from the two AXI_SRAM blocks on the internal 400 MHz AXI
 AXI-SRAM1 1024 KB
 AXI-SRAM2 1024 KB
 ```
+The VENC has 128 KM on this bus:
+```
+VENCRAM 128 KB
+```
 A good description of the memory architecture of the STM32N6 is given from 5:50 onwards by Nicolas Santini at ST here:
 https://www.youtube.com/watch?v=29EUWNwfywI&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=6
 
