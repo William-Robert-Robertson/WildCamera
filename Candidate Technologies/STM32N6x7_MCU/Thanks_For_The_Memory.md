@@ -76,6 +76,13 @@ MEMORY
   PSRAM (xrw)           : ORIGIN = 0x91000000, LENGTH =  16M
 }
 ```
+This would be allocated from the two AXI_SRAM blocks on the internal 400 MHz AXI bus:
+```
+AXI-SRAM1 1024 KB
+AXI-SRAM2 1024 KB
+```
+A good description of the memory architecture of the STM32N6 is given from 5:50 onwards by Nicolas Santini at ST here:
+https://www.youtube.com/watch?v=29EUWNwfywI&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=6
 
 AXISRAM is the fastest RAM on the STM32N6570 and deterministic.
 
@@ -122,6 +129,16 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Doc/Boot-Overview.md#boot-from-flash-with-first-stage-boot-loader
 states "STM32N6570-DK: 1MB of SRAM1 is reserved for the User App (see STM32N657xx.ld) and 1MB of SRAM2 is reserved for the network activations (see stm32n6-app2_STM32N6570-DK.mpool)."
+
+After AXISRAM1_S being defined by /STM32N6570-DK_GettingStarted_ObjectDetection/STM32N657xx.ld
+```
+/* Memories definition */
+MEMORY
+{
+  AXISRAM1_S (xrw)      : ORIGIN = 0x34000400, LENGTH =  1536K
+  PSRAM (xrw)           : ORIGIN = 0x91000000, LENGTH =  16M
+}
+```
 More detail of the higher sections of memory is given in:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/blob/main/Model/my_mpools/stm32n6-app2_STM32N6570-DK.mpool
@@ -131,7 +148,7 @@ AXISRAM2 cpuRAM2 1024 K,
 AXISRAM3 npuRAM3 448 K,
 AXISRAM4 npuRAM4 448 K,
 AXISRAM5 npuRAM5 448 K,
-AXISRAM6 npuRAM6 448K
+AXISRAM6 npuRAM6 448 K
 ```
 giving a total of 1024 K of CPU SRAM and 1792 K of NPU SRAM defined in the .mpool file.
 
