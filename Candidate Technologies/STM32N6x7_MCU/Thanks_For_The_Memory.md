@@ -52,7 +52,7 @@ Lower down there's
   return EWL_ERROR;
 #else
 ```
->EWL = Encoder Wrapper Layer
+>EWL = Encoder Wrapper Layer\
 >MM = Memory Manager
 
 So likely best to implemnt a user MM (Memory Manager) for the EWL that specifies PSRAM for the VENC reference frame and buffers or to override the above functions wiht an implementation that does this.
