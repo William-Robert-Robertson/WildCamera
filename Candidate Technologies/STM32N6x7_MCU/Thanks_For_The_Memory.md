@@ -57,6 +57,10 @@ Lower down there's
 
 So likely best to implemnt a user MM (Memory Manager) for the EWL that specifies PSRAM for the VENC reference frame and buffers or to override the above functions wiht an implementation that does this.
 
+Note that for the STM32N6570 to reach the fastest possible speeds interacting with external RAM (200 MHz clock) it would be neccessarry to set OTP fuses as described in [How to program the OTP fuse bits in the STM32N6... changing the VDDIOs' voltage to 1.8 V instead of 3.3 V using STM32CubeProgrammer. This allows the STM32N6570-DK to achieve the nominal speed with the external memories.](https://community.st.com/t5/stm32-mcus/how-to-program-the-otp-fuse-bits-in-the-stm32n6/ta-p/782353)
+
+>This article provides a quick guide on what the STM32N6’s OTP bits are and how to program them. It includes step-by-step instructions and explanation on configuring the OTP124, responsible for changing the VDDIOs' voltage to 1.8 V instead of 3.3 V using STM32CubeProgrammer. This allows the STM32N6570-DK to achieve the nominal speed with the external memories.
+
 https://community.st.com/t5/stm32-mcus-embedded-software/stm32n6x7-memory-allocation-for-isp-npu-and-venc/td-p/866284
 
 The .ld file /STM32N6570-DK_GettingStarted_ObjectDetection/STM32N657xx.ld \
