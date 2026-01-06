@@ -6,7 +6,7 @@ https://www.apmemory.com/en/downloadFiles/0324112221tz581562 \
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/APM_PSRAM_E7_OPI_Xccela%20(APS256XXN-OBx9%20KGD_PKG)_v1.0.pdf
 
 Typical Standby Current: \
-40μA @ 25°C (HalfsleepTM Mode with data retained)
+**40μA** @ 25°C (HalfsleepTM Mode with data retained)
 
 Table 28: Typical-mean PASR Current @ 25°C \
 Standby Current @ 25°C \
@@ -20,6 +20,10 @@ Full 40 μA => c. 80 μW \
 1/8 22 μA => c. 44 μW
 
 VDD Supply Voltage 1.62 1.98 V
+
+By contrast: In Stop mode - retaining SRAM:
+DS14791 Rev 9 dated December 2025:
+p156 Table 42. and Table 43. Current consumption in Stop mode show c. 10 mA at 1.8 V or c. **18 mW**
 
 Part numbers:
 
