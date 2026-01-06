@@ -13,6 +13,8 @@ STM32N6570 - RAM Transfer Speed and Frame Buffers
 
 The STM32N6570-DK board uses a PSRAM chip marked "apmemory APS256XXN-OBR" U26. - the "R" on "OBR"
 
+Nicolas Santini refers to https://stm32ai-cs.st.com/assets/embedded-docs/stneuralart_programming_model.html#ref_npu_memory_sub_system stating "0.8 GB/s" - 0.8 Gigabytes per second per second for 200 MHz hyperRAM external RAM.
+
 Note that for the STM32N6570 to reach the fastest possible speeds interacting with external RAM (200 MHz clock) it would be neccessarry to set OTP fuses as described in [How to program the OTP fuse bits in the STM32N6... changing the VDDIOs' voltage to 1.8 V instead of 3.3 V using STM32CubeProgrammer. This allows the STM32N6570-DK to achieve the nominal speed with the external memories.](https://community.st.com/t5/stm32-mcus/how-to-program-the-otp-fuse-bits-in-the-stm32n6/ta-p/782353) - taking note that [Write latency, WLC, is default to 5 after power up... When operating frequency exceeding Fmax listed in the table will result in write data corruption.](https://community.st.com/t5/stm32-mcus-embedded-software/stm32h7s78-dk-examples-exceed-external-ram-chip-aps256xxn-obr-bg/td-p/779620)
 
 In this article "SB" means Solder Bridge - on the board SB35 and SB36 are two small zero ohm resistors beside U26.
