@@ -88,7 +88,7 @@ VENCRAM 128 KB
 A good description of the memory architecture of the STM32N6 is given from 5:50 onwards by Nicolas Santini at ST here:
 https://www.youtube.com/watch?v=29EUWNwfywI&list=PLTJzs51NlEICI7ARAHOyUqMhTgJE0UFv0&index=6
 
-Nicolas Santini sumarises the RAM as follows:
+Nicolas Santini refers to https://stm32ai-cs.st.com/assets/embedded-docs/stneuralart_programming_model.html#ref_npu_memory_sub_system and sumarises the RAM as follows:
 
 | RAM | Bus | Throughput |
 | --- | --- | --- |
