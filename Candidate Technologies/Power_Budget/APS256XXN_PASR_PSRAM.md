@@ -10,14 +10,14 @@ Typical Standby Current: \
 
 Table 28: Typical-mean PASR Current @ 25°C \
 Standby Current @ 25°C \
-Full 90 μA =>  c. 180 μW \
+Full 90 μA =>  c. **180 μW** \
 ... \
-1/8 72 μA =>  c. 144 μW
+1/8 72 μA =>  c. **144 μW**
 
 HalfsleepTM Current @ 25°C \
-Full 40 μA => c. 80 μW \
+Full 40 μA => c. **80 μW** \
 ... \
-1/8 22 μA => c. 44 μW
+1/8 22 μA => c. **44 μW**
 
 VDD Supply Voltage 1.62 1.98 V
 
