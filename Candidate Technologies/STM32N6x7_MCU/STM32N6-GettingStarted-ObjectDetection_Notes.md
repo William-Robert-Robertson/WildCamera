@@ -6,6 +6,10 @@ https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection \
 
 https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection (under active development - may not be stable)
 
+Documentation for the Neural-ART accelerator can be found here:
+
+https://stm32ai-cs.st.com/assets/embedded-docs/stneuralart_programming_model.html
+
 ```
 git clone https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection
 cd STM32N6-GettingStarted-ObjectDetection/
