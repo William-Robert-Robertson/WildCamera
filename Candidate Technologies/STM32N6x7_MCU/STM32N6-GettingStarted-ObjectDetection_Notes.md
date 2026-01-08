@@ -18,6 +18,15 @@ git submodule update --init
 ls Middlewares/ST/stm32-mw-fatfs/
 ```
 
+```
+git clone https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection.git -b feature/sdio-tests --recurse-submodules
+# or
+git stash # Stash existing unimportant minor local changes.
+git pull --recurse-submodules
+git checkout feature/sdio-tests
+git submodule update # Shouldn't be neccessary because no submodules have changed since last update.
+```
+
 Optionally, Claude can be installed:
 ```
 curl -fsSL https://claude.ai/install.sh | bash
