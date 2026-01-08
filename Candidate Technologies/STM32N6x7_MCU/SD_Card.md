@@ -1,1 +1,8 @@
+SD Card
 
+OTP Fuses
+```
+Under HCONF1
+HSLV_VDDIO5 for SDMMC2
+HSLV_VDDIO4 for SDMMC1
+```
