@@ -1,6 +1,6 @@
 VENC EWL Encoder Wrapper Layer
 
-The EWL layer is available in three variants: ThreadX, FreeRTOS, and No OS.
+The EWL layer is available in three variants: ThreadX, FreeRTOS, and bare metal (No OS).
 
 >Hello @Will_Robertson,
 >
