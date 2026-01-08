@@ -21,7 +21,12 @@ The .project file used by STMCubeIDE is a hidden file:
 ```
 .project
 ```
-and so listed only with -a 
+and so listed only with -a \
+CubeIDE also genrates other hidden directories and files:
+```
+.medadata/
+.log
+```
 
 The repository contains some onomatopoeically named _ew_ and _ic_ files provided for other toolchains (_"IAR Embedded Workbench (EWARM)"_ 🙈 ) - these files are ignored by CubeIDE and VSCode:
 ```
