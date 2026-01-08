@@ -15,3 +15,12 @@ This can then be imported into CubeIDE e.g.
 ```
 /home/will/STM32CubeIDE/STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard/STM32CubeIDE
 ```
+
+The repository contains some files provided for other toolchains (_"IAR Embedded Workbench (EWARM)"_ 🙈 ) - these files are ignored by CubeIDE and VSCode:
+```
+.icf
+.ew...anything
+.ewd
+.ewp
+.eww
+```
