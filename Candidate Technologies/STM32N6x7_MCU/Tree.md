@@ -8,7 +8,9 @@ Debian comes without the tree comand - to install it using APT (Advanced Package
 sudo apt install tree
 ```
 
-Tree can also be used with grep 🌲🌳🙂
+Tree can also be used with -a to display all files including hidden files and piped to grep 🌲🌳🙂
 ```
 tree | grep STM32
+
+tree -a STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard | grep .projec
 ```
