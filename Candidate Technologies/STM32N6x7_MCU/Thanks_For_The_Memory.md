@@ -95,8 +95,13 @@ Nicolas Santini refers to https://stm32ai-cs.st.com/assets/embedded-docs/stneura
 | NPU RAM | 900 MHz | 32 GB/s 4 x 14.4 GB/s | 4 x 448 KB AXIRAM3 AXIRAM4 AXIRAM5 AXIRAM6 |
 | NPU Cache | 400 MHz | 6.4 GB/s | 256 KB AXICACHE |
 | System RAM + FLEXMEM | 400 MHz | 12.8 GB/s | 1 MB AXIRAM2 + 624 KB AXIRAM1 + 400 KB FLEX/AXIRAM1 |
+| D-TCM | 800/600 MHz | | 128 KB Data - Tightly Coupled Memory <sup>\*</sup> |
+| I-TCM | 800/600 MHz | | 64 KB Instruction - Tightly Coupled Memory <sup>\*</sup> |
 | hyperRAM | 200 MHz | 0.8 GB/s | |
 | octoFlash | 200 MHz | 0.4 GB/s | |
+
+Frequency: Overdrive/Normal MHz
+<sup>\*</sup> up to 256 KB with FLEXMEM
 
 AXISRAM is the fastest RAM on the STM32N6570 and deterministic.
 
