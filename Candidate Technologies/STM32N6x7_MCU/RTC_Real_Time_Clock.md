@@ -10,5 +10,5 @@ management unit (TAMP) with STM32 MCUs
 
 >The RTC clock can be calibrated with a resolution of about 0.954 ppm with a range from -487.1 ppm
 to +488.5 ppm.
->
->
+
+0.954 ppm would be about 0.0824 seconds per day - however actual value would depend on temperature variations.
