@@ -127,6 +127,10 @@ It looks like - in theory - the VENC can do H264 encoding without a buffer by us
 
 https://community.st.com/t5/stm32-mcus-products/stm32n6-venc-hardware-handshake-with-mjpeg-encoding/m-p/837174
 
+### ST Measured Power Consumption for VENC
+
+https://wiki.st.com/stm32mcu/wiki/Introduction_to_Hardware_Video_Encoding_with_STM32#Power_consumption
+
 STM32 Developers on Facebook
 
 https://www.facebook.com/groups/STM32Developers/
