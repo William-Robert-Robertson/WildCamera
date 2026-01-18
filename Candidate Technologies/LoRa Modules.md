@@ -32,6 +32,9 @@ https://github.com/William-Robert-Robertson/WildCamera/tree/main/Candidate%20Tec
 
 Price comparrison:
 
+https://www.st.com/en/evaluation-tools/nucleo-l432kc.html
+10 EUR
+
 https://debix.io/hardware/lora-board.html
 
 https://ch.rs-online.com/web/p/entwicklungstools-kommunikation-und-drahtlos/2380446?gb=s
