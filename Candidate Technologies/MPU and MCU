@@ -81,8 +81,9 @@ Getting Started with the New AI-Accelerated STM32N6
 	47:70 more than one camera - 
 	47:40 all software totally free - 
 	Good quality (low resistance) USB cable needed for power supply - 
+	53:44 "Nucleo board... there is external flash but there is no external PSRAM so if you would like to implement heavy graphics or complex AI model I propose to switch to the DK board" "the example application is only compatible with the DK"
 	55:00 real time voice recognition - 
-	Bartosz Boryna Edouard Dulau Julian Ettarian st.com
+	Bartosz Boryna - Edouard Dulau - Julian Ettarian st.com
 	Video on YouTube:
 	https://www.youtube.com/watch?v=u1bDyDm961g
 
