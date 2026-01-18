@@ -149,6 +149,19 @@ https://www.st.com/content/st_com/en/events/stm32-summit.html
       STMicroelectronics
 edge.ai at st com
 
+Planned Mainline Driver for DCMIPP supporting all 3 pipes
+In planning stage in December 2025
+Alain Volmat at foss ST
+	"This series provides a set of fixes and enhancements
+	to the existing DCMIPP in its single-pipe version.
+	Those commits are done prior to addition of the multi-pipe
+	support of the DCMIPP which comes after those commits.
+	I splitted the overall series (including MP25 pixel pipes)
+	into 2 series so that it is easier to review."
+https://lore.kernel.org/all/20251219-stm32-dcmipp-enhancements-v1-0-e2f8d46f022c@foss.st.com/
+	Mainline driver covering only the first of 3 pipes
+https://patchew.org/linux/20241212-csi._5Fdcmipp._5Fmp25-v4-0-fbeb55a05ed7@foss.st.com/
+
 OpenST Linux distribution
   https://wiki.st.com/stm32mpu/wiki/OpenSTLinux_distribution
   Applicable for	STM32MP13x lines  STM32MP15x lines  STM32MP23x lines  STM32MP25x lines
