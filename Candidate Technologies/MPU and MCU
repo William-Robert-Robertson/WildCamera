@@ -1024,3 +1024,14 @@ https://www.renesas.com/en/document/apn/using-ethos-u-npu-ra8-mcus
 Nordic Semi
 https://docs.nordicsemi.com/bundle/ncs-3.0.2/page/zephyr/samples/modules/tflite-micro/tflm_ethosu/README.html
 	Arm Ethos-U
+TI
+TMS320F28P550SJ
+https://www.ti.com/product/TMS320F28P550SJ
+	NPU
+	TI TMS320F28P55x
+	https://www.ti.com/lit/ds/symlink/tms320f28p550sj.pdf
+	No mention of a MIPI CSI-2 interface.
+Sitara MCU Overview
+	https://www.ti.com/content/dam/videos/external-videos/en-us/9/3816841626001/6313936780112.mp4/subassets/sitara_mcu_overview_0.pdf
+	2x CSI-2 (4 lane) Camera or MMIC Interface
+	No NPU
