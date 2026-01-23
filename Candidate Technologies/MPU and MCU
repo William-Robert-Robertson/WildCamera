@@ -1000,6 +1000,10 @@ Teensy
 Espressif
 ESP32-P4
 https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp-dev-kits-en-master-esp32p4.pdf - dated 22 January 2026
+https://www.dfrobot.com/blog-14003.html
+	768 KB of on-chip SRAM, expandable with external PSRAM
+	No WiFi no Bluetooth on chip
+	No NPU
 https://www.olimex.com/Products/IoT/ESP32-P4/ESP32-P4-DevKit/open-source-hardware
 https://github.com/OLIMEX/ESP32-P4-DevKit/blob/main/HARDWARE/ESP32-P4-DevKit-Rev.C/ESP32-P4-DevKit_Rev_C.pdf
 https://de.aliexpress.com/item/1005008833551850.html
