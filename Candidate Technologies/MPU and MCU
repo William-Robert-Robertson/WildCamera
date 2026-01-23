@@ -1019,6 +1019,8 @@ Renesas - RA8P1 - Arm Ethos-U55 - 3000 CoreMark
 https://www.renesas.com/en/products/ra8p1
 	Ethos-U55 NPU, 256GOPS at 500MHz
 	Launched July 2025
+Using the Ethos-U NPU with RA8 MCUs
+https://www.renesas.com/en/document/apn/using-ethos-u-npu-ra8-mcus
 Nordic Semi
 https://docs.nordicsemi.com/bundle/ncs-3.0.2/page/zephyr/samples/modules/tflite-micro/tflm_ethosu/README.html
-Arm Ethos-U
+	Arm Ethos-U
