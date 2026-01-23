@@ -1004,11 +1004,16 @@ https://www.dfrobot.com/blog-14003.html
 	768 KB of on-chip SRAM, expandable with external PSRAM
 	No WiFi no Bluetooth on chip
 	No NPU
+https://mozelectronics.com/parts/espressif-esp32p4-3356/
+	H.264 encoder Baseline profile - Note: not Baseline/Main/High
 https://www.olimex.com/Products/IoT/ESP32-P4/ESP32-P4-DevKit/open-source-hardware
 https://github.com/OLIMEX/ESP32-P4-DevKit/blob/main/HARDWARE/ESP32-P4-DevKit-Rev.C/ESP32-P4-DevKit_Rev_C.pdf
 https://de.aliexpress.com/item/1005008833551850.html
 https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32p4/esp32-p4-eye/user_guide.html#getting-started
 https://www.youtube.com/watch?v=smV4Q9LxXeQ
+
+For comparrison with the above, the ST STM32N6x5xx STM32N6x7xx supports 
+codecs: H264 (MPEG4_Part10/AVC, Baseline/Main/High up to 5.2)
 
 ESP32-S3-EYE
 https://www.espressif.com/en/taxonomy/term/890
