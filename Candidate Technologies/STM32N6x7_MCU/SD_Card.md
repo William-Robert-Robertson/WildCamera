@@ -22,6 +22,7 @@ ST Introduction to LEVELX \
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_LEVELX
 
 ST AN5200 Getting started with the STM32H7 MCU SDMMC host controller \
+AN5200 - Rev 3 - June 2025 \
 http://www.st.com/resource/en/application_note/an5200-getting-started-with-the-stm32h7-mcu-sdmmc-host-controller-stmicroelectronics.pdf
 
 ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host controller \
