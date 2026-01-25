@@ -1,6 +1,6 @@
 Filesystems - File Systems
 
-PLease see also \
+Please see also \
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/SD_Card.md
 
 https://github.com/STMicroelectronics/stm32-mw-fatfs
