@@ -14,3 +14,17 @@ Under HCONF1
 HSLV_VDDIO5 for SDMMC2
 HSLV_VDDIO4 for SDMMC1
 ```
+
+Interface SD Card via SDIO (4Bit Mode & DMA) - Interface SD Card via SDIO (4Bit Mode & DMA) \
+https://controllerstech.com/interface-sd-card-with-stm32-via-sdio-4bit-mode/
+
+ST Introduction to LEVELX \
+https://wiki.st.com/stm32mcu/wiki/Introduction_to_LEVELX
+
+ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host controller \
+19-Nov-2020 \
+https://www.st.com/resource/en/application_note/an5519-getting-started-with-the-spc58ehxspc58nhx-multimedia-card-host-controller-stmicroelectronics.pdf
+
+AD AN-1443: Interfacing an SD Card Through the ADuCM3027/ADuCM3029 SPI Bus \
+https://www.analog.com/en/resources/app-notes/an-1443.html
+
