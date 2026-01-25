@@ -35,6 +35,6 @@ ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host contro
 19-Nov-2020 \
 https://www.st.com/resource/en/application_note/an5519-getting-started-with-the-spc58ehxspc58nhx-multimedia-card-host-controller-stmicroelectronics.pdf
 
-AD AN-1443: Interfacing an SD Card Through the ADuCM3027/ADuCM3029 SPI Bus \
+AD AN-1443: Interfacing an SD Card Through the ADuCM3027/ADuCM3029 SPI Bus - Not Relevant Because SPI \
 https://www.analog.com/en/resources/app-notes/an-1443.html
 
