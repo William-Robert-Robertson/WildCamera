@@ -25,6 +25,12 @@ ST AN5200 Getting started with the STM32H7 MCU SDMMC host controller \
 AN5200 - Rev 3 - June 2025 \
 http://www.st.com/resource/en/application_note/an5200-getting-started-with-the-stm32h7-mcu-sdmmc-host-controller-stmicroelectronics.pdf
 
+ST HAL SD How to Use \
+https://dev.st.com/stm32cube-docs/stm32u5-hal2/2.0.0-beta.1.1/docs/drivers/hal_drivers/sd/hal_sd_how_to_use.html
+
+ST HAL SDIO How to Use \
+https://dev.st.com/stm32cube-docs/stm32u5-hal2/2.0.0-beta.1.1/docs/drivers/hal_drivers/sdio/hal_sdio_how_to_use.html#hal-sdio-how-to-use
+
 ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host controller \
 19-Nov-2020 \
 https://www.st.com/resource/en/application_note/an5519-getting-started-with-the-spc58ehxspc58nhx-multimedia-card-host-controller-stmicroelectronics.pdf
