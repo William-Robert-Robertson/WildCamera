@@ -4,11 +4,23 @@ STM32CubeN6 uses submodules - it has to be cloned, submodules updated and the co
 
 ```
 cd ~/STM32CubeIDE # For now, clone this to ~/STM32CubeIDE not ~/STM32CubeIDE/workspace_2.0.0
-git clone --recursive https://github.com/STMicroelectronics/STM32CubeN6.git
+git clone --recursive https://github.com/STMicroelectronics/STM32CubeN6.gi
 cd STM32CubeN6/
 git pull
 git submodule update --init --recursive
 git checkout v1.3.0
+
+git clone --recursive https://github.com/svogl/venc-sdcard-threadx
+cd venc-sdcard-threadx/
+git pull
+git submodule update --init --recursive
+git checkout main # Not needed - only one branch.
+
+git clone --recursive https://github.com/svogl/disco-recorder
+cd disco-recorder/
+git pull
+git submodule update --init --recursive
+git checkout main # Not needed - only one branch.
 ```
 
 This can then be imported into CubeIDE e.g.
