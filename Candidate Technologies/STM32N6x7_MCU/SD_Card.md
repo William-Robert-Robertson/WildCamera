@@ -18,7 +18,7 @@ HSLV_VDDIO4 for SDMMC1
 Interface SD Card via SDIO (4Bit Mode & DMA) - Interface SD Card via SDIO (4Bit Mode & DMA) \
 https://controllerstech.com/interface-sd-card-with-stm32-via-sdio-4bit-mode/
 
-ST Introduction to LEVELX \
+ST Introduction to LEVELX - Note that this does not seem to be helpful in this situation \
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_LEVELX
 
 ST AN5200 Getting started with the STM32H7 MCU SDMMC host controller \
