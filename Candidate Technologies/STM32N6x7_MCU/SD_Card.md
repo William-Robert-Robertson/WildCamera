@@ -18,6 +18,12 @@ HSLV_VDDIO4 for SDMMC1
 Interface SD Card via SDIO (4Bit Mode & DMA) - Interface SD Card via SDIO (4Bit Mode & DMA) \
 https://controllerstech.com/interface-sd-card-with-stm32-via-sdio-4bit-mode/
 
+https://community.st.com/t5/stm32-mcus-embedded-software/stm32n6-threadx-filex-sdmmc2-fx-io-error-144-during-continuous/td-p/864230
+
+references this:
+
+https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/FileX/Fx_uSD_File_Edit
+
 https://www.sdcard.org/wp-content/uploads/2020/11/Video_Speed_Class-The_new_capture_protocol_of_SD_5.0.pdf
 
 ST Introduction to LEVELX - Note that this does not seem to be helpful in this situation \
