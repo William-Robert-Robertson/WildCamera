@@ -15,6 +15,11 @@ https://elm-chan.org/fsw/ff/
 AsyncFatFS \
 https://github.com/thenickdude/asyncfatfs
 
+https://wiki.st.com/stm32mpu/wiki/Introduction_to_FILEX
+
+FileX slow because of FAT cache misses - on STM32H7B0
+https://learn.microsoft.com/en-gb/answers/questions/919417/filex-slow-because-of-fat-cache-misses
+
 UM1721 Developing applications on STM32Cube™ with FatFs \
 https://www.st.com/resource/en/user_manual/um1721-developing-applications-on-stm32cube-with-fatfs-stmicroelectronics.pdf
 
