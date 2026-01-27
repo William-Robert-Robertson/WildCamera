@@ -22,6 +22,16 @@ git pull
 git submodule update --init --recursive
 git checkout main # Not needed - only one branch.
 ```
+The STM32N6570-DK board exposes the serial port at 115200 baud - not the default 9600 baud.\
+It appears as ttyACM0
+```
+ls -l /dev/ttyACM0
+sudo putty -serial /dev/ttyACM0 -sercfg 115200
+```
+this can be found immediately after connecting using
+```
+sudo dmesg
+```
 
 This can then be imported into CubeIDE e.g.
 ```
