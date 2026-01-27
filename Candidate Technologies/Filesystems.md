@@ -20,6 +20,8 @@ https://wiki.st.com/stm32mpu/wiki/Introduction_to_FILEX
 FileX slow because of FAT cache misses - on STM32H7B0
 https://learn.microsoft.com/en-gb/answers/questions/919417/filex-slow-because-of-fat-cache-misses
 
+https://electronics.stackexchange.com/questions/705979/stm32-writing-to-sd-card-using-fatfs-sometimes-takes-longer-than-normally
+
 UM1721 Developing applications on STM32Cube™ with FatFs \
 https://www.st.com/resource/en/user_manual/um1721-developing-applications-on-stm32cube-with-fatfs-stmicroelectronics.pdf
 
