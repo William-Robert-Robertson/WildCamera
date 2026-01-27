@@ -1,5 +1,8 @@
 SD Card
 
+File systems are covedred seperately here:\
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Filesystems.md
+
 To achieve full speed a 4 bit bus should be set:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/commit/c99f02c8ac867aa11e0bdb14f32ff7709336928f
