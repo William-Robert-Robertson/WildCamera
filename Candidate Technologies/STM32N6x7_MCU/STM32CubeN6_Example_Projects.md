@@ -34,7 +34,8 @@ ckermit
 picocom
 # 
 ```
-If the user belongs to the 'dialout' user group they have accesss to serial ports and sudo isn't needed.
+If the user belongs to the 'dialout' user group they have accesss to serial ports and sudo isn't needed.\
+
 this can be found immediately after connecting using
 ```
 sudo dmesg
