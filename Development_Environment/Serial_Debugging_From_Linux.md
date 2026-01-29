@@ -15,6 +15,8 @@ sudo apt install -y minicom
 sudo minicom -s --color=on --device /dev/ttyUSB0
 ```
 
+picocom could also be used
+
 Now restart the Debix board and the sreults should appear in minicom.
 
 To get into the u - boot comand line hit enter within the first second or so of restarting
