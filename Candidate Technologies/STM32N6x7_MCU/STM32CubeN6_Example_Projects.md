@@ -27,6 +27,8 @@ It appears as ttyACM0
 ```
 ls -l /dev/ttyACM0
 sudo putty -serial /dev/ttyACM0 -sercfg 115200
+
+sudo minicom -s --color=on --device
 ```
 this can be found immediately after connecting using
 ```
