@@ -147,6 +147,12 @@ https://dev.st.com/stm32cube-docs/stm32u5-hal2/2.0.0-beta.1.1/docs/drivers/hal_d
 ### ST HAL SDIO How to Use
 https://dev.st.com/stm32cube-docs/stm32u5-hal2/2.0.0-beta.1.1/docs/drivers/hal_drivers/sdio/hal_sdio_how_to_use.html#hal-sdio-how-to-use
 
+### Reading File Genreated by VENC_SDCard_ThreadX
+```
+ffmpeg -f h264 -framerate 30 -i [extracted file] -c copy [output file]
+```
+https://community.st.com/t5/stm32-mcus-embedded-software/venc-sdcard-threadx-example/m-p/860986#M70641
+
 ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host controller - this appears to be an older version of the IP in **AN5200** above\
 19-Nov-2020 \
 https://www.st.com/resource/en/application_note/an5519-getting-started-with-the-spc58ehxspc58nhx-multimedia-card-host-controller-stmicroelectronics.pdf
