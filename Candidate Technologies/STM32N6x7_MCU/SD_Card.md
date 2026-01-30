@@ -34,6 +34,7 @@ TI Application Note - MMCSD Debug Guidelines (eMMC/SD)\
 https://www.ti.com/lit/an/sprad38/sprad38.pdf
 
 Sjors de Wit - MicroSD performance on memory-constrained devices\
+Industrial grade gives **10x less** maximum latency than standard.
 Open a file, append 512 bytes, close the file, repeat.
 | MicroSD Card | Max block latency (ms) | Avg throughput (KB/s) |
 | --- | --- | --- | 
