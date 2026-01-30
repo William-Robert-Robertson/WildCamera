@@ -1,4 +1,4 @@
-SD Card
+## SD Card
 
 File systems are covedred seperately here:\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Filesystems.md
@@ -47,6 +47,18 @@ sudo mkfs.exfat -c <size> /dev/sdXn
 ```
 If --cluster-size is not specified, mkfs.exfat chooses a default based on the SD size - full details are here:
 https://man.archlinux.org/man/mkfs.exfat.8
+
+### Maximum Sector Cache
+Consider increasing FX_MAX_SECTOR_CACHE 
+```
+#ifndef FX_MAX_SECTOR_CACHE
+#define FX_MAX_SECTOR_CACHE                    256      /* Maximum size of logical sector cache,
+                                                           minimum value of 2 all other values must
+                                                           be a power of 2.  */
+                                                        /* Example: 128KB cache (256 * 512 bytes) */
+#endif
+```
+https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
 
 ### STM32N6570-DK SDMMC2
 
