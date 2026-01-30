@@ -18,7 +18,7 @@ HSLV_VDDIO5 for SDMMC2
 HSLV_VDDIO4 for SDMMC1
 ```
 
-To give good performence, space for the file should be pre-allocated
+To give good performance, space for the file should be pre-allocated
 ```
 fx_file_allocate(&file, total_bytes_to_allocate);
 ```
