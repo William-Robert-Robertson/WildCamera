@@ -23,6 +23,10 @@ To give good performance, space for the file should be pre-allocated
 fx_file_allocate(&file, total_bytes_to_allocate);
 ```
 
+On the TM32N6570-DK board the SD card is connected to SDMMC2
+>A slot (CN13) for microSD™ card (UHS-I supported) is available on the STM32N6570-DK board and is connected to the SDMMC2 interface of STM32N657X0H3Q.\
+https://www.st.com/resource/en/user_manual/um3300-discovery-kit-with-stm32n657x0-mcu-stmicroelectronics.pdf
+
 STM32H7 - SDMMC
 https://www.st.com/content/ccc/resource/training/technical/product_training/group0/06/8b/84/d3/16/f6/4b/95/STM32H7-Peripheral-SDMMC_interface_SDMMC/files/STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf/_jcr_content/translations/en.STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf
 
