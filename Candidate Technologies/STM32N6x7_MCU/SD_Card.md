@@ -70,7 +70,8 @@ UINT _fx_media_open(FX_MEDIA *media_ptr, CHAR *media_name,
 https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_media_open
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_FILEX#How_to_use \
 In our example this is set here\
-https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L75
+https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L75 \
+https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L315
 
 ### STM32N6570-DK SDMMC2
 
