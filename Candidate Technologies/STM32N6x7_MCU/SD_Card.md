@@ -47,6 +47,13 @@ open a file once and write 8MB to it in blocks of 512
 | Sandisk Edge (8GB, class 4) | 211 | 436.2 | 
 | Sandisk Industrial (8GB) | 15 | 390.9 | 
 
+Block size 2048
+Let's increase the buffer size to 2KiB and the total data transfer to 32MiB
+| MicroSD Card | Max block latency (ms) | Avg throughput (KB/s) |
+| --- | --- | --- | 
+| Sandisk Edge (8GB, class 4) | 151 | 1169 | 
+| Sandisk Industrial (8GB) | 16 | 1148 | 
+
 https://jitter.nl/blog/2019/07/31/microsd-performance-on-memory-constrained-devices/
 
 https://www.sdcard.org/wp-content/uploads/2020/11/Video_Speed_Class-The_new_capture_protocol_of_SD_5.0.pdf
