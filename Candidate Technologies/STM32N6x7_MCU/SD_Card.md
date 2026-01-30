@@ -33,6 +33,21 @@ To give good performance, space for the file should be pre-allocated
 fx_file_allocate(&file, total_bytes_to_allocate);
 ```
 
+https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_file_allocate
+
+(Some sources seem to suggest that fx_file_allocate places the file pointer at the end of the file so fx_file_seek should be used to return it to the beginning but other sources said that this wasn't needed in FileX.)
+
+### Sector Size and Cluster Size
+
+For sustained good performence data must be written in blocks that are exact multiples of the **sector size** of **512 bytes**.
+
+It may help to write in blocks which are exact multiples of the **cluster size** with which the SD is formatted - typically 4KB to 128 KB - this is set by --cluster-size or -c when the card is formatted:
+```
+sudo mkfs.exfat -c <size> /dev/sdXn
+```
+If --cluster-size is not specified, mkfs.exfat chooses a default based on the SD size - full details are here:
+https://man.archlinux.org/man/mkfs.exfat.8
+
 ### STM32N6570-DK SDMMC2
 
 On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
