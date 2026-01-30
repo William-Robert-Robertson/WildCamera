@@ -33,6 +33,21 @@ https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-
 TI Application Note - MMCSD Debug Guidelines (eMMC/SD)\
 https://www.ti.com/lit/an/sprad38/sprad38.pdf
 
+Sjors de Wit - MicroSD performance on memory-constrained devices\
+Open a file, append 512 bytes, close the file, repeat.
+| MicroSD Card | Max block latency (ms) | Avg throughput (KB/s) |
+| --- | --- | --- | 
+| Sandisk Edge (8GB, class 4) | 340 | 148.4 |
+| Sandisk Industrial (8GB) | 24 | 112.3 |
+
+open a file once and write 8MB to it in blocks of 512
+| MicroSD Card | Max block latency (ms) | Avg throughput (KB/s) |
+| --- | --- | --- | 
+| Sandisk Edge (8GB, class 4) | 211 | 436.2 | 
+| Sandisk Industrial (8GB) | 15 | 390.9 | 
+
+https://jitter.nl/blog/2019/07/31/microsd-performance-on-memory-constrained-devices/
+
 https://www.sdcard.org/wp-content/uploads/2020/11/Video_Speed_Class-The_new_capture_protocol_of_SD_5.0.pdf
 
 ST Introduction to LEVELX - Note that this does not seem to be helpful in this situation \
