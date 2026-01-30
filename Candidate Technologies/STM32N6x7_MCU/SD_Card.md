@@ -60,6 +60,18 @@ Consider increasing FX_MAX_SECTOR_CACHE
 ```
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
 
+### FileX Media memory_size
+fx_media_open allows the size of the cache to be set - the bigger the cache the better the performance is likely to be in theory. fx_app_byte_pool must be large enough to allow for this.
+```
+UINT _fx_media_open(FX_MEDIA *media_ptr, CHAR *media_name,
+                                     VOID (*media_driver)(FX_MEDIA *), VOID *driver_info_ptr,
+                                     VOID *memory_ptr, ULONG memory_size);
+```
+https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_media_open
+https://wiki.st.com/stm32mcu/wiki/Introduction_to_FILEX#How_to_use \
+In our example this is set here\
+https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L75
+
 ### STM32N6570-DK SDMMC2
 
 On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
