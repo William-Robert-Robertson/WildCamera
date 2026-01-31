@@ -61,7 +61,7 @@ Consider increasing FX_MAX_SECTOR_CACHE
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
 
 ### FileX Media memory_size
-fx_media_open allows the size of the cache to be set - the bigger the cache the better the performance is likely to be in theory. fx_app_byte_pool must be large enough to allow for this.
+fx_media_open allows the size of the cache to be set - the bigger the cache the better the performance is likely to be in theory - again, this should be an exact multiple of the sector size of **512 bytes** - it may help to make this an exact multiple of the cluster size. fx_app_byte_pool must be large enough to allow for this.
 ```
 UINT _fx_media_open(FX_MEDIA *media_ptr, CHAR *media_name,
                                      VOID (*media_driver)(FX_MEDIA *), VOID *driver_info_ptr,
