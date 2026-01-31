@@ -39,6 +39,7 @@ FreeRTOS
   https://www.freertos.org/
   https://www.freertos.org/Partners/Semiconductor
   https://www.freertos.org/Documentation/02-Kernel/03-Supported-devices/00-Supported-devices
+  https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/FreeRTOS.md
 
 ThreadX
   https://threadx.io/
@@ -46,6 +47,7 @@ ThreadX
   On October 8, 2024, the Eclipse launched the ThreadX Alliance
   https://techcommunity.microsoft.com/blog/iotblog/microsoft-contributes-azure-rtos-to-open-source/3986318
   "UPDATE April 4, 2024:  The Azure RTOS transition to open-source is now complete and the first release of ThreadX real-time operating system Eclipse ThreadX 6.4.1 now available under MIT license."
+  https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/ThreadX_RTOS.md
 
 Zephyr RTOS
 Zephyr list of supported cameras
