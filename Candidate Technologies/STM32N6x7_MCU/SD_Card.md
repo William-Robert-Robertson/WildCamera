@@ -154,6 +154,16 @@ https://jitter.nl/blog/2019/07/31/microsd-performance-on-memory-constrained-devi
 
 https://www.sdcard.org/wp-content/uploads/2020/11/Video_Speed_Class-The_new_capture_protocol_of_SD_5.0.pdf
 
+### Optimizing File Writes
+
+Optimizing File Writes - CalSol UC Berkeley Solar Vehicle Team \
+file write speeds at around 600kByte/s - FAT32 - SD 10 MHz - CPU 20 MHz
+>In most (if not all) SD cards, read and write operations must occur in blocks of 512 bytes. On our microcontroller, the SPI module which communicates with the SD card has a maximum speed of 10 MHz while the processor runs at 20 MHz. Since SPI shifts out one bit at a time, each block takes up to 512 bytes * 8 bits/byte * 2 processor cycles / bit = 8192 processor cycles, and that doesn’t even take account the time waiting for the card to complete the operation. That’s certainly not very efficient – now if only there was some way to move these boring data transfer operations into the background…\
+>Enter DMA.\
+>DMA – meaning Direct Memory Access – is a hardware feature allowing memory-to-peripheral transfers to occur independent of the processor. Essentially, code that involved repeatedly waiting for transmissions to complete before sending the next byte can now be reduced to loading a pointer to the beginning of the data, loading the length of the data, and requesting a DMA transfer. Afterwards, the DMA module continues the block transfer in the background while the processor is free to do other tasks.
+>
+https://calsol.berkeley.edu/2011/06/12/optimizing-file-writes
+
 ### ST AN5200 Getting started with the STM32H7 MCU SDMMC host controller
 AN5200 - Rev 3 - June 2025 \
 http://www.st.com/resource/en/application_note/an5200-getting-started-with-the-stm32h7-mcu-sdmmc-host-controller-stmicroelectronics.pdf
