@@ -106,6 +106,8 @@ There are some tests that seem to test writing large amounts of data but only in
 
 >filex_fault_tolerant_write_large_data...
 
+https://github.com/STMicroelectronics/STM32CubeN6/blob/main/Middlewares/ST/filex/test/regression_test/filex_fault_tolerant_write_large_data_fat_interrupt_test.c
+
 without any automated performance tests there's no way of keeping track of what performance is actually like.
 
 ### STM32H7 - SDMMC
