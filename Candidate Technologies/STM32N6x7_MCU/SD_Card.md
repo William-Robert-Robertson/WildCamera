@@ -158,9 +158,16 @@ https://www.sdcard.org/wp-content/uploads/2020/11/Video_Speed_Class-The_new_capt
 
 Optimizing File Writes - CalSol UC Berkeley Solar Vehicle Team \
 file write speeds at around 600kByte/s - FAT32 - SD 10 MHz - CPU 20 MHz
->In most (if not all) SD cards, read and write operations must occur in blocks of 512 bytes. On our microcontroller, the SPI module which communicates with the SD card has a maximum speed of 10 MHz while the processor runs at 20 MHz. Since SPI shifts out one bit at a time, each block takes up to 512 bytes * 8 bits/byte * 2 processor cycles / bit = 8192 processor cycles, and that doesn’t even take account the time waiting for the card to complete the operation. That’s certainly not very efficient – now if only there was some way to move these boring data transfer operations into the background…\
->Enter DMA.\
+>In most (if not all) SD cards, read and write operations must occur in blocks of 512 bytes. On our microcontroller, the SPI module which communicates with the SD card has a maximum speed of 10 MHz while the processor runs at 20 MHz. Since SPI shifts out one bit at a time, each block takes up to 512 bytes * 8 bits/byte * 2 processor cycles / bit = 8192 processor cycles, and that doesn’t even take account the time waiting for the card to complete the operation. That’s certainly not very efficient – now if only there was some way to move these boring data transfer operations into the background…
+>
+>Enter DMA.
+>
 >DMA – meaning Direct Memory Access – is a hardware feature allowing memory-to-peripheral transfers to occur independent of the processor. Essentially, code that involved repeatedly waiting for transmissions to complete before sending the next byte can now be reduced to loading a pointer to the beginning of the data, loading the length of the data, and requesting a DMA transfer. Afterwards, the DMA module continues the block transfer in the background while the processor is free to do other tasks.
+>
+>One simple approach to writes would be to just write file data and allocate clusters as needed. However, whenever we allocate clusters, we need to perform writes in 3 different locations on disk to keep the filesystem consistent, and this random-access pattern is expensive compared to writing data sequentially. Therefore, it would make sense to allocate clusters as rarely as possible.
+>One optimization around that is to pre-allocate the entire file. This operation takes advantage of the fact that cluster pointers are stored sequentially, allowing a large amount of clusters to be allocated at once. However, this is inadequate for our needs, as we don’t know what size our file will be nor do we want a excessively long start-up delay.
+>
+>So, we compromise. Instead of pre-allocating the whole file, we write one block’s (512 bytes, for SD cards) worth of cluster pointers at a time, allocating 128 clusters or 512 kBytes of space.
 >
 https://calsol.berkeley.edu/2011/06/12/optimizing-file-writes
 
