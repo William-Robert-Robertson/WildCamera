@@ -1,7 +1,7 @@
 Follow the instructions here: https://github.com/STMicroelectronics/STM32CubeN6/blob/main/README.md#how-to-use
 
 Please see also the ST x-cube-n6... repositories:\
-https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc
+https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc \
 Documneted here:\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/ST_x-cube-n6_Repositories.md
 
