@@ -84,6 +84,12 @@ In our example this is set here\
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L75 \
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L315
 
+### FileX Disable Cache
+FX_DISABLE_CACHE should not be defined.
+
+### FX_SINGLE_THREAD
+FX_SINGLE_THREAD may improve performence slightly provided that FileX is only ever called from one thread but may cause problems if interupts are used.
+
 ### STM32N6570-DK SDMMC2
 
 On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
