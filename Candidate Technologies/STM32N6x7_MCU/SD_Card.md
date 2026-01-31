@@ -60,6 +60,16 @@ Consider increasing FX_MAX_SECTOR_CACHE
 ```
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
 
+### FileX Metadata Cache
+Consider increasing the maximum metadata cache size for ExFAT:
+```
+/* Define bitmap cache size for exFAT. Size should be minimum one sector size and maximum 4096.
+For applications using multiple media devices with varying sector size, the value should be :
+set to the size of largest sector size.
+The FX_EXFAT_MAX_CACHE_SIZE is 2 power of FX_EXFAT_MAX_CACHE_SIZE_NB_BIT. */
+/* #define FX_EXFAT_MAX_CACHE_SIZE         512 */
+```
+
 ### FileX Media memory_size
 fx_media_open allows the size of the cache to be set - the bigger the cache the better the performance is likely to be in theory - again, this should be an exact multiple of the sector size of **512 bytes** - it may help to make this an exact multiple of the cluster size. fx_app_byte_pool must be large enough to allow for this.
 ```
