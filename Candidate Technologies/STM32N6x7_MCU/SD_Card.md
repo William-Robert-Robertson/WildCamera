@@ -58,7 +58,7 @@ Consider increasing FX_MAX_SECTOR_CACHE
                                                         /* Example: 128KB cache (256 * 512 bytes) */
 #endif
 ```
-https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
+https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414 \
 This does not apply in Fat32 file systems where FX_MAX_FAT_CACHE sets the FAT table sectors that FileX can cache concurrently.
 
 ### FileX Metadata Cache
