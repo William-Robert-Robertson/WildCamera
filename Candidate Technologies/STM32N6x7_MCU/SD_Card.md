@@ -171,6 +171,9 @@ file write speeds at around 600kByte/s - FAT32 - SD 10 MHz - CPU 20 MHz
 >
 https://calsol.berkeley.edu/2011/06/12/optimizing-file-writes
 
+### Random high write times on SD card with STM32 and FileX
+https://www.eevblog.com/forum/microcontrollers/random-high-write-times-on-sd-card-with-stm32-and-filex/
+
 ### ST AN5200 Getting started with the STM32H7 MCU SDMMC host controller
 AN5200 - Rev 3 - June 2025 \
 http://www.st.com/resource/en/application_note/an5200-getting-started-with-the-stm32h7-mcu-sdmmc-host-controller-stmicroelectronics.pdf
