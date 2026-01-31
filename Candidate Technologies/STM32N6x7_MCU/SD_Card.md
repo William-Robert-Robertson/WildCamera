@@ -194,6 +194,11 @@ ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host contro
 19-Nov-2020 \
 https://www.st.com/resource/en/application_note/an5519-getting-started-with-the-spc58ehxspc58nhx-multimedia-card-host-controller-stmicroelectronics.pdf
 
+Infineon How to get the best performance from the SDMMC module\
+https://community.infineon.com/t5/Knowledge-Base-Articles/AURIX-MCU-How-to-get-the-best-performance-from-the-SDMMC-module/ta-p/448202#. \
+References SD- and eMMC Interface (SDMMC) in:\
+https://www.infineon.com/assets/row/public/documents/10/44/infineon-aurix-tc3xx-part2-usermanual-en.pdf
+
 ST Introduction to LEVELX - Note that this does not seem to be helpful in this situation \
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_LEVELX
 
