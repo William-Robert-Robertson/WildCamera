@@ -59,6 +59,17 @@ Consider increasing FX_MAX_SECTOR_CACHE
 #endif
 ```
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Middlewares/ST/filex/common/inc/fx_api.h#L414
+This does not apply in Fat32 file systems where FX_MAX_FAT_CACHE sets the FAT table sectors that FileX can cache concurrently.
+
+### FileX Metadata Cache
+Consider increasing the maximum metadata cache size for ExFAT:
+```
+/* Define bitmap cache size for exFAT. Size should be minimum one sector size and maximum 4096.
+For applications using multiple media devices with varying sector size, the value should be :
+set to the size of largest sector size.
+The FX_EXFAT_MAX_CACHE_SIZE is 2 power of FX_EXFAT_MAX_CACHE_SIZE_NB_BIT. */
+/* #define FX_EXFAT_MAX_CACHE_SIZE         512 */
+```
 
 ### FileX Media memory_size
 fx_media_open allows the size of the cache to be set - the bigger the cache the better the performance is likely to be in theory - again, this should be an exact multiple of the sector size of **512 bytes** - it may help to make this an exact multiple of the cluster size. fx_app_byte_pool must be large enough to allow for this.
@@ -77,6 +88,11 @@ https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a276
 This person suspects that on the STM32H750 the FileX buffer could be being flushed far too frequently - resulting in the bedia buffer not being fully utilised and write performence that is much slower than read performence:
 >What I have I seen until now is that FILEX seems tell every time SD card's driver to write only into 1 block and It never tries a multi blocks write ( so I don't understand if there are advantages from using a media buffer with size greater than 512 bytes) 
 https://community.st.com/t5/stm32-mcus-embedded-software/filex-writing-performance/td-p/750618
+### FileX Disable Cache
+FX_DISABLE_CACHE should not be defined.
+
+### FX_SINGLE_THREAD
+FX_SINGLE_THREAD may improve performence slightly provided that FileX is only ever called from one thread but may cause problems if interupts are used.
 
 ### STM32N6570-DK SDMMC2
 
