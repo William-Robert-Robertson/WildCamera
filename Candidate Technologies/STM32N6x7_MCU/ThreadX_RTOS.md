@@ -1,7 +1,7 @@
 ThreadX RTOS
 
-For FreeRTOS please see\
-https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/FreeRTOS.md
+For links to FreeRTOS and Zephyr please see:\
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/RTOS.md
 
 Introduction to THREADX \
 https://wiki.st.com/stm32mcu/wiki/Introduction_to_THREADX
