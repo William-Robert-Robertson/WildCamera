@@ -1,8 +1,9 @@
 Filesystems - File Systems
 
-Please see also \
+For interactions between file systems and SD storage please see also:\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/SD_Card.md
 
+ST FATFS \
 https://github.com/STMicroelectronics/stm32-mw-fatfs
 
 VENC_SDCard example:
@@ -15,9 +16,10 @@ https://elm-chan.org/fsw/ff/
 AsyncFatFS \
 https://github.com/thenickdude/asyncfatfs
 
+ST Introduction to FILEX \
 https://wiki.st.com/stm32mpu/wiki/Introduction_to_FILEX
 
-FileX slow because of FAT cache misses - on STM32H7B0
+FileX slow because of FAT cache misses - on STM32H7B0\
 https://learn.microsoft.com/en-gb/answers/questions/919417/filex-slow-because-of-fat-cache-misses
 
 https://electronics.stackexchange.com/questions/705979/stm32-writing-to-sd-card-using-fatfs-sometimes-takes-longer-than-normally
@@ -27,7 +29,7 @@ https://www.st.com/resource/en/user_manual/um1721-developing-applications-on-stm
 
 The Middleware FileX component is a STM32 tailored fork of the AzureRTOS FileX. \
 Middleware FileX Component stm32-mw-filex \
-https://github.com/STMicroelectronics/stm32-mw-filex
+https://github.com/STMicroelectronics/stm32-mw-filex \
 documentation: \
 https://wiki.st.com/stm32mcu/index.php?title=Introduction_to_FILEX&sfr=stm32mcu
 
