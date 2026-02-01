@@ -14,12 +14,6 @@ To achieve full speed a 4 bit bus should be set:
 
 https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/commit/c99f02c8ac867aa11e0bdb14f32ff7709336928f
 
-### EXFat
-
-EXFatshould be used:
-
-https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection/blob/feature/sdio-tests/Application/STM32N6570-DK/Inc/ffconf.h
-
 ### OTP Fuses for 1.8 V Interface
 
 and OTP Fuses changed from 3.3 V to 1.8 V
@@ -28,17 +22,6 @@ Under HCONF1
 HSLV_VDDIO5 for SDMMC2
 HSLV_VDDIO4 for SDMMC1
 ```
-
-### Pre-Allocation
-
-To give good performance, space for the file should be pre-allocated
-```
-fx_file_allocate(&file, total_bytes_to_allocate);
-```
-
-https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_file_allocate
-
-(Some sources seem to suggest that fx_file_allocate places the file pointer at the end of the file so fx_file_seek should be used to return it to the beginning but other sources said that this wasn't needed in FileX.)
 
 ### Sector Size and Cluster Size
 
@@ -50,6 +33,25 @@ sudo mkfs.exfat -c <size> /dev/sdXn
 ```
 If --cluster-size is not specified, mkfs.exfat chooses a default based on the SD size - full details are here:
 https://man.archlinux.org/man/mkfs.exfat.8
+
+### EXFat
+
+EXFatshould be used:
+
+https://github.com/svogl/STM32N6-GettingStarted-ObjectDetection/blob/feature/sdio-tests/Application/STM32N6570-DK/Inc/ffconf.h
+
+## ThreadX / FileX / EXFat Specific Performance Tuning
+
+### Pre-Allocation
+
+To give good performance, space for the file should be pre-allocated
+```
+fx_file_allocate(&file, total_bytes_to_allocate);
+```
+
+https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_file_allocate
+
+(Some sources seem to suggest that fx_file_allocate places the file pointer at the end of the file so fx_file_seek should be used to return it to the beginning but other sources said that this wasn't needed in FileX.)
 
 ### Maximum Sector Cache
 Consider increasing FX_MAX_SECTOR_CACHE 
@@ -101,7 +103,7 @@ https://www.st.com/resource/en/user_manual/um3300-discovery-kit-with-stm32n657x0
 
 ### Regression Tests
 
-Automated Regression Tests are found here:
+FileX Automated Regression Tests are found here:
 
 https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Middlewares/ST/filex/test/regression_test
 
