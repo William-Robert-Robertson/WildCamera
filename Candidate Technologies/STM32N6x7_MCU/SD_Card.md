@@ -95,6 +95,14 @@ FX_DISABLE_CACHE should not be defined.
 ### FX_SINGLE_THREAD
 FX_SINGLE_THREAD may improve performence slightly provided that FileX is only ever called from one thread but may cause problems if interupts are used.
 
+## FreeRTOS Specific Performance Tuning
+
+### Performance Tuning Tips
+https://github.com/carlk3/FreeRTOS-FAT-CLI-for-RPi-Pico?tab=readme-ov-file#appendix-d-performance-tuning-tips
+
+### FreeRTOS Plus FAT slow - Reccomendations from Carl Kugler
+https://forums.freertos.org/t/freertos-plus-fat-extrem-slow-compared-to-fatfs/23922/3
+
 ### STM32N6570-DK SDMMC2
 
 On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
