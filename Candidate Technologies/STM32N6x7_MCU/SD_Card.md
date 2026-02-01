@@ -115,6 +115,9 @@ FX_SINGLE_THREAD may improve performence slightly provided that FileX is only ev
 
 ## FreeRTOS Specific Performance Tuning
 
+### FreeRTOS-Plus-FAT
+https://www.freertos.org/Documentation/03-Libraries/05-FreeRTOS-labs/04-FreeRTOS-plus-FAT/01-FreeRTOS-plus-FAT
+
 ### Performance Tuning Tips from Carl Kugler
 https://github.com/carlk3/FreeRTOS-FAT-CLI-for-RPi-Pico?tab=readme-ov-file#appendix-d-performance-tuning-tips
 
