@@ -134,6 +134,14 @@ On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
 >A slot (CN13) for microSD™ card (UHS-I supported) is available on the STM32N6570-DK board and is connected to the SDMMC2 interface of STM32N657X0H3Q.\
 https://www.st.com/resource/en/user_manual/um3300-discovery-kit-with-stm32n657x0-mcu-stmicroelectronics.pdf
 
+### MBR and FAT Table Deletion by VENC_SDCard Example
+ST's VENC_SDCard example deletes the first part of an SD card - the partition table and the filesystem - making the card unusable until it's reformatted:
+```
+  /* Erase beginning of SDCard */
+  if (BSP_SD_Erase(0, 0, NB_BLOCKS_ERASED) != BSP_ERROR_NONE)
+```
+https://github.com/STMicroelectronics/STM32CubeN6/tree/main/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard
+
 ### Regression Tests
 
 FileX Automated Regression Tests are found here:
