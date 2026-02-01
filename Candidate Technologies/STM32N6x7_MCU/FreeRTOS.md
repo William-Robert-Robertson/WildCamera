@@ -10,3 +10,14 @@ An AI software application package demonstrating complex use case on STM32N6 pro
 https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc \
 Note that in the documentation "ATON" is used instead of "Neural-ART" (ATON was the original codename for Neural-ART).\
 https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc/blob/main/Doc/Application-Overview.md
+
+### x-cube-freertos
+
+https://github.com/STMicroelectronics/x-cube-freertos
+
+https://www.st.com/en/embedded-software/x-cube-freertos.html#documentation
+
+### ST M1722 User manual Developing applications on STM32Cube
+ST M1722 User manual Developing applications on STM32Cube with RTOS seems to be available from 2 different URLs:\
+https://www.st.com/resource/en/user_manual/um1722-developing-applications-on-stm32cube-with-rtos-stmicroelectronics.pdf \
+https://www.st.com/resource/en/user_manual/dm00105262-developing-applications-on-stm32cube-with-rtos-stmicroelectronics.pdf
