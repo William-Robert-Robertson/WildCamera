@@ -105,6 +105,9 @@ from Carl Kugler, David Crocker and Hein Tibosch\
 https://forums.freertos.org/t/freertos-plus-fat-extrem-slow-compared-to-fatfs/23922/3
 
 ### ST Community STM32L496 - SD Card SDIO Write Speeds with FreeRTOS
+```
+  hsd1.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_ENABLE; ///< It was set to DISABLE!
+```
 https://community.st.com/t5/stm32-mcus-products/stm32l496-sd-card-sdio-write-speeds-freertos-fatfs-and-usb-how/td-p/227955
 
 ### STM32N6570-DK SDMMC2
