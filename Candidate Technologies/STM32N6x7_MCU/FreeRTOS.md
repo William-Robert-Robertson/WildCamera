@@ -12,7 +12,7 @@ Note that in the documentation "ATON" is used instead of "Neural-ART" (ATON was 
 https://github.com/STMicroelectronics/x-cube-n6-ai-h264-usb-uvc/blob/main/Doc/Application-Overview.md
 
 ### x-cube-freertos
-
+The STM32N6x7 Nucleo eval. board is included under NUCLEO-**N657**X0-Q\
 https://github.com/STMicroelectronics/x-cube-freertos
 
 https://www.st.com/en/embedded-software/x-cube-freertos.html#documentation
