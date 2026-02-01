@@ -34,6 +34,21 @@ sudo mkfs.exfat -c <size> /dev/sdXn
 If --cluster-size is not specified, mkfs.exfat chooses a default based on the SD size - full details are here:
 https://man.archlinux.org/man/mkfs.exfat.8
 
+A good description of performence implications of writing incomplete segments and of the difference between FAT clusters and SD allocation units is provided by Carl Kugler below:
+
+>When an amount of data to be written is smaller than a segment, the segment is read, modified in memory, and then written again.
+
+>The FAT "allocation unit" (not to be confused with the SD card "allocation unit"), also known as "cluster", is a unit of "disk" space allocation for files. These are identically sized small blocks of contiguous space that are indexed by the File Allocation Table
+>The space efficiency of disk usage gets worse with increasing size of allocation unit, but, on the other hand, the read/write performance increases. Therefore the size of allocation unit is a trade-off between space efficiency and performance.
+
+https://github.com/carlk3/FreeRTOS-FAT-CLI-for-RPi-Pico?tab=readme-ov-file#appendix-d-performance-tuning-tips
+
+### Diagnosis
+
+Searching for printf in the code finds lines which can be enabled by precomiler directives or by uncommenting them to provide more diagnostic information:
+
+https://github.com/search?q=repo%3Asvogl%2Fvenc-sdcard-threadx+printf&type=code
+
 ### EXFat
 
 EXFatshould be used:
@@ -50,6 +65,9 @@ fx_file_allocate(&file, total_bytes_to_allocate);
 ```
 
 https://github.com/eclipse-threadx/rtos-docs/blob/main/rtos-docs/filex/chapter4.md#fx_file_allocate
+
+Carl Kugler describes long-term fragmentation resulting from not pre-allocating
+>File fragmentation can lead to long access times. Fragmented files can result from multiple files being incrementally extended in an interleaved fashion. One strategy to avoid fragmentation is to pre-allocate files to their maximum expected size, then reuse these files at run time.
 
 (Some sources seem to suggest that fx_file_allocate places the file pointer at the end of the file so fx_file_seek should be used to return it to the beginning but other sources said that this wasn't needed in FileX.)
 
