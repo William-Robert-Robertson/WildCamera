@@ -104,6 +104,9 @@ https://github.com/carlk3/FreeRTOS-FAT-CLI-for-RPi-Pico?tab=readme-ov-file#appen
 from Carl Kugler, David Crocker and Hein Tibosch\
 https://forums.freertos.org/t/freertos-plus-fat-extrem-slow-compared-to-fatfs/23922/3
 
+### ST Community STM32L496 - SD Card SDIO Write Speeds with FreeRTOS
+https://community.st.com/t5/stm32-mcus-products/stm32l496-sd-card-sdio-write-speeds-freertos-fatfs-and-usb-how/td-p/227955
+
 ### STM32N6570-DK SDMMC2
 
 On the STM32N6570-DK board the SD card is connected to SDMMC2 not SDMMC1
