@@ -21,6 +21,8 @@ HSLV_VDDIO5 for SDMMC2
 HSLV_VDDIO4 for SDMMC1
 ```
 
+![Alt text](SD_Card_3.3_V_1.8_V_Voltage_Selection_on_STM32N6570-DK.png?raw=true "Title")
+
 ### Sector Size and Cluster Size
 
 For sustained good performence data must be written in blocks that are exact multiples of the **sector size** of **512 bytes**.
