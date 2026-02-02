@@ -25,7 +25,11 @@ HSLV_VDDIO4 for SDMMC1
 
 For sustained good performence data must be written in blocks that are exact multiples of the **sector size** of **512 bytes**.
 
-It may help to write in blocks which are exact multiples of the **cluster size** with which the SD is formatted - typically 4KB to 128 KB - this is set by --cluster-size or -c when the card is formatted:
+It may help to write in blocks which are exact multiples of the **cluster size** with which the SD is formatted - typically 4KB to 128 KB - this can be found using dosfsck with -v and -n options (fsck.fat in dosfstools or minfo in mtools) could also be used:
+```
+sudo dosfsck -v -n /dev/sde1
+```
+this is set by --cluster-size or -c when the card is formatted:
 ```
 sudo mkfs.exfat -c <size> /dev/sdXn
 ```
