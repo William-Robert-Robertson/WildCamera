@@ -41,6 +41,13 @@ A good description of performence implications of writing incomplete segments an
 
 https://github.com/carlk3/FreeRTOS-FAT-CLI-for-RPi-Pico?tab=readme-ov-file#appendix-d-performance-tuning-tips
 
+### SD Transceiver
+
+For higher-speed operation the SD Transceiver can be enabled:
+```
+USE_SD_TRANSCEIVER
+```
+
 ### Diagnosis
 
 Searching for printf in the code finds lines which can be enabled by precomiler directives or by uncommenting them to provide more diagnostic information:
