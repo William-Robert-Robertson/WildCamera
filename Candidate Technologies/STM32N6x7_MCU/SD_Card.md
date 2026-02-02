@@ -10,9 +10,7 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 
 ### Bus width
 
-To achieve full speed a 4 bit bus should be set:
-
-https://github.com/STMicroelectronics/STM32N6-GettingStarted-ObjectDetection/commit/c99f02c8ac867aa11e0bdb14f32ff7709336928f
+To achieve full speed a 4 bit bus should be used - this should be auto-enabled during initial card configuration in the BSP_SD_Init function, right before speed negotiation.
 
 ### OTP Fuses for 1.8 V Interface
 
