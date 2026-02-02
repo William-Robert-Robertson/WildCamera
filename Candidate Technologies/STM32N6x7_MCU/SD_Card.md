@@ -22,7 +22,7 @@ HSLV_VDDIO4 for SDMMC1
 ```
 
 ![SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ](SD_Card_3.3_V_1.8_V_Voltage_Selection_on_STM32N6570-DK.png?raw=true "SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ")\
-Supply voltage selection for the SD card is achieved using the [NXP NX3L1T3157GMZ](https://www.nxp.com/docs/en/data-sheet/NX3L1T3157.pdf)
+Supply voltage selection for the SD card is achieved on the STM32N6570-DK using the [NXP NX3L1T3157GMZ](https://www.nxp.com/docs/en/data-sheet/NX3L1T3157.pdf)
 
 ### Sector Size and Cluster Size
 
@@ -271,3 +271,5 @@ https://www.analog.com/en/resources/app-notes/an-1443.html
 ### STM32N6570-DK Schematic
 https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf
 
+### Nicolas Fillon STM32 – Creating a File System on a SD card
+https://www.youtube.com/watch?v=I9KDN1o6924
