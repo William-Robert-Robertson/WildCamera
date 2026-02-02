@@ -21,7 +21,8 @@ HSLV_VDDIO5 for SDMMC2
 HSLV_VDDIO4 for SDMMC1
 ```
 
-![Alt text](SD_Card_3.3_V_1.8_V_Voltage_Selection_on_STM32N6570-DK.png?raw=true "Title")
+![SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ](SD_Card_3.3_V_1.8_V_Voltage_Selection_on_STM32N6570-DK.png?raw=true "SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ")\
+Supply voltage selection for the SD card is achieved using the [NXP NX3L1T3157GMZ](https://www.nxp.com/docs/en/data-sheet/NX3L1T3157.pdf)
 
 ### Sector Size and Cluster Size
 
