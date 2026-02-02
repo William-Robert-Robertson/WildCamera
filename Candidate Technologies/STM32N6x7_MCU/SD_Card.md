@@ -265,3 +265,6 @@ https://wiki.st.com/stm32mcu/wiki/Introduction_to_LEVELX
 AD AN-1443: Interfacing an SD Card Through the ADuCM3027/ADuCM3029 SPI Bus - Not Relevant Because SPI \
 https://www.analog.com/en/resources/app-notes/an-1443.html
 
+### STM32N6570-DK Schematic
+https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf
+
