@@ -60,6 +60,36 @@ static UINT sd_write_data(FX_MEDIA *media_ptr, ULONG start_sector, UINT num_sect
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/main/common/drivers/fx_stm32_sd_driver.c#L342
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L342
 
+If use_scratch_buffer each sector is written as an individual call to fx_stm32_sd_write_blocks - this will result in very slow and unstable performence:
+```
+  if (use_scratch_buffer)
+  {
+    write_addr = media_ptr->fx_media_driver_buffer;
+
+    for (i = 0; i < num_sectors; i++)
+    {
+      _fx_utility_memory_copy(write_addr, scratch, FX_STM32_SD_DEFAULT_SECTOR_SIZE);
+      write_addr += FX_STM32_SD_DEFAULT_SECTOR_SIZE;
+
+#if (FX_STM32_SD_CACHE_MAINTENANCE == 1)
+      /* Clean the DCache to make the SD DMA see the actual content of the scratch buffer */
+      clean_cache_by_addr((uint32_t*)scratch, FX_STM32_SD_DEFAULT_SECTOR_SIZE);
+#endif
+
+      status = fx_stm32_sd_write_blocks(FX_STM32_SD_INSTANCE, (UINT *)scratch, (UINT)start_sector++, 1);
+```
+If use_scratch_buffer is not set, multiple sectors are sent in one call to fx_stm32_sd_write_blocks (and so in one comand) - resulting in much faster and more stable write performence:
+```
+  else
+  {
+#if (FX_STM32_SD_CACHE_MAINTENANCE == 1)
+    clean_cache_by_addr((uint32_t*)media_ptr->fx_media_driver_buffer, num_sectors * FX_STM32_SD_DEFAULT_SECTOR_SIZE);
+#endif
+    status = fx_stm32_sd_write_blocks(FX_STM32_SD_INSTANCE, (UINT *)media_ptr->fx_media_driver_buffer, (UINT)start_sector, num_sectors);
+
+```
+
+
 ### Sector Size and Cluster Size
 
 For sustained good performence data must be written in blocks that are exact multiples of the **sector size** of **512 bytes**.
