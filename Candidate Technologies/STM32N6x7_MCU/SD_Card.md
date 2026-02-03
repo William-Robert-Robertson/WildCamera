@@ -24,11 +24,42 @@ HSLV_VDDIO4 for SDMMC1
 ![SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ](SD_Card_3.3_V_1.8_V_Voltage_Selection_on_STM32N6570-DK.png?raw=true "SD card voltage selection on the STM32N6570-DK using the NX3L1T3157GMZ")\
 Supply voltage selection for the SD card is achieved on the STM32N6570-DK using the [NXP NX3L1T3157GMZ](https://www.nxp.com/docs/en/data-sheet/NX3L1T3157.pdf)
 
+### 32 Bit (4 Byte) Buffer Alignment
+The SD driver requires a 32 bit (4 byte) aligned buffer - if the buffer is not 4 byte aligned the unaligned_buffer flag is set:
+```
+#if (FX_STM32_SD_DMA_API == 1)
+  /* the SD DMA requires a 4-byte aligned buffers */
+  unaligned_buffer = (UINT)(media_ptr->fx_media_driver_buffer) & 0x3;
+#else
+```
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/main/common/drivers/fx_stm32_sd_driver.c#L80
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L80
+unaligned_buffer is subsequently passed to sd_write_data:
+```
+  case FX_DRIVER_WRITE:
+    {
+      media_ptr->fx_media_driver_status = FX_IO_ERROR;
+
+      if (sd_write_data(media_ptr, media_ptr->fx_media_driver_logical_sector + media_ptr->fx_media_hidden_sectors,
+                        media_ptr->fx_media_driver_sectors, unaligned_buffer) == FX_SUCCESS)
+      {
+        media_ptr->fx_media_driver_status = FX_SUCCESS;
+      }
+
+      break;
+    }
+```
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L154
+
+defined here:
+
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L342
+
 ### Sector Size and Cluster Size
 
 For sustained good performence data must be written in blocks that are exact multiples of the **sector size** of **512 bytes**.
 
-It may help to write in blocks which are exact multiples of the **cluster size** with which the SD is formatted - typically 4KB to 128 KB - this can be found using dosfsck with -v and -n options (fsck.fat in dosfstools or minfo in mtools) could also be used:
+It may help to write in blocks which are exact multiples of the **cluster size** with which the SD is formatted - typically 4KB to 128 KB - this can be found using dosfsck with -v and -n options (fsck.fat in dosfstools or minfo in mtools could also be used):
 ```
 sudo dosfsck -v -n /dev/sde1
 ```
