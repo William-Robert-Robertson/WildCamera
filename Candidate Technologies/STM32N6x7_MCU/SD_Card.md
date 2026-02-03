@@ -34,6 +34,7 @@ The SD driver requires a 32 bit (4 byte) aligned buffer - if the buffer is not 4
 ```
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/main/common/drivers/fx_stm32_sd_driver.c#L80
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L80
+
 unaligned_buffer is subsequently passed to sd_write_data:
 ```
   case FX_DRIVER_WRITE:
@@ -49,10 +50,14 @@ unaligned_buffer is subsequently passed to sd_write_data:
       break;
     }
 ```
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/main/common/drivers/fx_stm32_sd_driver.c#L154
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L154
 
-defined here:
-
+sd_write_data is defined here where unaligned_buffer passed above is accepted as use_scratch_buffer:
+```
+static UINT sd_write_data(FX_MEDIA *media_ptr, ULONG start_sector, UINT num_sectors, UINT use_scratch_buffer)
+```
+https://github.com/STMicroelectronics/stm32-mw-filex/blob/main/common/drivers/fx_stm32_sd_driver.c#L342
 https://github.com/STMicroelectronics/stm32-mw-filex/blob/4c28b59a861ccdd9e8dd737f3e1f480c64d23bde/common/drivers/fx_stm32_sd_driver.c#L342
 
 ### Sector Size and Cluster Size
