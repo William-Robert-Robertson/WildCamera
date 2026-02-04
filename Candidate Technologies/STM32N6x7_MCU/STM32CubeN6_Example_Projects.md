@@ -19,7 +19,8 @@ git clone --recursive https://github.com/svogl/venc-sdcard-threadx
 cd venc-sdcard-threadx/
 git pull
 git submodule update --init --recursive
-git checkout main # Not needed - only one branch.
+git checkout main # The main branch gives a fx_media_open ERROR 2 FAILED TO OPEN CARD error - use the feature/filex-bsp-integration branch below
+git checkout feature/filex-bsp-integration
 
 git clone --recursive https://github.com/svogl/disco-recorder
 cd disco-recorder/
