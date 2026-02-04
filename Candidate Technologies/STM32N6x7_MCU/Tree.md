@@ -14,3 +14,9 @@ tree | grep STM32
 
 tree -a STM32CubeN6/Projects/STM32N6570-DK/Applications/VENC/VENC_SDCard | grep .projec
 ```
+PowerShell comes with tree but without grep - Select-String can be used in place of grep.
+```
+tree | Select-String STM32
+
+New-Alias -Name grep -Value Select-String -Description “grep Select-String alias”
+```
