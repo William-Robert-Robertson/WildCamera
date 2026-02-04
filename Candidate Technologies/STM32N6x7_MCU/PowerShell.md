@@ -27,5 +27,6 @@ To run TeraTerm if it isn't on the path
 ```
 ```
 cd C:\Users\wrobe\STM32CubeIDE\
-# git comands can be used to get source code from here.
+# git comands can be used to get source code from here. Please see:
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/STM32CubeN6_Example_Projects.md
 ```
