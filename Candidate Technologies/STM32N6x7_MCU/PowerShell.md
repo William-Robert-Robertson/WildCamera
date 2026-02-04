@@ -18,3 +18,14 @@ Get-CimInstance -Class Win32_SerialPort | Select-Object Name, Description, Devic
 # or
 [System.IO.Ports.SerialPort]::getportnames()
 ```
+The STM32N6570-DK board exposes the serial port at 115200 baud - not the default 9600 baud - and on COM3 in Windows.\
+To run TeraTerm if it isn't on the path
+```
+& "C:\Program Files (x86)\teraterm5\ttermpro.exe"
+
+& "C:\Program Files (x86)\teraterm5\ttermpro.exe" /BAUD=115200 /C=COM3
+```
+```
+cd C:\Users\wrobe\STM32CubeIDE\
+# git comands can be used to get source code from here.
+```
