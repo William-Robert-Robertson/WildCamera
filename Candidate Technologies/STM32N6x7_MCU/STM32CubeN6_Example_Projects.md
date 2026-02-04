@@ -9,7 +9,7 @@ STM32CubeN6 uses submodules - it has to be cloned, submodules updated and the co
 
 ```
 cd ~/STM32CubeIDE # For now, clone this to ~/STM32CubeIDE not ~/STM32CubeIDE/workspace_2.0.0
-git clone --recursive https://github.com/STMicroelectronics/STM32CubeN6.gi
+git clone --recursive https://github.com/STMicroelectronics/STM32CubeN6.git
 cd STM32CubeN6/
 git pull
 git submodule update --init --recursive
