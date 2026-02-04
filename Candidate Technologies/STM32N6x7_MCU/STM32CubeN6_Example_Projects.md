@@ -28,16 +28,17 @@ git submodule update --init --recursive
 git checkout main # Not needed - only one branch.
 ```
 The STM32N6570-DK board exposes the serial port at 115200 baud - not the default 9600 baud.\
-It appears as ttyACM0
+It appears in Linux as ttyACM0 and in Windows as COM3
 ```
 ls -l /dev/ttyACM0
 sudo putty -serial /dev/ttyACM0 -sercfg 115200
 
-# Other  serial consoles
+# Other Linux serial consoles
 sudo minicom -s --color=on --device
 ckermit
 picocom
-# 
+# Windows serial consoles
+TeraTerm
 ```
 If the user belongs to the 'dialout' user group they have accesss to serial ports and sudo isn't needed.
 
