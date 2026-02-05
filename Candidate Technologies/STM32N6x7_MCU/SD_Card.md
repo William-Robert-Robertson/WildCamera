@@ -348,7 +348,7 @@ Linux
 ```
 sudo /sbin/mkfs.vfat /dev/sda1
 ```
-PowerShell - note that althought FAT32 supports up to 2 TB Windows does not like formatting SD cards over 32 GB
+PowerShell - note that although FAT32 supports up to 2 TB Windows does not like formatting SD cards over 32 GB
 ```
 Get-Volume
 Format-Volume -DriveLetter X -FileSystem FAT32 -NewFileSystemLabel MYDISK
@@ -358,3 +358,10 @@ Ridgecrop FAT32format and GUI version of fat32format:
 http://ridgecrop.co.uk/index.htm?guiformat.htm
 
 http://ridgecrop.co.uk/index.htm?fat32format.htm
+
+Rufus
+
+https://rufus.ie/en/
+
+https://github.com/pbatard/rufus
+
