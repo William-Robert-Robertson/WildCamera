@@ -348,7 +348,7 @@ Linux
 ```
 sudo /sbin/mkfs.vfat /dev/sda1
 ```
-PowerShell
+PowerShell - note that althought FAT32 supports up to 2 TB Windows does not like formatting SD cards over 32 GB
 ```
 Get-Volume
 Format-Volume -DriveLetter X -FileSystem FAT32 -NewFileSystemLabel MYDISK
