@@ -342,3 +342,13 @@ https://www.youtube.com/watch?v=I9KDN1o6924
 
 #### OSPEED Maximum SPI Clock Frequency
 https://community.st.com/t5/stm32-mcus/spi-maximum-clock-frequency-for-stm32h5-mcus-devices-when-using/ta-p/658470
+
+### SD Card Formatting
+Linux
+```
+sudo /sbin/mkfs.vfat /dev/sda1
+```
+PowerShell
+```
+Format-Volume -DriveLetter X -FileSystem FAT32 -NewFileSystemLabel MYDISK
+```
