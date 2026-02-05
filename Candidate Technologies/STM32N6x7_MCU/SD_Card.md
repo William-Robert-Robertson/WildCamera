@@ -339,3 +339,6 @@ https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf
 
 ### Nicolas Fillon STM32 – Creating a File System on a SD card
 https://www.youtube.com/watch?v=I9KDN1o6924
+
+#### OSPEED Maximum SPI Clock Frequency
+https://community.st.com/t5/stm32-mcus/spi-maximum-clock-frequency-for-stm32h5-mcus-devices-when-using/ta-p/658470
