@@ -353,3 +353,8 @@ PowerShell - note that althought FAT32 supports up to 2 TB Windows does not like
 Get-Volume
 Format-Volume -DriveLetter X -FileSystem FAT32 -NewFileSystemLabel MYDISK
 ```
+Ridgecrop FAT32format and GUI version of fat32format:
+
+http://ridgecrop.co.uk/index.htm?guiformat.htm
+
+http://ridgecrop.co.uk/index.htm?fat32format.htm
