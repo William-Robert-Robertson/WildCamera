@@ -38,9 +38,14 @@ sudo putty -serial /dev/ttyACM0 -sercfg 115200
 sudo minicom -s --color=on --device
 ckermit
 picocom
-# Windows serial consoles
-TeraTerm
 ```
+
+Windows serial consoles 
+
+TeraTerm
+
+See [PowerShell.md](PowerShell.md)
+
 If the user belongs to the 'dialout' user group they have accesss to serial ports and sudo isn't needed.
 
 this can be found immediately after connecting using
