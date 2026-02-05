@@ -9,6 +9,7 @@ winget install --id Git.Git -e --source winget
 winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id TeraTermProject.teraterm
 winget install -e --id Notepad++.Notepad++
+winget install -e --id Gyan.FFmpeg
 ```
 VSCode Extensions:\
 STM32CubeIDE for Visual Studio Code
