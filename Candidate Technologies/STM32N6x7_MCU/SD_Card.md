@@ -350,5 +350,6 @@ sudo /sbin/mkfs.vfat /dev/sda1
 ```
 PowerShell
 ```
+Get-Volume
 Format-Volume -DriveLetter X -FileSystem FAT32 -NewFileSystemLabel MYDISK
 ```
