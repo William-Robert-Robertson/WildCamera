@@ -116,7 +116,7 @@
 		- Chips Integrating **Amlogic C3 ISP**
    			- Currently in development by Amlogic
 	- **Low Power**
-		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware video encoder
+		- **ST STM32N6 Series μCs** ISP, MIPI CSI-2, H264 hardware video encoder, Neural-ART NPU
 		- **NXP S32V2** Embedded ISP for HDR, color conversion, tone mapping, etc. enabled by ISP graph tool
 
 <video controls src="https://github.com/user-attachments/assets/248f8eea-008a-45c1-bc7c-6e400344eacd" alt="Eliomys quercinus © Goedele Verbeylen"></video>
