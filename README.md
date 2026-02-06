@@ -84,7 +84,7 @@
 		- **Choice of Processor** More limited
 		- **Choice of Camera Modules** More limited
 		- **Solar Panel and Battery** Smaller
-		- **Firmware** FreeRTOS, bare metal, C, C++, MicroPython
+		- **Firmware** ThreadX, FreeRTOS, Zephyr, bare metal, C, C++, MicroPython
 		- **Dependency** More dependencies between software and hardware
 - **AI**
  	- Built-in NPUs (Neural Processing Units) allow neural networks to be efficiently implemented on the camera
