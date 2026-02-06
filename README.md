@@ -148,7 +148,7 @@
 - **RFID / PIT** to read ID from tagged animals
 - **LASER Spot Alignment** to make the system quicker and easier to align in the trees
 - **4G LTE** Remote monitoring and control via mobile phone network via LTE (Long-Term Evolution) - successor to GSM to communicate over mobile phone network
-- **Thermal Imaging Camera** image sensors extending further into the IR (Infra Red)
+- **Thermal Imaging Camera / FLIR** image sensors extending further into the IR (Infra Red)
 - **Temperature Sensor** small and robust - multiple temperature sensors can be connected and can be some distance from the processor
 - **Humidity Sensor**
 - **Ambient Light Sensor**
