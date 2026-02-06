@@ -136,7 +136,7 @@
 	- **Scame Parre S.p.a SCABOX Series** IP56
 - **Activation Sensors** Passive Infra Red (PIR) or other technologies for specialist applications.
 - **Storage** MicroSD card or internal flash memory (eMMC).	
-- **Data Communication** Wi-Fi (preferred) or Bluetooth for video, photo and data download to a laptop within range.
+- **Data Communication** Wi-Fi (preferred) for video, photo and data download to a laptop within range (Bluetooth may be too slow for video).
 - **Wakeup Communication** Low power protocol e.g. Matter IoT, Bluetooth LE, Zigbee or sub-1GHz IEEE 802.15.4 to send wake-up signal to waken up WiFi above.
 - **Power Supply** solar panel(s), external power source.
 - **Battery** Li-Ion for moderate temperatures, LiFePO4 provides power down to -20 °C and can be charged down to 0 °C, PbA for lower temperatures.
