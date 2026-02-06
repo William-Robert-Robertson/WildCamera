@@ -10,6 +10,7 @@ winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id TeraTermProject.teraterm
 winget install -e --id Notepad++.Notepad++
 winget install -e --id Gyan.FFmpeg
+winget install "Lenovo Vantage" --source=msstore --accept-package-agreements
 ```
 VSCode Extensions:\
 STM32CubeIDE for Visual Studio Code
