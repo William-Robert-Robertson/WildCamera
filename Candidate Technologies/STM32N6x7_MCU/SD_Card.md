@@ -365,3 +365,16 @@ https://rufus.ie/en/
 
 https://github.com/pbatard/rufus
 
+#### SDIO 4-Bit Really Works!
+Mentioning pull-up resistors...
+
+https://www.youtube.com/watch?v=L8gfZCnjct8
+
+
+#### Interface SD card with STM32 using SDIO || 4Bit Mode || DMA
+with SDIO 194 kbytes per second with SPI.
+
+https://www.youtube.com/watch?v=KNuMM7NdgYw
+
+#### SD card using SDIO in STM32 || Uart RIng buffer || 4-Bit Mode || CubeMx
+https://www.youtube.com/watch?v=dgCfM0CZpBA
