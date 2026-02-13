@@ -4,6 +4,7 @@ Darlington Transistor Array
 https://www.ti.com/lit/ds/symlink/uln2803c.pdf?ts=1747893792899
 
 TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Time
+Used on STM32N6570-DK board
 On-Resistance (RON):
 1.8-V VIN: 105 mΩ (typical)
 https://www.ti.com/lit/ds/symlink/tps22919.pdf
@@ -11,6 +12,7 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 
 BSN20BK
 60 V, N-channel Trench MOSFET
+Used on STM32N6570-DK board
 drain-source on-state resistance RDSon quoted at VGS at 2.5 volts
 https://assets.nexperia.com/documents/data-sheet/BSN20BK.pdf
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/BSN20BK%2060%20V%20N-channel%20Trench%20MOSFET.pdf
