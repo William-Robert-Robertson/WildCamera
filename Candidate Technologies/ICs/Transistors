@@ -3,3 +3,14 @@ Transistors
 Darlington Transistor Array
 https://www.ti.com/lit/ds/symlink/uln2803c.pdf?ts=1747893792899
 
+TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Time
+On-Resistance (RON):
+1.8-V VIN: 105 mΩ (typical)
+https://www.ti.com/lit/ds/symlink/tps22919.pdf
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/TI%20tps22919%20TPS22919%205.5%20V%201.5%20A%2090-m%CE%A9%20Self-Protected%20Load%20Switch%20with%20Controlled%20Rise%20Time.pdf
+
+BSN20BK
+60 V, N-channel Trench MOSFET
+drain-source on-state resistance RDSon quoted at VGS at 2.5 volts
+https://assets.nexperia.com/documents/data-sheet/BSN20BK.pdf
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/BSN20BK%2060%20V%20N-channel%20Trench%20MOSFET.pdf
