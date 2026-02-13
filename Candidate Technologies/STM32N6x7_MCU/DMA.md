@@ -8,6 +8,9 @@ Note that this is the **opposite** priority order from ThreadX threads:
 
 >By default, ThreadX has 32 priority levels, ranging from priority 0 through priority 31. Numerically smaller values imply higher priority. Hence, priority 0 represents the highest priority, while priority (TX_MAX_PRIORITIES-1) represents the lowest priority.
 
+RM0486 Reference manual STM32N6x5/x7xx Arm®-based 32-bit MCUs chapter 18+19\
+https://www.st.com/resource/en/reference_manual/rm0486-stm32n647657xx-armbased-32bit-mcus-stmicroelectronics.pdf
+
 from:\
 https://www.st.com/content/ccc/resource/training/technical/product_training/group1/ff/53/77/83/1a/ba/48/5d/STM32H5-DMA-2D-V2/files/stm32h5-system-dma-2d-adressing-v2.pdf/jcr:content/translations/en.stm32h5-system-dma-2d-adressing-v2.pdf\
 or\
