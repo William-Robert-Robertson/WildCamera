@@ -37,15 +37,27 @@ Both the above use ST1S31PUR 3 A DC step-down switching regulator\
 2.8 V to 5.5 V input voltage\
 https://www.st.com/en/power-management/st1s31.html
 
-VDDIO
+5V External POWER\
+5V_VIN is derived from VIN via LD1117S50TR\
+This looks like a linear regulator\
+LD1117 Adjustable and fixed low drop positive voltage regulator\
+Output current up to 800 mA\
+Table 1. Absolute maximum ratings\
+DC input voltage 15V\
+Power dissipation 12W\
+https://www.st.com/resource/en/datasheet/ld1117.pdf
+
+VDDIO\
+
 LD39020ADTPU33R LD39020 LD39020 200 mA very low quiescent current linear regulator IC\
 Input voltage from 1.5 to 5.5 V\
 https://www.st.com/resource/en/datasheet/ld39020.pdf
 
-VDDA1V8_AON
+VDDA1V8_AON\
 LD39020ADTPU18R LD39020 200 mA very low quiescent current linear regulator IC\
 Input voltage from 1.5 to 5.5 V\
-https://www.st.com/resource/en/datasheet/ld39020.pdf
+https://www.st.com/resource/en/datasheet/ld39020.pdf \
+TP15 may provide a way of bringing VDDA1V8_AON onto the board without powering other supplies. R163 0R could be removed if need be.
 
 1V8 POWER\
 LD56100DPU18R - LD56100 1 A very low dropout fast transient ultra-low noise linear regulator\
