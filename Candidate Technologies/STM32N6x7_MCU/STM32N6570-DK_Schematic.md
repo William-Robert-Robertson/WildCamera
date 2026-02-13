@@ -32,7 +32,13 @@ drain-source on-state resistance R<sub>DSon</sub> quoted at V<sub>GS</sub> at 2.
 #### SD
 
 TPS22919DCKR\
-TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Time\
+TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Time
+>The TPS22919 device is a small, single channel load
+>switch with controlled slew rate. The device contains
+>an N-channel MOSFET that can operate over an
+>input voltage range of 1.6 V to 5.5 V and can support
+>a maximum continuous current of 1.5 A.
+
 https://www.ti.com/lit/ds/symlink/tps22919.pdf
 
 
