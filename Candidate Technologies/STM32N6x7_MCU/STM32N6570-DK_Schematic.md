@@ -41,4 +41,12 @@ TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Ti
 
 https://www.ti.com/lit/ds/symlink/tps22919.pdf
 
+#### Ethernet
+
+Sheet 13 of 21\
+RTL8211F-CG Realtek integrated Ethernet transceiver\
+The RTL8211F(I)-CG incorporates a state-of-the-art switching regulator\
+Supports Link Down power saving\
+https://www.realtek.com/Product/Index?id=3975&cate_id=786 \
+Powered by 3V3_DVDD_GMII and 3V3_AVDD_GMII whichare fed from VDD_ETH which is fed from VDD3V via SB3 (see sheet 13 of 21)
 
