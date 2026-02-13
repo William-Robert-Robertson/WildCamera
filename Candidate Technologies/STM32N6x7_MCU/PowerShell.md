@@ -26,7 +26,7 @@ To run TeraTerm if it isn't on the path
 ```
 & "C:\Program Files (x86)\teraterm5\ttermpro.exe"
 
-& "C:\Program Files (x86)\teraterm5\ttermpro.exe" /BAUD=115200 /C=COM3
+& "C:\Program Files (x86)\teraterm5\ttermpro.exe" /BAUD=115200 /C=3 #COM3 is 3 not "COM3"
 ```
 ```
 cd C:\Users\wrobe\STM32CubeIDE\
