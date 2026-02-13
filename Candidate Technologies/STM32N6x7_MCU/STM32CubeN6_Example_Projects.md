@@ -30,6 +30,9 @@ git checkout main # Not needed - only one branch.
 
 git clone --recursive https://github.com/svogl/stm32-fx-usd-file-edit
 
+# Stashed changes can be displayed using:
+git stash show -p
+
 ```
 The STM32N6570-DK board exposes the serial port at 115200 baud - not the default 9600 baud.\
 It appears in Linux as ttyACM0 and in Windows as COM3
