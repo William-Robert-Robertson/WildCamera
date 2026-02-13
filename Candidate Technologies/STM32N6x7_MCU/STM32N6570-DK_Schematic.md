@@ -17,6 +17,10 @@ No hardware debouncer apart from small internal capacitance of ESDALC6V1.\
 No hardware pulldown resistor (pulldown marked DNF "Do Not Fit")\
 https://community.st.com/t5/stm32-mcus-boards-and-hardware/nucleo-g431kb-what-does-quot-dnf-quot-mean/td-p/822780
 
+USER1 PC13 goes direct to the STM32N657X0H3Q via F3 (sheet 3 of 21)
+
+Digital and analog inuts are also made available via Arduino_UNO_R3 (sheet 3 of 21).
+
 #### Power
 
 5V Power Supply options
