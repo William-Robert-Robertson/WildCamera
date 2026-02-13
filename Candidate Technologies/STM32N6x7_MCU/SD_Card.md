@@ -240,7 +240,9 @@ without any automated performance tests there's no way of keeping track of what 
 ### STM32H7 - SDMMC
 
 The STM32H7 seems to use the same SDMMC as the STM32N6
-https://www.st.com/content/ccc/resource/training/technical/product_training/group0/06/8b/84/d3/16/f6/4b/95/STM32H7-Peripheral-SDMMC_interface_SDMMC/files/STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf/_jcr_content/translations/en.STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf
+https://www.st.com/content/ccc/resource/training/technical/product_training/group0/06/8b/84/d3/16/f6/4b/95/STM32H7-Peripheral-SDMMC_interface_SDMMC/files/STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf/_jcr_content/translations/en.STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf \
+or\
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ST_User_Manuals/STM32H7-Peripheral-SDMMC_interface_SDMMC.pdf
 
 Interface SD Card via SDIO (4Bit Mode & DMA) - Interface SD Card via SDIO (4Bit Mode & DMA) \
 https://controllerstech.com/interface-sd-card-with-stm32-via-sdio-4bit-mode/
