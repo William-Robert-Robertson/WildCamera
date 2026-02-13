@@ -52,7 +52,6 @@ Power dissipation 12W\
 https://www.st.com/resource/en/datasheet/ld1117.pdf
 
 VDDIO\
-
 LD39020ADTPU33R LD39020 LD39020 200 mA very low quiescent current linear regulator IC\
 Input voltage from 1.5 to 5.5 V\
 https://www.st.com/resource/en/datasheet/ld39020.pdf
