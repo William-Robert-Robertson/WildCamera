@@ -39,7 +39,8 @@ LD5 Green is powered direct from 5V but could be disabled by removing R129 820R
 
 Both the above use ST1S31PUR 3 A DC step-down switching regulator\
 2.8 V to 5.5 V input voltage\
-https://www.st.com/en/power-management/st1s31.html
+https://www.st.com/en/power-management/st1s31.html \
+https://www.st.com/resource/en/datasheet/st1s31.pdf
 
 5V External POWER\
 5V_VIN is derived from VIN via LD1117S50TR\
@@ -102,5 +103,5 @@ RTL8211F-CG Realtek integrated Ethernet transceiver\
 The RTL8211F(I)-CG incorporates a state-of-the-art switching regulator\
 Supports Link Down power saving\
 https://www.realtek.com/Product/Index?id=3975&cate_id=786 \
-Powered by 3V3_DVDD_GMII and 3V3_AVDD_GMII whichare fed from VDD_ETH which is fed from VDD3V via SB3 (see sheet 13 of 21)
+Powered by 3V3_DVDD_GMII and 3V3_AVDD_GMII which are fed from VDD_ETH which is fed from VDD3V via SB3 (see sheet 13 of 21)
 
