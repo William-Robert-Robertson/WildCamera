@@ -13,14 +13,50 @@ Sheet 8 of 21
 
 All the above are normally closed to logic high\
 Protection via ESDALC6V1-1U2\
-No hardware debouncer.\
+No hardware debouncer apart from small internal capacitance of ESDALC6V1.\
 No hardware pulldown resistor (pulldown marked DNF "Do Not Fit")\
 https://community.st.com/t5/stm32-mcus-boards-and-hardware/nucleo-g431kb-what-does-quot-dnf-quot-mean/td-p/822780
+
+#### Power
+
+5V Power Supply options
+
+5V_STLK: 5V 500mA / 1.5A / 3A\
+5V_USB_SNK: 5V 1.5A\
+5V_VIN: 5V 0.8A
+
+All the above are directly accessible via header JP2.
+
+LD5 Green is powered direct from 5V but could be disabled by removing R129 820R 
+
+"Internal SMPS and other MCU 1V8 POWER INPUT" is available to power VDD1V8 but not connected (DNF 0R resistor)
+
+"3V3 POWER" provides VDD3V3
+
+Both the above use ST1S31PUR 3 A DC step-down switching regulator\
+2.8 V to 5.5 V input voltage\
+https://www.st.com/en/power-management/st1s31.html
+
+VDDIO
+LD39020ADTPU33R LD39020 LD39020 200 mA very low quiescent current linear regulator IC\
+Input voltage from 1.5 to 5.5 V\
+https://www.st.com/resource/en/datasheet/ld39020.pdf
+
+VDDA1V8_AON
+LD39020ADTPU18R LD39020 200 mA very low quiescent current linear regulator IC\
+Input voltage from 1.5 to 5.5 V\
+https://www.st.com/resource/en/datasheet/ld39020.pdf
+
+1V8 POWER\
+LD56100DPU18R - LD56100 1 A very low dropout fast transient ultra-low noise linear regulator\
+Input voltage from 1.8 to 5.5 V\
+https://www.st.com/resource/en/datasheet/ld56100.pdf
 
 #### LCD
 
 Sheet 8 of 12\
-LCD_ON/OF PQ3
+LCD_ON/OF PQ3 via SB5\
+LCD_BL_CTR PG6
 
 #### Transistors, etc.
 
@@ -31,6 +67,7 @@ drain-source on-state resistance R<sub>DSon</sub> quoted at V<sub>GS</sub> at 2.
 
 #### SD
 
+Power controlled via PWR_SD_EN
 TPS22919DCKR\
 TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Time
 >The TPS22919 device is a small, single channel load
@@ -38,6 +75,8 @@ TPS22919 5.5 V, 1.5 A, 90-mΩ Self-Protected Load Switch with Controlled Rise Ti
 >an N-channel MOSFET that can operate over an
 >input voltage range of 1.6 V to 5.5 V and can support
 >a maximum continuous current of 1.5 A.
+
+VDDIO_SD selected from VDD_SD or VDDA1V8 by NX3L1T3157GM
 
 https://www.ti.com/lit/ds/symlink/tps22919.pdf
 
