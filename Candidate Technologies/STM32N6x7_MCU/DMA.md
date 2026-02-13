@@ -1,4 +1,4 @@
-DMA Direct Memeory Access
+DMA Direct Memery Access
 
 >Time-sensitive requests should be assigned the priority
 >3, which is handled with a fixed higher priority scheme
