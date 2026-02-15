@@ -9,6 +9,11 @@ https://www.cirrus.com/products/wm8904
 TI Audio CODECs\
 https://www.ti.com/product-category/audio/converters/codecs/overview.html
 
+ST Audio Codecs\
+STA309A Multi-channel digital audio processor with DDX\
+This appears to be DAC rather than ADC\
+https://www.st.com/resource/en/datasheet/sta309a.pdf
+
 TAC5242 Hardware-control stereo audio codec with 119dB dynamic range ADC and 120dB dynamic range DAC\
 https://www.ti.com/lit/ds/symlink/tac5242.pdf \
 AN3225 Application note Audio software codec for STM8L15xxx and STM8AL31xx/STM8AL3Lxx\
