@@ -1,6 +1,6 @@
 Audio CODECs
 
-STM32N6570-DK
+STM32N6570-DK\
 https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf \
 WM8904CGEFL/RV\
 Cirius Logic WM8904 Ultra Low Power Codec for Portable Audio Applications\
