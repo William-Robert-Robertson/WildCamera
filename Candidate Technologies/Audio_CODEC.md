@@ -23,6 +23,8 @@ https://www.issi.com/WW/pdf/62WV2568ALL_BLL.pdf \
 Open Acoustics Repositories \
 https://github.com/OpenAcousticDevices
 
+π•pistrelle, pipistrelle mini and pippyg by Phil Atkin\
+https://www.pippyg.com/ \
 Apodemus Pipistrelle Mini\
 https://www.apodemus.eu/en/Apodemus-Pipistrelle-Mini/00126.1 \
 Apodemus Pippyg and π•pistrelle\
@@ -31,6 +33,11 @@ https://www.apodemus.eu/en/Apodemus-Pippyg/00127
 > I can now detect no "SD writing noise" at all when using Samsung EVO 64GB SD cards, which were previously unusable as they generated so much ultrasound, It's now clear that these SD cards were much more electrically demending, and the current surges were causing the decoupling capacitors attached to the SD card interface to behave like pizeo speakers.
 > 
 https://wildlabs.net/discussion/improving-performance-pippyg-static-bat-detector-remote-microphone
+
+π•pistrelle mini BOM (Bill Of Materials)\
+Raspberry Pi Pico RP2040 MCU - 2x ARM Cortex-M0+\
+SPV0142LR5H-1 NEMS microphone \
+https://www.digikey.co.uk/en/mylists/list/LO9UPDIMG9
 
 TI Audio CODECs\
 https://www.ti.com/product-category/audio/converters/codecs/overview.html
