@@ -22,3 +22,11 @@ C. Baudoin, M.-M. Niaussat & S. Valentin\
 
 The acoustic identification of small terrestrial mammals in Britain \
 https://batability.co.uk/wp-content/uploads/2021/04/BWM32_3-Small-Mammal-ID-Spreads.pdf
+
+"hazel dormice should since they communicate in the ultrasonic frequencies"
+
+"I don;t know about Garden dormice, but I am going to test things this year in the zoo"
+
+"I use the Song Meter micro, 2nd generation"
+
+pers. com. Marjon Savelsberg 16 February 2026
