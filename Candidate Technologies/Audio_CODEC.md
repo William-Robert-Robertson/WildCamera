@@ -1,5 +1,9 @@
 Audio CODECs
 
+Phil Schatzmann pschatzmann.ch Audio Coders and Decoders\
+https://github.com/pschatzmann/arduino-audio-tools/wiki/Encoding-and-Decoding-of-Audio /
+https://www.pschatzmann.ch/home/2021/08/13/audio-decoders-for-microcontrollers /
+
 STM32N6570-DK\
 https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf \
 WM8904CGEFL/RV\
