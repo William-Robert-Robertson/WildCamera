@@ -380,3 +380,9 @@ https://www.youtube.com/watch?v=KNuMM7NdgYw
 
 #### SD card using SDIO in STM32 || Uart RIng buffer || 4-Bit Mode || CubeMx
 https://www.youtube.com/watch?v=dgCfM0CZpBA
+
+#### SD Card Mayhem
+
+> I can now detect no "SD writing noise" at all when using Samsung EVO 64GB SD cards, which were previously unusable as they generated so much ultrasound, It's now clear that these SD cards were much more electrically demending, and the current surges were causing the decoupling capacitors attached to the SD card interface to behave like pizeo speakers.
+ 
+ https://wildlabs.net/discussion/improving-performance-pippyg-static-bat-detector-remote-microphone
