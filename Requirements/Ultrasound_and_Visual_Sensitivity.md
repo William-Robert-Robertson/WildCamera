@@ -9,4 +9,14 @@ All three of them were mighty disturbed by it. Since then I checked all lamps wi
 
 Pers. com. Katrin Boltz 4th to 7th February 2026
 
-See also papers sent by Goedele Verbeylen on 16 February 2026 here:
+See also papers sent by Goedele Verbeylen on 16 February 2026 on use of ultrasound by Eliomys quercinus and Muscardinus avellanarius here:
+
+Ultrasonic communication in Gliridae (Rodentia): The hazel dormouse (Muscardinus avellanarius) as a case study\
+https://www.researchgate.net/publication/257082303_Ultrasonic_communication_in_Gliridae_Rodentia_The_hazel_dormouse_Muscardinus_avellanarius_as_a_case_study
+
+Acoustic communication and auditory sensitivity in the garden domouse, Eliomys quercinus L.\
+C. Baudoin, M.-M. Niaussat & S. Valentin\
+1984
+
+The acoustic identification of small terrestrial mammals in Britain \
+https://batability.co.uk/wp-content/uploads/2021/04/BWM32_3-Small-Mammal-ID-Spreads.pdf
