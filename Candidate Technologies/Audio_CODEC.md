@@ -54,6 +54,9 @@ Acoustic communication and auditory sensitivity in the garden domouse, Eliomys q
 C. Baudoin, M.-M. Niaussat & S. Valentin\
 1984
 
+The acoustic identification of small terrestrial mammals in Britain \
+https://batability.co.uk/wp-content/uploads/2021/04/BWM32_3-Small-Mammal-ID-Spreads.pdf
+
 TAC5242 Hardware-control stereo audio codec with 119dB dynamic range ADC and 120dB dynamic range DAC\
 https://www.ti.com/lit/ds/symlink/tac5242.pdf \
 AN3225 Application note Audio software codec for STM8L15xxx and STM8AL31xx/STM8AL3Lxx\
