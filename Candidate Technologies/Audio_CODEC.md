@@ -12,10 +12,14 @@ Cirius Logic WM8904 Ultra Low Power Codec for Portable Audio Applications\
 https://www.cirrus.com/products/wm8904
 
 Open Acoustics AudioMoth\
-Runs on an ARM M4 core\
+Runs on an ARM M4 core on EFM32 MCU\
 Some ecologists report reliability issues.\
 https://www.openacousticdevices.info/ \
-https://www.sciencedirect.com/science/article/pii/S2468067219300306
+https://www.sciencedirect.com/science/article/pii/S2468067219300306 \
+IC1 - EFM32™ Gecko 32-bit Microcontroller \
+https://www.silabs.com/mcu/32-bit-microcontrollers/efm32-gecko \
+IC2 - IS62WV2568BLL-55TLI Low Power Static RAM\
+https://www.issi.com/WW/pdf/62WV2568ALL_BLL.pdf
 
 TI Audio CODECs\
 https://www.ti.com/product-category/audio/converters/codecs/overview.html
