@@ -47,6 +47,9 @@ STA309A Multi-channel digital audio processor with DDX\
 This appears to be DAC rather than ADC\
 https://www.st.com/resource/en/datasheet/sta309a.pdf
 
+Ultrasonic communication in Gliridae (Rodentia): The hazel dormouse (Muscardinus avellanarius) as a case study\
+https://www.researchgate.net/publication/257082303_Ultrasonic_communication_in_Gliridae_Rodentia_The_hazel_dormouse_Muscardinus_avellanarius_as_a_case_study
+
 TAC5242 Hardware-control stereo audio codec with 119dB dynamic range ADC and 120dB dynamic range DAC\
 https://www.ti.com/lit/ds/symlink/tac5242.pdf \
 AN3225 Application note Audio software codec for STM8L15xxx and STM8AL31xx/STM8AL3Lxx\
