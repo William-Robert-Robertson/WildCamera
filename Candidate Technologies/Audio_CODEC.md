@@ -11,6 +11,12 @@ This is an audioo codec not an audio encoder\
 Cirius Logic WM8904 Ultra Low Power Codec for Portable Audio Applications\
 https://www.cirrus.com/products/wm8904
 
+Open Acoustics AudioMoth\
+Runs on an ARM M4 core\
+Some ecologists report reliability issues.\
+https://www.openacousticdevices.info/ \
+https://www.sciencedirect.com/science/article/pii/S2468067219300306
+
 TI Audio CODECs\
 https://www.ti.com/product-category/audio/converters/codecs/overview.html
 
