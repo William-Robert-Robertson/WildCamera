@@ -11,6 +11,8 @@ Pers. com. Katrin Boltz 4th to 7th February 2026
 
 See also papers sent by Goedele Verbeylen on 16 February 2026 on use of ultrasound by Eliomys quercinus and Muscardinus avellanarius here:
 
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Audio_CODEC.md
+
 Ultrasonic communication in Gliridae (Rodentia): The hazel dormouse (Muscardinus avellanarius) as a case study\
 https://www.researchgate.net/publication/257082303_Ultrasonic_communication_in_Gliridae_Rodentia_The_hazel_dormouse_Muscardinus_avellanarius_as_a_case_study
 
