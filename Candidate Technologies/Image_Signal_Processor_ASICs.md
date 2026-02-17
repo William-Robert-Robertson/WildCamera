@@ -1,6 +1,6 @@
 Image Signal Processor ASICs
 
-infineon EZ-USB™ CX3 MIPI CSI2 to USB 3.0 camera controller - used in ST STEVAL-EVK-U0I1\
+Infineon EZ-USB™ CX3 MIPI CSI2 to USB 3.0 camera controller - used in ST STEVAL-EVK-U0I1 PCB4405C\
 https://www.infineon.com/products/universal-serial-bus/usb-3-2-peripheral-controllers/ez-usb-cx3-mipi-csi2-to-usb-5gbps-camera-controller
 
 https://www.st.com/resource/en/schematic_pack/steval-evk-u0i-schematic.pdf
