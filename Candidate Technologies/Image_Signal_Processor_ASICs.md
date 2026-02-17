@@ -1,5 +1,10 @@
 Image Signal Processor ASICs
 
+EZ-USB™ CX3 MIPI CSI2 to USB 3.0 camera controller - used in ST STEVAL-EVK-U0I1\
+https://www.infineon.com/products/universal-serial-bus/usb-3-2-peripheral-controllers/ez-usb-cx3-mipi-csi2-to-usb-5gbps-camera-controller
+
+https://www.st.com/resource/en/schematic_pack/steval-evk-u0i-schematic.pdf
+
 https://www.digikey.ch/en/product-highlight/t/thine/theia-cam-and-isp
 >The ISP firmware is configurable by licensing THine’s camera development kit separately to design camera systems using the customer’s preferred image sensor.
 
