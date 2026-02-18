@@ -185,6 +185,10 @@ In our example this is set here\
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L75 \
 https://github.com/svogl/venc-sdcard-threadx/blob/6580b74ad25a7e58abde708830a27687af65e13b/Appli/Src/app_filex.c#L315
 
+### FileX Buffer Fush
+This person suspects that on the STM32H750 the FileX buffer could be being flushed far too frequently - resulting in the bedia buffer not being fully utilised and write performence that is much slower than read performence:
+>What I have I seen until now is that FILEX seems tell every time SD card's driver to write only into 1 block and It never tries a multi blocks write ( so I don't understand if there are advantages from using a media buffer with size greater than 512 bytes) 
+https://community.st.com/t5/stm32-mcus-embedded-software/filex-writing-performance/td-p/750618
 ### FileX Disable Cache
 FX_DISABLE_CACHE should not be defined.
 
@@ -320,6 +324,9 @@ https://dev.st.com/stm32cube-docs/stm32u5-hal2/2.0.0-beta.1.1/docs/drivers/hal_d
 ffmpeg -f h264 -framerate 30 -i [extracted file] -c copy [output file]
 ```
 https://community.st.com/t5/stm32-mcus-embedded-software/venc-sdcard-threadx-example/m-p/860986#M70641
+
+### Simple case of writing a small file
+https://community.st.com/t5/stm32-mcus/how-to-use-filex-with-emmc-for-file-system-management/ta-p/634300
 
 ST AN5519 Getting started with the SPC58EHx/SPC58NHx multimedia card host controller - this appears to be an older version of the IP in **AN5200** above\
 19-Nov-2020 \
