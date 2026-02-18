@@ -3,7 +3,7 @@
 File systems are covedred seperately here:\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/Filesystems.md
 
-RTOSs FreeRTOS, ThreadX and Zephyr are ceovered seperately here:\
+RTOSs FreeRTOS, ThreadX and Zephyr are covered seperately here:\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/STM32N6x7_MCU/RTOS.md
 
 ## Optimising SD Speed
