@@ -30,3 +30,6 @@ MB1280-B01_BOM - all capcitors are MLCC except 1uF CC0603KRX5R9BB105 which digiK
 MB1280-3V3-C01_BOM - as above - all capcitors are MLCC except 1uF CC0603KRX5R9BB105 which digiKey reports as ceramic and 10nF CC0603KRX7R9BB103 which digiKey reports as ceramic
 
 No traditional electrolytic capacitors could be found in the BOMs for the boards in the STM32N6570-DK - only ceramic and tantalum capacitors - so problems due to decreases in capacitance at temperatures below freezing are not expected.
+
+NASA Goddard Space Flight Center - Performance and Reliability of Solid Tantalum Capacitors at Cryogenic Conditions\
+https://ntrs.nasa.gov/api/citations/20060026218/downloads/20060026218.pdf
