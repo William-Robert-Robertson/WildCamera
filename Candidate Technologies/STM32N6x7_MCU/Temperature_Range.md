@@ -14,6 +14,19 @@ https://www.st.com/resource/en/schematic_pack/mb1939-n6570-c02-schematic.pdf
 
 https://www.st.com/en/evaluation-tools/stm32n6570-dk.html#cad-resources
 
+ST provide seperate BOMs for the boards in the STM32N6570-DK
+
 In both MB1854-CSI-B01_BOM and MB1854-CSI-B02_BOM for MB1854 all capacitors are listed as "MLCC" (Multi Layer Ceramic Capacitor)
 
-For mb1939, mb1860 and mb1280
+For Bill of Material for other boards in the STM32N6570-DK
+
+mb1939 - MB1939-N6570-C02_BOM - all capcitors are MLCC\
+mb1860:\
+MB1860-RK050HR18C-A02_BOM - all capcitors are MLCC or Tantalum\
+MB1860-RK050HR18C-B01_BOM - all capcitors are MLCC or Tantalum\
+mb1280:\
+MB1280-A0x_BOM - 100nF 1uF and 10nF capacitor comments only\
+MB1280-B01_BOM - all capcitors are MLCC except 1uF CC0603KRX5R9BB105 which digiKey reports as ceramic and 10nF CC0603KRX7R9BB103 which digiKey reports as ceramic\
+MB1280-3V3-C01_BOM - as above - all capcitors are MLCC except 1uF CC0603KRX5R9BB105 which digiKey reports as ceramic and 10nF CC0603KRX7R9BB103 which digiKey reports as ceramic
+
+No traditional electrolytic capacitors could be found in the BOMs for the boards in the STM32N6570-DK - only ceramic and tantalum capacitors - so problems due to decreases in capacitance at temperatures below freezing are not expected.
