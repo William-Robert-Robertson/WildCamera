@@ -274,8 +274,19 @@ Application Note:
 https://www.st.com/resource/en/application_note/DM00914720.pdf
 STHS34PF80 Low-power, high-sensitivity infrared (IR) sensor for presence and motion detection
 https://www.st.com/en/mems-and-sensors/sths34pf80.html
-Pres release
+Press release
 https://newsroom.st.com/media-center/press-item.html/p4562.html
+
+Eval. board:
+
+STEVAL-MKI109D
+Professional MEMS tool: evaluation board for all ST MEMS sensors
+Uses STM32H563ZI MCU
+https://www.st.com/en/evaluation-tools/steval-mki109d.html
+
+Obsolete:
+Professional MEMS tool: ST MEMS adapters motherboard based on the STM32F401VE and compatible with all ST MEMS adapters
+https://www.st.com/en/evaluation-tools/steval-mki109v3.html
 
 For lenses
 https://www.digikey.ch
