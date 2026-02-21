@@ -19,8 +19,9 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 
 
 ##### Knowles MEMS Microphones For Full Range Audio And Ultrasonic Applications (Consumer) Selection Guide
->Digital (PDM) Microphones
->Analog Microphones
+>Digital (PDM) Microphones...\
+>Analog Microphones...\
+>Specialty Microphones...
 
 https://www.digikey.com/en/pdf/k/knowles/ultrasonic-electret-mems-microphones \
 local copy\
