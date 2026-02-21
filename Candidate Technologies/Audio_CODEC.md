@@ -1,5 +1,8 @@
 Audio CODECs
 
+For microphones with integrated preamplifier and ADC please see:\
+https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/MEMS_Microphones.md
+
 Phil Schatzmann pschatzmann.ch Audio Coders and Decoders\
 https://github.com/pschatzmann/arduino-audio-tools/wiki/Encoding-and-Decoding-of-Audio \
 https://www.pschatzmann.ch/home/2021/08/13/audio-decoders-for-microcontrollers
@@ -38,6 +41,9 @@ https://wildlabs.net/discussion/improving-performance-pippyg-static-bat-detector
 Raspberry Pi Pico RP2040 MCU - 2x ARM Cortex-M0+\
 SPV0142LR5H-1 NEMS microphone \
 https://www.digikey.co.uk/en/mylists/list/LO9UPDIMG9
+
+AD4058 Compact, Low Power, 16-Bit, 2 MSPS/500 kSPS Easy Drive SAR ADC\
+https://www.analog.com/en/products/AD4058.html
 
 TI Audio CODECs\
 https://www.ti.com/product-category/audio/converters/codecs/overview.html
