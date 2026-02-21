@@ -26,3 +26,6 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 https://www.digikey.com/en/pdf/k/knowles/ultrasonic-electret-mems-microphones \
 local copy\
 https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Technologies/ICs/Data%20Sheets/Knowles_Audio_And_Ultrasonic_Mic-Selection-Guide-r5.pdf
+
+##### TDK launches low power MEMS microphone with I²S interface to worldwide distribution
+https://invensense.tdk.com/news-media/tdk-launches-low-power-mems-microphone-with-i2s-interface-to-worldwide-distribution/
