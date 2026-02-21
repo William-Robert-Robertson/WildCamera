@@ -284,6 +284,10 @@ Professional MEMS tool: evaluation board for all ST MEMS sensors
 Uses STM32H563ZI MCU
 https://www.st.com/en/evaluation-tools/steval-mki109d.html
 
+Eval. software:
+You can run the MEMS-Studio graphical user interface (GUI)
+Firmware for the STEVAL-MKI109D is also available in the MEMS Studio software solution
+
 Obsolete:
 Professional MEMS tool: ST MEMS adapters motherboard based on the STM32F401VE and compatible with all ST MEMS adapters
 https://www.st.com/en/evaluation-tools/steval-mki109v3.html
