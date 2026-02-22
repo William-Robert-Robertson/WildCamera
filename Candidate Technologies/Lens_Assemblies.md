@@ -20,6 +20,10 @@ All Products -> Imaging Lenses -> M12 Lenses (S-Mount Lenses)\
 https://www.edmundoptics.eu/c/m12-smount-lenses/1005/
 
 ##### Variable Focus Liquid Lens
+Liquid Lenses Basics\
+https://www.edmundoptics.com/knowledge-center/application-notes/imaging/introduction-to-liquid-lenses/ \
+Liquid Lens Features, Applications, and Technology\
+https://www.edmundoptics.com/knowledge-center/application-notes/imaging/liquid-lenses-in-imaging/ \
 Corning® Varioptic®\
 https://www.edmundoptics.eu/p/25mm-CA-NIR-Coated-70-Diopter-Focus-Range-A-P-25H1-D0-33-CorningR-VariopticR-Variable-Focus-Liquid-Lens-Packaged-A-Series-6-pins-FPC-with-Thermistor/52386?PrintPDF=true
 
