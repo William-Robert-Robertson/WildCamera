@@ -173,7 +173,7 @@
 - **Mesh Network** Automatically form a WiFi or sub-1GHz mesh network between cameras which are in range of each other
 - **Weight Measurement** via load cell
 - **USB Camera Modules** Increased flexibility at the cost of increased power consumption
-- **ToF (Time of Flight) Sensor**
+- **ToF (Time of Flight) Sensor** mm wave radar or LiDAR (Light Detection And Ranging)
 - **Sample Collection** for example via paper roll or adhesive tape roll
 - **Auto Wake-Up** from change of scene from VD55G1 image sensor in low power (2mW) mode
 - **Automated re-baiting** of small, non-perishable bait items - for example nuts
