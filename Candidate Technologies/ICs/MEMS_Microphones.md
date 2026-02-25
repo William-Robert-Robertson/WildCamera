@@ -7,6 +7,11 @@ https://www.infineon.com/products/sensor/mems-microphones
 https://www.st.com/en/mems-and-sensors/mems-microphones/products.html
 
 #### Knowles MEMS Microphones
+
+Knowles MEMS Microphones became part of seltech-international.com as of February 2026
+
+Seltech SPH0641LU4H-1 Digital Zero-Height SiSonicTM Microphone With Multi-Mode And Ultrasonic Support
+
 ##### Knowles Application Note 17 - Ultrasonic Applications for Knowles Electret and MEMS Microphones
 >In
 this application note typical performance data up to
