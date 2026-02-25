@@ -42,3 +42,6 @@ https://github.com/William-Robert-Robertson/WildCamera/blob/main/Candidate%20Tec
 
 ##### TDK launches low power MEMS microphone with I²S interface to worldwide distribution
 https://invensense.tdk.com/news-media/tdk-launches-low-power-mems-microphone-with-i2s-interface-to-worldwide-distribution/
+
+##### TDK AN-1124 – Recommendations for Sealing InvenSense Bottom-Port MEMS Microphones from Dust and Liquid Ingress
+https://invensense.tdk.com/download-pdf/an-1124-recommendations-for-sealing-invensense-bottom-port-mems-microphones-from-dust-and-liquid-ingress/
