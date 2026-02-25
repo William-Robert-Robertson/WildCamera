@@ -10,7 +10,9 @@ https://www.st.com/en/mems-and-sensors/mems-microphones/products.html
 
 Knowles MEMS Microphones became part of seltech-international.com as of February 2026
 
-Seltech SPH0641LU4H-1 Digital Zero-Height SiSonicTM Microphone With Multi-Mode And Ultrasonic Support
+Seltech SPH0641LU4H-1 Digital Zero-Height SiSonicTM Microphone With Multi-Mode And Ultrasonic Support\
+https://seltech-international.com/sph0641lu4h-1/ \
+https://seltech-international.com/product/sph0641lu4h-1/
 
 ##### Knowles Application Note 17 - Ultrasonic Applications for Knowles Electret and MEMS Microphones
 >In
