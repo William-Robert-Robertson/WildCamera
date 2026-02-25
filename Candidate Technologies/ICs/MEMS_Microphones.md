@@ -10,7 +10,7 @@ https://www.st.com/en/mems-and-sensors/mems-microphones/products.html
 https://andymurkin.wordpress.com/2019/11/24/ultrasonic-field-recording/ \
 "Knowles SPU0410LR5H-QB"\
 "FEL Communications Primo EM258"\
-"JLI Electronics JLI-61A"\
+"JLI Electronics JLI-61A"
 
 #### Knowles MEMS Microphones
 
