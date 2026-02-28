@@ -24,7 +24,7 @@ Video for Linux 2 (V4L2) used by libcamera.org to interface with cameras
 User friendly Linux camera stack
 
 #### gstreamer
-www.gstreamer.freedesktop.org \
+https://gstreamer.freedesktop.org \
 GStreamer multimedia framework
 
 #### NNStreamer 
@@ -61,8 +61,8 @@ Online relational database management
 
 #### observation.org
 www.observation.org \
-Ecological observations database
-observation.org/apps/obsmapp
+Ecological observations database\
+[observation.org/apps/obsmapp](https://observation.org/apps/obsmapp) \
 ObsMap field GPS coordinate and data recording
 
 #### Overleaf
@@ -73,16 +73,20 @@ LaTeX scientific typesetting
 www.qgis.org \
 Desktop and server GIS
 
-#### docs.georama.io
+#### Georama
+https://docs.georama.io \
 Django apps for QGIS data - currently under development
 
-#### numpy.org
+#### NumPy
+www.numpy.org \
 Scientific and numerical computing
 
-#### flask.palletsprojects.com/en/stable
+#### Flask
+https://flask.palletsprojects.com/en/stable \
 Python web applications framework
 
-#### wordpress.org
+#### WordPress
+www.wordpress.org \
 Content management
 
 #### Wordpress Plugins:
@@ -136,11 +140,12 @@ Roundcube email
 #### tabby.sh
 Tabby terminal
 
-#### kicad.org
+#### KiCad
+www.kicad.org \
 Printed circuit board (PCB) design
 
 #### PowerTOP
-https://github.com/fenrus75/powertop
+https://github.com/fenrus75/powertop \
 Power consumption measurement tool for Linux
 
 #### meet.jit.si
@@ -161,24 +166,29 @@ OFTC IRC
 #### irssi.org
 IRC Client
 
-#### gnu.org/software/screen
+#### Screen
+www.gnu.org/software/screen \
 Window manager and multiplexer
 
-#### qfield.org
-QField
+#### QField
+www.qfield.org \
+QField - fieldwork app. for QGIS
 
 #### transmissionbt.com
 Bittorrent Client
 
-#### eclipseide.org
-Eclipse IDE
+#### Eclipse IDE
+www.eclipseide.org \
+Eclipse IDE - STM32CubeIDE and DBeaver are based on Eclipse.
 
 #### beagleboard.org
-Single Board Computers
+www.beagleboard.org \
+Open source SBCs (Single Board Computers)
 
 #### ST.com
 STM32CubeIDE\
 STM32CubeMX
 
-#### anubis.techaro.lol
+#### Anubis
+https://anubis.techaro.lol/ \
 Anubis scrapebot blocking.
