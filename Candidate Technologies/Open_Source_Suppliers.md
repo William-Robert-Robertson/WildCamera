@@ -1,59 +1,76 @@
 ### Open Source Suppliers
 
-#### git-scm.com
+#### GIT
+www.git-scm.com \
 Version management and collaboration
 
-#### ubuntu.com
+#### Ubuntu
+www.ubuntu.com \
 Desktop and server operating systems
 
-#### battreehabitatkey.co.uk
+#### Bat Tree Habitat Key
+www.battreehabitatkey.co.uk \
 Database of Bat Roosts in The UK
 
-#### libcamera.org
+#### libcamera
+www.libcamera.org \
 Linux camera stack
 
-#### linuxtv.org
+#### linuxtv
+www.linuxtv.org \
 Video for Linux 2 (V4L2) used by libcamera.org to interface with cameras
 
 #### codeberg.org/libobscura
 User friendly Linux camera stack
 
-#### gstreamer.freedesktop.org
+#### gstreamer
+www.gstreamer.freedesktop.org \
 GStreamer multimedia framework
 
-#### nnstreamer.ai
+#### NNStreamer 
+www.nnstreamer.ai \
 NNStreamer GStreamer plugins to apply neural networks
 
-#### pytorch.org
+#### PyTorch
+www.pytorch.org \
 PyTorch machine learning
 
-#### opencv.org
+#### OpenCV
+www.opencv.org \
 OpenCV computer vision library
 
-#### python.org
+#### Python
+www.python.org \
 Python 3 programming language
 
-#### jupyter.org
-JupyterLab interactive data analysis
+#### Jupyter
+www.jupyter.org \
+JupyterLab interactive data analysis - superceded Jupyter Notes
 
-#### postgresql.org
+#### PostgreSQL
+www.postgresql.org \
 Database with advanced geospatial and multithreading capabilities
 
-#### dbeaver.io
+#### DBeaver
+www.dbeaver.io \
 DBeaver Community relational database management
 
-#### phpmyadmin.net
+#### phpMyAdmin
+www.phpmyadmin.net \
 Online relational database management
 
 #### observation.org
+www.observation.org \
 Ecological observations database
 observation.org/apps/obsmapp
 ObsMap field GPS coordinate and data recording
 
-#### overleaf.com
+#### Overleaf
+www.overleaf.com \
 LaTeX scientific typesetting
 
-#### qgis.org
+#### QGIS
+www.qgis.org \
 Desktop and server GIS
 
 #### docs.georama.io
@@ -73,7 +90,8 @@ contactform7.com - Contact Form\
 akismet.com - Akismet Anti-Spam\
 polylang.pro - Multilingual Functionality\
 wordpress.org/themes/twentytwentyfour - Theme\
-wordpress.org/themes/twentytwentyfive - Theme
+wordpress.org/themes/twentytwentyfive - Theme\
+wordpress.org/plugins/redirection/ - redirect manager
 
 #### Microsoft
 code.visualstudio.com \
