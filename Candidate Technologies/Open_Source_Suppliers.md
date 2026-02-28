@@ -187,7 +187,9 @@ Open source SBCs (Single Board Computers)
 
 #### ST.com
 STM32CubeIDE\
-STM32CubeMX
+www.st.com/en/development-tools/stm32cubeide.html \
+STM32CubeMX\
+www.st.com/en/development-tools/stm32cubemx.html
 
 #### Anubis
 https://anubis.techaro.lol/ \
