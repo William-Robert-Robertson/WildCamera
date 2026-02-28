@@ -161,3 +161,6 @@ Single Board Computers
 #### ST.com
 STM32CubeIDE\
 STM32CubeMX
+
+#### anubis.techaro.lol
+Anubis scrapebot blocking.
