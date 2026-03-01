@@ -194,3 +194,7 @@ www.st.com/en/development-tools/stm32cubemx.html
 #### Anubis
 https://anubis.techaro.lol/ \
 Anubis scrapebot blocking.
+
+#### leaflet
+https://leafletjs.com/ \
+Interactive maps JavaScript library.
