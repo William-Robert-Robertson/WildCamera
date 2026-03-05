@@ -1,5 +1,7 @@
 Bundes Forschungs Zentrum für Wald bfw.gv.at
 
+2 March 2026
+
 My requirements are in some cases quite similar (e.g. edge-computing to reduce blank images is also important for ground images, due to wind and ground vegetation, foliage, sun spots, ...).
 
 Additionally, it would be great to be able to easily adjust the focus, depending on the project/field setup and maybe even exchange the lens for a different field of view. Really sharp images, even of small objects like seeds, would be a selling point for some experimental setups.
