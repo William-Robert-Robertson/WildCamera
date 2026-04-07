@@ -10,3 +10,7 @@ https://github.com/STMicroelectronics/x-cube-n6-ai-power-measurement
 
 ### How to measure power on the STM32N6
 https://community.st.com/t5/stm32-mcus/how-to-measure-power-on-the-stm32n6/ta-p/816166
+
+### VBAT Domain
+"The N6 contains some registers and RAM (called BKPRAM) that reside in a Battery-backed power domain called VBAT. This domain can be arranged to be Always-on (e.g. powered by a coin-cell battery), and therefore can emulate nonvolatile memory."
+https://wiki.stmicroelectronics.cn/stm32mcu/wiki/Security%3ASecurity_features_on_STM32N6_MCUs
