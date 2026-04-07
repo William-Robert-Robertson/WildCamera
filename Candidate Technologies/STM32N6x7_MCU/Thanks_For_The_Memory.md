@@ -111,9 +111,13 @@ SRAM is on-chip but not as fast as AXISRAM - marked NOLOAD
 
 PSRAM off-chip RAM - marked NOLOAD
 
+The RAM in the VBAT Domain can be powered by a coin cell and so used as pseudo-nonvolatile RAM
+"The N6 contains some registers and RAM (called BKPRAM) that reside in a Battery-backed power domain called VBAT. This domain can be arranged to be Always-on (e.g. powered by a coin-cell battery), and therefore can emulate nonvolatile memory."
+https://wiki.stmicroelectronics.cn/stm32mcu/wiki/Security%3ASecurity_features_on_STM32N6_MCUs
+
 It appears that ST required NPU scratch buffers to be in AXI SRAM to give good NPU performence - NPU activations in PSRAM would lead to 10× slower inference (not confirmed).
 
-It appears that ST may somptimes put framebuffers on PSRAM because of their size (not confitrmed).
+It appears that ST may sometimes put framebuffers on PSRAM because of their size (not confitrmed).
 
 main.c seems to define background and screen buffers with 2 bytes per pixel as large 1 dimensional arrays but the foreground buffer by contrast is a **double** buffer uint8_t lcd_fg_buffer[**2**] (will's emphasis) in main.c
 ```
