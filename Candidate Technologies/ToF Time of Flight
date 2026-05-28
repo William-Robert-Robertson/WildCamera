@@ -1,5 +1,7 @@
 ToF Time of Flight Sensors
 
+Note: Time of flight in the context of mm Wave radar (mmWave rader) is covered in the document mmWave_Radar.md
+
 ST Time-of-Flight sensors
 dToF direct Time of Flight and iToF indirect Time of Flight
   https://www.st.com/en/imaging-and-photonics-solutions/time-of-flight-sensors.html
