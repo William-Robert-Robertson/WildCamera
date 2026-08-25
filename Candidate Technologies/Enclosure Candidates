@@ -1,13 +1,37 @@
 Candidate Enclosures (Waterproof Boxes), Cable Glands and Valves:
 
 For cable glands please see Cable_Glands
-For micro dehumidifiers and electro-osmotic memberabes please see Electroosmotic Membranes
+For micro dehumidifiers and electro-osmotic membranes please see Electroosmotic Membranes
 
   RB Series (https://www.serpac.com/product-by-series/rb-series.html ) IP67 enclosures
     See answer from Darin Chambers | Design Engineer sales@serpac.com via Imelda Leon | Account Manager | Office Admin imelda at serpac.com to cairnwater.com email address on 2024-11-13 18:56
     Venting is a good idea, out in the elements, it will help from condensation building up
     Heyco brand is what we use for our p20.
     Serpac Electronic Enclosures 2009 Wright Ave, La Verne, CA 91750
+
+Sittinger et al. documented their tests for moisture ingression here:
+
+  https://www.biorxiv.org/content/10.1101/2023.12.05.570242v2
+
+  Getting good results with only 5 g of silica gel.
+
+  They listed the enclosures they used here:
+
+  https://maxsitt.github.io/insect-detect-docs/hardware/2024_components/#list-of-components
+
+  Bocube Enclosure B 221309 PC-V0
+  https://www.bopla.de/en/enclosure-technology/bocube/pc-ul-94-v0-single-coloured/enclosures-polycarbonate-ul-94-v0-single-coloured/b-221309-pc-v0-7035
+
+  Euromas Enclosure M 215 G
+  https://www.bopla.de/en/enclosure-technology/euromas-abs-pc-f05/pc-crystal-clear-lid/enclosure-polycarbonate-3/m-215-g
+
+  the first one is available in IP  IP 66 and IP 68 so a slightly lower and slightly higher rating than the ones we were looking at - the 2nd one is IP 66 so a slightly lower rating than the IP67 enclosures that we were looking at.
+
+  They used a different ventilation plug to the Heyco brand that Serpac suggested:
+
+  DELOCK 60478
+  https://www.reichelt.com/de/en/shop/product/ventilation_plug_m6_grey_2_pcs-371153
+  https://www.delock.com/produkt/60478/merkmale.html
 
   digikey.ch
     Boxes, Enclosures, Racks
